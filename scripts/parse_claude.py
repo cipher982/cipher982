@@ -3,7 +3,7 @@ import json
 from pathlib import Path
 from datetime import datetime, timezone, timedelta
 from collections import defaultdict
-from typing import Dict, List, Any
+from typing import Dict, List, Any, Optional
 
 
 def extract_repo_from_cwd(cwd: str) -> str:
@@ -28,9 +28,43 @@ def extract_repo_from_cwd(cwd: str) -> str:
     return path.name if path.name else "unknown"
 
 
+# Global cache: directory slug -> cwd path
+_slug_cache = {}
+
+
+def find_field_in_session(lines: List[str], field: str) -> Optional[Any]:
+    """
+    Walk session lines until we find a non-null value for the given field.
+    Some sessions start with summary objects; metadata appears on line 2+.
+    """
+    for line in lines[:10]:  # Check first 10 lines max
+        try:
+            obj = json.loads(line)
+            value = obj.get(field)
+            if value and value != "null":
+                return value
+        except json.JSONDecodeError:
+            continue
+    return None
+
+
+def resolve_cwd_from_slug(slug: str) -> Optional[str]:
+    """
+    Resolve cwd using cached slug→cwd mappings.
+    Slug format: -Users-davidrose-git-ai-tools-website
+    Can't decode directly due to hyphens in real dir names.
+    """
+    return _slug_cache.get(slug)
+
+
 def parse_claude_sessions(sessions_dir: Path, days_back: int = 7) -> Dict[str, Any]:
     """
     Parse all Claude sessions within the time window.
+
+    Strategy:
+    1. Primary: Walk each file until we find non-null cwd (handles summary-first files)
+    2. Fallback: Use slug→cwd cache from previous sessions
+    3. Validation: Compare slug vs cwd when both present
 
     Returns:
         dict with sessions_Xd, turns_Xd, repos, last_session
@@ -44,6 +78,7 @@ def parse_claude_sessions(sessions_dir: Path, days_back: int = 7) -> Dict[str, A
     # Find all session files
     session_files = list(sessions_dir.rglob("*.jsonl"))
 
+    # First pass: build slug cache from sessions with valid cwd
     for session_file in session_files:
         try:
             with open(session_file, 'r') as f:
@@ -52,13 +87,38 @@ def parse_claude_sessions(sessions_dir: Path, days_back: int = 7) -> Dict[str, A
             if not lines:
                 continue
 
-            # Parse first line to get session metadata
-            first_line = json.loads(lines[0])
-            timestamp_str = first_line.get("timestamp")
-            cwd = first_line.get("cwd")
-            session_id = first_line.get("sessionId")
+            cwd = find_cwd_in_session(lines)
+            if cwd:
+                slug = session_file.parent.name
+                _slug_cache[slug] = cwd
+        except Exception:
+            continue
 
-            if not timestamp_str or not cwd:
+    # Second pass: parse sessions with fallback to cache
+    for session_file in session_files:
+        try:
+            with open(session_file, 'r') as f:
+                lines = f.readlines()
+
+            if not lines:
+                continue
+
+            # Find cwd (walks multiple lines for summary-first files)
+            cwd = find_field_in_session(lines, "cwd")
+
+            # Fallback: use slug cache
+            if not cwd:
+                slug = session_file.parent.name
+                cwd = resolve_cwd_from_slug(slug)
+
+            if not cwd:
+                continue  # Still no cwd, skip session
+
+            # Find timestamp (also walks multiple lines)
+            timestamp_str = find_field_in_session(lines, "timestamp")
+            session_id = find_field_in_session(lines, "sessionId")
+
+            if not timestamp_str:
                 continue
 
             # Parse timestamp
