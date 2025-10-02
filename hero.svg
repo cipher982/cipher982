@@ -40,11 +40,11 @@
     <text x="0" y="0" class="metric-label">LAST 7 DAYS</text>
 
     <!-- Claude segment -->
-    <rect x="0" y="10" width="493.6" height="24" fill="#ff7b00" rx="2"/>
+    <rect x="0" y="10" width="493.6" height="24" fill="#58a6ff" rx="2"/>
     <text x="10" y="28" class="bar-label">Claude 61.7%</text>
 
     <!-- Codex segment -->
-    <rect x="493.6" y="10" width="306.4" height="24" fill="#10b981" rx="2"/>
+    <rect x="493.6" y="10" width="306.4" height="24" fill="#8b949e" rx="2"/>
     <text x="503.6" y="28" class="bar-label">Codex 38.3%</text>
   </g>
 

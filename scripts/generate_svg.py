@@ -50,13 +50,13 @@ def generate_hero_svg(data: Dict[str, Any]) -> str:
     width = 900
     height = 200
 
-    # Colors (GitHub dark theme inspired)
+    # Colors (GitHub native palette)
     bg_color = "#0d1117"
     border_color = "#30363d"
     text_primary = "#c9d1d9"
     text_secondary = "#8b949e"
-    claude_color = "#ff7b00"
-    codex_color = "#10b981"
+    claude_color = "#58a6ff"  # GitHub blue
+    codex_color = "#8b949e"   # GitHub gray
     accent_color = "#58a6ff"
 
     # Generate SVG
