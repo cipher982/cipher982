@@ -1,18 +1,18 @@
 {
-  "generated_at": "2025-10-01T21:28:39.617931+00:00",
+  "generated_at": "2025-10-02T01:16:18.039380+00:00",
   "github": {
-    "repos_active_7d": 6,
-    "repos_active_30d": 9,
-    "commits_7d": 120,
-    "commits_30d": 416,
+    "repos_active_7d": 7,
+    "repos_active_30d": 10,
+    "commits_7d": 122,
+    "commits_30d": 410,
     "languages_30d": [
       {
         "name": "Python",
-        "commits": 338
+        "commits": 330
       },
       {
         "name": "TypeScript",
-        "commits": 76
+        "commits": 78
       },
       {
         "name": "Shell",
@@ -20,43 +20,43 @@
       }
     ],
     "last_push": {
-      "repo": "zerg",
-      "timestamp": "2025-10-01T17:25:48-04:00",
-      "hours_ago": 0.05
+      "repo": "cipher982",
+      "timestamp": "2025-10-01T21:16:04-04:00",
+      "hours_ago": 0.0
     },
     "top_repos_7d": [
       {
         "repo": "zerg",
-        "commits": 41
+        "commits": 36
+      },
+      {
+        "repo": "ai-tools-website",
+        "commits": 21
       },
       {
         "repo": "this-wine-does-not-exist",
         "commits": 20
       },
       {
-        "repo": "stopsign_ai",
+        "repo": "drose_io",
         "commits": 20
       },
       {
-        "repo": "drose_io",
-        "commits": 18
-      },
-      {
-        "repo": "ai-tools-website",
-        "commits": 17
+        "repo": "stopsign_ai",
+        "commits": 19
       }
     ]
   },
   "claude": {
-    "sessions_7d": 46,
-    "sessions_30d": 193,
-    "turns_7d": 11406,
-    "turns_30d": 40129,
+    "sessions_7d": 47,
+    "sessions_30d": 191,
+    "turns_7d": 11912,
+    "turns_30d": 40006,
     "repos": [
       {
         "repo": "zeta",
-        "sessions": 9,
-        "turns": 1467
+        "sessions": 10,
+        "turns": 1547
       },
       {
         "repo": "stopsign_ai",
@@ -71,12 +71,12 @@
       {
         "repo": "zerg",
         "sessions": 6,
-        "turns": 2178
+        "turns": 2303
       },
       {
         "repo": "this-wine-does-not-exist",
         "sessions": 4,
-        "turns": 2139
+        "turns": 2181
       },
       {
         "repo": "ai-tools-website",
@@ -86,7 +86,7 @@
       {
         "repo": "mytech",
         "sessions": 4,
-        "turns": 1150
+        "turns": 1295
       },
       {
         "repo": "llmbench",
@@ -96,7 +96,7 @@
       {
         "repo": "cipher982",
         "sessions": 1,
-        "turns": 219
+        "turns": 333
       },
       {
         "repo": "drose_io",
@@ -105,16 +105,16 @@
       }
     ],
     "last_session": {
-      "repo": "mytech",
-      "timestamp": "2025-10-01T21:10:25.034000+00:00",
-      "hours_ago": 0.3
+      "repo": "zeta",
+      "timestamp": "2025-10-02T00:40:49.147000+00:00",
+      "hours_ago": 0.59
     }
   },
   "codex": {
-    "sessions_7d": 50,
+    "sessions_7d": 51,
     "sessions_30d": 199,
-    "turns_7d": 20966,
-    "turns_30d": 59541,
+    "turns_7d": 21245,
+    "turns_30d": 59673,
     "repos": [
       {
         "repo": "zerg",
@@ -133,8 +133,8 @@
       },
       {
         "repo": "zeta",
-        "sessions": 7,
-        "turns": 2013
+        "sessions": 8,
+        "turns": 2292
       },
       {
         "repo": "this-wine-does-not-exist",
@@ -153,34 +153,34 @@
       }
     ],
     "last_session": {
-      "repo": "ai-tools-website",
-      "timestamp": "2025-10-01T20:38:43.852000+00:00",
-      "hours_ago": 0.83
+      "repo": "zeta",
+      "timestamp": "2025-10-01T22:05:37.546000+00:00",
+      "hours_ago": 3.18
     }
   },
   "aggregate": {
-    "ai_sessions_7d": 96,
-    "ai_turns_7d": 32372,
-    "claude_percentage": 47.9,
-    "codex_percentage": 52.1,
+    "ai_sessions_7d": 98,
+    "ai_turns_7d": 33157,
+    "claude_percentage": 48.0,
+    "codex_percentage": 52.0,
     "top_repos_combined": [
       {
         "repo": "zerg",
-        "commits": 41,
+        "commits": 36,
         "ai_sessions": 18,
-        "activity_score": 77
+        "activity_score": 72
       },
       {
         "repo": "stopsign_ai",
-        "commits": 20,
+        "commits": 19,
         "ai_sessions": 19,
-        "activity_score": 58
+        "activity_score": 57
       },
       {
         "repo": "ai-tools-website",
-        "commits": 17,
+        "commits": 21,
         "ai_sessions": 14,
-        "activity_score": 45
+        "activity_score": 49
       },
       {
         "repo": "this-wine-does-not-exist",
@@ -191,8 +191,8 @@
       {
         "repo": "zeta",
         "commits": 0,
-        "ai_sessions": 16,
-        "activity_score": 32
+        "ai_sessions": 18,
+        "activity_score": 36
       }
     ]
   }
