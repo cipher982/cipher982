@@ -23,11 +23,11 @@
     <text x="0" y="20" class="metric-label">AI SESSIONS</text>
 
     <!-- Turns -->
-    <text x="200" y="0" class="metric-value">37.9k</text>
+    <text x="200" y="0" class="metric-value">38.0k</text>
     <text x="200" y="20" class="metric-label">TURNS</text>
 
     <!-- Commits -->
-    <text x="380" y="0" class="metric-value">145</text>
+    <text x="380" y="0" class="metric-value">147</text>
     <text x="380" y="20" class="metric-label">COMMITS</text>
 
     <!-- Repos -->
@@ -49,5 +49,5 @@
   </g>
 
   <!-- Last Activity -->
-  <text x="30" y="180" class="last-activity">⚡ Last activity: 11m ago</text>
+  <text x="30" y="180" class="last-activity">⚡ Last activity: 3m ago</text>
 </svg>

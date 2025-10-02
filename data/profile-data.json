@@ -1,18 +1,18 @@
 {
-  "generated_at": "2025-10-02T21:41:25.108061+00:00",
+  "generated_at": "2025-10-02T21:46:47.243893+00:00",
   "github": {
     "repos_active_7d": 7,
     "repos_active_30d": 10,
-    "commits_7d": 145,
-    "commits_30d": 433,
+    "commits_7d": 147,
+    "commits_30d": 435,
     "languages_30d": [
       {
         "name": "Python",
-        "commits": 349
+        "commits": 350
       },
       {
         "name": "TypeScript",
-        "commits": 82
+        "commits": 83
       },
       {
         "name": "Shell",
@@ -20,9 +20,9 @@
       }
     ],
     "last_push": {
-      "repo": "zerg",
-      "timestamp": "2025-10-02T17:30:05-04:00",
-      "hours_ago": 0.19
+      "repo": "drose_io",
+      "timestamp": "2025-10-02T17:43:45-04:00",
+      "hours_ago": 0.05
     },
     "top_repos_7d": [
       {
@@ -31,7 +31,7 @@
       },
       {
         "repo": "drose_io",
-        "commits": 24
+        "commits": 25
       },
       {
         "repo": "ai-tools-website",
@@ -48,10 +48,10 @@
     ]
   },
   "claude": {
-    "sessions_7d": 95,
+    "sessions_7d": 94,
     "sessions_30d": 368,
-    "turns_7d": 23227,
-    "turns_30d": 77784,
+    "turns_7d": 23242,
+    "turns_30d": 77875,
     "repos": [
       {
         "repo": "this-wine-does-not-exist",
@@ -91,7 +91,7 @@
       {
         "repo": "cipher982",
         "sessions": 1,
-        "turns": 670
+        "turns": 692
       },
       {
         "repo": "floodmap",
@@ -101,25 +101,25 @@
       {
         "repo": "drose_io",
         "sessions": 1,
-        "turns": 1258
+        "turns": 1294
       }
     ],
     "last_session": {
       "repo": "zeta",
       "timestamp": "2025-10-02T18:48:35.692000+00:00",
-      "hours_ago": 2.88
+      "hours_ago": 2.97
     }
   },
   "codex": {
     "sessions_7d": 51,
     "sessions_30d": 199,
-    "turns_7d": 20990,
-    "turns_30d": 60245,
+    "turns_7d": 21013,
+    "turns_30d": 60268,
     "repos": [
       {
         "repo": "zerg",
         "sessions": 13,
-        "turns": 7931
+        "turns": 7936
       },
       {
         "repo": "ai-tools-website",
@@ -149,23 +149,23 @@
       {
         "repo": "cipher982",
         "sessions": 1,
-        "turns": 182
+        "turns": 191
       },
       {
         "repo": "drose_io",
         "sessions": 1,
-        "turns": 738
+        "turns": 747
       }
     ],
     "last_session": {
       "repo": "cipher982",
       "timestamp": "2025-10-02T21:19:10.944000+00:00",
-      "hours_ago": 0.37
+      "hours_ago": 0.46
     }
   },
   "aggregate": {
     "ai_sessions_7d": 120,
-    "ai_turns_7d": 37906,
+    "ai_turns_7d": 37987,
     "claude_percentage": 61.7,
     "codex_percentage": 38.3,
     "top_repos_combined": [
@@ -195,7 +195,7 @@
       },
       {
         "repo": "drose_io",
-        "commits": 24,
+        "commits": 25,
         "ai_sessions": 2,
         "github_url": "https://github.com/cipher982/drose_io"
       }
