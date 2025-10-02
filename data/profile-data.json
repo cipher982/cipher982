@@ -1,18 +1,18 @@
 {
-  "generated_at": "2025-10-02T16:50:13.158348+00:00",
+  "generated_at": "2025-10-02T20:40:24.358674+00:00",
   "github": {
     "repos_active_7d": 7,
     "repos_active_30d": 10,
-    "commits_7d": 139,
+    "commits_7d": 142,
     "commits_30d": 427,
     "languages_30d": [
       {
         "name": "Python",
-        "commits": 344
+        "commits": 343
       },
       {
         "name": "TypeScript",
-        "commits": 81
+        "commits": 82
       },
       {
         "name": "Shell",
@@ -20,21 +20,21 @@
       }
     ],
     "last_push": {
-      "repo": "cipher982",
-      "timestamp": "2025-10-02T12:49:12-04:00",
-      "hours_ago": 0.02
+      "repo": "drose_io",
+      "timestamp": "2025-10-02T13:24:35-04:00",
+      "hours_ago": 3.26
     },
     "top_repos_7d": [
       {
         "repo": "zerg",
-        "commits": 43
-      },
-      {
-        "repo": "ai-tools-website",
-        "commits": 23
+        "commits": 44
       },
       {
         "repo": "drose_io",
+        "commits": 24
+      },
+      {
+        "repo": "ai-tools-website",
         "commits": 23
       },
       {
@@ -49,9 +49,9 @@
   },
   "claude": {
     "sessions_7d": 50,
-    "sessions_30d": 190,
-    "turns_7d": 12489,
-    "turns_30d": 39897,
+    "sessions_30d": 191,
+    "turns_7d": 13294,
+    "turns_30d": 40777,
     "repos": [
       {
         "repo": "stopsign_ai",
@@ -59,14 +59,14 @@
         "turns": 1339
       },
       {
-        "repo": "unknown",
-        "sessions": 8,
-        "turns": 235
-      },
-      {
         "repo": "zerg",
         "sessions": 7,
-        "turns": 2435
+        "turns": 2497
+      },
+      {
+        "repo": "Home",
+        "sessions": 7,
+        "turns": 160
       },
       {
         "repo": "this-wine-does-not-exist",
@@ -91,25 +91,25 @@
       {
         "repo": "cipher982",
         "sessions": 1,
-        "turns": 407
+        "turns": 451
       },
       {
         "repo": "drose_io",
         "sessions": 1,
-        "turns": 1182
+        "turns": 1213
       }
     ],
     "last_session": {
       "repo": "zeta",
-      "timestamp": "2025-10-02T16:31:21.848000+00:00",
-      "hours_ago": 0.31
+      "timestamp": "2025-10-02T18:15:40.068000+00:00",
+      "hours_ago": 2.41
     }
   },
   "codex": {
-    "sessions_7d": 52,
-    "sessions_30d": 197,
-    "turns_7d": 21610,
-    "turns_30d": 59024,
+    "sessions_7d": 51,
+    "sessions_30d": 196,
+    "turns_7d": 21609,
+    "turns_30d": 58784,
     "repos": [
       {
         "repo": "zerg",
@@ -132,7 +132,7 @@
         "turns": 1459
       },
       {
-        "repo": "unknown",
+        "repo": "Home",
         "sessions": 3,
         "turns": 15
       },
@@ -145,39 +145,44 @@
     "last_session": {
       "repo": "zerg",
       "timestamp": "2025-10-02T15:22:41.874000+00:00",
-      "hours_ago": 1.46
+      "hours_ago": 5.3
     }
   },
   "aggregate": {
-    "ai_sessions_7d": 82,
-    "ai_turns_7d": 30300,
-    "claude_percentage": 46.3,
-    "codex_percentage": 53.7,
+    "ai_sessions_7d": 81,
+    "ai_turns_7d": 30362,
+    "claude_percentage": 45.7,
+    "codex_percentage": 54.3,
     "top_repos_combined": [
       {
         "repo": "zerg",
-        "commits": 43,
-        "ai_sessions": 20
+        "commits": 44,
+        "ai_sessions": 20,
+        "github_url": "https://github.com/cipher982/zerg"
       },
       {
         "repo": "stopsign_ai",
         "commits": 20,
-        "ai_sessions": 18
+        "ai_sessions": 18,
+        "github_url": "https://github.com/cipher982/stopsign_ai"
       },
       {
         "repo": "ai-tools-website",
         "commits": 23,
-        "ai_sessions": 14
+        "ai_sessions": 14,
+        "github_url": "https://github.com/cipher982/ai-tools-website"
       },
       {
         "repo": "this-wine-does-not-exist",
         "commits": 22,
-        "ai_sessions": 9
+        "ai_sessions": 9,
+        "github_url": "https://github.com/cipher982/this-wine-does-not-exist"
       },
       {
         "repo": "drose_io",
-        "commits": 23,
-        "ai_sessions": 1
+        "commits": 24,
+        "ai_sessions": 1,
+        "github_url": "https://github.com/cipher982/drose_io"
       }
     ]
   }

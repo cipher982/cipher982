@@ -14,7 +14,16 @@ def generate_shipping_table(data: Dict[str, Any]) -> str:
     table += "|------|---------|-------------|\n"
 
     for repo in repos:
-        table += f"| **{repo['repo']}** | {repo['commits']} | {repo['ai_sessions']} |\n"
+        repo_name = repo['repo']
+        github_url = repo.get('github_url')
+
+        # Create link if GitHub URL exists
+        if github_url:
+            repo_display = f"[**{repo_name}**]({github_url})"
+        else:
+            repo_display = f"**{repo_name}**"
+
+        table += f"| {repo_display} | {repo['commits']} | {repo['ai_sessions']} |\n"
 
     return table
 

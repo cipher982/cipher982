@@ -7,15 +7,28 @@ from typing import Dict, List, Any
 
 
 def extract_repo_from_cwd(cwd: str) -> str:
-    """Extract repo name from cwd path like /Users/davidrose/git/stopsign_ai"""
+    """Extract meaningful name from any working directory"""
     if not cwd:
         return "unknown"
-    parts = Path(cwd).parts
-    if "git" in parts:
-        git_idx = parts.index("git")
-        if git_idx + 1 < len(parts):
-            return parts[git_idx + 1]
-    return "unknown"
+
+    path = Path(cwd)
+
+    # Home directory
+    if path == Path.home():
+        return "Home"
+
+    # Try to find meaningful project directory
+    parts = path.parts
+
+    # If in ~/git/X or ~/Documents/X or ~/projects/X or ~/work/X
+    for base in ["git", "Documents", "projects", "work", "dev"]:
+        if base in parts:
+            idx = parts.index(base)
+            if idx + 1 < len(parts):
+                return parts[idx + 1]
+
+    # Otherwise use the last directory name
+    return path.name if path.name else "unknown"
 
 
 def parse_claude_sessions(sessions_dir: Path, days_back: int = 7) -> Dict[str, Any]:

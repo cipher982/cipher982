@@ -6,11 +6,11 @@
 
 | Repo | Commits | AI Sessions |
 |------|---------|-------------|
-| **zerg** | 43 | 20 |
-| **stopsign_ai** | 20 | 18 |
-| **ai-tools-website** | 23 | 14 |
-| **this-wine-does-not-exist** | 22 | 9 |
-| **drose_io** | 23 | 1 |
+| [**zerg**](https://github.com/cipher982/zerg) | 44 | 20 |
+| [**stopsign_ai**](https://github.com/cipher982/stopsign_ai) | 20 | 18 |
+| [**ai-tools-website**](https://github.com/cipher982/ai-tools-website) | 23 | 14 |
+| [**this-wine-does-not-exist**](https://github.com/cipher982/this-wine-does-not-exist) | 22 | 9 |
+| [**drose_io**](https://github.com/cipher982/drose_io) | 24 | 1 |
 
 
 ## 💡 About
@@ -20,7 +20,7 @@ I'm a full-stack developer building AI-powered applications. This profile showca
 **What makes this unique?** Rather than just showing finished work (commits), this dashboard reveals the actual building process through:
 - Real-time AI collaboration metrics
 - Parallel development across multiple projects
-- Deep problem-solving sessions (avg 369 turns/session)
+- Deep problem-solving sessions (avg 374 turns/session)
 
 ## 🛠️ Current Stack
 
@@ -41,10 +41,10 @@ All metrics are computed locally and aggregated into a single JSON file, then vi
 <summary>🔍 Detailed Stats (Last 30 Days)</summary>
 
 - **Commits**: 427
-- **Languages**: Python (344), TypeScript (81), Shell (2)
-- **AI Sessions**: Claude 190 · Codex 197
-- **Total Turns**: 98.9k
+- **Languages**: Python (343), TypeScript (82), Shell (2)
+- **AI Sessions**: Claude 191 · Codex 196
+- **Total Turns**: 99.6k
 
 </details>
 
-*Last updated: 2025-10-02 16:50 UTC*
+*Last updated: 2025-10-02 20:40 UTC*

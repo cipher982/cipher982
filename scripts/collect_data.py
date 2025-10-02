@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """Main orchestrator to collect all profile data"""
 import json
+import subprocess
 from pathlib import Path
 from datetime import datetime, timezone
-from typing import Dict, Any
+from typing import Dict, Any, Optional
 from collections import defaultdict
 
 from parse_claude import parse_claude_sessions
@@ -14,6 +15,33 @@ from parse_github import parse_github_activity
 EXCLUDED_REPOS = [
     "zeta",
 ]
+
+
+def get_github_url(repo_name: str, git_dir: Path) -> Optional[str]:
+    """Get GitHub URL if repo has GitHub remote"""
+    repo_path = git_dir / repo_name
+    if not repo_path.exists() or not (repo_path / ".git").exists():
+        return None
+
+    try:
+        result = subprocess.run(
+            ["git", "-C", str(repo_path), "remote", "get-url", "origin"],
+            capture_output=True,
+            text=True,
+            timeout=2
+        )
+        if result.returncode == 0:
+            url = result.stdout.strip()
+            # Convert SSH to HTTPS for links
+            if "github.com" in url:
+                # git@github.com:cipher982/repo.git -> https://github.com/cipher982/repo
+                url = url.replace("git@github.com:", "https://github.com/")
+                url = url.replace(".git", "")
+                return url
+    except (subprocess.TimeoutExpired, subprocess.CalledProcessError):
+        pass
+
+    return None
 
 
 def aggregate_metrics(github_data: Dict, claude_data: Dict, codex_data: Dict) -> Dict[str, Any]:
@@ -60,11 +88,15 @@ def aggregate_metrics(github_data: Dict, claude_data: Dict, codex_data: Dict) ->
 
     # Sort by total activity (commits + sessions) and take top 5
     top_repos_combined = []
+    git_dir = Path.home() / "git"
+
     for repo, data in repo_scores.items():
+        github_url = get_github_url(repo, git_dir)
         top_repos_combined.append({
             "repo": repo,
             "commits": data["commits"],
-            "ai_sessions": data["ai_sessions"]
+            "ai_sessions": data["ai_sessions"],
+            "github_url": github_url
         })
 
     # Sort by commits first, then sessions
