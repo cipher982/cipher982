@@ -40,18 +40,17 @@ def aggregate_metrics(github_data: Dict, claude_data: Dict, codex_data: Dict) ->
     for repo_data in codex_data["repos"]:
         repo_scores[repo_data["repo"]]["ai_sessions"] += repo_data["sessions"]
 
-    # Calculate combined score and sort
+    # Sort by total activity (commits + sessions) and take top 5
     top_repos_combined = []
     for repo, data in repo_scores.items():
-        activity_score = data["commits"] + (data["ai_sessions"] * 2)  # Weight AI sessions higher
         top_repos_combined.append({
             "repo": repo,
             "commits": data["commits"],
-            "ai_sessions": data["ai_sessions"],
-            "activity_score": activity_score
+            "ai_sessions": data["ai_sessions"]
         })
 
-    top_repos_combined.sort(key=lambda x: x["activity_score"], reverse=True)
+    # Sort by commits first, then sessions
+    top_repos_combined.sort(key=lambda x: (x["commits"] + x["ai_sessions"]), reverse=True)
     top_repos_combined = top_repos_combined[:5]
 
     return {

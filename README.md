@@ -2,15 +2,15 @@
   <img src="./hero.svg" alt="AI-Native Development Dashboard" />
 </p>
 
-## 🚀 Shipping This Week
+## 🚀 Active This Week
 
-| Repo | Commits | AI Sessions | Activity Score |
-|------|---------|-------------|----------------|
-| **zerg** | 36 | 18 | 72 |
-| **stopsign_ai** | 19 | 19 | 57 |
-| **ai-tools-website** | 21 | 14 | 49 |
-| **this-wine-does-not-exist** | 20 | 8 | 36 |
-| **zeta** | 0 | 18 | 36 |
+| Repo | Commits | AI Sessions |
+|------|---------|-------------|
+| **zerg** | 43 | 20 |
+| **stopsign_ai** | 20 | 18 |
+| **ai-tools-website** | 23 | 14 |
+| **this-wine-does-not-exist** | 22 | 9 |
+| **drose_io** | 23 | 1 |
 
 
 ## 💡 About
@@ -20,7 +20,7 @@ I'm a full-stack developer building AI-powered applications. This profile showca
 **What makes this unique?** Rather than just showing finished work (commits), this dashboard reveals the actual building process through:
 - Real-time AI collaboration metrics
 - Parallel development across multiple projects
-- Deep problem-solving sessions (avg 338 turns/session)
+- Deep problem-solving sessions (avg 333 turns/session)
 
 ## 🛠️ Current Stack
 
@@ -40,11 +40,11 @@ All metrics are computed locally and aggregated into a single JSON file, then vi
 <details>
 <summary>🔍 Detailed Stats (Last 30 Days)</summary>
 
-- **Commits**: 410
-- **Languages**: Python (330), TypeScript (78), Shell (2)
-- **AI Sessions**: Claude 191 · Codex 199
-- **Total Turns**: 99.7k
+- **Commits**: 426
+- **Languages**: Python (343), TypeScript (81), Shell (2)
+- **AI Sessions**: Claude 190 · Codex 197
+- **Total Turns**: 98.9k
 
 </details>
 
-*Last updated: 2025-10-02 01:16 UTC*
+*Last updated: 2025-10-02 16:48 UTC*

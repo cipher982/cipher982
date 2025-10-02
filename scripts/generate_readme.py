@@ -10,11 +10,11 @@ def generate_shipping_table(data: Dict[str, Any]) -> str:
     """Generate markdown table for top repos"""
     repos = data["aggregate"]["top_repos_combined"]
 
-    table = "| Repo | Commits | AI Sessions | Activity Score |\n"
-    table += "|------|---------|-------------|----------------|\n"
+    table = "| Repo | Commits | AI Sessions |\n"
+    table += "|------|---------|-------------|\n"
 
     for repo in repos:
-        table += f"| **{repo['repo']}** | {repo['commits']} | {repo['ai_sessions']} | {repo['activity_score']} |\n"
+        table += f"| **{repo['repo']}** | {repo['commits']} | {repo['ai_sessions']} |\n"
 
     return table
 

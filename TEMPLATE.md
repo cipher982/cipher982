@@ -2,7 +2,7 @@
   <img src="./hero.svg" alt="AI-Native Development Dashboard" />
 </p>
 
-## 🚀 Shipping This Week
+## 🚀 Active This Week
 
 {{SHIPPING_TABLE}}
 
