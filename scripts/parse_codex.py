@@ -7,7 +7,7 @@ from typing import Dict, List, Any
 
 
 def extract_repo_from_cwd(cwd: str) -> str:
-    """Extract meaningful name from any working directory"""
+    """Extract meaningful name from working directory"""
     if not cwd:
         return "unknown"
 
@@ -17,17 +17,14 @@ def extract_repo_from_cwd(cwd: str) -> str:
     if path == Path.home():
         return "Home"
 
-    # Try to find meaningful project directory
+    # Check if in ~/git/* structure (your actual directory layout)
     parts = path.parts
+    if "git" in parts:
+        idx = parts.index("git")
+        if idx + 1 < len(parts):
+            return parts[idx + 1]
 
-    # If in ~/git/X or ~/Documents/X or ~/projects/X or ~/work/X
-    for base in ["git", "Documents", "projects", "work", "dev"]:
-        if base in parts:
-            idx = parts.index(base)
-            if idx + 1 < len(parts):
-                return parts[idx + 1]
-
-    # Otherwise use the last directory name
+    # Fallback: use last directory name
     return path.name if path.name else "unknown"
 
 

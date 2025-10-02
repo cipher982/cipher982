@@ -1,14 +1,14 @@
 {
-  "generated_at": "2025-10-02T20:40:24.358674+00:00",
+  "generated_at": "2025-10-02T20:51:12.204910+00:00",
   "github": {
     "repos_active_7d": 7,
     "repos_active_30d": 10,
-    "commits_7d": 142,
-    "commits_30d": 427,
+    "commits_7d": 144,
+    "commits_30d": 429,
     "languages_30d": [
       {
         "name": "Python",
-        "commits": 343
+        "commits": 345
       },
       {
         "name": "TypeScript",
@@ -20,14 +20,14 @@
       }
     ],
     "last_push": {
-      "repo": "drose_io",
-      "timestamp": "2025-10-02T13:24:35-04:00",
-      "hours_ago": 3.26
+      "repo": "zerg",
+      "timestamp": "2025-10-02T16:47:48-04:00",
+      "hours_ago": 0.06
     },
     "top_repos_7d": [
       {
         "repo": "zerg",
-        "commits": 44
+        "commits": 45
       },
       {
         "repo": "drose_io",
@@ -48,10 +48,10 @@
     ]
   },
   "claude": {
-    "sessions_7d": 50,
+    "sessions_7d": 49,
     "sessions_30d": 191,
-    "turns_7d": 13294,
-    "turns_30d": 40777,
+    "turns_7d": 12785,
+    "turns_30d": 40900,
     "repos": [
       {
         "repo": "stopsign_ai",
@@ -61,7 +61,7 @@
       {
         "repo": "zerg",
         "sessions": 7,
-        "turns": 2497
+        "turns": 2568
       },
       {
         "repo": "Home",
@@ -80,8 +80,8 @@
       },
       {
         "repo": "mytech",
-        "sessions": 4,
-        "turns": 1315
+        "sessions": 3,
+        "turns": 683
       },
       {
         "repo": "llmbench",
@@ -91,7 +91,7 @@
       {
         "repo": "cipher982",
         "sessions": 1,
-        "turns": 451
+        "turns": 485
       },
       {
         "repo": "drose_io",
@@ -102,13 +102,13 @@
     "last_session": {
       "repo": "zeta",
       "timestamp": "2025-10-02T18:15:40.068000+00:00",
-      "hours_ago": 2.41
+      "hours_ago": 2.59
     }
   },
   "codex": {
-    "sessions_7d": 51,
+    "sessions_7d": 49,
     "sessions_30d": 196,
-    "turns_7d": 21609,
+    "turns_7d": 21011,
     "turns_30d": 58784,
     "repos": [
       {
@@ -145,18 +145,18 @@
     "last_session": {
       "repo": "zerg",
       "timestamp": "2025-10-02T15:22:41.874000+00:00",
-      "hours_ago": 5.3
+      "hours_ago": 5.48
     }
   },
   "aggregate": {
-    "ai_sessions_7d": 81,
-    "ai_turns_7d": 30362,
-    "claude_percentage": 45.7,
-    "codex_percentage": 54.3,
+    "ai_sessions_7d": 80,
+    "ai_turns_7d": 29835,
+    "claude_percentage": 45.0,
+    "codex_percentage": 55.0,
     "top_repos_combined": [
       {
         "repo": "zerg",
-        "commits": 44,
+        "commits": 45,
         "ai_sessions": 20,
         "github_url": "https://github.com/cipher982/zerg"
       },
