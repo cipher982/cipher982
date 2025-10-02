@@ -19,15 +19,15 @@
   <!-- Metrics Row -->
   <g transform="translate(30, 70)">
     <!-- AI Sessions -->
-    <text x="0" y="0" class="metric-value">102</text>
+    <text x="0" y="0" class="metric-value">82</text>
     <text x="0" y="20" class="metric-label">AI SESSIONS</text>
 
     <!-- Turns -->
-    <text x="200" y="0" class="metric-value">34.0k</text>
+    <text x="200" y="0" class="metric-value">30.3k</text>
     <text x="200" y="20" class="metric-label">TURNS</text>
 
     <!-- Commits -->
-    <text x="380" y="0" class="metric-value">138</text>
+    <text x="380" y="0" class="metric-value">139</text>
     <text x="380" y="20" class="metric-label">COMMITS</text>
 
     <!-- Repos -->
@@ -40,14 +40,14 @@
     <text x="0" y="0" class="metric-label">LAST 7 DAYS</text>
 
     <!-- Claude segment -->
-    <rect x="0" y="10" width="392.0" height="24" fill="#ff7b00" rx="2"/>
-    <text x="10" y="28" class="bar-label">Claude 49.0%</text>
+    <rect x="0" y="10" width="370.4" height="24" fill="#ff7b00" rx="2"/>
+    <text x="10" y="28" class="bar-label">Claude 46.3%</text>
 
     <!-- Codex segment -->
-    <rect x="392.0" y="10" width="408.0" height="24" fill="#10b981" rx="2"/>
-    <text x="402.0" y="28" class="bar-label">Codex 51.0%</text>
+    <rect x="370.4" y="10" width="429.6" height="24" fill="#10b981" rx="2"/>
+    <text x="380.4" y="28" class="bar-label">Codex 53.7%</text>
   </g>
 
   <!-- Last Activity -->
-  <text x="30" y="180" class="last-activity">⚡ Last activity: 5m ago</text>
+  <text x="30" y="180" class="last-activity">⚡ Last activity: 1m ago</text>
 </svg>

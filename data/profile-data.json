@@ -1,14 +1,14 @@
 {
-  "generated_at": "2025-10-02T16:48:48.995259+00:00",
+  "generated_at": "2025-10-02T16:50:13.158348+00:00",
   "github": {
     "repos_active_7d": 7,
     "repos_active_30d": 10,
-    "commits_7d": 138,
-    "commits_30d": 426,
+    "commits_7d": 139,
+    "commits_30d": 427,
     "languages_30d": [
       {
         "name": "Python",
-        "commits": 343
+        "commits": 344
       },
       {
         "name": "TypeScript",
@@ -20,9 +20,9 @@
       }
     ],
     "last_push": {
-      "repo": "ai-tools-website",
-      "timestamp": "2025-10-02T12:43:08-04:00",
-      "hours_ago": 0.09
+      "repo": "cipher982",
+      "timestamp": "2025-10-02T12:49:12-04:00",
+      "hours_ago": 0.02
     },
     "top_repos_7d": [
       {
@@ -50,14 +50,9 @@
   "claude": {
     "sessions_7d": 50,
     "sessions_30d": 190,
-    "turns_7d": 12433,
-    "turns_30d": 39841,
+    "turns_7d": 12489,
+    "turns_30d": 39897,
     "repos": [
-      {
-        "repo": "zeta",
-        "sessions": 12,
-        "turns": 1507
-      },
       {
         "repo": "stopsign_ai",
         "sessions": 8,
@@ -71,7 +66,7 @@
       {
         "repo": "zerg",
         "sessions": 7,
-        "turns": 2399
+        "turns": 2435
       },
       {
         "repo": "this-wine-does-not-exist",
@@ -96,7 +91,7 @@
       {
         "repo": "cipher982",
         "sessions": 1,
-        "turns": 387
+        "turns": 407
       },
       {
         "repo": "drose_io",
@@ -107,7 +102,7 @@
     "last_session": {
       "repo": "zeta",
       "timestamp": "2025-10-02T16:31:21.848000+00:00",
-      "hours_ago": 0.29
+      "hours_ago": 0.31
     }
   },
   "codex": {
@@ -132,11 +127,6 @@
         "turns": 4971
       },
       {
-        "repo": "zeta",
-        "sessions": 8,
-        "turns": 2292
-      },
-      {
         "repo": "this-wine-does-not-exist",
         "sessions": 5,
         "turns": 1459
@@ -155,14 +145,14 @@
     "last_session": {
       "repo": "zerg",
       "timestamp": "2025-10-02T15:22:41.874000+00:00",
-      "hours_ago": 1.44
+      "hours_ago": 1.46
     }
   },
   "aggregate": {
-    "ai_sessions_7d": 102,
-    "ai_turns_7d": 34043,
-    "claude_percentage": 49.0,
-    "codex_percentage": 51.0,
+    "ai_sessions_7d": 82,
+    "ai_turns_7d": 30300,
+    "claude_percentage": 46.3,
+    "codex_percentage": 53.7,
     "top_repos_combined": [
       {
         "repo": "zerg",

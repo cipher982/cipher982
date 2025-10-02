@@ -10,6 +10,11 @@ from parse_claude import parse_claude_sessions
 from parse_codex import parse_codex_sessions
 from parse_github import parse_github_activity
 
+# Repos to exclude from dashboard (work projects, private exploration, etc.)
+EXCLUDED_REPOS = [
+    "zeta",
+]
+
 
 def aggregate_metrics(github_data: Dict, claude_data: Dict, codex_data: Dict) -> Dict[str, Any]:
     """
@@ -18,14 +23,27 @@ def aggregate_metrics(github_data: Dict, claude_data: Dict, codex_data: Dict) ->
     Returns complete profile-data.json structure
     """
 
-    # Calculate AI aggregate metrics
-    ai_sessions_7d = claude_data["sessions_7d"] + codex_data["sessions_7d"]
-    ai_turns_7d = claude_data["turns_7d"] + codex_data["turns_7d"]
+    # Filter out excluded repos from all data sources
+    def filter_repos(repo_list):
+        return [r for r in repo_list if r["repo"] not in EXCLUDED_REPOS]
 
-    claude_pct = (claude_data["sessions_7d"] / ai_sessions_7d * 100) if ai_sessions_7d > 0 else 0
-    codex_pct = (codex_data["sessions_7d"] / ai_sessions_7d * 100) if ai_sessions_7d > 0 else 0
+    github_data["top_repos_7d"] = filter_repos(github_data["top_repos_7d"])
+    claude_data["repos"] = filter_repos(claude_data["repos"])
+    codex_data["repos"] = filter_repos(codex_data["repos"])
 
-    # Combine top repos with activity score (commits + AI sessions)
+    # Recalculate AI metrics after filtering
+    claude_sessions_filtered = sum(r["sessions"] for r in claude_data["repos"])
+    codex_sessions_filtered = sum(r["sessions"] for r in codex_data["repos"])
+    claude_turns_filtered = sum(r["turns"] for r in claude_data["repos"])
+    codex_turns_filtered = sum(r["turns"] for r in codex_data["repos"])
+
+    ai_sessions_7d = claude_sessions_filtered + codex_sessions_filtered
+    ai_turns_7d = claude_turns_filtered + codex_turns_filtered
+
+    claude_pct = (claude_sessions_filtered / ai_sessions_7d * 100) if ai_sessions_7d > 0 else 0
+    codex_pct = (codex_sessions_filtered / ai_sessions_7d * 100) if ai_sessions_7d > 0 else 0
+
+    # Combine top repos (commits + AI sessions)
     repo_scores = defaultdict(lambda: {"commits": 0, "ai_sessions": 0})
 
     # Add git commits
