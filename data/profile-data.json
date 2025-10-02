@@ -1,0 +1,199 @@
+{
+  "generated_at": "2025-10-01T21:28:39.617931+00:00",
+  "github": {
+    "repos_active_7d": 6,
+    "repos_active_30d": 9,
+    "commits_7d": 120,
+    "commits_30d": 416,
+    "languages_30d": [
+      {
+        "name": "Python",
+        "commits": 338
+      },
+      {
+        "name": "TypeScript",
+        "commits": 76
+      },
+      {
+        "name": "Shell",
+        "commits": 2
+      }
+    ],
+    "last_push": {
+      "repo": "zerg",
+      "timestamp": "2025-10-01T17:25:48-04:00",
+      "hours_ago": 0.05
+    },
+    "top_repos_7d": [
+      {
+        "repo": "zerg",
+        "commits": 41
+      },
+      {
+        "repo": "this-wine-does-not-exist",
+        "commits": 20
+      },
+      {
+        "repo": "stopsign_ai",
+        "commits": 20
+      },
+      {
+        "repo": "drose_io",
+        "commits": 18
+      },
+      {
+        "repo": "ai-tools-website",
+        "commits": 17
+      }
+    ]
+  },
+  "claude": {
+    "sessions_7d": 46,
+    "sessions_30d": 193,
+    "turns_7d": 11406,
+    "turns_30d": 40129,
+    "repos": [
+      {
+        "repo": "zeta",
+        "sessions": 9,
+        "turns": 1467
+      },
+      {
+        "repo": "stopsign_ai",
+        "sessions": 8,
+        "turns": 1339
+      },
+      {
+        "repo": "unknown",
+        "sessions": 8,
+        "turns": 235
+      },
+      {
+        "repo": "zerg",
+        "sessions": 6,
+        "turns": 2178
+      },
+      {
+        "repo": "this-wine-does-not-exist",
+        "sessions": 4,
+        "turns": 2139
+      },
+      {
+        "repo": "ai-tools-website",
+        "sessions": 4,
+        "turns": 1284
+      },
+      {
+        "repo": "mytech",
+        "sessions": 4,
+        "turns": 1150
+      },
+      {
+        "repo": "llmbench",
+        "sessions": 1,
+        "turns": 278
+      },
+      {
+        "repo": "cipher982",
+        "sessions": 1,
+        "turns": 219
+      },
+      {
+        "repo": "drose_io",
+        "sessions": 1,
+        "turns": 1117
+      }
+    ],
+    "last_session": {
+      "repo": "mytech",
+      "timestamp": "2025-10-01T21:10:25.034000+00:00",
+      "hours_ago": 0.3
+    }
+  },
+  "codex": {
+    "sessions_7d": 50,
+    "sessions_30d": 199,
+    "turns_7d": 20966,
+    "turns_30d": 59541,
+    "repos": [
+      {
+        "repo": "zerg",
+        "sessions": 12,
+        "turns": 8187
+      },
+      {
+        "repo": "stopsign_ai",
+        "sessions": 11,
+        "turns": 5293
+      },
+      {
+        "repo": "ai-tools-website",
+        "sessions": 10,
+        "turns": 2555
+      },
+      {
+        "repo": "zeta",
+        "sessions": 7,
+        "turns": 2013
+      },
+      {
+        "repo": "this-wine-does-not-exist",
+        "sessions": 4,
+        "turns": 1457
+      },
+      {
+        "repo": "unknown",
+        "sessions": 3,
+        "turns": 15
+      },
+      {
+        "repo": "llmbench",
+        "sessions": 3,
+        "turns": 1446
+      }
+    ],
+    "last_session": {
+      "repo": "ai-tools-website",
+      "timestamp": "2025-10-01T20:38:43.852000+00:00",
+      "hours_ago": 0.83
+    }
+  },
+  "aggregate": {
+    "ai_sessions_7d": 96,
+    "ai_turns_7d": 32372,
+    "claude_percentage": 47.9,
+    "codex_percentage": 52.1,
+    "top_repos_combined": [
+      {
+        "repo": "zerg",
+        "commits": 41,
+        "ai_sessions": 18,
+        "activity_score": 77
+      },
+      {
+        "repo": "stopsign_ai",
+        "commits": 20,
+        "ai_sessions": 19,
+        "activity_score": 58
+      },
+      {
+        "repo": "ai-tools-website",
+        "commits": 17,
+        "ai_sessions": 14,
+        "activity_score": 45
+      },
+      {
+        "repo": "this-wine-does-not-exist",
+        "commits": 20,
+        "ai_sessions": 8,
+        "activity_score": 36
+      },
+      {
+        "repo": "zeta",
+        "commits": 0,
+        "ai_sessions": 16,
+        "activity_score": 32
+      }
+    ]
+  }
+}

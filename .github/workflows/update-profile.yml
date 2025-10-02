@@ -1,0 +1,35 @@
+name: Update Profile Dashboard
+
+# NOTE: This workflow is a placeholder for future automation.
+# Currently, AI session data (~/.claude/projects/ and ~/.codex/sessions/)
+# is only available locally, so updates must be run via scripts/update_local.sh
+#
+# Future enhancement: Sync session data to a cloud store (S3/R2) that Actions can access
+
+on:
+  # schedule:
+  #   - cron: '0 */6 * * *'  # Disabled until session data sync is implemented
+  workflow_dispatch:  # Manual trigger only for now
+
+jobs:
+  update-dashboard:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Git stats only (AI stats require local session data)
+        run: |
+          echo "⚠️  This workflow currently only updates git stats."
+          echo "    AI session data must be updated locally via scripts/update_local.sh"
+          python scripts/parse_github.py > /tmp/github_data.json
+
+      - name: Update README with git stats
+        run: |
+          echo "📊 Git stats collected. For full update, run scripts/update_local.sh locally."

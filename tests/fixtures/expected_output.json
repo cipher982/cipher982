@@ -1,0 +1,72 @@
+{
+  "generated_at": "2025-10-01T20:00:00.000Z",
+  "github": {
+    "repos_active_7d": 8,
+    "repos_active_30d": 15,
+    "commits_7d": 47,
+    "commits_30d": 142,
+    "languages_30d": [
+      {"name": "Python", "commits": 58},
+      {"name": "TypeScript", "commits": 42},
+      {"name": "Go", "commits": 28},
+      {"name": "Shell", "commits": 14}
+    ],
+    "last_push": {
+      "repo": "stopsign_ai",
+      "timestamp": "2025-09-30T18:30:00.000Z",
+      "hours_ago": 1.5
+    },
+    "top_repos_7d": [
+      {"repo": "stopsign_ai", "commits": 12},
+      {"repo": "ai-tools-website", "commits": 9},
+      {"repo": "zerg", "commits": 8},
+      {"repo": "this-wine-does-not-exist", "commits": 7},
+      {"repo": "drose_io", "commits": 6}
+    ]
+  },
+  "claude": {
+    "sessions_7d": 93,
+    "sessions_30d": 390,
+    "turns_7d": 20570,
+    "turns_30d": 85000,
+    "repos": [
+      {"repo": "stopsign_ai", "sessions": 8, "turns": 2400},
+      {"repo": "zerg", "sessions": 6, "turns": 1800},
+      {"repo": "this-wine-does-not-exist", "sessions": 4, "turns": 1200}
+    ],
+    "last_session": {
+      "repo": "stopsign_ai",
+      "timestamp": "2025-10-01T19:45:00.000Z",
+      "hours_ago": 0.25
+    }
+  },
+  "codex": {
+    "sessions_7d": 53,
+    "sessions_30d": 203,
+    "turns_7d": 8900,
+    "turns_30d": 35000,
+    "repos": [
+      {"repo": "ai-tools-website", "sessions": 12, "turns": 3200},
+      {"repo": "zerg", "sessions": 8, "turns": 2100},
+      {"repo": "drose_io", "sessions": 5, "turns": 1400}
+    ],
+    "last_session": {
+      "repo": "ai-tools-website",
+      "timestamp": "2025-10-01T19:30:00.000Z",
+      "hours_ago": 0.5
+    }
+  },
+  "aggregate": {
+    "ai_sessions_7d": 146,
+    "ai_turns_7d": 29470,
+    "claude_percentage": 63.7,
+    "codex_percentage": 36.3,
+    "top_repos_combined": [
+      {"repo": "stopsign_ai", "commits": 12, "ai_sessions": 8, "activity_score": 20},
+      {"repo": "ai-tools-website", "commits": 9, "ai_sessions": 12, "activity_score": 21},
+      {"repo": "zerg", "commits": 8, "ai_sessions": 14, "activity_score": 22},
+      {"repo": "this-wine-does-not-exist", "commits": 7, "ai_sessions": 4, "activity_score": 11},
+      {"repo": "drose_io", "commits": 6, "ai_sessions": 5, "activity_score": 11}
+    ]
+  }
+}
