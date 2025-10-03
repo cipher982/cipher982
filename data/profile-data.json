@@ -1,14 +1,14 @@
 {
-  "generated_at": "2025-10-03T02:34:04.452455+00:00",
+  "generated_at": "2025-10-03T02:47:07.554033+00:00",
   "github": {
     "repos_active_7d": 6,
     "repos_active_30d": 10,
-    "commits_7d": 126,
-    "commits_30d": 416,
+    "commits_7d": 129,
+    "commits_30d": 419,
     "languages_30d": [
       {
         "name": "Python",
-        "commits": 328
+        "commits": 331
       },
       {
         "name": "TypeScript",
@@ -21,13 +21,13 @@
     ],
     "last_push": {
       "repo": "cipher982",
-      "timestamp": "2025-10-02T22:26:20-04:00",
-      "hours_ago": 0.13
+      "timestamp": "2025-10-02T22:43:50-04:00",
+      "hours_ago": 0.05
     },
     "top_repos_7d": [
       {
         "repo": "zerg",
-        "commits": 39
+        "commits": 40
       },
       {
         "repo": "drose_io",
@@ -43,7 +43,7 @@
       },
       {
         "repo": "cipher982",
-        "commits": 12
+        "commits": 14
       }
     ],
     "daily_commits": [
@@ -73,15 +73,15 @@
       },
       {
         "date": "2025-10-02",
-        "commits": 25
+        "commits": 28
       }
     ]
   },
   "claude": {
-    "sessions_7d": 92,
+    "sessions_7d": 91,
     "sessions_30d": 365,
-    "turns_7d": 23675,
-    "turns_30d": 78126,
+    "turns_7d": 23620,
+    "turns_30d": 78229,
     "repos": [
       {
         "repo": "this-wine-does-not-exist",
@@ -89,19 +89,19 @@
         "turns": 4504
       },
       {
-        "repo": "Home",
-        "sessions": 14,
-        "turns": 407
-      },
-      {
         "repo": "stopsign_ai",
         "sessions": 13,
         "turns": 1761
       },
       {
+        "repo": "Home",
+        "sessions": 13,
+        "turns": 249
+      },
+      {
         "repo": "zerg",
         "sessions": 12,
-        "turns": 5133
+        "turns": 5190
       },
       {
         "repo": "ai-tools-website",
@@ -121,12 +121,12 @@
       {
         "repo": "drose_io",
         "sessions": 2,
-        "turns": 1523
+        "turns": 1542
       },
       {
         "repo": "cipher982",
         "sessions": 1,
-        "turns": 1260
+        "turns": 1287
       },
       {
         "repo": "floodmap",
@@ -137,13 +137,13 @@
     "last_session": {
       "repo": "drose_io",
       "timestamp": "2025-10-02T22:12:10.710000+00:00",
-      "hours_ago": 4.36
+      "hours_ago": 4.58
     },
     "daily_sessions": [
       {
         "date": "2025-09-26",
-        "sessions": 20,
-        "turns": 2754
+        "sessions": 19,
+        "turns": 2596
       },
       {
         "date": "2025-09-27",
@@ -168,12 +168,12 @@
       {
         "date": "2025-10-01",
         "sessions": 6,
-        "turns": 3784
+        "turns": 3811
       },
       {
         "date": "2025-10-02",
         "sessions": 13,
-        "turns": 2439
+        "turns": 2515
       }
     ]
   },
@@ -227,7 +227,7 @@
     "last_session": {
       "repo": "drose_io",
       "timestamp": "2025-10-03T02:16:56.275000+00:00",
-      "hours_ago": 0.29
+      "hours_ago": 0.5
     },
     "daily_sessions": [
       {
@@ -273,14 +273,14 @@
     ]
   },
   "aggregate": {
-    "ai_sessions_7d": 121,
-    "ai_turns_7d": 38093,
-    "claude_percentage": 60.3,
-    "codex_percentage": 39.7,
+    "ai_sessions_7d": 120,
+    "ai_turns_7d": 38038,
+    "claude_percentage": 60.0,
+    "codex_percentage": 40.0,
     "top_repos_combined": [
       {
         "repo": "zerg",
-        "commits": 39,
+        "commits": 40,
         "ai_sessions": 25,
         "github_url": "https://github.com/cipher982/zerg"
       },
@@ -313,9 +313,9 @@
       {
         "date": "2025-09-26",
         "commits": 1,
-        "claude_sessions": 20,
+        "claude_sessions": 19,
         "codex_sessions": 13,
-        "total_sessions": 33
+        "total_sessions": 32
       },
       {
         "date": "2025-09-27",
@@ -354,7 +354,7 @@
       },
       {
         "date": "2025-10-02",
-        "commits": 25,
+        "commits": 28,
         "claude_sessions": 13,
         "codex_sessions": 5,
         "total_sessions": 18
