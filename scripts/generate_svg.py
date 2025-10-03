@@ -6,10 +6,8 @@ from typing import Dict, Any, List
 
 
 def format_large_number(num: int) -> str:
-    """Format large numbers with k suffix"""
-    if num >= 1000:
-        return f"{num/1000:.1f}k"
-    return str(num)
+    """Format large numbers with comma separators"""
+    return f"{num:,}"
 
 
 def generate_sparkline_path(values: List[int], width: int, height: int) -> str:
@@ -117,6 +115,7 @@ def generate_hero_svg(data: Dict[str, Any]) -> str:
       .metric-value {{ font: bold 36px 'SF Mono', 'Consolas', monospace; fill: #58a6ff; }}
       .metric-label {{ font: 11px 'Segoe UI', -apple-system, sans-serif; letter-spacing: 0.5px; }}
       .sparkline-label {{ font: 13px 'Segoe UI', -apple-system, sans-serif; }}
+      .sparkline-header {{ font: bold 15px 'Segoe UI', -apple-system, sans-serif; }}
       .card-title {{ font: bold 16px 'Segoe UI', -apple-system, sans-serif; }}
       .card-value {{ font: bold 28px 'SF Mono', 'Consolas', monospace; fill: #58a6ff; }}
       .card-stat {{ font: 13px 'Segoe UI', -apple-system, sans-serif; }}
@@ -173,7 +172,7 @@ def generate_hero_svg(data: Dict[str, Any]) -> str:
 
   <!-- Tier 2: Sparklines -->
   <g transform="translate(30, 140)">
-    <text x="0" y="0" class="sparkline-label text-secondary">Activity (Last 7 Days)</text>
+    <text x="0" y="0" class="sparkline-header text-primary">Activity (Last 7 Days)</text>
 
     <!-- Commits sparkline -->
     <g transform="translate(0, 20)">
