@@ -203,20 +203,28 @@ def generate_hero_svg(data: Dict[str, Any]) -> str:
     <rect x="0" y="0" width="410" height="65" class="card-border" stroke-width="1" rx="6"/>
 
     <text x="20" y="25" class="card-title text-primary">Claude Code</text>
-    <text x="20" y="50" class="card-value">{claude_sessions}</text>
-    <text x="90" y="50" class="card-stat text-secondary">sessions · {format_large_number(claude_turns)} turns · {claude_pct}%</text>
+    <text x="20" y="55" class="card-value">{claude_sessions}</text>
+    <text x="95" y="55" class="card-stat text-secondary">sessions · {format_large_number(claude_turns)} turns</text>
+    <text x="340" y="55" class="card-stat text-primary" style="font-weight: bold; font-size: 16px;">{claude_pct}%</text>
 
     <!-- Codex Card -->
     <rect x="440" y="0" width="410" height="65" class="card-bg" rx="6"/>
     <rect x="440" y="0" width="410" height="65" class="card-border" stroke-width="1" rx="6"/>
 
     <text x="460" y="25" class="card-title text-primary">OpenAI Codex</text>
-    <text x="460" y="50" class="card-value">{codex_sessions}</text>
-    <text x="530" y="50" class="card-stat text-secondary">sessions · {format_large_number(codex_turns)} turns · {codex_pct}%</text>
+    <text x="460" y="55" class="card-value">{codex_sessions}</text>
+    <text x="535" y="55" class="card-stat text-secondary">sessions · {format_large_number(codex_turns)} turns</text>
+    <text x="780" y="55" class="card-stat text-primary" style="font-weight: bold; font-size: 16px;">{codex_pct}%</text>
+  </g>
+
+  <!-- VS Separator between cards -->
+  <g transform="translate({width/2}, 215)">
+    <circle cx="0" cy="32" r="20" fill="#21262d" stroke="#30363d" stroke-width="1"/>
+    <text x="0" y="38" class="card-title text-secondary" text-anchor="middle" style="font-size: 14px;">VS</text>
   </g>
 
   <!-- Footer: Last Activity -->
-  <text x="30" y="{height - 15}" class="footer text-secondary">
+  <text x="30" y="{height - 12}" class="footer text-secondary">
     <tspan class="pulse">⚡</tspan> Last activity: {last_activity}
   </text>
 </svg>'''
