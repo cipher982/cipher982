@@ -115,7 +115,7 @@ def parse_github_activity(git_dir: Path) -> Dict[str, Any]:
     Parse GitHub activity from local git repositories.
 
     Returns:
-        dict with repos_active_Xd, commits_Xd, languages_30d, last_push, top_repos_7d
+        dict with repos_active_Xd, commits_Xd, languages_30d, last_push, top_repos_7d, daily_commits
     """
     repos = get_git_repos(git_dir)
 
@@ -126,6 +126,7 @@ def parse_github_activity(git_dir: Path) -> Dict[str, Any]:
 
     repo_commits_7d = defaultdict(int)
     language_commits_30d = defaultdict(int)
+    commits_by_date = defaultdict(int)  # Track daily commits
 
     last_push_data = None
     last_push_time = None
@@ -141,6 +142,11 @@ def parse_github_activity(git_dir: Path) -> Dict[str, Any]:
             repos_7d.add(repo_name)
             commits_7d_total += len(commits_7d)
             repo_commits_7d[repo_name] = len(commits_7d)
+
+            # Track commits by date
+            for commit in commits_7d:
+                commit_date = commit["timestamp"].date().isoformat()
+                commits_by_date[commit_date] += 1
 
             # Track last push
             latest_commit = max(commits_7d, key=lambda c: c["timestamp"])
@@ -174,6 +180,12 @@ def parse_github_activity(git_dir: Path) -> Dict[str, Any]:
         for lang, count in sorted(language_commits_30d.items(), key=lambda x: x[1], reverse=True)
     ]
 
+    # Convert daily commits to sorted array
+    daily_commits = [
+        {"date": date, "commits": count}
+        for date, count in sorted(commits_by_date.items())
+    ]
+
     return {
         "repos_active_7d": len(repos_7d),
         "repos_active_30d": len(repos_30d),
@@ -181,7 +193,8 @@ def parse_github_activity(git_dir: Path) -> Dict[str, Any]:
         "commits_30d": commits_30d_total,
         "languages_30d": languages,
         "last_push": last_push_data,
-        "top_repos_7d": top_repos
+        "top_repos_7d": top_repos,
+        "daily_commits": daily_commits
     }
 
 

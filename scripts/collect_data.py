@@ -103,6 +103,33 @@ def aggregate_metrics(github_data: Dict, claude_data: Dict, codex_data: Dict) ->
     top_repos_combined.sort(key=lambda x: (x["commits"] + x["ai_sessions"]), reverse=True)
     top_repos_combined = top_repos_combined[:5]
 
+    # Merge daily breakdowns from all sources
+    daily_breakdown = defaultdict(lambda: {"commits": 0, "claude_sessions": 0, "codex_sessions": 0, "total_sessions": 0})
+
+    # Add git commits
+    for day_data in github_data.get("daily_commits", []):
+        daily_breakdown[day_data["date"]]["commits"] = day_data["commits"]
+
+    # Add Claude sessions
+    for day_data in claude_data.get("daily_sessions", []):
+        daily_breakdown[day_data["date"]]["claude_sessions"] = day_data["sessions"]
+
+    # Add Codex sessions
+    for day_data in codex_data.get("daily_sessions", []):
+        daily_breakdown[day_data["date"]]["codex_sessions"] = day_data["sessions"]
+
+    # Calculate totals
+    for date in daily_breakdown:
+        daily_breakdown[date]["total_sessions"] = (
+            daily_breakdown[date]["claude_sessions"] + daily_breakdown[date]["codex_sessions"]
+        )
+
+    # Convert to sorted array
+    daily_breakdown_array = [
+        {"date": date, **data}
+        for date, data in sorted(daily_breakdown.items())
+    ]
+
     return {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "github": github_data,
@@ -113,7 +140,8 @@ def aggregate_metrics(github_data: Dict, claude_data: Dict, codex_data: Dict) ->
             "ai_turns_7d": ai_turns_7d,
             "claude_percentage": round(claude_pct, 1),
             "codex_percentage": round(codex_pct, 1),
-            "top_repos_combined": top_repos_combined
+            "top_repos_combined": top_repos_combined,
+            "daily_breakdown_7d": daily_breakdown_array
         }
     }
 

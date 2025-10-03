@@ -1,53 +1,118 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="200" viewBox="0 0 900 200">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300">
   <defs>
     <style>
-      .title { font: bold 20px 'Segoe UI', Ubuntu, sans-serif; fill: #c9d1d9; }
-      .metric-value { font: bold 32px 'Segoe UI', Ubuntu, monospace; fill: #58a6ff; }
-      .metric-label { font: 12px 'Segoe UI', Ubuntu, sans-serif; fill: #8b949e; }
-      .bar-label { font: 13px 'Segoe UI', Ubuntu, sans-serif; fill: #c9d1d9; }
-      .last-activity { font: 14px 'Segoe UI', Ubuntu, sans-serif; fill: #8b949e; }
+      /* Dark mode (default) */
+      .bg { fill: #0d1117; }
+      .border { stroke: #30363d; fill: none; }
+      .text-primary { fill: #c9d1d9; }
+      .text-secondary { fill: #8b949e; }
+      .card-bg { fill: #161b22; }
+      .card-border { stroke: #30363d; fill: none; }
+
+      .title { font: bold 22px 'Segoe UI', -apple-system, sans-serif; }
+      .metric-value { font: bold 36px 'SF Mono', 'Consolas', monospace; fill: #58a6ff; }
+      .metric-label { font: 11px 'Segoe UI', -apple-system, sans-serif; letter-spacing: 0.5px; }
+      .sparkline-label { font: 13px 'Segoe UI', -apple-system, sans-serif; }
+      .card-title { font: bold 16px 'Segoe UI', -apple-system, sans-serif; }
+      .card-value { font: bold 28px 'SF Mono', 'Consolas', monospace; fill: #58a6ff; }
+      .card-stat { font: 13px 'Segoe UI', -apple-system, sans-serif; }
+      .footer { font: 13px 'Segoe UI', -apple-system, sans-serif; }
+
+      .sparkline-commits { stroke: #58a6ff; stroke-width: 2.5; fill: none; }
+      .sparkline-sessions { stroke: #a371f7; stroke-width: 2.5; fill: none; }
+
+      /* Light mode */
+      @media (prefers-color-scheme: light) {
+        .bg { fill: #ffffff; }
+        .border { stroke: #d0d7de; }
+        .text-primary { fill: #1f2328; }
+        .text-secondary { fill: #636c76; }
+        .card-bg { fill: #f6f8fa; }
+        .card-border { stroke: #d0d7de; }
+        .metric-value { fill: #0969da; }
+        .card-value { fill: #0969da; }
+      }
+
+      /* Pulse animation for lightning bolt */
+      @keyframes pulse {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.5; }
+      }
+      .pulse { animation: pulse 3s ease-in-out infinite; }
     </style>
   </defs>
 
   <!-- Background -->
-  <rect width="900" height="200" fill="#0d1117" rx="8"/>
-  <rect x="1" y="1" width="898" height="198" fill="none" stroke="#30363d" stroke-width="1" rx="8"/>
+  <rect width="900" height="300" class="bg" rx="10"/>
+  <rect x="1" y="1" width="898" height="298" class="border" stroke-width="1" rx="10"/>
 
-  <!-- Title -->
-  <text x="30" y="35" class="title">🤖 AI-Native Development Dashboard</text>
+  <!-- Tier 1: Title & Metrics -->
+  <text x="30" y="40" class="title text-primary">🤖 AI-Native Development Dashboard</text>
 
-  <!-- Metrics Row -->
-  <g transform="translate(30, 70)">
+  <g transform="translate(30, 75)">
     <!-- AI Sessions -->
-    <text x="0" y="0" class="metric-value">120</text>
-    <text x="0" y="20" class="metric-label">AI SESSIONS</text>
+    <text x="0" y="0" class="metric-value">121</text>
+    <text x="0" y="18" class="metric-label text-secondary">AI SESSIONS</text>
 
     <!-- Turns -->
-    <text x="200" y="0" class="metric-value">38.0k</text>
-    <text x="200" y="20" class="metric-label">TURNS</text>
+    <text x="220" y="0" class="metric-value">37.8k</text>
+    <text x="220" y="18" class="metric-label text-secondary">TURNS</text>
 
     <!-- Commits -->
-    <text x="380" y="0" class="metric-value">147</text>
-    <text x="380" y="20" class="metric-label">COMMITS</text>
+    <text x="420" y="0" class="metric-value">124</text>
+    <text x="420" y="18" class="metric-label text-secondary">COMMITS</text>
 
     <!-- Repos -->
-    <text x="530" y="0" class="metric-value">7</text>
-    <text x="530" y="20" class="metric-label">ACTIVE REPOS</text>
+    <text x="620" y="0" class="metric-value">6</text>
+    <text x="620" y="18" class="metric-label text-secondary">ACTIVE REPOS</text>
   </g>
 
-  <!-- AI Split Bar -->
-  <g transform="translate(30, 130)">
-    <text x="0" y="0" class="metric-label">LAST 7 DAYS</text>
+  <!-- Tier 2: Sparklines -->
+  <g transform="translate(30, 140)">
+    <text x="0" y="0" class="sparkline-label text-secondary">Activity (Last 7 Days)</text>
 
-    <!-- Claude segment -->
-    <rect x="0" y="10" width="493.6" height="24" fill="#58a6ff" rx="2"/>
-    <text x="10" y="28" class="bar-label">Claude 61.7%</text>
+    <!-- Commits sparkline -->
+    <g transform="translate(0, 20)">
+      <text x="0" y="25" class="sparkline-label text-secondary">Commits</text>
+      <svg x="80" y="0" width="180" height="40" viewBox="0 0 180 40">
+        <path d="M 0.00,38.71 L 25.71,21.94 L 51.43,21.94 L 77.14,18.06 L 102.86,9.03 L 128.57,0.00 L 154.29,10.32 L 180.00,40.00" class="sparkline-commits" stroke-dasharray="240" stroke-dashoffset="240">
+          <animate attributeName="stroke-dashoffset" from="240" to="0" dur="1.2s" fill="freeze"/>
+        </path>
+      </svg>
+    </g>
 
-    <!-- Codex segment -->
-    <rect x="493.6" y="10" width="306.4" height="24" fill="#8b949e" rx="2"/>
-    <text x="503.6" y="28" class="bar-label">Codex 38.3%</text>
+    <!-- AI Sessions sparkline -->
+    <g transform="translate(420, 20)">
+      <text x="0" y="25" class="sparkline-label text-secondary">AI Sessions</text>
+      <svg x="110" y="0" width="180" height="40" viewBox="0 0 180 40">
+        <path d="M 0.00,0.00 L 25.71,27.10 L 51.43,12.90 L 77.14,15.48 L 102.86,20.65 L 128.57,27.10 L 154.29,20.65 L 180.00,40.00" class="sparkline-sessions" stroke-dasharray="240" stroke-dashoffset="240">
+          <animate attributeName="stroke-dashoffset" from="240" to="0" dur="1.2s" fill="freeze"/>
+        </path>
+      </svg>
+    </g>
   </g>
 
-  <!-- Last Activity -->
-  <text x="30" y="180" class="last-activity">⚡ Last activity: 3m ago</text>
+  <!-- Tier 3: Tool Cards -->
+  <g transform="translate(30, 210)">
+    <!-- Claude Card -->
+    <rect x="0" y="0" width="410" height="65" class="card-bg" rx="6"/>
+    <rect x="0" y="0" width="410" height="65" class="card-border" stroke-width="1" rx="6"/>
+
+    <text x="20" y="25" class="card-title text-primary">Claude Code</text>
+    <text x="20" y="50" class="card-value">73</text>
+    <text x="90" y="50" class="card-stat text-secondary">sessions · 23.6k turns · 60.3%</text>
+
+    <!-- Codex Card -->
+    <rect x="440" y="0" width="410" height="65" class="card-bg" rx="6"/>
+    <rect x="440" y="0" width="410" height="65" class="card-border" stroke-width="1" rx="6"/>
+
+    <text x="460" y="25" class="card-title text-primary">OpenAI Codex</text>
+    <text x="460" y="50" class="card-value">48</text>
+    <text x="530" y="50" class="card-stat text-secondary">sessions · 20.0k turns · 39.7%</text>
+  </g>
+
+  <!-- Footer: Last Activity -->
+  <text x="30" y="285" class="footer text-secondary">
+    <tspan class="pulse">⚡</tspan> Last activity: 15m ago
+  </text>
 </svg>

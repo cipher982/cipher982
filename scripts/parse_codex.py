@@ -28,6 +28,16 @@ def extract_repo_from_cwd(cwd: str) -> str:
     return path.name if path.name else "unknown"
 
 
+def extract_cwd_from_dirname(dirname: str) -> str:
+    """
+    Extract cwd from Codex session directory name.
+    Note: Codex uses ISO format, not hyphen-separated like Claude
+    """
+    # Codex stores by date: 2025/09/30/rollout-2025-09-30T...jsonl
+    # The cwd is in the JSON, not the directory structure
+    return None
+
+
 def parse_codex_sessions(sessions_dir: Path, days_back: int = 7) -> Dict[str, Any]:
     """
     Parse all Codex sessions within the time window.
@@ -44,6 +54,7 @@ def parse_codex_sessions(sessions_dir: Path, days_back: int = 7) -> Dict[str, An
 
     sessions_7d = []
     sessions_30d = []
+    sessions_by_date = defaultdict(lambda: {"sessions": 0, "turns": 0})
 
     # Find all session files
     session_files = list(sessions_dir.rglob("*.jsonl"))
@@ -74,6 +85,9 @@ def parse_codex_sessions(sessions_dir: Path, days_back: int = 7) -> Dict[str, An
             if not timestamp_str:
                 continue
 
+            # Codex sometimes has null cwd - skip those for now
+            # (Codex doesn't encode cwd in directory structure like Claude does)
+
             # Parse timestamp
             timestamp = datetime.fromisoformat(timestamp_str.replace("Z", "+00:00"))
             repo = extract_repo_from_cwd(cwd) if cwd else "unknown"
@@ -89,6 +103,11 @@ def parse_codex_sessions(sessions_dir: Path, days_back: int = 7) -> Dict[str, An
             # Categorize by time window
             if timestamp >= cutoff_7d:
                 sessions_7d.append(session_data)
+                # Track by date
+                session_date = timestamp.date().isoformat()
+                sessions_by_date[session_date]["sessions"] += 1
+                sessions_by_date[session_date]["turns"] += turn_count
+
             if timestamp >= cutoff_30d:
                 sessions_30d.append(session_data)
 
@@ -120,13 +139,20 @@ def parse_codex_sessions(sessions_dir: Path, days_back: int = 7) -> Dict[str, An
             "hours_ago": round(hours_ago, 2)
         }
 
+    # Convert daily sessions to sorted array
+    daily_sessions = [
+        {"date": date, "sessions": data["sessions"], "turns": data["turns"]}
+        for date, data in sorted(sessions_by_date.items())
+    ]
+
     return {
         "sessions_7d": len(sessions_7d),
         "sessions_30d": len(sessions_30d),
         "turns_7d": sum(s["turns"] for s in sessions_7d),
         "turns_30d": sum(s["turns"] for s in sessions_30d),
         "repos": aggregate_repos(sessions_7d),
-        "last_session": last_session
+        "last_session": last_session,
+        "daily_sessions": daily_sessions
     }
 
 

@@ -1,18 +1,18 @@
 {
-  "generated_at": "2025-10-02T21:46:47.243893+00:00",
+  "generated_at": "2025-10-03T02:23:20.717102+00:00",
   "github": {
-    "repos_active_7d": 7,
+    "repos_active_7d": 6,
     "repos_active_30d": 10,
-    "commits_7d": 147,
-    "commits_30d": 435,
+    "commits_7d": 124,
+    "commits_30d": 414,
     "languages_30d": [
       {
         "name": "Python",
-        "commits": 350
+        "commits": 327
       },
       {
         "name": "TypeScript",
-        "commits": 83
+        "commits": 85
       },
       {
         "name": "Shell",
@@ -20,38 +20,68 @@
       }
     ],
     "last_push": {
-      "repo": "drose_io",
-      "timestamp": "2025-10-02T17:43:45-04:00",
-      "hours_ago": 0.05
+      "repo": "zerg",
+      "timestamp": "2025-10-02T22:08:33-04:00",
+      "hours_ago": 0.25
     },
     "top_repos_7d": [
       {
         "repo": "zerg",
-        "commits": 44
+        "commits": 39
       },
       {
         "repo": "drose_io",
-        "commits": 25
-      },
-      {
-        "repo": "ai-tools-website",
-        "commits": 23
+        "commits": 27
       },
       {
         "repo": "this-wine-does-not-exist",
         "commits": 22
       },
       {
-        "repo": "stopsign_ai",
-        "commits": 20
+        "repo": "ai-tools-website",
+        "commits": 21
+      },
+      {
+        "repo": "cipher982",
+        "commits": 11
+      }
+    ],
+    "daily_commits": [
+      {
+        "date": "2025-09-26",
+        "commits": 1
+      },
+      {
+        "date": "2025-09-27",
+        "commits": 14
+      },
+      {
+        "date": "2025-09-28",
+        "commits": 14
+      },
+      {
+        "date": "2025-09-29",
+        "commits": 17
+      },
+      {
+        "date": "2025-09-30",
+        "commits": 24
+      },
+      {
+        "date": "2025-10-01",
+        "commits": 31
+      },
+      {
+        "date": "2025-10-02",
+        "commits": 23
       }
     ]
   },
   "claude": {
-    "sessions_7d": 94,
-    "sessions_30d": 368,
-    "turns_7d": 23242,
-    "turns_30d": 77875,
+    "sessions_7d": 93,
+    "sessions_30d": 365,
+    "turns_7d": 23623,
+    "turns_30d": 77928,
     "repos": [
       {
         "repo": "this-wine-does-not-exist",
@@ -59,19 +89,19 @@
         "turns": 4504
       },
       {
-        "repo": "stopsign_ai",
-        "sessions": 14,
-        "turns": 1952
-      },
-      {
         "repo": "Home",
         "sessions": 14,
         "turns": 407
       },
       {
-        "repo": "zerg",
+        "repo": "stopsign_ai",
         "sessions": 13,
-        "turns": 5169
+        "turns": 1761
+      },
+      {
+        "repo": "zerg",
+        "sessions": 12,
+        "turns": 5092
       },
       {
         "repo": "ai-tools-website",
@@ -89,37 +119,74 @@
         "turns": 292
       },
       {
+        "repo": "drose_io",
+        "sessions": 2,
+        "turns": 1463
+      },
+      {
         "repo": "cipher982",
         "sessions": 1,
-        "turns": 692
+        "turns": 1163
       },
       {
         "repo": "floodmap",
         "sessions": 1,
         "turns": 270
-      },
-      {
-        "repo": "drose_io",
-        "sessions": 1,
-        "turns": 1294
       }
     ],
     "last_session": {
-      "repo": "zeta",
-      "timestamp": "2025-10-02T18:48:35.692000+00:00",
-      "hours_ago": 2.97
-    }
+      "repo": "drose_io",
+      "timestamp": "2025-10-02T22:12:10.710000+00:00",
+      "hours_ago": 4.19
+    },
+    "daily_sessions": [
+      {
+        "date": "2025-09-26",
+        "sessions": 21,
+        "turns": 2900
+      },
+      {
+        "date": "2025-09-27",
+        "sessions": 4,
+        "turns": 1213
+      },
+      {
+        "date": "2025-09-28",
+        "sessions": 16,
+        "turns": 3859
+      },
+      {
+        "date": "2025-09-29",
+        "sessions": 19,
+        "turns": 2891
+      },
+      {
+        "date": "2025-09-30",
+        "sessions": 14,
+        "turns": 6735
+      },
+      {
+        "date": "2025-10-01",
+        "sessions": 6,
+        "turns": 3687
+      },
+      {
+        "date": "2025-10-02",
+        "sessions": 13,
+        "turns": 2338
+      }
+    ]
   },
   "codex": {
-    "sessions_7d": 51,
-    "sessions_30d": 199,
-    "turns_7d": 21013,
-    "turns_30d": 60268,
+    "sessions_7d": 52,
+    "sessions_30d": 202,
+    "turns_7d": 20038,
+    "turns_30d": 60623,
     "repos": [
       {
         "repo": "zerg",
         "sessions": 13,
-        "turns": 7936
+        "turns": 8006
       },
       {
         "repo": "ai-tools-website",
@@ -128,8 +195,8 @@
       },
       {
         "repo": "stopsign_ai",
-        "sessions": 10,
-        "turns": 4971
+        "sessions": 9,
+        "turns": 4091
       },
       {
         "repo": "this-wine-does-not-exist",
@@ -148,38 +215,74 @@
       },
       {
         "repo": "cipher982",
-        "sessions": 1,
-        "turns": 191
+        "sessions": 3,
+        "turns": 297
       },
       {
         "repo": "drose_io",
-        "sessions": 1,
-        "turns": 747
+        "sessions": 2,
+        "turns": 926
       }
     ],
     "last_session": {
-      "repo": "cipher982",
-      "timestamp": "2025-10-02T21:19:10.944000+00:00",
-      "hours_ago": 0.46
-    }
+      "repo": "drose_io",
+      "timestamp": "2025-10-03T02:16:56.275000+00:00",
+      "hours_ago": 0.11
+    },
+    "daily_sessions": [
+      {
+        "date": "2025-09-26",
+        "sessions": 13,
+        "turns": 7982
+      },
+      {
+        "date": "2025-09-27",
+        "sessions": 9,
+        "turns": 2548
+      },
+      {
+        "date": "2025-09-28",
+        "sessions": 8,
+        "turns": 3096
+      },
+      {
+        "date": "2025-09-29",
+        "sessions": 3,
+        "turns": 15
+      },
+      {
+        "date": "2025-09-30",
+        "sessions": 4,
+        "turns": 1566
+      },
+      {
+        "date": "2025-10-01",
+        "sessions": 7,
+        "turns": 2305
+      },
+      {
+        "date": "2025-10-02",
+        "sessions": 5,
+        "turns": 2241
+      },
+      {
+        "date": "2025-10-03",
+        "sessions": 3,
+        "turns": 285
+      }
+    ]
   },
   "aggregate": {
-    "ai_sessions_7d": 120,
-    "ai_turns_7d": 37987,
-    "claude_percentage": 61.7,
-    "codex_percentage": 38.3,
+    "ai_sessions_7d": 121,
+    "ai_turns_7d": 37834,
+    "claude_percentage": 60.3,
+    "codex_percentage": 39.7,
     "top_repos_combined": [
       {
         "repo": "zerg",
-        "commits": 44,
-        "ai_sessions": 26,
+        "commits": 39,
+        "ai_sessions": 25,
         "github_url": "https://github.com/cipher982/zerg"
-      },
-      {
-        "repo": "stopsign_ai",
-        "commits": 20,
-        "ai_sessions": 24,
-        "github_url": "https://github.com/cipher982/stopsign_ai"
       },
       {
         "repo": "this-wine-does-not-exist",
@@ -189,15 +292,79 @@
       },
       {
         "repo": "ai-tools-website",
-        "commits": 23,
+        "commits": 21,
         "ai_sessions": 17,
         "github_url": "https://github.com/cipher982/ai-tools-website"
       },
       {
         "repo": "drose_io",
-        "commits": 25,
-        "ai_sessions": 2,
+        "commits": 27,
+        "ai_sessions": 4,
         "github_url": "https://github.com/cipher982/drose_io"
+      },
+      {
+        "repo": "stopsign_ai",
+        "commits": 0,
+        "ai_sessions": 22,
+        "github_url": "https://github.com/cipher982/stopsign_ai"
+      }
+    ],
+    "daily_breakdown_7d": [
+      {
+        "date": "2025-09-26",
+        "commits": 1,
+        "claude_sessions": 21,
+        "codex_sessions": 13,
+        "total_sessions": 34
+      },
+      {
+        "date": "2025-09-27",
+        "commits": 14,
+        "claude_sessions": 4,
+        "codex_sessions": 9,
+        "total_sessions": 13
+      },
+      {
+        "date": "2025-09-28",
+        "commits": 14,
+        "claude_sessions": 16,
+        "codex_sessions": 8,
+        "total_sessions": 24
+      },
+      {
+        "date": "2025-09-29",
+        "commits": 17,
+        "claude_sessions": 19,
+        "codex_sessions": 3,
+        "total_sessions": 22
+      },
+      {
+        "date": "2025-09-30",
+        "commits": 24,
+        "claude_sessions": 14,
+        "codex_sessions": 4,
+        "total_sessions": 18
+      },
+      {
+        "date": "2025-10-01",
+        "commits": 31,
+        "claude_sessions": 6,
+        "codex_sessions": 7,
+        "total_sessions": 13
+      },
+      {
+        "date": "2025-10-02",
+        "commits": 23,
+        "claude_sessions": 13,
+        "codex_sessions": 5,
+        "total_sessions": 18
+      },
+      {
+        "date": "2025-10-03",
+        "commits": 0,
+        "claude_sessions": 0,
+        "codex_sessions": 3,
+        "total_sessions": 3
       }
     ]
   }

@@ -74,6 +74,7 @@ def parse_claude_sessions(sessions_dir: Path, days_back: int = 7) -> Dict[str, A
 
     sessions_7d = []
     sessions_30d = []
+    sessions_by_date = defaultdict(lambda: {"sessions": 0, "turns": 0})
 
     # Find all session files
     session_files = list(sessions_dir.rglob("*.jsonl"))
@@ -136,6 +137,11 @@ def parse_claude_sessions(sessions_dir: Path, days_back: int = 7) -> Dict[str, A
             # Categorize by time window
             if timestamp >= cutoff_7d:
                 sessions_7d.append(session_data)
+                # Track by date
+                session_date = timestamp.date().isoformat()
+                sessions_by_date[session_date]["sessions"] += 1
+                sessions_by_date[session_date]["turns"] += turn_count
+
             if timestamp >= cutoff_30d:
                 sessions_30d.append(session_data)
 
@@ -167,13 +173,20 @@ def parse_claude_sessions(sessions_dir: Path, days_back: int = 7) -> Dict[str, A
             "hours_ago": round(hours_ago, 2)
         }
 
+    # Convert daily sessions to sorted array
+    daily_sessions = [
+        {"date": date, "sessions": data["sessions"], "turns": data["turns"]}
+        for date, data in sorted(sessions_by_date.items())
+    ]
+
     return {
         "sessions_7d": len(sessions_7d),
         "sessions_30d": len(sessions_30d),
         "turns_7d": sum(s["turns"] for s in sessions_7d),
         "turns_30d": sum(s["turns"] for s in sessions_30d),
         "repos": aggregate_repos(sessions_7d),
-        "last_session": last_session
+        "last_session": last_session,
+        "daily_sessions": daily_sessions
     }
 
 
