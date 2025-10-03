@@ -143,8 +143,9 @@ def parse_github_activity(git_dir: Path) -> Dict[str, Any]:
             commits_7d_total += len(commits_7d)
             repo_commits_7d[repo_name] = len(commits_7d)
 
-            # Track commits by date
+            # Track commits by date (use commit's local timezone, not UTC)
             for commit in commits_7d:
+                # Commit timestamp already has timezone info from git
                 commit_date = commit["timestamp"].date().isoformat()
                 commits_by_date[commit_date] += 1
 

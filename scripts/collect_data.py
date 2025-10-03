@@ -125,10 +125,18 @@ def aggregate_metrics(github_data: Dict, claude_data: Dict, codex_data: Dict) ->
         )
 
     # Convert to sorted array
-    daily_breakdown_array = [
-        {"date": date, **data}
-        for date, data in sorted(daily_breakdown.items())
-    ]
+    # Always exclude the most recent date (likely partial/incomplete)
+    all_days_sorted = sorted(daily_breakdown.items())
+
+    # Take days excluding the most recent, then take last 7
+    if len(all_days_sorted) > 1:
+        complete_days = all_days_sorted[:-1]  # Drop most recent
+        daily_breakdown_array = [
+            {"date": date, **data}
+            for date, data in complete_days[-7:]  # Take last 7 complete
+        ]
+    else:
+        daily_breakdown_array = []
 
     return {
         "generated_at": datetime.now(timezone.utc).isoformat(),
