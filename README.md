@@ -6,11 +6,11 @@
 
 | Repo | Commits | AI Sessions |
 |------|---------|-------------|
-| [**zerg**](https://github.com/cipher982/zerg) | 40 | 25 |
-| [**this-wine-does-not-exist**](https://github.com/cipher982/this-wine-does-not-exist) | 22 | 19 |
-| [**ai-tools-website**](https://github.com/cipher982/ai-tools-website) | 21 | 17 |
-| [**drose_io**](https://github.com/cipher982/drose_io) | 28 | 4 |
-| [**stopsign_ai**](https://github.com/cipher982/stopsign_ai) | 0 | 22 |
+| [**zerg**](https://github.com/cipher982/zerg) | 63 | 22 |
+| [**drose_io**](https://github.com/cipher982/drose_io) | 57 | 11 |
+| [**pepper-place**](https://github.com/cipher982/pepper-place) | 42 | 3 |
+| [**cipher982**](https://github.com/cipher982/cipher982) | 17 | 6 |
+| **Home** | 0 | 14 |
 
 
 ## 💡 About
@@ -20,7 +20,7 @@ I'm a full-stack developer building AI-powered applications. This profile showca
 **What makes this unique?** Rather than just showing finished work (commits), this dashboard reveals the actual building process through:
 - Real-time AI collaboration metrics
 - Parallel development across multiple projects
-- Deep problem-solving sessions (avg 316 turns/session)
+- Deep problem-solving sessions (avg 343 turns/session)
 
 ## 🛠️ Current Stack
 
@@ -40,11 +40,11 @@ All metrics are computed locally and aggregated into a single JSON file, then vi
 <details>
 <summary>🔍 Detailed Stats (Last 30 Days)</summary>
 
-- **Commits**: 419
-- **Languages**: Python (331), TypeScript (86), Shell (2)
-- **AI Sessions**: Claude 365 · Codex 202
-- **Total Turns**: 138.9k
+- **Commits**: 498
+- **Languages**: Python (323), TypeScript (173), Shell (2)
+- **AI Sessions**: Claude 362 · Codex 203
+- **Total Turns**: 139.7k
 
 </details>
 
-*Last updated: 2025-10-03 02:47 UTC*
+*Last updated: 2025-10-08 14:55 UTC*

@@ -52,15 +52,15 @@
 
   <g transform="translate(30, 75)">
     <!-- AI Sessions -->
-    <text x="0" y="0" class="metric-value">120</text>
+    <text x="0" y="0" class="metric-value">73</text>
     <text x="0" y="18" class="metric-label text-secondary">AI SESSIONS</text>
 
     <!-- Turns -->
-    <text x="220" y="0" class="metric-value">38,038</text>
+    <text x="220" y="0" class="metric-value">25,077</text>
     <text x="220" y="18" class="metric-label text-secondary">TURNS</text>
 
     <!-- Commits -->
-    <text x="420" y="0" class="metric-value">129</text>
+    <text x="420" y="0" class="metric-value">187</text>
     <text x="420" y="18" class="metric-label text-secondary">COMMITS</text>
 
     <!-- Repos -->
@@ -76,7 +76,7 @@
     <g transform="translate(0, 20)">
       <text x="0" y="25" class="sparkline-label text-secondary">Commits</text>
       <svg x="80" y="0" width="180" height="40" viewBox="0 0 180 40">
-        <path d="M 0.00,40.00 L 30.00,22.67 L 60.00,22.67 L 90.00,18.67 L 120.00,9.33 L 150.00,0.00 L 180.00,4.00" class="sparkline-commits" stroke-dasharray="210" stroke-dashoffset="210">
+        <path d="M 0.00,14.69 L 30.00,13.06 L 60.00,28.57 L 90.00,14.69 L 120.00,40.00 L 150.00,17.14 L 180.00,0.00" class="sparkline-commits" stroke-dasharray="210" stroke-dashoffset="210">
           <animate attributeName="stroke-dashoffset" from="210" to="0" dur="1.2s" fill="freeze"/>
         </path>
       </svg>
@@ -86,7 +86,7 @@
     <g transform="translate(420, 20)">
       <text x="0" y="25" class="sparkline-label text-secondary">AI Sessions</text>
       <svg x="110" y="0" width="180" height="40" viewBox="0 0 180 40">
-        <path d="M 0.00,0.00 L 30.00,40.00 L 60.00,16.84 L 90.00,21.05 L 120.00,29.47 L 150.00,40.00 L 180.00,29.47" class="sparkline-sessions" stroke-dasharray="210" stroke-dashoffset="210">
+        <path d="M 0.00,26.67 L 30.00,0.00 L 60.00,22.22 L 90.00,17.78 L 120.00,40.00 L 150.00,22.22 L 180.00,22.22" class="sparkline-sessions" stroke-dasharray="210" stroke-dashoffset="210">
           <animate attributeName="stroke-dashoffset" from="210" to="0" dur="1.2s" fill="freeze"/>
         </path>
       </svg>
@@ -100,18 +100,18 @@
     <rect x="0" y="0" width="410" height="65" class="card-border" stroke-width="1" rx="6"/>
 
     <text x="20" y="25" class="card-title text-primary">Claude Code</text>
-    <text x="20" y="55" class="card-value">72</text>
-    <text x="95" y="55" class="card-stat text-secondary">sessions · 23,620 turns</text>
-    <text x="340" y="55" class="card-stat text-primary" style="font-weight: bold; font-size: 16px;">60.0%</text>
+    <text x="20" y="55" class="card-value">42</text>
+    <text x="95" y="55" class="card-stat text-secondary">sessions · 17,373 turns</text>
+    <text x="340" y="55" class="card-stat text-primary" style="font-weight: bold; font-size: 16px;">57.5%</text>
 
     <!-- Codex Card -->
     <rect x="440" y="0" width="410" height="65" class="card-bg" rx="6"/>
     <rect x="440" y="0" width="410" height="65" class="card-border" stroke-width="1" rx="6"/>
 
     <text x="460" y="25" class="card-title text-primary">OpenAI Codex</text>
-    <text x="460" y="55" class="card-value">48</text>
-    <text x="535" y="55" class="card-stat text-secondary">sessions · 20,099 turns</text>
-    <text x="780" y="55" class="card-stat text-primary" style="font-weight: bold; font-size: 16px;">40.0%</text>
+    <text x="460" y="55" class="card-value">31</text>
+    <text x="535" y="55" class="card-stat text-secondary">sessions · 14,106 turns</text>
+    <text x="780" y="55" class="card-stat text-primary" style="font-weight: bold; font-size: 16px;">42.5%</text>
   </g>
 
   <!-- VS Separator between cards -->
@@ -122,6 +122,6 @@
 
   <!-- Footer: Last Activity -->
   <text x="30" y="288" class="footer text-secondary">
-    <tspan class="pulse">⚡</tspan> Last activity: 3m ago
+    <tspan class="pulse">⚡</tspan> Last activity: 0m ago
   </text>
 </svg>
