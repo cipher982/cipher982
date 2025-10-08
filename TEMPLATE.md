@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./hero.svg" alt="AI-Native Development Dashboard" />
+  <img src="./hero.svg" alt="My Last 7 Days of Coding" />
 </p>
 
 ## 🚀 Active This Week
@@ -13,7 +13,9 @@ I'm a full-stack developer building AI-powered applications. This profile showca
 **What makes this unique?** Rather than just showing finished work (commits), this dashboard reveals the actual building process through:
 - Real-time AI collaboration metrics
 - Parallel development across multiple projects
-- Deep problem-solving sessions (avg {{AVG_TURNS}} turns/session)
+- Vibe coding sessions (avg {{AVG_TURNS}} turns/session)
+- And it was just fun to build! 😊
+
 
 ## 🛠️ Current Stack
 

@@ -3,6 +3,9 @@
 
 set -e
 
+# Ensure we're in the project root directory
+cd "$(dirname "$0")/.."
+
 echo "🔄 Updating profile dashboard..."
 echo ""
 
