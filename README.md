@@ -1,16 +1,16 @@
 <p align="center">
-  <img src="./hero.svg" alt="AI-Native Development Dashboard" />
+  <img src="./hero.svg" alt="My Last 7 Days of Coding" />
 </p>
 
 ## 🚀 Active This Week
 
 | Repo | Commits | AI Sessions |
 |------|---------|-------------|
-| [**zerg**](https://github.com/cipher982/zerg) | 63 | 22 |
-| [**drose_io**](https://github.com/cipher982/drose_io) | 57 | 11 |
-| [**pepper-place**](https://github.com/cipher982/pepper-place) | 42 | 3 |
-| [**cipher982**](https://github.com/cipher982/cipher982) | 17 | 6 |
-| **Home** | 0 | 14 |
+| [**zerg**](https://github.com/cipher982/zerg) | 30 | 22 |
+| [**mytech**](https://github.com/cipher982/mytech) | 12 | 11 |
+| [**scrypted**](https://github.com/cipher982/scrypted) | 4 | 0 |
+| **assistants-service** | 0 | 3 |
+| **Home** | 0 | 3 |
 
 
 ## 💡 About
@@ -20,7 +20,9 @@ I'm a full-stack developer building AI-powered applications. This profile showca
 **What makes this unique?** Rather than just showing finished work (commits), this dashboard reveals the actual building process through:
 - Real-time AI collaboration metrics
 - Parallel development across multiple projects
-- Deep problem-solving sessions (avg 343 turns/session)
+- Vibe coding sessions (avg 297 turns/session)
+- And it was just fun to build! 😊
+
 
 ## 🛠️ Current Stack
 
@@ -40,11 +42,11 @@ All metrics are computed locally and aggregated into a single JSON file, then vi
 <details>
 <summary>🔍 Detailed Stats (Last 30 Days)</summary>
 
-- **Commits**: 498
-- **Languages**: Python (323), TypeScript (173), Shell (2)
-- **AI Sessions**: Claude 362 · Codex 203
-- **Total Turns**: 139.7k
+- **Commits**: 550
+- **Languages**: Python (362), TypeScript (142), Shell (42)
+- **AI Sessions**: Claude 282 · Codex 154
+- **Total Turns**: 282.9k
 
 </details>
 
-*Last updated: 2025-10-08 14:55 UTC*
+*Last updated: 2025-10-23 23:35 UTC*
