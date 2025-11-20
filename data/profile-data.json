@@ -1,14 +1,14 @@
 {
-  "generated_at": "2025-11-20T00:22:42.395734+00:00",
+  "generated_at": "2025-11-20T02:04:08.878927+00:00",
   "github": {
     "repos_active_7d": 3,
     "repos_active_30d": 6,
-    "commits_7d": 119,
-    "commits_30d": 289,
+    "commits_7d": 118,
+    "commits_30d": 293,
     "languages_30d": [
       {
         "name": "Python",
-        "commits": 268
+        "commits": 272
       },
       {
         "name": "Shell",
@@ -20,18 +20,18 @@
       }
     ],
     "last_push": {
-      "repo": "zerg",
-      "timestamp": "2025-11-19T18:50:01-05:00",
-      "hours_ago": 0.54
+      "repo": "toon-test",
+      "timestamp": "2025-11-19T21:00:21-05:00",
+      "hours_ago": 0.06
     },
     "top_repos_7d": [
       {
         "repo": "zerg",
-        "commits": 103
+        "commits": 98
       },
       {
         "repo": "toon-test",
-        "commits": 15
+        "commits": 19
       },
       {
         "repo": "cipher982",
@@ -41,7 +41,7 @@
     "daily_commits": [
       {
         "date": "2025-11-13",
-        "commits": 14
+        "commits": 9
       },
       {
         "date": "2025-11-15",
@@ -61,15 +61,15 @@
       },
       {
         "date": "2025-11-19",
-        "commits": 23
+        "commits": 27
       }
     ]
   },
   "claude": {
     "sessions_7d": 246,
-    "sessions_30d": 834,
-    "turns_7d": 21218,
-    "turns_30d": 79348,
+    "sessions_30d": 837,
+    "turns_7d": 21094,
+    "turns_30d": 79468,
     "repos": [
       {
         "repo": "zerg",
@@ -79,12 +79,12 @@
       {
         "repo": "toon-test",
         "sessions": 36,
-        "turns": 4305
+        "turns": 4375
       },
       {
         "repo": "Home",
-        "sessions": 10,
-        "turns": 54
+        "sessions": 13,
+        "turns": 104
       },
       {
         "repo": "cannable",
@@ -103,15 +103,15 @@
       }
     ],
     "last_session": {
-      "repo": "drose_io",
-      "timestamp": "2025-11-19T23:51:22.501000+00:00",
-      "hours_ago": 0.52
+      "repo": "Home",
+      "timestamp": "2025-11-20T01:48:13.825000+00:00",
+      "hours_ago": 0.27
     },
     "daily_sessions": [
       {
         "date": "2025-11-13",
-        "sessions": 61,
-        "turns": 4006
+        "sessions": 58,
+        "turns": 3762
       },
       {
         "date": "2025-11-14",
@@ -141,15 +141,20 @@
       {
         "date": "2025-11-19",
         "sessions": 39,
-        "turns": 3072
+        "turns": 3142
+      },
+      {
+        "date": "2025-11-20",
+        "sessions": 3,
+        "turns": 50
       }
     ]
   },
   "codex": {
-    "sessions_7d": 20,
-    "sessions_30d": 95,
-    "turns_7d": 12993,
-    "turns_30d": 47213,
+    "sessions_7d": 22,
+    "sessions_30d": 97,
+    "turns_7d": 13016,
+    "turns_30d": 47236,
     "repos": [
       {
         "repo": "zerg",
@@ -160,12 +165,17 @@
         "repo": "toon-test",
         "sessions": 5,
         "turns": 1922
+      },
+      {
+        "repo": "Home",
+        "sessions": 2,
+        "turns": 23
       }
     ],
     "last_session": {
-      "repo": "toon-test",
-      "timestamp": "2025-11-19T21:27:30.776000+00:00",
-      "hours_ago": 2.92
+      "repo": "Home",
+      "timestamp": "2025-11-20T01:51:29.348000+00:00",
+      "hours_ago": 0.21
     },
     "daily_sessions": [
       {
@@ -202,31 +212,71 @@
         "date": "2025-11-19",
         "sessions": 4,
         "turns": 1998
+      },
+      {
+        "date": "2025-11-20",
+        "sessions": 2,
+        "turns": 23
+      }
+    ]
+  },
+  "cursor": {
+    "sessions_7d": 14,
+    "sessions_30d": 42,
+    "turns_7d": 790,
+    "turns_30d": 2276,
+    "repos": [],
+    "last_session": {
+      "mode": "agent",
+      "timestamp": "2025-11-19T23:42:57.089000+00:00",
+      "hours_ago": 2.35
+    },
+    "daily_sessions": [
+      {
+        "date": "2025-11-13",
+        "sessions": 2,
+        "turns": 2
+      },
+      {
+        "date": "2025-11-17",
+        "sessions": 3,
+        "turns": 3
+      },
+      {
+        "date": "2025-11-18",
+        "sessions": 3,
+        "turns": 264
+      },
+      {
+        "date": "2025-11-19",
+        "sessions": 6,
+        "turns": 521
       }
     ]
   },
   "aggregate": {
-    "ai_sessions_7d": 183,
-    "ai_turns_7d": 28315,
-    "claude_percentage": 91.8,
-    "codex_percentage": 8.2,
+    "ai_sessions_7d": 202,
+    "ai_turns_7d": 29248,
+    "claude_percentage": 84.7,
+    "codex_percentage": 8.4,
+    "cursor_percentage": 6.9,
     "top_repos_combined": [
       {
         "repo": "zerg",
-        "commits": 103,
+        "commits": 98,
         "ai_sessions": 119,
         "github_url": "https://github.com/cipher982/zerg"
       },
       {
         "repo": "toon-test",
-        "commits": 15,
+        "commits": 19,
         "ai_sessions": 41,
         "github_url": null
       },
       {
         "repo": "Home",
         "commits": 0,
-        "ai_sessions": 10,
+        "ai_sessions": 15,
         "github_url": null
       },
       {
@@ -245,16 +295,18 @@
     "daily_breakdown_7d": [
       {
         "date": "2025-11-13",
-        "commits": 14,
-        "claude_sessions": 61,
+        "commits": 9,
+        "claude_sessions": 58,
         "codex_sessions": 5,
-        "total_sessions": 66
+        "cursor_sessions": 2,
+        "total_sessions": 65
       },
       {
         "date": "2025-11-14",
         "commits": 0,
         "claude_sessions": 55,
         "codex_sessions": 3,
+        "cursor_sessions": 0,
         "total_sessions": 58
       },
       {
@@ -262,6 +314,7 @@
         "commits": 11,
         "claude_sessions": 18,
         "codex_sessions": 1,
+        "cursor_sessions": 0,
         "total_sessions": 19
       },
       {
@@ -269,6 +322,7 @@
         "commits": 17,
         "claude_sessions": 7,
         "codex_sessions": 1,
+        "cursor_sessions": 0,
         "total_sessions": 8
       },
       {
@@ -276,14 +330,24 @@
         "commits": 23,
         "claude_sessions": 40,
         "codex_sessions": 3,
-        "total_sessions": 43
+        "cursor_sessions": 3,
+        "total_sessions": 46
       },
       {
         "date": "2025-11-18",
         "commits": 31,
         "claude_sessions": 26,
         "codex_sessions": 3,
-        "total_sessions": 29
+        "cursor_sessions": 3,
+        "total_sessions": 32
+      },
+      {
+        "date": "2025-11-19",
+        "commits": 27,
+        "claude_sessions": 39,
+        "codex_sessions": 4,
+        "cursor_sessions": 6,
+        "total_sessions": 49
       }
     ]
   }
