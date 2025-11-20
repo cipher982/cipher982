@@ -213,8 +213,7 @@ def generate_hero_svg(data: Dict[str, Any]) -> str:
 
   <!-- Tier 3: Ranked Leaderboard -->
   <g transform="translate(30, 200)">
-    <text x="420" y="15" text-anchor="middle" class="sparkline-header text-primary">Top AI Tools</text>
-    
+
     <!-- Rank 1: Claude -->
     <g transform="translate(0, 20)">
         <rect width="840" height="60" class="card-bg" rx="6"/>
