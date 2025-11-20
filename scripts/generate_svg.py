@@ -60,9 +60,9 @@ def generate_hero_svg(data: Dict[str, Any]) -> str:
     codex_turns = data["codex"]["turns_7d"]
     cursor_turns = data["cursor"]["turns_7d"]
 
-    claude_pct = data["aggregate"]["claude_percentage"]
-    codex_pct = data["aggregate"]["codex_percentage"]
-    cursor_pct = data["aggregate"].get("cursor_percentage", 0)
+    claude_pct = data["aggregate"].get("claude_turns_percentage", 0)
+    codex_pct = data["aggregate"].get("codex_turns_percentage", 0)
+    cursor_pct = data["aggregate"].get("cursor_turns_percentage", 0)
 
     # Get daily data for sparklines
     daily_breakdown = data["aggregate"].get("daily_breakdown_7d", [])

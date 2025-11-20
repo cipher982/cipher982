@@ -77,6 +77,10 @@ def aggregate_metrics(github_data: Dict, claude_data: Dict, codex_data: Dict, cu
     codex_pct = (codex_sessions_filtered / ai_sessions_7d * 100) if ai_sessions_7d > 0 else 0
     cursor_pct = (cursor_sessions_filtered / ai_sessions_7d * 100) if ai_sessions_7d > 0 else 0
 
+    claude_turns_pct = (claude_turns_filtered / ai_turns_7d * 100) if ai_turns_7d > 0 else 0
+    codex_turns_pct = (codex_turns_filtered / ai_turns_7d * 100) if ai_turns_7d > 0 else 0
+    cursor_turns_pct = (cursor_turns_filtered / ai_turns_7d * 100) if ai_turns_7d > 0 else 0
+
     # Combine top repos (commits + AI sessions)
     repo_scores = defaultdict(lambda: {"commits": 0, "ai_sessions": 0})
 
@@ -162,6 +166,9 @@ def aggregate_metrics(github_data: Dict, claude_data: Dict, codex_data: Dict, cu
             "claude_percentage": round(claude_pct, 1),
             "codex_percentage": round(codex_pct, 1),
             "cursor_percentage": round(cursor_pct, 1),
+            "claude_turns_percentage": round(claude_turns_pct, 1),
+            "codex_turns_percentage": round(codex_turns_pct, 1),
+            "cursor_turns_percentage": round(cursor_turns_pct, 1),
             "top_repos_combined": top_repos_combined,
             "daily_breakdown_7d": daily_breakdown_array
         }

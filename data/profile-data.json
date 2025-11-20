@@ -1,14 +1,14 @@
 {
-  "generated_at": "2025-11-20T02:04:08.878927+00:00",
+  "generated_at": "2025-11-20T02:09:51.214471+00:00",
   "github": {
     "repos_active_7d": 3,
     "repos_active_30d": 6,
-    "commits_7d": 118,
-    "commits_30d": 293,
+    "commits_7d": 119,
+    "commits_30d": 294,
     "languages_30d": [
       {
         "name": "Python",
-        "commits": 272
+        "commits": 273
       },
       {
         "name": "Shell",
@@ -20,9 +20,9 @@
       }
     ],
     "last_push": {
-      "repo": "toon-test",
-      "timestamp": "2025-11-19T21:00:21-05:00",
-      "hours_ago": 0.06
+      "repo": "cipher982",
+      "timestamp": "2025-11-19T21:08:33-05:00",
+      "hours_ago": 0.02
     },
     "top_repos_7d": [
       {
@@ -35,7 +35,7 @@
       },
       {
         "repo": "cipher982",
-        "commits": 1
+        "commits": 2
       }
     ],
     "daily_commits": [
@@ -61,15 +61,15 @@
       },
       {
         "date": "2025-11-19",
-        "commits": 27
+        "commits": 28
       }
     ]
   },
   "claude": {
-    "sessions_7d": 246,
-    "sessions_30d": 837,
-    "turns_7d": 21094,
-    "turns_30d": 79468,
+    "sessions_7d": 247,
+    "sessions_30d": 838,
+    "turns_7d": 21148,
+    "turns_30d": 79522,
     "repos": [
       {
         "repo": "zerg",
@@ -78,8 +78,8 @@
       },
       {
         "repo": "toon-test",
-        "sessions": 36,
-        "turns": 4375
+        "sessions": 37,
+        "turns": 4429
       },
       {
         "repo": "Home",
@@ -103,9 +103,9 @@
       }
     ],
     "last_session": {
-      "repo": "Home",
-      "timestamp": "2025-11-20T01:48:13.825000+00:00",
-      "hours_ago": 0.27
+      "repo": "toon-test",
+      "timestamp": "2025-11-20T02:05:21.954000+00:00",
+      "hours_ago": 0.07
     },
     "daily_sessions": [
       {
@@ -141,12 +141,12 @@
       {
         "date": "2025-11-19",
         "sessions": 39,
-        "turns": 3142
+        "turns": 3147
       },
       {
         "date": "2025-11-20",
-        "sessions": 3,
-        "turns": 50
+        "sessions": 4,
+        "turns": 99
       }
     ]
   },
@@ -175,7 +175,7 @@
     "last_session": {
       "repo": "Home",
       "timestamp": "2025-11-20T01:51:29.348000+00:00",
-      "hours_ago": 0.21
+      "hours_ago": 0.31
     },
     "daily_sessions": [
       {
@@ -229,7 +229,7 @@
     "last_session": {
       "mode": "agent",
       "timestamp": "2025-11-19T23:42:57.089000+00:00",
-      "hours_ago": 2.35
+      "hours_ago": 2.45
     },
     "daily_sessions": [
       {
@@ -255,11 +255,14 @@
     ]
   },
   "aggregate": {
-    "ai_sessions_7d": 202,
-    "ai_turns_7d": 29248,
+    "ai_sessions_7d": 203,
+    "ai_turns_7d": 29302,
     "claude_percentage": 84.7,
     "codex_percentage": 8.4,
     "cursor_percentage": 6.9,
+    "claude_turns_percentage": 61.1,
+    "codex_turns_percentage": 36.2,
+    "cursor_turns_percentage": 2.7,
     "top_repos_combined": [
       {
         "repo": "zerg",
@@ -270,7 +273,7 @@
       {
         "repo": "toon-test",
         "commits": 19,
-        "ai_sessions": 41,
+        "ai_sessions": 42,
         "github_url": null
       },
       {
@@ -343,7 +346,7 @@
       },
       {
         "date": "2025-11-19",
-        "commits": 27,
+        "commits": 28,
         "claude_sessions": 39,
         "codex_sessions": 4,
         "cursor_sessions": 6,
