@@ -55,14 +55,17 @@ def generate_hero_svg(data: Dict[str, Any]) -> str:
     claude_sessions = sum(r["sessions"] for r in data["claude"]["repos"])
     codex_sessions = sum(r["sessions"] for r in data["codex"]["repos"])
     cursor_sessions = data["cursor"]["sessions_7d"]
+    gemini_sessions = data["gemini"]["sessions_7d"]
 
     claude_turns = data["claude"]["turns_7d"]
     codex_turns = data["codex"]["turns_7d"]
     cursor_turns = data["cursor"]["turns_7d"]
+    gemini_turns = data["gemini"]["turns_7d"]
 
     claude_pct = data["aggregate"].get("claude_turns_percentage", 0)
     codex_pct = data["aggregate"].get("codex_turns_percentage", 0)
     cursor_pct = data["aggregate"].get("cursor_turns_percentage", 0)
+    gemini_pct = data["aggregate"].get("gemini_turns_percentage", 0)
 
     # Get daily data for sparklines
     daily_breakdown = data["aggregate"].get("daily_breakdown_7d", [])
@@ -93,7 +96,7 @@ def generate_hero_svg(data: Dict[str, Any]) -> str:
 
     # SVG dimensions
     width = 900
-    height = 450
+    height = 550  # Increased to accommodate 4 ranked tools
 
     # Generate SVG
     svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}">
@@ -129,6 +132,7 @@ def generate_hero_svg(data: Dict[str, Any]) -> str:
       .color-claude {{ fill: #58a6ff; }}  /* Blue */
       .color-codex {{ fill: #a371f7; }}   /* Purple */
       .color-cursor {{ fill: #2ea043; }}  /* Green */
+      .color-gemini {{ fill: #ea4335; }}  /* Red */
 
       /* Light mode */
       @media (prefers-color-scheme: light) {{
@@ -255,16 +259,33 @@ def generate_hero_svg(data: Dict[str, Any]) -> str:
     <g transform="translate(0, 160)">
         <rect width="840" height="60" class="card-bg" rx="6"/>
         <rect width="840" height="60" class="card-border" stroke-width="1" rx="6"/>
-        
+
         <text x="20" y="38" class="rank-num">#3</text>
-        
+
         <text x="60" y="28" class="card-title text-primary">Cursor</text>
         <text x="60" y="48" class="card-stat text-secondary">{cursor_sessions} sessions · {format_large_number(cursor_turns)} turns</text>
-        
+
         <g transform="translate(500, 0)">
             <text x="320" y="28" class="card-value color-cursor" text-anchor="end">{cursor_pct}%</text>
             <rect x="0" y="40" width="320" height="6" class="progress-bg" rx="3"/>
             <rect x="0" y="40" width="{320 * (cursor_pct/100)}" height="6" class="color-cursor anim-bar" rx="3"/>
+        </g>
+    </g>
+
+    <!-- Rank 4: Gemini -->
+    <g transform="translate(0, 230)">
+        <rect width="840" height="60" class="card-bg" rx="6"/>
+        <rect width="840" height="60" class="card-border" stroke-width="1" rx="6"/>
+
+        <text x="20" y="38" class="rank-num">#4</text>
+
+        <text x="60" y="28" class="card-title text-primary">Gemini</text>
+        <text x="60" y="48" class="card-stat text-secondary">{gemini_sessions} sessions · {format_large_number(gemini_turns)} turns</text>
+
+        <g transform="translate(500, 0)">
+            <text x="320" y="28" class="card-value color-gemini" text-anchor="end">{gemini_pct}%</text>
+            <rect x="0" y="40" width="320" height="6" class="progress-bg" rx="3"/>
+            <rect x="0" y="40" width="{320 * (gemini_pct/100)}" height="6" class="color-gemini anim-bar" rx="3"/>
         </g>
     </g>
   </g>
@@ -297,7 +318,7 @@ def main():
         f.write(svg)
 
     print(f"✅ SVG written to {output_file}")
-    print(f"   Size: 900×450px")
+    print(f"   Size: 900×550px")
     daily_days = len(data['aggregate'].get('daily_breakdown_7d', []))
     print(f"   Sparklines: {daily_days} days of data")
 

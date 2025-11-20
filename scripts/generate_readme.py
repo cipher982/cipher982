@@ -86,7 +86,8 @@ def generate_readme(data: Dict[str, Any]) -> str:
         "{{CLAUDE_30D}}": str(data["claude"]["sessions_30d"]),
         "{{CODEX_30D}}": str(data["codex"]["sessions_30d"]),
         "{{CURSOR_30D}}": str(data["cursor"]["sessions_30d"]),
-        "{{TURNS_30D}}": format_number(data["claude"]["turns_30d"] + data["codex"]["turns_30d"] + data["cursor"]["turns_30d"]),
+        "{{GEMINI_30D}}": str(data["gemini"]["sessions_30d"]),
+        "{{TURNS_30D}}": format_number(data["claude"]["turns_30d"] + data["codex"]["turns_30d"] + data["cursor"]["turns_30d"] + data["gemini"]["turns_30d"]),
         "{{UPDATED_AT}}": datetime.fromisoformat(data["generated_at"].replace("Z", "+00:00")).strftime("%Y-%m-%d %H:%M UTC")
     }
 

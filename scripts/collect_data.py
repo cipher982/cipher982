@@ -10,6 +10,7 @@ from collections import defaultdict
 from parse_claude import parse_claude_sessions
 from parse_codex import parse_codex_sessions
 from parse_cursor import parse_cursor_sessions
+from parse_gemini import parse_gemini_sessions
 from parse_github import parse_github_activity
 
 # Repos to exclude from dashboard (work projects, private exploration, etc.)
@@ -45,9 +46,9 @@ def get_github_url(repo_name: str, git_dir: Path) -> Optional[str]:
     return None
 
 
-def aggregate_metrics(github_data: Dict, claude_data: Dict, codex_data: Dict, cursor_data: Dict) -> Dict[str, Any]:
+def aggregate_metrics(github_data: Dict, claude_data: Dict, codex_data: Dict, cursor_data: Dict, gemini_data: Dict) -> Dict[str, Any]:
     """
-    Combine GitHub, Claude, Codex, and Cursor data with aggregate metrics.
+    Combine GitHub, Claude, Codex, Cursor, and Gemini data with aggregate metrics.
 
     Returns complete profile-data.json structure
     """
@@ -59,27 +60,31 @@ def aggregate_metrics(github_data: Dict, claude_data: Dict, codex_data: Dict, cu
     github_data["top_repos_7d"] = filter_repos(github_data["top_repos_7d"])
     claude_data["repos"] = filter_repos(claude_data["repos"])
     codex_data["repos"] = filter_repos(codex_data["repos"])
-    # Cursor doesn't track repos yet, so nothing to filter
+    # Cursor and Gemini don't track repos yet, so nothing to filter
 
     # Recalculate AI metrics after filtering
     claude_sessions_filtered = sum(r["sessions"] for r in claude_data["repos"])
     codex_sessions_filtered = sum(r["sessions"] for r in codex_data["repos"])
     cursor_sessions_filtered = cursor_data["sessions_7d"]  # No repo filtering available
+    gemini_sessions_filtered = gemini_data["sessions_7d"]  # No repo filtering available
 
     claude_turns_filtered = sum(r["turns"] for r in claude_data["repos"])
     codex_turns_filtered = sum(r["turns"] for r in codex_data["repos"])
     cursor_turns_filtered = cursor_data["turns_7d"]
+    gemini_turns_filtered = gemini_data["turns_7d"]
 
-    ai_sessions_7d = claude_sessions_filtered + codex_sessions_filtered + cursor_sessions_filtered
-    ai_turns_7d = claude_turns_filtered + codex_turns_filtered + cursor_turns_filtered
+    ai_sessions_7d = claude_sessions_filtered + codex_sessions_filtered + cursor_sessions_filtered + gemini_sessions_filtered
+    ai_turns_7d = claude_turns_filtered + codex_turns_filtered + cursor_turns_filtered + gemini_turns_filtered
 
     claude_pct = (claude_sessions_filtered / ai_sessions_7d * 100) if ai_sessions_7d > 0 else 0
     codex_pct = (codex_sessions_filtered / ai_sessions_7d * 100) if ai_sessions_7d > 0 else 0
     cursor_pct = (cursor_sessions_filtered / ai_sessions_7d * 100) if ai_sessions_7d > 0 else 0
+    gemini_pct = (gemini_sessions_filtered / ai_sessions_7d * 100) if ai_sessions_7d > 0 else 0
 
     claude_turns_pct = (claude_turns_filtered / ai_turns_7d * 100) if ai_turns_7d > 0 else 0
     codex_turns_pct = (codex_turns_filtered / ai_turns_7d * 100) if ai_turns_7d > 0 else 0
     cursor_turns_pct = (cursor_turns_filtered / ai_turns_7d * 100) if ai_turns_7d > 0 else 0
+    gemini_turns_pct = (gemini_turns_filtered / ai_turns_7d * 100) if ai_turns_7d > 0 else 0
 
     # Combine top repos (commits + AI sessions)
     repo_scores = defaultdict(lambda: {"commits": 0, "ai_sessions": 0})
@@ -114,7 +119,7 @@ def aggregate_metrics(github_data: Dict, claude_data: Dict, codex_data: Dict, cu
     top_repos_combined = top_repos_combined[:5]
 
     # Merge daily breakdowns from all sources
-    daily_breakdown = defaultdict(lambda: {"commits": 0, "claude_sessions": 0, "codex_sessions": 0, "cursor_sessions": 0, "total_sessions": 0})
+    daily_breakdown = defaultdict(lambda: {"commits": 0, "claude_sessions": 0, "codex_sessions": 0, "cursor_sessions": 0, "gemini_sessions": 0, "total_sessions": 0})
 
     # Add git commits
     for day_data in github_data.get("daily_commits", []):
@@ -132,12 +137,17 @@ def aggregate_metrics(github_data: Dict, claude_data: Dict, codex_data: Dict, cu
     for day_data in cursor_data.get("daily_sessions", []):
         daily_breakdown[day_data["date"]]["cursor_sessions"] = day_data["sessions"]
 
+    # Add Gemini sessions
+    for day_data in gemini_data.get("daily_sessions", []):
+        daily_breakdown[day_data["date"]]["gemini_sessions"] = day_data["sessions"]
+
     # Calculate totals
     for date in daily_breakdown:
         daily_breakdown[date]["total_sessions"] = (
-            daily_breakdown[date]["claude_sessions"] + 
+            daily_breakdown[date]["claude_sessions"] +
             daily_breakdown[date]["codex_sessions"] +
-            daily_breakdown[date]["cursor_sessions"]
+            daily_breakdown[date]["cursor_sessions"] +
+            daily_breakdown[date]["gemini_sessions"]
         )
 
     # Convert to sorted array
@@ -160,15 +170,18 @@ def aggregate_metrics(github_data: Dict, claude_data: Dict, codex_data: Dict, cu
         "claude": claude_data,
         "codex": codex_data,
         "cursor": cursor_data,
+        "gemini": gemini_data,
         "aggregate": {
             "ai_sessions_7d": ai_sessions_7d,
             "ai_turns_7d": ai_turns_7d,
             "claude_percentage": round(claude_pct, 1),
             "codex_percentage": round(codex_pct, 1),
             "cursor_percentage": round(cursor_pct, 1),
+            "gemini_percentage": round(gemini_pct, 1),
             "claude_turns_percentage": round(claude_turns_pct, 1),
             "codex_turns_percentage": round(codex_turns_pct, 1),
             "cursor_turns_percentage": round(cursor_turns_pct, 1),
+            "gemini_turns_percentage": round(gemini_turns_pct, 1),
             "top_repos_combined": top_repos_combined,
             "daily_breakdown_7d": daily_breakdown_array
         }
@@ -204,8 +217,12 @@ def main():
     cursor_data = parse_cursor_sessions()
     print(f"   ✓ {cursor_data['sessions_7d']} sessions, {cursor_data['turns_7d']} turns (7d)")
 
+    print("🔍 Collecting Gemini sessions...")
+    gemini_data = parse_gemini_sessions()
+    print(f"   ✓ {gemini_data['sessions_7d']} sessions, {gemini_data['turns_7d']} turns (7d)")
+
     print("📊 Aggregating metrics...")
-    profile_data = aggregate_metrics(github_data, claude_data, codex_data, cursor_data)
+    profile_data = aggregate_metrics(github_data, claude_data, codex_data, cursor_data, gemini_data)
 
     print(f"💾 Writing to {output_file}...")
     with open(output_file, 'w') as f:
@@ -215,7 +232,7 @@ def main():
     print(f"\n📈 Summary:")
     print(f"   Git: {profile_data['github']['commits_7d']} commits across {profile_data['github']['repos_active_7d']} repos")
     print(f"   AI:  {profile_data['aggregate']['ai_sessions_7d']} sessions, {profile_data['aggregate']['ai_turns_7d']} turns")
-    print(f"   Split: Claude {profile_data['aggregate']['claude_percentage']}%, Codex {profile_data['aggregate']['codex_percentage']}%, Cursor {profile_data['aggregate']['cursor_percentage']}%")
+    print(f"   Split: Claude {profile_data['aggregate']['claude_percentage']}%, Codex {profile_data['aggregate']['codex_percentage']}%, Cursor {profile_data['aggregate']['cursor_percentage']}%, Gemini {profile_data['aggregate']['gemini_percentage']}%")
 
 
 if __name__ == "__main__":
