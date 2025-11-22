@@ -6,11 +6,11 @@
 
 | Repo | Commits | AI Sessions |
 |------|---------|-------------|
-| [**zerg**](https://github.com/cipher982/zerg) | 98 | 119 |
-| **toon-test** | 20 | 42 |
-| **Home** | 0 | 15 |
-| [**cipher982**](https://github.com/cipher982/cipher982) | 4 | 3 |
-| **cannable** | 0 | 5 |
+| [**zerg**](https://github.com/cipher982/zerg) | 89 | 68 |
+| **toon-test** | 36 | 52 |
+| [**agent-zoom**](https://github.com/cipher982/spoc-shot) | 8 | 5 |
+| [**cipher982**](https://github.com/cipher982/cipher982) | 7 | 3 |
+| **Home** | 0 | 8 |
 
 
 ## 💡 About
@@ -20,7 +20,7 @@ I'm a full-stack developer building AI-powered applications. This profile showca
 **What makes this unique?** Rather than just showing finished work (commits), this dashboard reveals the actual building process through:
 - Real-time AI collaboration metrics
 - Parallel development across multiple projects
-- Vibe coding sessions (avg 137 turns/session)
+- Vibe coding sessions (avg 152 turns/session)
 - And it was just fun to build! 😊
 
 
@@ -44,11 +44,11 @@ All metrics are computed locally and aggregated into a single JSON file, then vi
 <details>
 <summary>🔍 Detailed Stats (Last 30 Days)</summary>
 
-- **Commits**: 297
-- **Languages**: Python (276), Shell (15), TypeScript (5)
-- **AI Sessions**: Claude 841 · Codex 97 · Cursor 42 · Gemini 31
-- **Total Turns**: 129.5k
+- **Commits**: 315
+- **Languages**: Python (294), Shell (15), TypeScript (6)
+- **AI Sessions**: Claude 837 · Codex 91 · Cursor 61 · Gemini 31
+- **Total Turns**: 125.9k
 
 </details>
 
-*Last updated: 2025-11-20 02:23 UTC*
+*Last updated: 2025-11-22 01:40 UTC*
