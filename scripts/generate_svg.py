@@ -94,6 +94,38 @@ def generate_hero_svg(data: Dict[str, Any]) -> str:
     else:
         last_activity = f"{int(hours_ago / 24)}d ago"
 
+    # Build leaderboard sorted by turns (descending)
+    tools = [
+        {"name": "Claude Code", "sessions": claude_sessions, "turns": claude_turns, "pct": claude_pct, "color": "claude"},
+        {"name": "OpenAI Codex", "sessions": codex_sessions, "turns": codex_turns, "pct": codex_pct, "color": "codex"},
+        {"name": "Cursor", "sessions": cursor_sessions, "turns": cursor_turns, "pct": cursor_pct, "color": "cursor"},
+        {"name": "Gemini", "sessions": gemini_sessions, "turns": gemini_turns, "pct": gemini_pct, "color": "gemini"},
+    ]
+    tools_sorted = sorted(tools, key=lambda t: t["turns"], reverse=True)
+
+    # Generate leaderboard card SVG for each tool
+    def generate_leaderboard_card(rank: int, tool: dict, y_offset: int) -> str:
+        return f'''
+    <g transform="translate(0, {y_offset})">
+        <rect width="840" height="60" class="card-bg" rx="6"/>
+        <rect width="840" height="60" class="card-border" stroke-width="1" rx="6"/>
+        
+        <text x="20" y="38" class="rank-num">#{rank}</text>
+        
+        <text x="60" y="28" class="card-title text-primary">{tool["name"]}</text>
+        <text x="60" y="48" class="card-stat text-secondary">{tool["sessions"]} sessions · {format_large_number(tool["turns"])} turns</text>
+        
+        <g transform="translate(500, 0)">
+            <text x="320" y="28" class="card-value color-{tool["color"]}" text-anchor="end">{tool["pct"]}%</text>
+            <rect x="0" y="40" width="320" height="6" class="progress-bg" rx="3"/>
+            <rect x="0" y="40" width="{320 * (tool["pct"]/100)}" height="6" class="color-{tool["color"]} anim-bar" rx="3"/>
+        </g>
+    </g>'''
+
+    leaderboard_cards = ""
+    for i, tool in enumerate(tools_sorted):
+        leaderboard_cards += generate_leaderboard_card(i + 1, tool, 20 + i * 70)
+
     # SVG dimensions
     width = 900
     height = 550  # Increased to accommodate 4 ranked tools
@@ -213,80 +245,7 @@ def generate_hero_svg(data: Dict[str, Any]) -> str:
 
   <!-- Tier 3: Ranked Leaderboard -->
   <g transform="translate(30, 200)">
-
-    <!-- Rank 1: Claude -->
-    <g transform="translate(0, 20)">
-        <rect width="840" height="60" class="card-bg" rx="6"/>
-        <rect width="840" height="60" class="card-border" stroke-width="1" rx="6"/>
-        
-        <!-- Rank Number -->
-        <text x="20" y="38" class="rank-num">#1</text>
-        
-        <!-- Title -->
-        <text x="60" y="28" class="card-title text-primary">Claude Code</text>
-        <text x="60" y="48" class="card-stat text-secondary">{claude_sessions} sessions · {format_large_number(claude_turns)} turns</text>
-        
-        <!-- Right Side: Stats & Progress -->
-        <g transform="translate(500, 0)">
-            <text x="320" y="28" class="card-value color-claude" text-anchor="end">{claude_pct}%</text>
-            
-            <!-- Progress Bar Background -->
-            <rect x="0" y="40" width="320" height="6" class="progress-bg" rx="3"/>
-            <!-- Progress Bar Foreground -->
-            <rect x="0" y="40" width="{320 * (claude_pct/100)}" height="6" class="color-claude anim-bar" rx="3"/>
-        </g>
-    </g>
-    
-    <!-- Rank 2: Codex -->
-    <g transform="translate(0, 90)">
-        <rect width="840" height="60" class="card-bg" rx="6"/>
-        <rect width="840" height="60" class="card-border" stroke-width="1" rx="6"/>
-        
-        <text x="20" y="38" class="rank-num">#2</text>
-        
-        <text x="60" y="28" class="card-title text-primary">OpenAI Codex</text>
-        <text x="60" y="48" class="card-stat text-secondary">{codex_sessions} sessions · {format_large_number(codex_turns)} turns</text>
-        
-        <g transform="translate(500, 0)">
-            <text x="320" y="28" class="card-value color-codex" text-anchor="end">{codex_pct}%</text>
-            <rect x="0" y="40" width="320" height="6" class="progress-bg" rx="3"/>
-            <rect x="0" y="40" width="{320 * (codex_pct/100)}" height="6" class="color-codex anim-bar" rx="3"/>
-        </g>
-    </g>
-    
-    <!-- Rank 3: Cursor -->
-    <g transform="translate(0, 160)">
-        <rect width="840" height="60" class="card-bg" rx="6"/>
-        <rect width="840" height="60" class="card-border" stroke-width="1" rx="6"/>
-
-        <text x="20" y="38" class="rank-num">#3</text>
-
-        <text x="60" y="28" class="card-title text-primary">Cursor</text>
-        <text x="60" y="48" class="card-stat text-secondary">{cursor_sessions} sessions · {format_large_number(cursor_turns)} turns</text>
-
-        <g transform="translate(500, 0)">
-            <text x="320" y="28" class="card-value color-cursor" text-anchor="end">{cursor_pct}%</text>
-            <rect x="0" y="40" width="320" height="6" class="progress-bg" rx="3"/>
-            <rect x="0" y="40" width="{320 * (cursor_pct/100)}" height="6" class="color-cursor anim-bar" rx="3"/>
-        </g>
-    </g>
-
-    <!-- Rank 4: Gemini -->
-    <g transform="translate(0, 230)">
-        <rect width="840" height="60" class="card-bg" rx="6"/>
-        <rect width="840" height="60" class="card-border" stroke-width="1" rx="6"/>
-
-        <text x="20" y="38" class="rank-num">#4</text>
-
-        <text x="60" y="28" class="card-title text-primary">Gemini</text>
-        <text x="60" y="48" class="card-stat text-secondary">{gemini_sessions} sessions · {format_large_number(gemini_turns)} turns</text>
-
-        <g transform="translate(500, 0)">
-            <text x="320" y="28" class="card-value color-gemini" text-anchor="end">{gemini_pct}%</text>
-            <rect x="0" y="40" width="320" height="6" class="progress-bg" rx="3"/>
-            <rect x="0" y="40" width="{320 * (gemini_pct/100)}" height="6" class="color-gemini anim-bar" rx="3"/>
-        </g>
-    </g>
+{leaderboard_cards}
   </g>
 
   <!-- Footer: Last Activity -->
