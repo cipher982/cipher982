@@ -1,14 +1,14 @@
 {
-  "generated_at": "2025-12-02T19:29:08.537846+00:00",
+  "generated_at": "2025-12-02T19:54:53.093502+00:00",
   "github": {
     "repos_active_7d": 4,
     "repos_active_30d": 7,
-    "commits_7d": 133,
-    "commits_30d": 411,
+    "commits_7d": 137,
+    "commits_30d": 415,
     "languages_30d": [
       {
         "name": "Python",
-        "commits": 398
+        "commits": 402
       },
       {
         "name": "Shell",
@@ -21,13 +21,13 @@
     ],
     "last_push": {
       "repo": "zerg",
-      "timestamp": "2025-12-02T13:43:33-05:00",
-      "hours_ago": 0.75
+      "timestamp": "2025-12-02T14:54:16-05:00",
+      "hours_ago": 0.01
     },
     "top_repos_7d": [
       {
         "repo": "zerg",
-        "commits": 93
+        "commits": 97
       },
       {
         "repo": "hdr",
@@ -73,20 +73,20 @@
       },
       {
         "date": "2025-12-02",
-        "commits": 20
+        "commits": 24
       }
     ]
   },
   "claude": {
-    "sessions_7d": 147,
-    "sessions_30d": 933,
-    "turns_7d": 8216,
-    "turns_30d": 69849,
+    "sessions_7d": 150,
+    "sessions_30d": 936,
+    "turns_7d": 8535,
+    "turns_30d": 70168,
     "repos": [
       {
         "repo": "zerg",
         "sessions": 56,
-        "turns": 4117
+        "turns": 4299
       },
       {
         "repo": "Home",
@@ -96,17 +96,17 @@
       {
         "repo": "hdr",
         "sessions": 18,
-        "turns": 1130
+        "turns": 1205
+      },
+      {
+        "repo": "drose_io",
+        "sessions": 11,
+        "turns": 85
       },
       {
         "repo": "llmbench",
         "sessions": 10,
         "turns": 183
-      },
-      {
-        "repo": "drose_io",
-        "sessions": 8,
-        "turns": 23
       },
       {
         "repo": "mytech",
@@ -120,9 +120,9 @@
       }
     ],
     "last_session": {
-      "repo": "zerg",
-      "timestamp": "2025-12-02T18:17:08.315000+00:00",
-      "hours_ago": 1.2
+      "repo": "drose_io",
+      "timestamp": "2025-12-02T19:52:11.622000+00:00",
+      "hours_ago": 0.04
     },
     "daily_sessions": [
       {
@@ -162,16 +162,16 @@
       },
       {
         "date": "2025-12-02",
-        "sessions": 21,
-        "turns": 1465
+        "sessions": 24,
+        "turns": 1784
       }
     ]
   },
   "codex": {
     "sessions_7d": 11,
     "sessions_30d": 80,
-    "turns_7d": 4061,
-    "turns_30d": 41885,
+    "turns_7d": 4295,
+    "turns_30d": 42119,
     "repos": [
       {
         "repo": "hdr",
@@ -181,7 +181,7 @@
       {
         "repo": "zerg",
         "sessions": 3,
-        "turns": 1896
+        "turns": 2130
       },
       {
         "repo": "drose_io",
@@ -197,7 +197,7 @@
     "last_session": {
       "repo": "zerg",
       "timestamp": "2025-12-02T18:02:00.976000+00:00",
-      "hours_ago": 1.45
+      "hours_ago": 1.88
     },
     "daily_sessions": [
       {
@@ -218,7 +218,7 @@
       {
         "date": "2025-12-02",
         "sessions": 3,
-        "turns": 1036
+        "turns": 1270
       }
     ]
   },
@@ -231,7 +231,7 @@
     "last_session": {
       "mode": "agent",
       "timestamp": "2025-12-02T18:15:29.674000+00:00",
-      "hours_ago": 1.23
+      "hours_ago": 1.66
     },
     "daily_sessions": [
       {
@@ -405,20 +405,20 @@
     ]
   },
   "aggregate": {
-    "ai_sessions_7d": 212,
-    "ai_turns_7d": 18973,
-    "claude_percentage": 57.5,
-    "codex_percentage": 5.2,
-    "cursor_percentage": 37.3,
+    "ai_sessions_7d": 215,
+    "ai_turns_7d": 20802,
+    "claude_percentage": 58.1,
+    "codex_percentage": 5.1,
+    "cursor_percentage": 36.7,
     "gemini_percentage": 0.0,
-    "claude_turns_percentage": 36.6,
-    "codex_turns_percentage": 21.4,
-    "cursor_turns_percentage": 42.0,
+    "claude_turns_percentage": 41.0,
+    "codex_turns_percentage": 20.6,
+    "cursor_turns_percentage": 38.3,
     "gemini_turns_percentage": 0.0,
     "top_repos_combined": [
       {
         "repo": "zerg",
-        "commits": 93,
+        "commits": 97,
         "ai_sessions": 59,
         "github_url": "https://github.com/cipher982/zerg"
       },
@@ -437,7 +437,7 @@
       {
         "repo": "drose_io",
         "commits": 0,
-        "ai_sessions": 11,
+        "ai_sessions": 14,
         "github_url": "https://github.com/cipher982/drose_io"
       },
       {

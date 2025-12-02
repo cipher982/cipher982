@@ -68,8 +68,9 @@ def aggregate_metrics(github_data: Dict, claude_data: Dict, codex_data: Dict, cu
     cursor_sessions_filtered = cursor_data["sessions_7d"]  # No repo filtering available
     gemini_sessions_filtered = gemini_data["sessions_7d"]  # No repo filtering available
 
-    claude_turns_filtered = sum(r["turns"] for r in claude_data["repos"])
-    codex_turns_filtered = sum(r["turns"] for r in codex_data["repos"])
+    # Use actual turns_7d totals (not repo sums, which miss non-repo sessions)
+    claude_turns_filtered = claude_data["turns_7d"]
+    codex_turns_filtered = codex_data["turns_7d"]
     cursor_turns_filtered = cursor_data["turns_7d"]
     gemini_turns_filtered = gemini_data["turns_7d"]
 
