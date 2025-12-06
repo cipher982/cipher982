@@ -6,11 +6,11 @@
 
 | Repo | Commits | AI Sessions |
 |------|---------|-------------|
-| [**zerg**](https://github.com/cipher982/zerg) | 93 | 59 |
-| [**hdr**](https://github.com/cipher982/ultra-hdr-ai-pipeline) | 33 | 22 |
-| **Home** | 0 | 23 |
-| [**drose_io**](https://github.com/cipher982/drose_io) | 0 | 11 |
-| **llmbench** | 0 | 10 |
+| [**zerg**](https://github.com/cipher982/zerg) | 170 | 179 |
+| [**hdr**](https://github.com/cipher982/ultra-hdr-ai-pipeline) | 47 | 43 |
+| **mytech** | 0 | 27 |
+| [**me**](https://github.com/cipher982/mytech) | 5 | 11 |
+| [**storyteller**](https://github.com/cipher982/spoc-shot) | 4 | 12 |
 
 
 ## 💡 About
@@ -20,13 +20,13 @@ I'm a full-stack developer building AI-powered applications. This profile showca
 **What makes this unique?** Rather than just showing finished work (commits), this dashboard reveals the actual building process through:
 - Real-time AI collaboration metrics
 - Parallel development across multiple projects
-- Vibe coding sessions (avg 89 turns/session)
+- Vibe coding sessions (avg 103 turns/session)
 - And it was just fun to build! 😊
 
 
 ## 🛠️ Current Stack
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Shell](https://img.shields.io/badge/Shell-89e051?style=flat-square&logo=shell&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Shell](https://img.shields.io/badge/Shell-89e051?style=flat-square&logo=shell&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=white)
 
 ## 📊 How This Works
 
@@ -44,11 +44,11 @@ All metrics are computed locally and aggregated into a single JSON file, then vi
 <details>
 <summary>🔍 Detailed Stats (Last 30 Days)</summary>
 
-- **Commits**: 411
-- **Languages**: Python (398), Shell (10), TypeScript (3)
-- **AI Sessions**: Claude 933 · Codex 80 · Cursor 135 · Gemini 31
-- **Total Turns**: 124.1k
+- **Commits**: 536
+- **Languages**: Python (524), Shell (5), JavaScript (4), TypeScript (2)
+- **AI Sessions**: Claude 1032 · Codex 80 · Cursor 166 · Gemini 31
+- **Total Turns**: 131.9k
 
 </details>
 
-*Last updated: 2025-12-02 19:29 UTC*
+*Last updated: 2025-12-06 21:36 UTC*
