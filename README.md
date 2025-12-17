@@ -6,11 +6,11 @@
 
 | Repo | Commits | AI Sessions |
 |------|---------|-------------|
-| [**zerg**](https://github.com/cipher982/zerg) | 93 | 59 |
-| [**hdr**](https://github.com/cipher982/ultra-hdr-ai-pipeline) | 33 | 22 |
-| **Home** | 0 | 23 |
-| [**drose_io**](https://github.com/cipher982/drose_io) | 0 | 11 |
-| **llmbench** | 0 | 10 |
+| [**zerg**](https://github.com/cipher982/zerg) | 110 | 173 |
+| [**hdr**](https://github.com/cipher982/ultra-hdr-ai-pipeline) | 21 | 73 |
+| [**floodmap**](https://github.com/cipher982/floodmap) | 50 | 42 |
+| [**me**](https://github.com/cipher982/mytech) | 14 | 38 |
+| [**drose_io**](https://github.com/cipher982/drose_io) | 0 | 37 |
 
 
 ## 💡 About
@@ -20,7 +20,7 @@ I'm a full-stack developer building AI-powered applications. This profile showca
 **What makes this unique?** Rather than just showing finished work (commits), this dashboard reveals the actual building process through:
 - Real-time AI collaboration metrics
 - Parallel development across multiple projects
-- Vibe coding sessions (avg 89 turns/session)
+- Vibe coding sessions (avg 137 turns/session)
 - And it was just fun to build! 😊
 
 
@@ -44,11 +44,11 @@ All metrics are computed locally and aggregated into a single JSON file, then vi
 <details>
 <summary>🔍 Detailed Stats (Last 30 Days)</summary>
 
-- **Commits**: 411
-- **Languages**: Python (398), Shell (10), TypeScript (3)
-- **AI Sessions**: Claude 933 · Codex 80 · Cursor 135 · Gemini 31
-- **Total Turns**: 124.1k
+- **Commits**: 804
+- **Languages**: Python (766), Shell (21), TypeScript (12), JavaScript (4)
+- **AI Sessions**: Claude 1238 · Codex 125 · Cursor 176 · Gemini 31
+- **Total Turns**: 160.1k
 
 </details>
 
-*Last updated: 2025-12-02 19:29 UTC*
+*Last updated: 2025-12-17 00:08 UTC*
