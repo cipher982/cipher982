@@ -1,404 +1,621 @@
 {
-  "generated_at": "2025-12-17T00:08:04.179019+00:00",
+  "generated_at": "2026-01-03T16:37:31.919165+00:00",
   "github": {
-    "repos_active_7d": 10,
-    "repos_active_30d": 16,
-    "commits_7d": 216,
-    "commits_30d": 804,
+    "repos_active_7d": 14,
+    "repos_active_30d": 21,
+    "commits_7d": 397,
+    "commits_30d": 1447,
     "languages_30d": [
       {
         "name": "Python",
-        "commits": 766
-      },
-      {
-        "name": "Shell",
-        "commits": 21
+        "commits": 1340
       },
       {
         "name": "TypeScript",
-        "commits": 12
+        "commits": 98
       },
       {
         "name": "JavaScript",
-        "commits": 4
+        "commits": 8
       }
     ],
     "last_push": {
-      "repo": "me",
-      "timestamp": "2025-12-16T18:41:56-05:00",
-      "hours_ago": 0.43
+      "repo": "zerg",
+      "timestamp": "2026-01-03T11:36:57-05:00",
+      "hours_ago": 0.0
     },
     "top_repos_7d": [
       {
         "repo": "zerg",
-        "commits": 110
+        "commits": 196
       },
       {
-        "repo": "floodmap",
-        "commits": 50
+        "repo": "weft",
+        "commits": 46
       },
       {
-        "repo": "hdr",
-        "commits": 21
-      },
-      {
-        "repo": "me",
-        "commits": 14
+        "repo": "drose_io",
+        "commits": 38
       },
       {
         "repo": "collector",
-        "commits": 8
+        "commits": 30
+      },
+      {
+        "repo": "code-wrapped",
+        "commits": 24
       }
     ],
     "daily_commits": [
       {
-        "date": "2025-12-10",
-        "commits": 11
+        "date": "2025-12-27",
+        "commits": 97
       },
       {
-        "date": "2025-12-11",
-        "commits": 30
+        "date": "2025-12-28",
+        "commits": 50
       },
       {
-        "date": "2025-12-12",
-        "commits": 83
+        "date": "2025-12-29",
+        "commits": 41
       },
       {
-        "date": "2025-12-14",
-        "commits": 30
+        "date": "2025-12-30",
+        "commits": 95
       },
       {
-        "date": "2025-12-15",
-        "commits": 23
+        "date": "2025-12-31",
+        "commits": 49
       },
       {
-        "date": "2025-12-16",
-        "commits": 39
+        "date": "2026-01-01",
+        "commits": 31
+      },
+      {
+        "date": "2026-01-02",
+        "commits": 25
+      },
+      {
+        "date": "2026-01-03",
+        "commits": 9
       }
     ]
   },
   "claude": {
-    "sessions_7d": 402,
-    "sessions_30d": 1238,
-    "turns_7d": 29949,
-    "turns_30d": 92139,
+    "sessions_7d": 830,
+    "sessions_30d": 2239,
+    "turns_7d": 40331,
+    "turns_30d": 148438,
     "repos": [
       {
+        "repo": "weft",
+        "sessions": 218,
+        "turns": 2569
+      },
+      {
         "repo": "zerg",
-        "sessions": 145,
-        "turns": 15482
-      },
-      {
-        "repo": "hdr",
-        "sessions": 66,
-        "turns": 3873
-      },
-      {
-        "repo": "me",
-        "sessions": 37,
-        "turns": 2286
-      },
-      {
-        "repo": "drose_io",
-        "sessions": 35,
-        "turns": 1558
-      },
-      {
-        "repo": "floodmap",
-        "sessions": 34,
-        "turns": 1642
-      },
-      {
-        "repo": "collector",
-        "sessions": 16,
-        "turns": 720
-      },
-      {
-        "repo": "google-ads-cli",
-        "sessions": 10,
-        "turns": 637
+        "sessions": 205,
+        "turns": 19369
       },
       {
         "repo": "llmbench",
-        "sessions": 10,
-        "turns": 325
+        "sessions": 71,
+        "turns": 5016
       },
       {
-        "repo": "rich_wedding",
-        "sessions": 5,
-        "turns": 582
+        "repo": "drose_io",
+        "sessions": 64,
+        "turns": 4615
+      },
+      {
+        "repo": "me",
+        "sessions": 56,
+        "turns": 2638
+      },
+      {
+        "repo": "Home",
+        "sessions": 26,
+        "turns": 141
+      },
+      {
+        "repo": "tmp",
+        "sessions": 24,
+        "turns": 58
+      },
+      {
+        "repo": "code-wrapped",
+        "sessions": 14,
+        "turns": 1145
+      },
+      {
+        "repo": "pepper-place",
+        "sessions": 12,
+        "turns": 791
+      },
+      {
+        "repo": "collector",
+        "sessions": 10,
+        "turns": 1153
+      },
+      {
+        "repo": "test-mesh-repo",
+        "sessions": 9,
+        "turns": 26
+      },
+      {
+        "repo": "flipper-rf",
+        "sessions": 7,
+        "turns": 506
+      },
+      {
+        "repo": "sauron",
+        "sessions": 7,
+        "turns": 902
       },
       {
         "repo": "git",
-        "sessions": 3,
-        "turns": 18
+        "sessions": 7,
+        "turns": 520
       },
       {
-        "repo": "ai-tools-website",
-        "sessions": 2,
-        "turns": 2
+        "repo": "hdr",
+        "sessions": 6,
+        "turns": 390
+      },
+      {
+        "repo": "tmp.AeRYOfbUqM",
+        "sessions": 4,
+        "turns": 8
+      },
+      {
+        "repo": "tmpc30nc1hx",
+        "sessions": 3,
+        "turns": 9
+      },
+      {
+        "repo": "tmp4b82ik94",
+        "sessions": 3,
+        "turns": 5
+      },
+      {
+        "repo": "tmph2mn38jh",
+        "sessions": 3,
+        "turns": 5
+      },
+      {
+        "repo": "tmpa3nj78sm",
+        "sessions": 3,
+        "turns": 6
+      },
+      {
+        "repo": "tmp7und7xsb",
+        "sessions": 3,
+        "turns": 9
+      },
+      {
+        "repo": "tmpm1zafu8d",
+        "sessions": 3,
+        "turns": 9
+      },
+      {
+        "repo": "tmpp7ionxmg",
+        "sessions": 3,
+        "turns": 9
+      },
+      {
+        "repo": "tmp.dIlbgzUuqb",
+        "sessions": 3,
+        "turns": 11
+      },
+      {
+        "repo": "tmp4pps13i7",
+        "sessions": 3,
+        "turns": 5
+      },
+      {
+        "repo": "tmp7255kqmu",
+        "sessions": 3,
+        "turns": 9
+      },
+      {
+        "repo": "tmp9ldznl_a",
+        "sessions": 3,
+        "turns": 9
+      },
+      {
+        "repo": "tmpr6rqm0h8",
+        "sessions": 3,
+        "turns": 7
+      },
+      {
+        "repo": "tmp5bi4hwvv",
+        "sessions": 3,
+        "turns": 10
+      },
+      {
+        "repo": "tmp84k53dnh",
+        "sessions": 3,
+        "turns": 7
+      },
+      {
+        "repo": "tmpm8u8xh5t",
+        "sessions": 3,
+        "turns": 9
+      },
+      {
+        "repo": "tmpkq5_rw6z",
+        "sessions": 3,
+        "turns": 9
+      },
+      {
+        "repo": "tmpdz2tqrqi",
+        "sessions": 3,
+        "turns": 8
+      },
+      {
+        "repo": "tmp.10EQ7BBer7",
+        "sessions": 3,
+        "turns": 12
+      },
+      {
+        "repo": "tmpfcrjcb0g",
+        "sessions": 3,
+        "turns": 5
+      },
+      {
+        "repo": "tmp5jpkr6la",
+        "sessions": 3,
+        "turns": 8
+      },
+      {
+        "repo": "tmp77qy6kx3",
+        "sessions": 3,
+        "turns": 5
+      },
+      {
+        "repo": "tmpwmnzvbcd",
+        "sessions": 3,
+        "turns": 10
+      },
+      {
+        "repo": "tmpku9ub5qq",
+        "sessions": 3,
+        "turns": 8
+      },
+      {
+        "repo": "tmp09revyes",
+        "sessions": 3,
+        "turns": 6
+      },
+      {
+        "repo": "tmpxvslwg0p",
+        "sessions": 3,
+        "turns": 5
+      },
+      {
+        "repo": "storyteller",
+        "sessions": 3,
+        "turns": 72
+      },
+      {
+        "repo": "tmpw6vvofbj",
+        "sessions": 3,
+        "turns": 5
+      },
+      {
+        "repo": "tmp.iKiiVMnGXO",
+        "sessions": 3,
+        "turns": 8
       }
     ],
     "last_session": {
-      "repo": "ai-tools-website",
-      "timestamp": "2025-12-16T23:47:44.992000+00:00",
-      "hours_ago": 0.34
+      "repo": "zerg",
+      "timestamp": "2026-01-03T16:35:47.779000+00:00",
+      "hours_ago": 0.03
     },
     "daily_sessions": [
       {
-        "date": "2025-12-10",
-        "sessions": 82,
-        "turns": 6669
+        "date": "2025-12-27",
+        "sessions": 178,
+        "turns": 4998
       },
       {
-        "date": "2025-12-11",
-        "sessions": 74,
-        "turns": 6813
+        "date": "2025-12-28",
+        "sessions": 298,
+        "turns": 6753
       },
       {
-        "date": "2025-12-12",
-        "sessions": 64,
-        "turns": 4166
+        "date": "2025-12-29",
+        "sessions": 108,
+        "turns": 7528
       },
       {
-        "date": "2025-12-13",
-        "sessions": 19,
-        "turns": 1473
+        "date": "2025-12-30",
+        "sessions": 67,
+        "turns": 6008
       },
       {
-        "date": "2025-12-14",
-        "sessions": 20,
-        "turns": 1195
+        "date": "2025-12-31",
+        "sessions": 29,
+        "turns": 2714
       },
       {
-        "date": "2025-12-15",
-        "sessions": 46,
-        "turns": 3884
+        "date": "2026-01-01",
+        "sessions": 72,
+        "turns": 5963
       },
       {
-        "date": "2025-12-16",
-        "sessions": 97,
-        "turns": 5749
+        "date": "2026-01-02",
+        "sessions": 38,
+        "turns": 3557
+      },
+      {
+        "date": "2026-01-03",
+        "sessions": 40,
+        "turns": 2810
       }
     ]
   },
   "codex": {
-    "sessions_7d": 67,
-    "sessions_30d": 125,
-    "turns_7d": 29166,
-    "turns_30d": 52068,
+    "sessions_7d": 205,
+    "sessions_30d": 368,
+    "turns_7d": 32779,
+    "turns_30d": 106733,
     "repos": [
       {
         "repo": "zerg",
-        "sessions": 28,
-        "turns": 12206
+        "sessions": 57,
+        "turns": 15528
       },
       {
-        "repo": "floodmap",
-        "sessions": 8,
-        "turns": 7402
+        "repo": "weft",
+        "sessions": 51,
+        "turns": 1697
       },
       {
-        "repo": "hdr",
+        "repo": "llmbench",
+        "sessions": 27,
+        "turns": 5300
+      },
+      {
+        "repo": "drose_io",
+        "sessions": 10,
+        "turns": 2338
+      },
+      {
+        "repo": "me",
         "sessions": 7,
-        "turns": 3088
+        "turns": 1683
+      },
+      {
+        "repo": "code-wrapped",
+        "sessions": 7,
+        "turns": 1279
+      },
+      {
+        "repo": "collector",
+        "sessions": 7,
+        "turns": 1100
+      },
+      {
+        "repo": "sauron",
+        "sessions": 5,
+        "turns": 677
       },
       {
         "repo": "Home",
         "sessions": 4,
-        "turns": 1013
+        "turns": 170
       },
       {
-        "repo": "collector",
-        "sessions": 4,
-        "turns": 1289
+        "repo": "test-mesh-repo",
+        "sessions": 3,
+        "turns": 36
+      },
+      {
+        "repo": "pepper-place",
+        "sessions": 2,
+        "turns": 595
+      },
+      {
+        "repo": "flipper-rf",
+        "sessions": 2,
+        "turns": 1881
+      },
+      {
+        "repo": "tmpc30nc1hx",
+        "sessions": 1,
+        "turns": 11
+      },
+      {
+        "repo": "tmp.BwvUDdi8OX",
+        "sessions": 1,
+        "turns": 25
+      },
+      {
+        "repo": "tmp5bi4hwvv",
+        "sessions": 1,
+        "turns": 11
+      },
+      {
+        "repo": "tmpp7ionxmg",
+        "sessions": 1,
+        "turns": 11
+      },
+      {
+        "repo": "tmp.dIlbgzUuqb",
+        "sessions": 1,
+        "turns": 25
+      },
+      {
+        "repo": "tmp.NKw6ES19QF",
+        "sessions": 1,
+        "turns": 11
+      },
+      {
+        "repo": "tmpku9ub5qq",
+        "sessions": 1,
+        "turns": 11
+      },
+      {
+        "repo": "tmp",
+        "sessions": 1,
+        "turns": 10
+      },
+      {
+        "repo": "tmpkq5_rw6z",
+        "sessions": 1,
+        "turns": 11
+      },
+      {
+        "repo": "tmp.hAeSbtZzGw",
+        "sessions": 1,
+        "turns": 11
+      },
+      {
+        "repo": "tmpm1zafu8d",
+        "sessions": 1,
+        "turns": 11
+      },
+      {
+        "repo": "tmpdz2tqrqi",
+        "sessions": 1,
+        "turns": 11
+      },
+      {
+        "repo": "tmp.QWrhY7R2LB",
+        "sessions": 1,
+        "turns": 11
+      },
+      {
+        "repo": "tmp7255kqmu",
+        "sessions": 1,
+        "turns": 11
+      },
+      {
+        "repo": "tmp9ldznl_a",
+        "sessions": 1,
+        "turns": 11
+      },
+      {
+        "repo": "tmpwmnzvbcd",
+        "sessions": 1,
+        "turns": 11
+      },
+      {
+        "repo": "tmp7und7xsb",
+        "sessions": 1,
+        "turns": 11
+      },
+      {
+        "repo": "tmp.onRZBabPid",
+        "sessions": 1,
+        "turns": 12
+      },
+      {
+        "repo": "tmp.AeRYOfbUqM",
+        "sessions": 1,
+        "turns": 74
+      },
+      {
+        "repo": "tmpm8u8xh5t",
+        "sessions": 1,
+        "turns": 11
       },
       {
         "repo": "git",
-        "sessions": 2,
-        "turns": 421
-      },
-      {
-        "repo": "llmbench",
-        "sessions": 2,
-        "turns": 991
-      },
-      {
-        "repo": "drose_io",
-        "sessions": 2,
-        "turns": 554
-      },
-      {
-        "repo": "me",
         "sessions": 1,
-        "turns": 39
+        "turns": 84
       },
       {
-        "repo": "ai-tools-website",
+        "repo": "tmp5jpkr6la",
         "sessions": 1,
-        "turns": 520
+        "turns": 11
       },
       {
-        "repo": "browser-use",
+        "repo": "hdr",
         "sessions": 1,
-        "turns": 1216
+        "turns": 89
       }
     ],
     "last_session": {
-      "repo": "ai-tools-website",
-      "timestamp": "2025-12-16T23:47:50.607000+00:00",
-      "hours_ago": 0.34
+      "repo": "sauron",
+      "timestamp": "2026-01-03T16:22:24.930000+00:00",
+      "hours_ago": 0.25
     },
     "daily_sessions": [
       {
-        "date": "2025-12-10",
-        "sessions": 1,
-        "turns": 261
+        "date": "2025-12-27",
+        "sessions": 31,
+        "turns": 3005
       },
       {
-        "date": "2025-12-11",
-        "sessions": 21,
-        "turns": 3948
+        "date": "2025-12-28",
+        "sessions": 71,
+        "turns": 6610
       },
       {
-        "date": "2025-12-12",
-        "sessions": 24,
-        "turns": 14343
+        "date": "2025-12-29",
+        "sessions": 20,
+        "turns": 6763
       },
       {
-        "date": "2025-12-13",
-        "sessions": 1,
-        "turns": 1415
+        "date": "2025-12-30",
+        "sessions": 32,
+        "turns": 6433
       },
       {
-        "date": "2025-12-14",
-        "sessions": 6,
-        "turns": 3016
+        "date": "2025-12-31",
+        "sessions": 11,
+        "turns": 2062
       },
       {
-        "date": "2025-12-15",
-        "sessions": 8,
-        "turns": 3681
+        "date": "2026-01-01",
+        "sessions": 28,
+        "turns": 5618
       },
       {
-        "date": "2025-12-16",
-        "sessions": 6,
-        "turns": 2502
+        "date": "2026-01-02",
+        "sessions": 5,
+        "turns": 1525
+      },
+      {
+        "date": "2026-01-03",
+        "sessions": 7,
+        "turns": 763
       }
     ]
   },
   "cursor": {
-    "sessions_7d": 10,
-    "sessions_30d": 176,
-    "turns_7d": 441,
-    "turns_30d": 15751,
+    "sessions_7d": 7,
+    "sessions_30d": 84,
+    "turns_7d": 7,
+    "turns_30d": 7329,
     "repos": [],
     "last_session": {
       "mode": "agent",
-      "timestamp": "2025-12-15T23:29:29.025000+00:00",
-      "hours_ago": 24.64
+      "timestamp": "2025-12-29T02:05:44.738000+00:00",
+      "hours_ago": 134.53
     },
     "daily_sessions": [
       {
-        "date": "2025-12-11",
+        "date": "2025-12-27",
+        "sessions": 5,
+        "turns": 5
+      },
+      {
+        "date": "2025-12-29",
         "sessions": 2,
-        "turns": 171
-      },
-      {
-        "date": "2025-12-12",
-        "sessions": 1,
-        "turns": 172
-      },
-      {
-        "date": "2025-12-13",
-        "sessions": 1,
-        "turns": 1
-      },
-      {
-        "date": "2025-12-15",
-        "sessions": 6,
-        "turns": 97
+        "turns": 2
       }
     ]
   },
   "gemini": {
-    "sessions_7d": 0,
-    "sessions_30d": 31,
-    "turns_7d": 0,
-    "turns_30d": 184,
+    "sessions_7d": 16,
+    "sessions_30d": 57,
+    "turns_7d": 94,
+    "turns_30d": 351,
     "daily_sessions": [
-      {
-        "date": "2025-11-17",
-        "sessions": 0
-      },
-      {
-        "date": "2025-11-18",
-        "sessions": 18
-      },
-      {
-        "date": "2025-11-19",
-        "sessions": 85
-      },
-      {
-        "date": "2025-11-20",
-        "sessions": 9
-      },
-      {
-        "date": "2025-11-21",
-        "sessions": 0
-      },
-      {
-        "date": "2025-11-22",
-        "sessions": 0
-      },
-      {
-        "date": "2025-11-23",
-        "sessions": 0
-      },
-      {
-        "date": "2025-11-24",
-        "sessions": 0
-      },
-      {
-        "date": "2025-11-25",
-        "sessions": 0
-      },
-      {
-        "date": "2025-11-26",
-        "sessions": 0
-      },
-      {
-        "date": "2025-11-27",
-        "sessions": 0
-      },
-      {
-        "date": "2025-11-28",
-        "sessions": 0
-      },
-      {
-        "date": "2025-11-29",
-        "sessions": 0
-      },
-      {
-        "date": "2025-11-30",
-        "sessions": 0
-      },
-      {
-        "date": "2025-12-01",
-        "sessions": 0
-      },
-      {
-        "date": "2025-12-02",
-        "sessions": 0
-      },
-      {
-        "date": "2025-12-03",
-        "sessions": 0
-      },
-      {
-        "date": "2025-12-04",
-        "sessions": 0
-      },
       {
         "date": "2025-12-05",
         "sessions": 0
@@ -446,115 +663,187 @@
       {
         "date": "2025-12-16",
         "sessions": 0
+      },
+      {
+        "date": "2025-12-17",
+        "sessions": 0
+      },
+      {
+        "date": "2025-12-18",
+        "sessions": 0
+      },
+      {
+        "date": "2025-12-19",
+        "sessions": 4
+      },
+      {
+        "date": "2025-12-20",
+        "sessions": 36
+      },
+      {
+        "date": "2025-12-21",
+        "sessions": 5
+      },
+      {
+        "date": "2025-12-22",
+        "sessions": 0
+      },
+      {
+        "date": "2025-12-23",
+        "sessions": 0
+      },
+      {
+        "date": "2025-12-24",
+        "sessions": 10
+      },
+      {
+        "date": "2025-12-25",
+        "sessions": 18
+      },
+      {
+        "date": "2025-12-26",
+        "sessions": 0
+      },
+      {
+        "date": "2025-12-27",
+        "sessions": 0
+      },
+      {
+        "date": "2025-12-28",
+        "sessions": 31
+      },
+      {
+        "date": "2025-12-29",
+        "sessions": 2
+      },
+      {
+        "date": "2025-12-30",
+        "sessions": 5
+      },
+      {
+        "date": "2025-12-31",
+        "sessions": 13
+      },
+      {
+        "date": "2026-01-01",
+        "sessions": 23
+      },
+      {
+        "date": "2026-01-02",
+        "sessions": 0
+      },
+      {
+        "date": "2026-01-03",
+        "sessions": 20
       }
     ]
   },
   "aggregate": {
-    "ai_sessions_7d": 433,
-    "ai_turns_7d": 59556,
-    "claude_percentage": 83.8,
-    "codex_percentage": 13.9,
-    "cursor_percentage": 2.3,
-    "gemini_percentage": 0.0,
-    "claude_turns_percentage": 50.3,
-    "codex_turns_percentage": 49.0,
-    "cursor_turns_percentage": 0.7,
-    "gemini_turns_percentage": 0.0,
+    "ai_sessions_7d": 1052,
+    "ai_turns_7d": 73211,
+    "claude_percentage": 78.3,
+    "codex_percentage": 19.5,
+    "cursor_percentage": 0.7,
+    "gemini_percentage": 1.5,
+    "claude_turns_percentage": 55.1,
+    "codex_turns_percentage": 44.8,
+    "cursor_turns_percentage": 0.0,
+    "gemini_turns_percentage": 0.1,
     "top_repos_combined": [
       {
         "repo": "zerg",
-        "commits": 110,
-        "ai_sessions": 173,
+        "commits": 196,
+        "ai_sessions": 262,
         "github_url": "https://github.com/cipher982/zerg"
       },
       {
-        "repo": "hdr",
-        "commits": 21,
-        "ai_sessions": 73,
-        "github_url": "https://github.com/cipher982/ultra-hdr-ai-pipeline"
-      },
-      {
-        "repo": "floodmap",
-        "commits": 50,
-        "ai_sessions": 42,
-        "github_url": "https://github.com/cipher982/floodmap"
-      },
-      {
-        "repo": "me",
-        "commits": 14,
-        "ai_sessions": 38,
-        "github_url": "https://github.com/cipher982/mytech"
+        "repo": "weft",
+        "commits": 46,
+        "ai_sessions": 269,
+        "github_url": "https://github.com/cipher982/weft"
       },
       {
         "repo": "drose_io",
-        "commits": 0,
-        "ai_sessions": 37,
+        "commits": 38,
+        "ai_sessions": 74,
         "github_url": "https://github.com/cipher982/drose_io"
+      },
+      {
+        "repo": "llmbench",
+        "commits": 0,
+        "ai_sessions": 98,
+        "github_url": null
+      },
+      {
+        "repo": "me",
+        "commits": 0,
+        "ai_sessions": 63,
+        "github_url": "https://github.com/cipher982/me"
       }
     ],
     "daily_breakdown_7d": [
       {
-        "date": "2025-12-09",
-        "commits": 0,
-        "claude_sessions": 0,
-        "codex_sessions": 0,
-        "cursor_sessions": 0,
+        "date": "2025-12-27",
+        "commits": 97,
+        "claude_sessions": 178,
+        "codex_sessions": 31,
+        "cursor_sessions": 5,
         "gemini_sessions": 0,
-        "total_sessions": 0
+        "total_sessions": 214
       },
       {
-        "date": "2025-12-10",
-        "commits": 11,
-        "claude_sessions": 82,
-        "codex_sessions": 1,
+        "date": "2025-12-28",
+        "commits": 50,
+        "claude_sessions": 298,
+        "codex_sessions": 71,
         "cursor_sessions": 0,
-        "gemini_sessions": 0,
-        "total_sessions": 83
+        "gemini_sessions": 31,
+        "total_sessions": 400
       },
       {
-        "date": "2025-12-11",
-        "commits": 30,
-        "claude_sessions": 74,
-        "codex_sessions": 21,
+        "date": "2025-12-29",
+        "commits": 41,
+        "claude_sessions": 108,
+        "codex_sessions": 20,
         "cursor_sessions": 2,
-        "gemini_sessions": 0,
-        "total_sessions": 97
+        "gemini_sessions": 2,
+        "total_sessions": 132
       },
       {
-        "date": "2025-12-12",
-        "commits": 83,
-        "claude_sessions": 64,
-        "codex_sessions": 24,
-        "cursor_sessions": 1,
-        "gemini_sessions": 0,
-        "total_sessions": 89
+        "date": "2025-12-30",
+        "commits": 95,
+        "claude_sessions": 67,
+        "codex_sessions": 32,
+        "cursor_sessions": 0,
+        "gemini_sessions": 5,
+        "total_sessions": 104
       },
       {
-        "date": "2025-12-13",
-        "commits": 0,
-        "claude_sessions": 19,
-        "codex_sessions": 1,
-        "cursor_sessions": 1,
-        "gemini_sessions": 0,
-        "total_sessions": 21
+        "date": "2025-12-31",
+        "commits": 49,
+        "claude_sessions": 29,
+        "codex_sessions": 11,
+        "cursor_sessions": 0,
+        "gemini_sessions": 13,
+        "total_sessions": 53
       },
       {
-        "date": "2025-12-14",
-        "commits": 30,
-        "claude_sessions": 20,
-        "codex_sessions": 6,
+        "date": "2026-01-01",
+        "commits": 31,
+        "claude_sessions": 72,
+        "codex_sessions": 28,
+        "cursor_sessions": 0,
+        "gemini_sessions": 23,
+        "total_sessions": 123
+      },
+      {
+        "date": "2026-01-02",
+        "commits": 25,
+        "claude_sessions": 38,
+        "codex_sessions": 5,
         "cursor_sessions": 0,
         "gemini_sessions": 0,
-        "total_sessions": 26
-      },
-      {
-        "date": "2025-12-15",
-        "commits": 23,
-        "claude_sessions": 46,
-        "codex_sessions": 8,
-        "cursor_sessions": 6,
-        "gemini_sessions": 0,
-        "total_sessions": 60
+        "total_sessions": 43
       }
     ]
   }
