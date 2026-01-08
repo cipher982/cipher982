@@ -25,9 +25,12 @@ A **dynamic GitHub profile README** that showcases your unique "AI-native develo
 ```
 cipher982/
 ├── scripts/
-│   ├── parse_claude.py       # Extract Claude session data
-│   ├── parse_codex.py        # Extract Codex session data
+│   ├── parse_claude.py       # Extract Claude session data (local)
+│   ├── parse_codex.py        # Extract Codex session data (local)
+│   ├── parse_cursor.py       # Extract Cursor session data (local SQLite)
+│   ├── parse_gemini.py       # Extract Gemini session data (local)
 │   ├── parse_github.py       # Extract git commit data
+│   ├── fetch_from_lifehub.py # Fetch AI stats from Life Hub API (remote)
 │   ├── collect_data.py       # Orchestrator - combines all data
 │   ├── generate_svg.py       # Render hero.svg
 │   ├── generate_readme.py    # Populate README from template
@@ -40,7 +43,31 @@ cipher982/
 ├── README.md                 # Generated profile (what visitors see)
 ├── TEMPLATE.md               # README template with placeholders
 └── .github/workflows/
-    └── update-profile.yml    # Placeholder for future automation
+    └── update-profile.yml    # GitHub Actions automation
+```
+
+## 📡 Data Sources
+
+### Local Parsing (Default)
+By default, the dashboard parses local files:
+- **Claude**: `~/.claude/projects/` JSONL files
+- **Codex**: `~/.codex/sessions/` JSONL files
+- **Cursor**: SQLite database at `~/Library/Application Support/Cursor/User/globalStorage/state.vscdb`
+- **Gemini**: `~/.gemini/tmp/*/logs.json` files
+- **Git**: Scans `~/git/` for commit history
+
+### Life Hub API (Remote)
+For GitHub Actions (where local files aren't available), set `USE_LIFE_HUB_API=1`:
+- Fetches aggregated stats from `https://data.drose.io/api/agents/stats`
+- Requires `LIFE_HUB_API_KEY` environment variable
+- Falls back to local parsing if API fails
+
+```bash
+# Use Life Hub API
+USE_LIFE_HUB_API=1 LIFE_HUB_API_KEY=your-key python scripts/collect_data.py
+
+# Or use --life-hub flag
+python scripts/collect_data.py --life-hub
 ```
 
 ## 🚀 Usage
@@ -109,7 +136,7 @@ Key metrics:
 - [ ] Tool usage heatmap (bash/edit/read commands)
 
 ### v3 - Data Enrichment
-- [ ] Sync session data to S3/R2 for Actions access
+- [x] ~~Sync session data to S3/R2 for Actions access~~ (Implemented via Life Hub API!)
 - [ ] Integrate deployment status from Coolify
 - [ ] AI-generated weekly narrative summaries
 - [ ] Code complexity trends
@@ -137,10 +164,11 @@ Key metrics:
 - The data is genuinely impressive (337 avg turns/session!)
 
 **Limitations:**
-- GitHub Actions can't access local session data yet
-- Manual updates required (but fast: <10 seconds)
+- ~~GitHub Actions can't access local session data yet~~ (Fixed: Life Hub API integration!)
+- Manual updates required for local mode (but fast: <10 seconds)
 - Static SVG (no interactivity)
 - Language detection is simplistic (file extension based)
+- Life Hub API doesn't provide per-repo AI session breakdown (only totals)
 
 **Surprising insights:**
 - Near 50/50 Claude/Codex split shows thoughtful tool selection

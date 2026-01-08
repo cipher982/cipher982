@@ -1,7 +1,26 @@
 #!/usr/bin/env python3
-"""Main orchestrator to collect all profile data"""
+"""
+Main orchestrator to collect all profile data.
+
+Data Sources:
+    By default, this script parses local log files for AI session data:
+    - Claude: ~/.claude/projects/
+    - Codex: ~/.codex/sessions/
+    - Cursor: SQLite database
+    - Gemini: ~/.gemini/tmp/*/logs.json
+
+    Alternatively, set USE_LIFE_HUB_API=1 (or --life-hub flag) to fetch from
+    the Life Hub API instead. This is useful for GitHub Actions where local
+    files aren't available.
+
+Environment Variables:
+    USE_LIFE_HUB_API: Set to "1" to use Life Hub API instead of local parsing
+    LIFE_HUB_API_KEY: Required when USE_LIFE_HUB_API=1
+"""
 import json
+import os
 import subprocess
+import sys
 from pathlib import Path
 from datetime import datetime, timezone
 from typing import Dict, Any, Optional
@@ -12,6 +31,13 @@ from parse_codex import parse_codex_sessions
 from parse_cursor import parse_cursor_sessions
 from parse_gemini import parse_gemini_sessions
 from parse_github import parse_github_activity
+
+# Lazy import for Life Hub API fetcher (requires 'requests' package)
+# Only imported when USE_LIFE_HUB_API=1 or --life-hub flag is used
+def get_life_hub_fetcher():
+    """Lazy import of fetch_from_lifehub to avoid requiring 'requests' package."""
+    from fetch_from_lifehub import fetch_all_providers
+    return fetch_all_providers
 
 # Repos to exclude from dashboard (work projects, private exploration, etc.)
 EXCLUDED_REPOS = [
@@ -63,8 +89,9 @@ def aggregate_metrics(github_data: Dict, claude_data: Dict, codex_data: Dict, cu
     # Cursor and Gemini don't track repos yet, so nothing to filter
 
     # Recalculate AI metrics after filtering
-    claude_sessions_filtered = sum(r["sessions"] for r in claude_data["repos"])
-    codex_sessions_filtered = sum(r["sessions"] for r in codex_data["repos"])
+    # If repos list is empty (e.g., from API source), use sessions_7d directly
+    claude_sessions_filtered = sum(r["sessions"] for r in claude_data["repos"]) if claude_data["repos"] else claude_data["sessions_7d"]
+    codex_sessions_filtered = sum(r["sessions"] for r in codex_data["repos"]) if codex_data["repos"] else codex_data["sessions_7d"]
     cursor_sessions_filtered = cursor_data["sessions_7d"]  # No repo filtering available
     gemini_sessions_filtered = gemini_data["sessions_7d"]  # No repo filtering available
 
@@ -189,14 +216,68 @@ def aggregate_metrics(github_data: Dict, claude_data: Dict, codex_data: Dict, cu
     }
 
 
+def should_use_life_hub_api() -> bool:
+    """Check if we should use Life Hub API instead of local parsing."""
+    # Check environment variable
+    if os.environ.get("USE_LIFE_HUB_API", "").lower() in ("1", "true", "yes"):
+        return True
+    # Check command line flag
+    if "--life-hub" in sys.argv:
+        return True
+    return False
+
+
+def collect_ai_data_local() -> tuple[Dict, Dict, Dict, Dict]:
+    """Collect AI session data from local files."""
+    home = Path.home()
+    claude_sessions = home / ".claude" / "projects"
+    codex_sessions = home / ".codex" / "sessions"
+
+    print("🔍 Collecting Claude sessions (local)...")
+    claude_data = parse_claude_sessions(claude_sessions)
+    print(f"   ✓ {claude_data['sessions_7d']} sessions, {claude_data['turns_7d']} turns (7d)")
+
+    print("🔍 Collecting Codex sessions (local)...")
+    codex_data = parse_codex_sessions(codex_sessions)
+    print(f"   ✓ {codex_data['sessions_7d']} sessions, {codex_data['turns_7d']} turns (7d)")
+
+    print("🔍 Collecting Cursor sessions (local)...")
+    cursor_data = parse_cursor_sessions()
+    print(f"   ✓ {cursor_data['sessions_7d']} sessions, {cursor_data['turns_7d']} turns (7d)")
+
+    print("🔍 Collecting Gemini sessions (local)...")
+    gemini_data = parse_gemini_sessions()
+    print(f"   ✓ {gemini_data['sessions_7d']} sessions, {gemini_data['turns_7d']} turns (7d)")
+
+    return claude_data, codex_data, cursor_data, gemini_data
+
+
+def collect_ai_data_api() -> Optional[tuple[Dict, Dict, Dict, Dict]]:
+    """Collect AI session data from Life Hub API."""
+    print("🔍 Fetching AI sessions from Life Hub API...")
+
+    # Lazy import to avoid requiring 'requests' when not using API
+    fetch_all_providers = get_life_hub_fetcher()
+    api_data = fetch_all_providers()
+
+    if not api_data:
+        print("   ❌ Failed to fetch from Life Hub API")
+        return None
+
+    return (
+        api_data["claude"],
+        api_data["codex"],
+        api_data["cursor"],
+        api_data["gemini"],
+    )
+
+
 def main():
     """Collect all data and write to data/profile-data.json"""
 
     # Define paths
     home = Path.home()
     git_dir = home / "git"
-    claude_sessions = home / ".claude" / "projects"
-    codex_sessions = home / ".codex" / "sessions"
     output_file = Path(__file__).parent.parent / "data" / "profile-data.json"
 
     # Ensure output directory exists
@@ -206,21 +287,18 @@ def main():
     github_data = parse_github_activity(git_dir)
     print(f"   ✓ {github_data['commits_7d']} commits, {github_data['repos_active_7d']} repos (7d)")
 
-    print("🔍 Collecting Claude sessions...")
-    claude_data = parse_claude_sessions(claude_sessions)
-    print(f"   ✓ {claude_data['sessions_7d']} sessions, {claude_data['turns_7d']} turns (7d)")
+    # Collect AI session data from either local files or Life Hub API
+    use_api = should_use_life_hub_api()
 
-    print("🔍 Collecting Codex sessions...")
-    codex_data = parse_codex_sessions(codex_sessions)
-    print(f"   ✓ {codex_data['sessions_7d']} sessions, {codex_data['turns_7d']} turns (7d)")
+    if use_api:
+        ai_data = collect_ai_data_api()
+        if ai_data is None:
+            print("\n⚠️  Life Hub API failed, falling back to local parsing...")
+            ai_data = collect_ai_data_local()
+    else:
+        ai_data = collect_ai_data_local()
 
-    print("🔍 Collecting Cursor sessions...")
-    cursor_data = parse_cursor_sessions()
-    print(f"   ✓ {cursor_data['sessions_7d']} sessions, {cursor_data['turns_7d']} turns (7d)")
-
-    print("🔍 Collecting Gemini sessions...")
-    gemini_data = parse_gemini_sessions()
-    print(f"   ✓ {gemini_data['sessions_7d']} sessions, {gemini_data['turns_7d']} turns (7d)")
+    claude_data, codex_data, cursor_data, gemini_data = ai_data
 
     print("📊 Aggregating metrics...")
     profile_data = aggregate_metrics(github_data, claude_data, codex_data, cursor_data, gemini_data)
@@ -234,6 +312,7 @@ def main():
     print(f"   Git: {profile_data['github']['commits_7d']} commits across {profile_data['github']['repos_active_7d']} repos")
     print(f"   AI:  {profile_data['aggregate']['ai_sessions_7d']} sessions, {profile_data['aggregate']['ai_turns_7d']} turns")
     print(f"   Split: Claude {profile_data['aggregate']['claude_percentage']}%, Codex {profile_data['aggregate']['codex_percentage']}%, Cursor {profile_data['aggregate']['cursor_percentage']}%, Gemini {profile_data['aggregate']['gemini_percentage']}%")
+    print(f"\n   Data source: {'Life Hub API' if use_api else 'Local files'}")
 
 
 if __name__ == "__main__":
