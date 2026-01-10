@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-10T04:09:04.940212+00:00",
+  "generated_at": "2026-01-10T06:03:03.037286+00:00",
   "github": {
     "repos_active_7d": 9,
     "repos_active_30d": 18,
@@ -18,7 +18,7 @@
     "last_push": {
       "repo": "cipher982",
       "timestamp": "2026-01-10T03:56:43+00:00",
-      "hours_ago": 0.2
+      "hours_ago": 2.1
     },
     "top_repos_7d": [
       {
@@ -74,15 +74,15 @@
     ]
   },
   "claude": {
-    "sessions_7d": 129,
+    "sessions_7d": 128,
     "sessions_30d": 618,
-    "turns_7d": 1500,
-    "turns_30d": 5642,
+    "turns_7d": 1490,
+    "turns_30d": 5643,
     "repos": [
       {
         "repo": "zerg",
-        "sessions": 21,
-        "turns": 222
+        "sessions": 20,
+        "turns": 211
       },
       {
         "repo": "me",
@@ -117,7 +117,7 @@
       {
         "repo": "browser-playground",
         "sessions": 4,
-        "turns": 91
+        "turns": 92
       },
       {
         "repo": "banana",
@@ -178,13 +178,13 @@
     "last_session": {
       "repo": "agentlog",
       "timestamp": "2026-01-10T03:31:14.866000+00:00",
-      "hours_ago": 0.63
+      "hours_ago": 2.53
     },
     "daily_sessions": [
       {
         "date": "2026-01-03",
-        "sessions": 25,
-        "turns": 334
+        "sessions": 24,
+        "turns": 323
       },
       {
         "date": "2026-01-04",
@@ -219,15 +219,15 @@
       {
         "date": "2026-01-10",
         "sessions": 6,
-        "turns": 61
+        "turns": 62
       }
     ]
   },
   "codex": {
     "sessions_7d": 170,
-    "sessions_30d": 509,
+    "sessions_30d": 510,
     "turns_7d": 703,
-    "turns_30d": 2356,
+    "turns_30d": 2359,
     "repos": [
       {
         "repo": "image-gen-poc",
@@ -246,8 +246,8 @@
       },
       {
         "repo": "zerg",
-        "sessions": 24,
-        "turns": 113
+        "sessions": 23,
+        "turns": 110
       },
       {
         "repo": "sauron",
@@ -270,6 +270,11 @@
         "turns": 15
       },
       {
+        "repo": "git",
+        "sessions": 3,
+        "turns": 9
+      },
+      {
         "repo": "ai-tools-website",
         "sessions": 3,
         "turns": 16
@@ -278,11 +283,6 @@
         "repo": "llm-benchmarks",
         "sessions": 3,
         "turns": 9
-      },
-      {
-        "repo": "git",
-        "sessions": 2,
-        "turns": 6
       },
       {
         "repo": "llmbench",
@@ -306,15 +306,15 @@
       }
     ],
     "last_session": {
-      "repo": "zerg",
-      "timestamp": "2026-01-10T03:25:27.946000+00:00",
-      "hours_ago": 0.73
+      "repo": "git",
+      "timestamp": "2026-01-10T04:08:47.594000+00:00",
+      "hours_ago": 1.9
     },
     "daily_sessions": [
       {
         "date": "2026-01-03",
-        "sessions": 28,
-        "turns": 99
+        "sessions": 27,
+        "turns": 96
       },
       {
         "date": "2026-01-04",
@@ -348,8 +348,8 @@
       },
       {
         "date": "2026-01-10",
-        "sessions": 3,
-        "turns": 10
+        "sessions": 4,
+        "turns": 13
       }
     ]
   },
@@ -371,7 +371,7 @@
     "last_session": {
       "repo": null,
       "timestamp": "2026-01-09T18:58:38.274000+00:00",
-      "hours_ago": 9.17
+      "hours_ago": 11.07
     },
     "daily_sessions": [
       {
@@ -412,14 +412,14 @@
     ]
   },
   "aggregate": {
-    "ai_sessions_7d": 305,
-    "ai_turns_7d": 2335,
-    "claude_percentage": 35.7,
-    "codex_percentage": 55.7,
+    "ai_sessions_7d": 304,
+    "ai_turns_7d": 2325,
+    "claude_percentage": 35.5,
+    "codex_percentage": 55.9,
     "cursor_percentage": 0.0,
-    "gemini_percentage": 8.5,
-    "claude_turns_percentage": 64.2,
-    "codex_turns_percentage": 30.1,
+    "gemini_percentage": 8.6,
+    "claude_turns_percentage": 64.1,
+    "codex_turns_percentage": 30.2,
     "cursor_turns_percentage": 0.0,
     "gemini_turns_percentage": 5.7,
     "top_repos_combined": [
@@ -430,15 +430,15 @@
         "github_url": null
       },
       {
-        "repo": "zerg",
+        "repo": "me",
         "commits": 0,
         "ai_sessions": 45,
         "github_url": null
       },
       {
-        "repo": "me",
+        "repo": "zerg",
         "commits": 0,
-        "ai_sessions": 45,
+        "ai_sessions": 43,
         "github_url": null
       },
       {
@@ -458,11 +458,11 @@
       {
         "date": "2026-01-03",
         "commits": 0,
-        "claude_sessions": 25,
-        "codex_sessions": 28,
+        "claude_sessions": 24,
+        "codex_sessions": 27,
         "cursor_sessions": 0,
         "gemini_sessions": 1,
-        "total_sessions": 54
+        "total_sessions": 52
       },
       {
         "date": "2026-01-04",

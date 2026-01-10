@@ -7,8 +7,8 @@
 | Repo | Commits | AI Sessions |
 |------|---------|-------------|
 | **watchman** | 0 | 49 |
-| **zerg** | 0 | 45 |
 | **me** | 0 | 45 |
+| **zerg** | 0 | 43 |
 | **image-gen-poc** | 0 | 41 |
 | **mcp-tools** | 19 | 11 |
 
@@ -46,9 +46,9 @@ All metrics are computed locally and aggregated into a single JSON file, then vi
 
 - **Commits**: 400
 - **Languages**: Python (267), TypeScript (133)
-- **AI Sessions**: Claude 618 · Codex 509 · Cursor 24 · Gemini 64
+- **AI Sessions**: Claude 618 · Codex 510 · Cursor 24 · Gemini 64
 - **Total Turns**: 8.3k
 
 </details>
 
-*Last updated: 2026-01-10 04:09 UTC*
+*Last updated: 2026-01-10 06:03 UTC*
