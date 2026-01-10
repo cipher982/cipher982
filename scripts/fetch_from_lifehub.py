@@ -271,7 +271,7 @@ def transform_provider_data(
     sessions_count_7d = provider_7d.get("sessions", 0) if provider_7d else 0
     sessions_count_30d = provider_30d.get("sessions", 0) if provider_30d else 0
 
-    # Use user_messages for turns (closer to what local parsers count)
+    # Use user_messages for turns (actual conversation turns, not raw event count)
     turns_7d = provider_7d.get("user_messages", 0) if provider_7d else 0
     turns_30d = provider_30d.get("user_messages", 0) if provider_30d else 0
 
