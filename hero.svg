@@ -73,7 +73,7 @@
     <text x="0" y="18" class="metric-label text-secondary">AI SESSIONS</text>
 
     <!-- Turns -->
-    <text x="220" y="0" class="metric-value">18,174</text>
+    <text x="220" y="0" class="metric-value">2,335</text>
     <text x="220" y="18" class="metric-label text-secondary">TURNS</text>
 
     <!-- Commits -->
@@ -120,12 +120,12 @@
         <text x="20" y="38" class="rank-num">#1</text>
         
         <text x="60" y="28" class="card-title text-primary">Claude Code</text>
-        <text x="60" y="48" class="card-stat text-secondary">109 sessions · 17,339 turns</text>
+        <text x="60" y="48" class="card-stat text-secondary">109 sessions · 1,500 turns</text>
         
         <g transform="translate(500, 0)">
-            <text x="320" y="28" class="card-value color-claude" text-anchor="end">95.4%</text>
+            <text x="320" y="28" class="card-value color-claude" text-anchor="end">64.2%</text>
             <rect x="0" y="40" width="320" height="6" class="progress-bg" rx="3"/>
-            <rect x="0" y="40" width="305.28000000000003" height="6" class="color-claude anim-bar" rx="3"/>
+            <rect x="0" y="40" width="205.44" height="6" class="color-claude anim-bar" rx="3"/>
         </g>
     </g>
     <g transform="translate(0, 90)">
@@ -138,9 +138,9 @@
         <text x="60" y="48" class="card-stat text-secondary">170 sessions · 703 turns</text>
         
         <g transform="translate(500, 0)">
-            <text x="320" y="28" class="card-value color-codex" text-anchor="end">3.9%</text>
+            <text x="320" y="28" class="card-value color-codex" text-anchor="end">30.1%</text>
             <rect x="0" y="40" width="320" height="6" class="progress-bg" rx="3"/>
-            <rect x="0" y="40" width="12.48" height="6" class="color-codex anim-bar" rx="3"/>
+            <rect x="0" y="40" width="96.32" height="6" class="color-codex anim-bar" rx="3"/>
         </g>
     </g>
     <g transform="translate(0, 160)">
@@ -153,9 +153,9 @@
         <text x="60" y="48" class="card-stat text-secondary">26 sessions · 132 turns</text>
         
         <g transform="translate(500, 0)">
-            <text x="320" y="28" class="card-value color-gemini" text-anchor="end">0.7%</text>
+            <text x="320" y="28" class="card-value color-gemini" text-anchor="end">5.7%</text>
             <rect x="0" y="40" width="320" height="6" class="progress-bg" rx="3"/>
-            <rect x="0" y="40" width="2.2399999999999998" height="6" class="color-gemini anim-bar" rx="3"/>
+            <rect x="0" y="40" width="18.240000000000002" height="6" class="color-gemini anim-bar" rx="3"/>
         </g>
     </g>
     <g transform="translate(0, 230)">
@@ -177,6 +177,6 @@
 
   <!-- Footer: Last Activity -->
   <text x="30" y="535" class="footer text-secondary">
-    <tspan class="pulse">⚡</tspan> Last activity: 0m ago
+    <tspan class="pulse">⚡</tspan> Last activity: 12m ago
   </text>
 </svg>

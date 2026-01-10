@@ -20,7 +20,7 @@ I'm a full-stack developer building AI-powered applications. This profile showca
 **What makes this unique?** Rather than just showing finished work (commits), this dashboard reveals the actual building process through:
 - Real-time AI collaboration metrics
 - Parallel development across multiple projects
-- Vibe coding sessions (avg 59 turns/session)
+- Vibe coding sessions (avg 7 turns/session)
 - And it was just fun to build! 😊
 
 
@@ -47,8 +47,8 @@ All metrics are computed locally and aggregated into a single JSON file, then vi
 - **Commits**: 400
 - **Languages**: Python (267), TypeScript (133)
 - **AI Sessions**: Claude 618 · Codex 509 · Cursor 24 · Gemini 64
-- **Total Turns**: 57.1k
+- **Total Turns**: 8.3k
 
 </details>
 
-*Last updated: 2026-01-10 03:57 UTC*
+*Last updated: 2026-01-10 04:09 UTC*
