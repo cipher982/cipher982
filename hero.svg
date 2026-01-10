@@ -73,11 +73,11 @@
     <text x="0" y="18" class="metric-label text-secondary">AI SESSIONS</text>
 
     <!-- Turns -->
-    <text x="220" y="0" class="metric-value">18,150</text>
+    <text x="220" y="0" class="metric-value">18,174</text>
     <text x="220" y="18" class="metric-label text-secondary">TURNS</text>
 
     <!-- Commits -->
-    <text x="420" y="0" class="metric-value">70</text>
+    <text x="420" y="0" class="metric-value">71</text>
     <text x="420" y="18" class="metric-label text-secondary">COMMITS</text>
 
     <!-- Repos -->
@@ -120,7 +120,7 @@
         <text x="20" y="38" class="rank-num">#1</text>
         
         <text x="60" y="28" class="card-title text-primary">Claude Code</text>
-        <text x="60" y="48" class="card-stat text-secondary">109 sessions · 17,316 turns</text>
+        <text x="60" y="48" class="card-stat text-secondary">109 sessions · 17,339 turns</text>
         
         <g transform="translate(500, 0)">
             <text x="320" y="28" class="card-value color-claude" text-anchor="end">95.4%</text>
@@ -135,7 +135,7 @@
         <text x="20" y="38" class="rank-num">#2</text>
         
         <text x="60" y="28" class="card-title text-primary">OpenAI Codex</text>
-        <text x="60" y="48" class="card-stat text-secondary">170 sessions · 702 turns</text>
+        <text x="60" y="48" class="card-stat text-secondary">170 sessions · 703 turns</text>
         
         <g transform="translate(500, 0)">
             <text x="320" y="28" class="card-value color-codex" text-anchor="end">3.9%</text>
