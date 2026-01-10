@@ -1,19 +1,22 @@
 name: Update Profile Dashboard
 
-# NOTE: This workflow is a placeholder for future automation.
-# Currently, AI session data (~/.claude/projects/ and ~/.codex/sessions/)
-# is only available locally, so updates must be run via scripts/update_local.sh
-#
-# Future enhancement: Sync session data to a cloud store (S3/R2) that Actions can access
+# Fetches AI session data from Life Hub API and updates profile-data.json
+# Run manually or on schedule to keep the profile dashboard current.
 
 on:
-  # schedule:
-  #   - cron: '0 */6 * * *'  # Disabled until session data sync is implemented
-  workflow_dispatch:  # Manual trigger only for now
+  schedule:
+    - cron: '0 6 * * *'  # Daily at 6 AM UTC
+  workflow_dispatch:  # Manual trigger
+
+permissions:
+  contents: write
 
 jobs:
   update-dashboard:
     runs-on: ubuntu-latest
+
+    env:
+      USE_LIFE_HUB_API: "1"
 
     steps:
       - name: Checkout repository
@@ -24,12 +27,24 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Git stats only (AI stats require local session data)
-        run: |
-          echo "⚠️  This workflow currently only updates git stats."
-          echo "    AI session data must be updated locally via scripts/update_local.sh"
-          python scripts/parse_github.py > /tmp/github_data.json
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
 
-      - name: Update README with git stats
+      - name: Collect profile data
+        env:
+          LIFE_HUB_API_KEY: ${{ secrets.LIFE_HUB_API_KEY }}
+        working-directory: scripts
+        run: python collect_data.py
+
+      - name: Commit and push if changed
         run: |
-          echo "📊 Git stats collected. For full update, run scripts/update_local.sh locally."
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/profile-data.json
+          if ! git diff --staged --quiet; then
+            git commit -m "chore: update profile data [skip ci]"
+            git push
+          else
+            echo "No changes to commit"
+          fi
