@@ -10,7 +10,7 @@
 | **zerg** | 0 | 45 |
 | **me** | 0 | 45 |
 | **image-gen-poc** | 0 | 41 |
-| **sauron** | 0 | 26 |
+| **mcp-tools** | 19 | 11 |
 
 
 ## 💡 About
@@ -26,7 +26,7 @@ I'm a full-stack developer building AI-powered applications. This profile showca
 
 ## 🛠️ Current Stack
 
-
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 
 ## 📊 How This Works
 
@@ -44,11 +44,11 @@ All metrics are computed locally and aggregated into a single JSON file, then vi
 <details>
 <summary>🔍 Detailed Stats (Last 30 Days)</summary>
 
-- **Commits**: 0
-- **Languages**: 
+- **Commits**: 399
+- **Languages**: Python (266), TypeScript (133)
 - **AI Sessions**: Claude 618 · Codex 509 · Cursor 24 · Gemini 64
-- **Total Turns**: 57.0k
+- **Total Turns**: 57.1k
 
 </details>
 
-*Last updated: 2026-01-10 03:42 UTC*
+*Last updated: 2026-01-10 03:50 UTC*

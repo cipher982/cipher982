@@ -1,25 +1,88 @@
 {
-  "generated_at": "2026-01-10T03:42:25.249413+00:00",
+  "generated_at": "2026-01-10T03:50:59.471902+00:00",
   "github": {
-    "repos_active_7d": 0,
-    "repos_active_30d": 0,
-    "commits_7d": 0,
-    "commits_30d": 0,
-    "languages_30d": [],
-    "last_push": null,
-    "top_repos_7d": [],
-    "daily_commits": []
+    "repos_active_7d": 9,
+    "repos_active_30d": 18,
+    "commits_7d": 70,
+    "commits_30d": 399,
+    "languages_30d": [
+      {
+        "name": "Python",
+        "commits": 266
+      },
+      {
+        "name": "TypeScript",
+        "commits": 133
+      }
+    ],
+    "last_push": {
+      "repo": "cipher982",
+      "timestamp": "2026-01-10T03:50:30+00:00",
+      "hours_ago": 0.01
+    },
+    "top_repos_7d": [
+      {
+        "repo": "mcp-tools",
+        "commits": 19
+      },
+      {
+        "repo": "agentlog",
+        "commits": 12
+      },
+      {
+        "repo": "llm-benchmarks",
+        "commits": 12
+      },
+      {
+        "repo": "cipher982",
+        "commits": 10
+      },
+      {
+        "repo": "ai-tools-website",
+        "commits": 7
+      }
+    ],
+    "daily_commits": [
+      {
+        "date": "2026-01-04",
+        "commits": 1
+      },
+      {
+        "date": "2026-01-05",
+        "commits": 2
+      },
+      {
+        "date": "2026-01-06",
+        "commits": 19
+      },
+      {
+        "date": "2026-01-07",
+        "commits": 11
+      },
+      {
+        "date": "2026-01-08",
+        "commits": 11
+      },
+      {
+        "date": "2026-01-09",
+        "commits": 20
+      },
+      {
+        "date": "2026-01-10",
+        "commits": 6
+      }
+    ]
   },
   "claude": {
     "sessions_7d": 129,
     "sessions_30d": 618,
-    "turns_7d": 17246,
-    "turns_30d": 54348,
+    "turns_7d": 17316,
+    "turns_30d": 54418,
     "repos": [
       {
         "repo": "zerg",
         "sessions": 21,
-        "turns": 13262
+        "turns": 13391
       },
       {
         "repo": "me",
@@ -54,7 +117,7 @@
       {
         "repo": "browser-playground",
         "sessions": 4,
-        "turns": 1682
+        "turns": 1709
       },
       {
         "repo": "banana",
@@ -79,7 +142,7 @@
       {
         "repo": "agentlog",
         "sessions": 1,
-        "turns": 86
+        "turns": 169
       },
       {
         "repo": "pixel-pilot",
@@ -115,7 +178,7 @@
     "last_session": {
       "repo": "agentlog",
       "timestamp": "2026-01-10T03:31:14.866000+00:00",
-      "hours_ago": 0.19
+      "hours_ago": 0.33
     },
     "daily_sessions": [
       {
@@ -156,7 +219,7 @@
       {
         "date": "2026-01-10",
         "sessions": 6,
-        "turns": 1066
+        "turns": 1305
       }
     ]
   },
@@ -245,7 +308,7 @@
     "last_session": {
       "repo": "zerg",
       "timestamp": "2026-01-10T03:25:27.946000+00:00",
-      "hours_ago": 0.28
+      "hours_ago": 0.43
     },
     "daily_sessions": [
       {
@@ -308,7 +371,7 @@
     "last_session": {
       "repo": null,
       "timestamp": "2026-01-09T18:58:38.274000+00:00",
-      "hours_ago": 8.73
+      "hours_ago": 8.87
     },
     "daily_sessions": [
       {
@@ -350,7 +413,7 @@
   },
   "aggregate": {
     "ai_sessions_7d": 305,
-    "ai_turns_7d": 18080,
+    "ai_turns_7d": 18150,
     "claude_percentage": 35.7,
     "codex_percentage": 55.7,
     "cursor_percentage": 0.0,
@@ -385,9 +448,9 @@
         "github_url": null
       },
       {
-        "repo": "sauron",
-        "commits": 0,
-        "ai_sessions": 26,
+        "repo": "mcp-tools",
+        "commits": 19,
+        "ai_sessions": 11,
         "github_url": null
       }
     ],
@@ -403,7 +466,7 @@
       },
       {
         "date": "2026-01-04",
-        "commits": 0,
+        "commits": 1,
         "claude_sessions": 10,
         "codex_sessions": 4,
         "cursor_sessions": 0,
@@ -412,7 +475,7 @@
       },
       {
         "date": "2026-01-05",
-        "commits": 0,
+        "commits": 2,
         "claude_sessions": 2,
         "codex_sessions": 7,
         "cursor_sessions": 0,
@@ -421,7 +484,7 @@
       },
       {
         "date": "2026-01-06",
-        "commits": 0,
+        "commits": 19,
         "claude_sessions": 25,
         "codex_sessions": 40,
         "cursor_sessions": 0,
@@ -430,7 +493,7 @@
       },
       {
         "date": "2026-01-07",
-        "commits": 0,
+        "commits": 11,
         "claude_sessions": 22,
         "codex_sessions": 36,
         "cursor_sessions": 0,
@@ -439,7 +502,7 @@
       },
       {
         "date": "2026-01-08",
-        "commits": 0,
+        "commits": 11,
         "claude_sessions": 25,
         "codex_sessions": 23,
         "cursor_sessions": 0,
@@ -448,7 +511,7 @@
       },
       {
         "date": "2026-01-09",
-        "commits": 0,
+        "commits": 20,
         "claude_sessions": 14,
         "codex_sessions": 29,
         "cursor_sessions": 0,
