@@ -1,6 +1,6 @@
 name: Update Profile Dashboard
 
-# Fetches AI session data from Life Hub API and updates profile-data.json
+# Fetches AI session data from Life Hub API and GitHub activity via GitHub API.
 # Run manually or on schedule to keep the profile dashboard current.
 
 on:
@@ -17,6 +17,7 @@ jobs:
 
     env:
       USE_LIFE_HUB_API: "1"
+      USE_GITHUB_API: "1"
 
     steps:
       - name: Checkout repository
@@ -33,6 +34,7 @@ jobs:
       - name: Collect profile data
         env:
           LIFE_HUB_API_KEY: ${{ secrets.LIFE_HUB_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         working-directory: scripts
         run: python collect_data.py
 

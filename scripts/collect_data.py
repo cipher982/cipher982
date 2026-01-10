@@ -13,9 +13,14 @@ Data Sources:
     the Life Hub API instead. This is useful for GitHub Actions where local
     files aren't available.
 
+    For GitHub activity, set USE_GITHUB_API=1 to fetch via GitHub API instead
+    of parsing local git repos. This is automatic in CI when GITHUB_TOKEN is set.
+
 Environment Variables:
     USE_LIFE_HUB_API: Set to "1" to use Life Hub API instead of local parsing
     LIFE_HUB_API_KEY: Required when USE_LIFE_HUB_API=1
+    USE_GITHUB_API: Set to "1" to use GitHub API instead of local git parsing
+    GITHUB_TOKEN: Used for GitHub API authentication (auto-set in GitHub Actions)
 """
 import json
 import os
@@ -38,6 +43,12 @@ def get_life_hub_fetcher():
     """Lazy import of fetch_from_lifehub to avoid requiring 'requests' package."""
     from fetch_from_lifehub import fetch_all_providers
     return fetch_all_providers
+
+
+def get_github_api_fetcher():
+    """Lazy import of fetch_github_api to avoid requiring 'requests' package."""
+    from fetch_github_api import fetch_github_activity
+    return fetch_github_activity
 
 # Repos to exclude from dashboard (work projects, private exploration, etc.)
 EXCLUDED_REPOS = [
@@ -227,6 +238,17 @@ def should_use_life_hub_api() -> bool:
     return False
 
 
+def should_use_github_api() -> bool:
+    """Check if we should use GitHub API instead of local git parsing."""
+    # Explicit env var takes priority
+    if os.environ.get("USE_GITHUB_API", "").lower() in ("1", "true", "yes"):
+        return True
+    # Auto-detect CI environment (GITHUB_TOKEN is set by GitHub Actions)
+    if os.environ.get("GITHUB_ACTIONS") == "true" and os.environ.get("GITHUB_TOKEN"):
+        return True
+    return False
+
+
 def collect_ai_data_local() -> tuple[Dict, Dict, Dict, Dict]:
     """Collect AI session data from local files."""
     home = Path.home()
@@ -297,13 +319,20 @@ def main():
     # Ensure output directory exists
     output_file.parent.mkdir(parents=True, exist_ok=True)
 
-    # Collect GitHub activity (skip if ~/git doesn't exist, e.g., in CI)
-    if git_dir.exists():
-        print("🔍 Collecting GitHub activity...")
+    # Collect GitHub activity
+    use_github_api = should_use_github_api()
+
+    if use_github_api:
+        print("🔍 Fetching GitHub activity from API...")
+        fetch_github = get_github_api_fetcher()
+        github_data = fetch_github()
+        print(f"   ✓ {github_data['commits_7d']} commits, {github_data['repos_active_7d']} repos (7d)")
+    elif git_dir.exists():
+        print("🔍 Collecting GitHub activity (local)...")
         github_data = parse_github_activity(git_dir)
         print(f"   ✓ {github_data['commits_7d']} commits, {github_data['repos_active_7d']} repos (7d)")
     else:
-        print("⏭️  Skipping GitHub activity (no local git directory)")
+        print("⏭️  Skipping GitHub activity (no local git directory and no API)")
         github_data = empty_github_data()
 
     # Collect AI session data from either local files or Life Hub API
@@ -331,7 +360,9 @@ def main():
     print(f"   Git: {profile_data['github']['commits_7d']} commits across {profile_data['github']['repos_active_7d']} repos")
     print(f"   AI:  {profile_data['aggregate']['ai_sessions_7d']} sessions, {profile_data['aggregate']['ai_turns_7d']} turns")
     print(f"   Split: Claude {profile_data['aggregate']['claude_percentage']}%, Codex {profile_data['aggregate']['codex_percentage']}%, Cursor {profile_data['aggregate']['cursor_percentage']}%, Gemini {profile_data['aggregate']['gemini_percentage']}%")
-    print(f"\n   Data source: {'Life Hub API' if use_api else 'Local files'}")
+    print(f"\n   Data sources:")
+    print(f"      GitHub: {'API' if use_github_api else 'Local'}")
+    print(f"      AI Sessions: {'Life Hub API' if use_api else 'Local files'}")
 
 
 if __name__ == "__main__":
