@@ -272,6 +272,20 @@ def collect_ai_data_api() -> Optional[tuple[Dict, Dict, Dict, Dict]]:
     )
 
 
+def empty_github_data() -> Dict[str, Any]:
+    """Return empty GitHub data structure for CI environments."""
+    return {
+        "repos_active_7d": 0,
+        "repos_active_30d": 0,
+        "commits_7d": 0,
+        "commits_30d": 0,
+        "languages_30d": [],
+        "last_push": None,
+        "top_repos_7d": [],
+        "daily_commits": []
+    }
+
+
 def main():
     """Collect all data and write to data/profile-data.json"""
 
@@ -283,9 +297,14 @@ def main():
     # Ensure output directory exists
     output_file.parent.mkdir(parents=True, exist_ok=True)
 
-    print("🔍 Collecting GitHub activity...")
-    github_data = parse_github_activity(git_dir)
-    print(f"   ✓ {github_data['commits_7d']} commits, {github_data['repos_active_7d']} repos (7d)")
+    # Collect GitHub activity (skip if ~/git doesn't exist, e.g., in CI)
+    if git_dir.exists():
+        print("🔍 Collecting GitHub activity...")
+        github_data = parse_github_activity(git_dir)
+        print(f"   ✓ {github_data['commits_7d']} commits, {github_data['repos_active_7d']} repos (7d)")
+    else:
+        print("⏭️  Skipping GitHub activity (no local git directory)")
+        github_data = empty_github_data()
 
     # Collect AI session data from either local files or Life Hub API
     use_api = should_use_life_hub_api()
