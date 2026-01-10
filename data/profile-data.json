@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-01-09T23:10:02.991484+00:00",
+  "generated_at": "2026-01-10T01:10:40.188653+00:00",
   "github": {
     "repos_active_7d": 14,
     "repos_active_30d": 24,
-    "commits_7d": 440,
-    "commits_30d": 1578,
+    "commits_7d": 377,
+    "commits_30d": 1551,
     "languages_30d": [
       {
         "name": "Python",
-        "commits": 1472
+        "commits": 1445
       },
       {
         "name": "TypeScript",
@@ -20,26 +20,26 @@
       }
     ],
     "last_push": {
-      "repo": "sauron",
-      "timestamp": "2026-01-09T17:37:55-05:00",
-      "hours_ago": 0.53
+      "repo": "zerg",
+      "timestamp": "2026-01-09T20:08:42-05:00",
+      "hours_ago": 0.02
     },
     "top_repos_7d": [
       {
         "repo": "me",
-        "commits": 156
-      },
-      {
-        "repo": "zerg",
-        "commits": 87
+        "commits": 141
       },
       {
         "repo": "watchman",
-        "commits": 73
+        "commits": 75
+      },
+      {
+        "repo": "zerg",
+        "commits": 68
       },
       {
         "repo": "sauron",
-        "commits": 63
+        "commits": 27
       },
       {
         "repo": "mcp-tools",
@@ -47,14 +47,6 @@
       }
     ],
     "daily_commits": [
-      {
-        "date": "2026-01-02",
-        "commits": 16
-      },
-      {
-        "date": "2026-01-03",
-        "commits": 60
-      },
       {
         "date": "2026-01-04",
         "commits": 30
@@ -77,30 +69,30 @@
       },
       {
         "date": "2026-01-09",
-        "commits": 29
+        "commits": 42
       }
     ]
   },
   "claude": {
-    "sessions_7d": 593,
-    "sessions_30d": 2339,
-    "turns_7d": 55856,
-    "turns_30d": 167909,
+    "sessions_7d": 576,
+    "sessions_30d": 2350,
+    "turns_7d": 55757,
+    "turns_30d": 169090,
     "repos": [
       {
         "repo": "me",
-        "sessions": 115,
-        "turns": 9480
+        "sessions": 123,
+        "turns": 10156
       },
       {
         "repo": "zerg",
-        "sessions": 110,
-        "turns": 14137
+        "sessions": 92,
+        "turns": 13540
       },
       {
         "repo": "sauron",
-        "sessions": 75,
-        "turns": 7022
+        "sessions": 71,
+        "turns": 6626
       },
       {
         "repo": "watchman",
@@ -109,8 +101,8 @@
       },
       {
         "repo": "llmbench",
-        "sessions": 28,
-        "turns": 2902
+        "sessions": 25,
+        "turns": 2778
       },
       {
         "repo": "Home",
@@ -125,7 +117,7 @@
       {
         "repo": "browser-playground",
         "sessions": 12,
-        "turns": 658
+        "turns": 992
       },
       {
         "repo": "git",
@@ -140,7 +132,7 @@
       {
         "repo": "ai-tools-website",
         "sessions": 5,
-        "turns": 78
+        "turns": 86
       },
       {
         "repo": "browser-use",
@@ -164,20 +156,15 @@
       }
     ],
     "last_session": {
-      "repo": "browser-playground",
-      "timestamp": "2026-01-09T22:56:51.352000+00:00",
-      "hours_ago": 0.22
+      "repo": "zerg",
+      "timestamp": "2026-01-10T01:10:11.063000+00:00",
+      "hours_ago": 0.01
     },
     "daily_sessions": [
       {
-        "date": "2026-01-02",
-        "sessions": 4,
-        "turns": 104
-      },
-      {
         "date": "2026-01-03",
-        "sessions": 131,
-        "turns": 11695
+        "sessions": 107,
+        "turns": 10519
       },
       {
         "date": "2026-01-04",
@@ -206,36 +193,41 @@
       },
       {
         "date": "2026-01-09",
-        "sessions": 88,
-        "turns": 9685
+        "sessions": 94,
+        "turns": 10756
+      },
+      {
+        "date": "2026-01-10",
+        "sessions": 5,
+        "turns": 110
       }
     ]
   },
   "codex": {
-    "sessions_7d": 166,
-    "sessions_30d": 503,
-    "turns_7d": 49124,
-    "turns_30d": 148547,
+    "sessions_7d": 168,
+    "sessions_30d": 508,
+    "turns_7d": 49580,
+    "turns_30d": 149279,
     "repos": [
       {
         "repo": "watchman",
-        "sessions": 36,
-        "turns": 11230
+        "sessions": 37,
+        "turns": 11261
       },
       {
         "repo": "me",
-        "sessions": 24,
-        "turns": 6342
+        "sessions": 25,
+        "turns": 6791
       },
       {
         "repo": "zerg",
         "sessions": 22,
-        "turns": 12983
+        "turns": 13111
       },
       {
         "repo": "sauron",
-        "sessions": 15,
-        "turns": 5932
+        "sessions": 12,
+        "turns": 5656
       },
       {
         "repo": "mcp-tools",
@@ -249,13 +241,13 @@
       },
       {
         "repo": "agent-shipper",
-        "sessions": 5,
-        "turns": 505
+        "sessions": 6,
+        "turns": 531
       },
       {
         "repo": "agentlog",
-        "sessions": 4,
-        "turns": 1039
+        "sessions": 5,
+        "turns": 1117
       },
       {
         "repo": "ai-tools-website",
@@ -271,18 +263,23 @@
         "repo": "Home",
         "sessions": 1,
         "turns": 520
+      },
+      {
+        "repo": "cipher982",
+        "sessions": 1,
+        "turns": 20
       }
     ],
     "last_session": {
-      "repo": "ai-tools-website",
-      "timestamp": "2026-01-09T22:46:35.318000+00:00",
-      "hours_ago": 0.39
+      "repo": "cipher982",
+      "timestamp": "2026-01-10T00:02:12.362000+00:00",
+      "hours_ago": 1.14
     },
     "daily_sessions": [
       {
         "date": "2026-01-03",
-        "sessions": 31,
-        "turns": 6124
+        "sessions": 28,
+        "turns": 5848
       },
       {
         "date": "2026-01-04",
@@ -302,7 +299,7 @@
       {
         "date": "2026-01-07",
         "sessions": 36,
-        "turns": 13124
+        "turns": 13252
       },
       {
         "date": "2026-01-08",
@@ -311,8 +308,13 @@
       },
       {
         "date": "2026-01-09",
-        "sessions": 25,
-        "turns": 7585
+        "sessions": 29,
+        "turns": 8169
+      },
+      {
+        "date": "2026-01-10",
+        "sessions": 1,
+        "turns": 20
       }
     ]
   },
@@ -325,7 +327,7 @@
     "last_session": {
       "mode": "agent",
       "timestamp": "2026-01-07T22:08:55.089000+00:00",
-      "hours_ago": 49.02
+      "hours_ago": 51.03
     },
     "daily_sessions": [
       {
@@ -469,39 +471,39 @@
     ]
   },
   "aggregate": {
-    "ai_sessions_7d": 643,
-    "ai_turns_7d": 105139,
-    "claude_percentage": 75.1,
-    "codex_percentage": 19.4,
-    "cursor_percentage": 0.9,
-    "gemini_percentage": 4.5,
-    "claude_turns_percentage": 53.1,
-    "codex_turns_percentage": 46.7,
+    "ai_sessions_7d": 628,
+    "ai_turns_7d": 105496,
+    "claude_percentage": 74.2,
+    "codex_percentage": 20.2,
+    "cursor_percentage": 1.0,
+    "gemini_percentage": 4.6,
+    "claude_turns_percentage": 52.9,
+    "codex_turns_percentage": 47.0,
     "cursor_turns_percentage": 0.0,
     "gemini_turns_percentage": 0.1,
     "top_repos_combined": [
       {
         "repo": "me",
-        "commits": 156,
-        "ai_sessions": 139,
+        "commits": 141,
+        "ai_sessions": 148,
         "github_url": "https://github.com/cipher982/me"
       },
       {
         "repo": "zerg",
-        "commits": 87,
-        "ai_sessions": 132,
+        "commits": 68,
+        "ai_sessions": 114,
         "github_url": "https://github.com/cipher982/zerg"
       },
       {
         "repo": "watchman",
-        "commits": 73,
-        "ai_sessions": 103,
+        "commits": 75,
+        "ai_sessions": 104,
         "github_url": "https://github.com/cipher982/watchman"
       },
       {
         "repo": "sauron",
-        "commits": 63,
-        "ai_sessions": 90,
+        "commits": 27,
+        "ai_sessions": 83,
         "github_url": "https://github.com/cipher982/sauron"
       },
       {
@@ -513,22 +515,13 @@
     ],
     "daily_breakdown_7d": [
       {
-        "date": "2026-01-02",
-        "commits": 16,
-        "claude_sessions": 4,
-        "codex_sessions": 0,
-        "cursor_sessions": 0,
-        "gemini_sessions": 0,
-        "total_sessions": 4
-      },
-      {
         "date": "2026-01-03",
-        "commits": 60,
-        "claude_sessions": 131,
-        "codex_sessions": 31,
+        "commits": 0,
+        "claude_sessions": 107,
+        "codex_sessions": 28,
         "cursor_sessions": 0,
         "gemini_sessions": 25,
-        "total_sessions": 187
+        "total_sessions": 160
       },
       {
         "date": "2026-01-04",
@@ -574,6 +567,15 @@
         "cursor_sessions": 0,
         "gemini_sessions": 11,
         "total_sessions": 153
+      },
+      {
+        "date": "2026-01-09",
+        "commits": 42,
+        "claude_sessions": 94,
+        "codex_sessions": 29,
+        "cursor_sessions": 0,
+        "gemini_sessions": 27,
+        "total_sessions": 150
       }
     ]
   }
