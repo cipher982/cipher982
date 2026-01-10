@@ -118,7 +118,7 @@ def compute_daily_breakdown(
     Compute daily session breakdown from session list.
 
     Args:
-        sessions: List of session dicts with 'started_at' and 'events_total' fields
+        sessions: List of session dicts with 'started_at' and 'user_messages' fields
         days: Number of days to include
 
     Returns:
@@ -148,7 +148,8 @@ def compute_daily_breakdown(
 
         date_str = ts.date().isoformat()
         daily[date_str]["sessions"] += 1
-        daily[date_str]["turns"] += session.get("events_total", 0) or session.get("user_messages", 0) or 1
+        # Use user_messages (actual conversation turns), not events_total (includes tool calls)
+        daily[date_str]["turns"] += session.get("user_messages") or 1
 
     # Convert to sorted list
     return [
@@ -166,7 +167,7 @@ def compute_repos_from_sessions(
     Uses the 'project' field from sessions (extracted from cwd by Life Hub).
 
     Args:
-        sessions: List of session dicts with 'project' and 'events_total' fields
+        sessions: List of session dicts with 'project' and 'user_messages' fields
 
     Returns:
         List of {"repo": str, "sessions": int, "turns": int} sorted by sessions desc
@@ -179,7 +180,8 @@ def compute_repos_from_sessions(
             continue
 
         repo_stats[project]["sessions"] += 1
-        repo_stats[project]["turns"] += session.get("events_total", 0) or session.get("user_messages", 0) or 1
+        # Use user_messages (actual conversation turns), not events_total (includes tool calls)
+        repo_stats[project]["turns"] += session.get("user_messages") or 1
 
     # Convert to sorted list
     return [
