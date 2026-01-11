@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-01-10T06:03:03.037286+00:00",
+  "generated_at": "2026-01-11T06:03:03.262717+00:00",
   "github": {
-    "repos_active_7d": 9,
+    "repos_active_7d": 10,
     "repos_active_30d": 18,
-    "commits_7d": 71,
-    "commits_30d": 400,
+    "commits_7d": 84,
+    "commits_30d": 413,
     "languages_30d": [
       {
         "name": "Python",
-        "commits": 267
+        "commits": 280
       },
       {
         "name": "TypeScript",
@@ -16,18 +16,18 @@
       }
     ],
     "last_push": {
-      "repo": "cipher982",
-      "timestamp": "2026-01-10T03:56:43+00:00",
-      "hours_ago": 2.1
+      "repo": "mcp-tools",
+      "timestamp": "2026-01-11T02:02:22+00:00",
+      "hours_ago": 4.01
     },
     "top_repos_7d": [
       {
         "repo": "mcp-tools",
-        "commits": 19
+        "commits": 24
       },
       {
         "repo": "agentlog",
-        "commits": 12
+        "commits": 18
       },
       {
         "repo": "llm-benchmarks",
@@ -69,30 +69,34 @@
       },
       {
         "date": "2026-01-10",
-        "commits": 7
+        "commits": 19
+      },
+      {
+        "date": "2026-01-11",
+        "commits": 1
       }
     ]
   },
   "claude": {
-    "sessions_7d": 128,
-    "sessions_30d": 618,
-    "turns_7d": 1490,
-    "turns_30d": 5643,
+    "sessions_7d": 135,
+    "sessions_30d": 634,
+    "turns_7d": 1482,
+    "turns_30d": 5792,
     "repos": [
       {
         "repo": "zerg",
-        "sessions": 20,
-        "turns": 211
+        "sessions": 17,
+        "turns": 217
       },
       {
         "repo": "me",
-        "sessions": 20,
-        "turns": 236
+        "sessions": 16,
+        "turns": 159
       },
       {
         "repo": "sauron",
-        "sessions": 14,
-        "turns": 218
+        "sessions": 12,
+        "turns": 177
       },
       {
         "repo": "watchman",
@@ -100,14 +104,34 @@
         "turns": 125
       },
       {
+        "repo": "life-hub",
+        "sessions": 11,
+        "turns": 114
+      },
+      {
         "repo": "llmbench",
-        "sessions": 7,
-        "turns": 75
+        "sessions": 8,
+        "turns": 90
       },
       {
         "repo": "Home",
-        "sessions": 6,
-        "turns": 24
+        "sessions": 8,
+        "turns": 39
+      },
+      {
+        "repo": "mcp-tools",
+        "sessions": 7,
+        "turns": 40
+      },
+      {
+        "repo": "banana",
+        "sessions": 5,
+        "turns": 56
+      },
+      {
+        "repo": "browser-playground",
+        "sessions": 5,
+        "turns": 106
       },
       {
         "repo": "hub",
@@ -115,19 +139,9 @@
         "turns": 86
       },
       {
-        "repo": "browser-playground",
+        "repo": "tweetcraft",
         "sessions": 4,
-        "turns": 92
-      },
-      {
-        "repo": "banana",
-        "sessions": 4,
-        "turns": 53
-      },
-      {
-        "repo": "mcp-tools",
-        "sessions": 4,
-        "turns": 28
+        "turns": 26
       },
       {
         "repo": "git",
@@ -135,14 +149,24 @@
         "turns": 18
       },
       {
-        "repo": "life-hub",
+        "repo": "stopsign_ai",
         "sessions": 2,
-        "turns": 18
+        "turns": 24
       },
       {
         "repo": "agentlog",
+        "sessions": 2,
+        "turns": 27
+      },
+      {
+        "repo": "mytech",
         "sessions": 1,
-        "turns": 16
+        "turns": 9
+      },
+      {
+        "repo": "aiml",
+        "sessions": 1,
+        "turns": 10
       },
       {
         "repo": "pixel-pilot",
@@ -168,28 +192,18 @@
         "repo": "hdr",
         "sessions": 1,
         "turns": 7
-      },
-      {
-        "repo": "stopsign_ai",
-        "sessions": 1,
-        "turns": 11
       }
     ],
     "last_session": {
-      "repo": "agentlog",
-      "timestamp": "2026-01-10T03:31:14.866000+00:00",
-      "hours_ago": 2.53
+      "repo": "life-hub",
+      "timestamp": "2026-01-11T03:04:11.051000+00:00",
+      "hours_ago": 2.98
     },
     "daily_sessions": [
       {
-        "date": "2026-01-03",
-        "sessions": 24,
-        "turns": 323
-      },
-      {
         "date": "2026-01-04",
-        "sessions": 10,
-        "turns": 100
+        "sessions": 8,
+        "turns": 74
       },
       {
         "date": "2026-01-05",
@@ -218,41 +232,61 @@
       },
       {
         "date": "2026-01-10",
-        "sessions": 6,
-        "turns": 62
+        "sessions": 32,
+        "turns": 355
+      },
+      {
+        "date": "2026-01-11",
+        "sessions": 7,
+        "turns": 48
       }
     ]
   },
   "codex": {
-    "sessions_7d": 170,
-    "sessions_30d": 510,
-    "turns_7d": 703,
-    "turns_30d": 2359,
+    "sessions_7d": 182,
+    "sessions_30d": 530,
+    "turns_7d": 740,
+    "turns_30d": 2340,
     "repos": [
-      {
-        "repo": "image-gen-poc",
-        "sessions": 41,
-        "turns": 152
-      },
       {
         "repo": "watchman",
         "sessions": 37,
         "turns": 141
       },
       {
-        "repo": "me",
-        "sessions": 25,
-        "turns": 107
+        "repo": "image-gen-poc",
+        "sessions": 32,
+        "turns": 126
       },
       {
         "repo": "zerg",
+        "sessions": 29,
+        "turns": 125
+      },
+      {
+        "repo": "me",
         "sessions": 23,
-        "turns": 110
+        "turns": 98
+      },
+      {
+        "repo": "agentlog",
+        "sessions": 12,
+        "turns": 36
+      },
+      {
+        "repo": "life-hub",
+        "sessions": 11,
+        "turns": 45
+      },
+      {
+        "repo": "agent-shipper",
+        "sessions": 7,
+        "turns": 21
       },
       {
         "repo": "sauron",
-        "sessions": 12,
-        "turns": 82
+        "sessions": 7,
+        "turns": 63
       },
       {
         "repo": "mcp-tools",
@@ -260,14 +294,9 @@
         "turns": 25
       },
       {
-        "repo": "agent-shipper",
-        "sessions": 6,
-        "turns": 18
-      },
-      {
-        "repo": "agentlog",
-        "sessions": 5,
-        "turns": 15
+        "repo": "tweetcraft",
+        "sessions": 3,
+        "turns": 9
       },
       {
         "repo": "git",
@@ -290,6 +319,11 @@
         "turns": 8
       },
       {
+        "repo": "davidrose",
+        "sessions": 1,
+        "turns": 3
+      },
+      {
         "repo": "cipher982",
         "sessions": 1,
         "turns": 3
@@ -298,28 +332,18 @@
         "repo": "llm-benchmarks-dashboard",
         "sessions": 1,
         "turns": 3
-      },
-      {
-        "repo": "davidrose",
-        "sessions": 1,
-        "turns": 5
       }
     ],
     "last_session": {
-      "repo": "git",
-      "timestamp": "2026-01-10T04:08:47.594000+00:00",
-      "hours_ago": 1.9
+      "repo": "zerg",
+      "timestamp": "2026-01-11T03:29:42.214000+00:00",
+      "hours_ago": 2.56
     },
     "daily_sessions": [
       {
-        "date": "2026-01-03",
-        "sessions": 27,
-        "turns": 96
-      },
-      {
         "date": "2026-01-04",
-        "sessions": 4,
-        "turns": 14
+        "sessions": 2,
+        "turns": 8
       },
       {
         "date": "2026-01-05",
@@ -348,14 +372,19 @@
       },
       {
         "date": "2026-01-10",
-        "sessions": 4,
-        "turns": 13
+        "sessions": 35,
+        "turns": 122
+      },
+      {
+        "date": "2026-01-11",
+        "sessions": 10,
+        "turns": 30
       }
     ]
   },
   "cursor": {
     "sessions_7d": 0,
-    "sessions_30d": 24,
+    "sessions_30d": 22,
     "turns_7d": 0,
     "turns_30d": 0,
     "repos": [],
@@ -363,27 +392,58 @@
     "daily_sessions": []
   },
   "gemini": {
-    "sessions_7d": 26,
-    "sessions_30d": 64,
-    "turns_7d": 132,
-    "turns_30d": 294,
-    "repos": [],
-    "last_session": {
-      "repo": null,
-      "timestamp": "2026-01-09T18:58:38.274000+00:00",
-      "hours_ago": 11.07
-    },
-    "daily_sessions": [
+    "sessions_7d": 32,
+    "sessions_30d": 72,
+    "turns_7d": 156,
+    "turns_30d": 330,
+    "repos": [
       {
-        "date": "2026-01-03",
+        "repo": "sauron",
+        "sessions": 6,
+        "turns": 30
+      },
+      {
+        "repo": "zerg",
+        "sessions": 2,
+        "turns": 17
+      },
+      {
+        "repo": "agentlog",
+        "sessions": 2,
+        "turns": 8
+      },
+      {
+        "repo": "watchman",
+        "sessions": 2,
+        "turns": 12
+      },
+      {
+        "repo": "mcp-tools",
+        "sessions": 1,
+        "turns": 2
+      },
+      {
+        "repo": "misc",
         "sessions": 1,
         "turns": 4
       },
       {
-        "date": "2026-01-04",
+        "repo": "ai-tools-website",
         "sessions": 1,
-        "turns": 8
+        "turns": 28
       },
+      {
+        "repo": "llmbench",
+        "sessions": 1,
+        "turns": 5
+      }
+    ],
+    "last_session": {
+      "repo": null,
+      "timestamp": "2026-01-11T03:28:17.822000+00:00",
+      "hours_ago": 2.58
+    },
+    "daily_sessions": [
       {
         "date": "2026-01-05",
         "sessions": 5,
@@ -408,20 +468,30 @@
         "date": "2026-01-09",
         "sessions": 5,
         "turns": 9
+      },
+      {
+        "date": "2026-01-10",
+        "sessions": 7,
+        "turns": 35
+      },
+      {
+        "date": "2026-01-11",
+        "sessions": 1,
+        "turns": 1
       }
     ]
   },
   "aggregate": {
-    "ai_sessions_7d": 304,
-    "ai_turns_7d": 2325,
-    "claude_percentage": 35.5,
-    "codex_percentage": 55.9,
+    "ai_sessions_7d": 338,
+    "ai_turns_7d": 2378,
+    "claude_percentage": 36.7,
+    "codex_percentage": 53.8,
     "cursor_percentage": 0.0,
-    "gemini_percentage": 8.6,
-    "claude_turns_percentage": 64.1,
-    "codex_turns_percentage": 30.2,
+    "gemini_percentage": 9.5,
+    "claude_turns_percentage": 62.3,
+    "codex_turns_percentage": 31.1,
     "cursor_turns_percentage": 0.0,
-    "gemini_turns_percentage": 5.7,
+    "gemini_turns_percentage": 6.6,
     "top_repos_combined": [
       {
         "repo": "watchman",
@@ -430,48 +500,39 @@
         "github_url": null
       },
       {
-        "repo": "me",
-        "commits": 0,
-        "ai_sessions": 45,
-        "github_url": null
-      },
-      {
         "repo": "zerg",
         "commits": 0,
-        "ai_sessions": 43,
+        "ai_sessions": 46,
         "github_url": null
       },
       {
-        "repo": "image-gen-poc",
+        "repo": "me",
         "commits": 0,
-        "ai_sessions": 41,
+        "ai_sessions": 39,
         "github_url": null
       },
       {
         "repo": "mcp-tools",
-        "commits": 19,
-        "ai_sessions": 11,
+        "commits": 24,
+        "ai_sessions": 14,
+        "github_url": null
+      },
+      {
+        "repo": "agentlog",
+        "commits": 18,
+        "ai_sessions": 14,
         "github_url": null
       }
     ],
     "daily_breakdown_7d": [
       {
-        "date": "2026-01-03",
-        "commits": 0,
-        "claude_sessions": 24,
-        "codex_sessions": 27,
-        "cursor_sessions": 0,
-        "gemini_sessions": 1,
-        "total_sessions": 52
-      },
-      {
         "date": "2026-01-04",
         "commits": 1,
-        "claude_sessions": 10,
-        "codex_sessions": 4,
+        "claude_sessions": 8,
+        "codex_sessions": 2,
         "cursor_sessions": 0,
-        "gemini_sessions": 1,
-        "total_sessions": 15
+        "gemini_sessions": 0,
+        "total_sessions": 10
       },
       {
         "date": "2026-01-05",
@@ -517,6 +578,15 @@
         "cursor_sessions": 0,
         "gemini_sessions": 5,
         "total_sessions": 48
+      },
+      {
+        "date": "2026-01-10",
+        "commits": 19,
+        "claude_sessions": 32,
+        "codex_sessions": 35,
+        "cursor_sessions": 0,
+        "gemini_sessions": 7,
+        "total_sessions": 74
       }
     ]
   }
