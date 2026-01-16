@@ -69,19 +69,19 @@
 
   <g transform="translate(30, 75)">
     <!-- AI Sessions -->
-    <text x="0" y="0" class="metric-value">368</text>
+    <text x="0" y="0" class="metric-value">359</text>
     <text x="0" y="18" class="metric-label text-secondary">AI SESSIONS</text>
 
     <!-- Turns -->
-    <text x="220" y="0" class="metric-value">2,404</text>
+    <text x="220" y="0" class="metric-value">2,309</text>
     <text x="220" y="18" class="metric-label text-secondary">TURNS</text>
 
     <!-- Commits -->
-    <text x="420" y="0" class="metric-value">70</text>
+    <text x="420" y="0" class="metric-value">63</text>
     <text x="420" y="18" class="metric-label text-secondary">COMMITS</text>
 
     <!-- Repos -->
-    <text x="620" y="0" class="metric-value">11</text>
+    <text x="620" y="0" class="metric-value">10</text>
     <text x="620" y="18" class="metric-label text-secondary">ACTIVE REPOS</text>
   </g>
 
@@ -93,7 +93,7 @@
     <g transform="translate(0, 20)">
       <text x="0" y="25" class="sparkline-label text-secondary">Commits</text>
       <svg x="80" y="0" width="180" height="40" viewBox="0 0 180 40">
-        <path d="M 0.00,24.00 L 30.00,0.00 L 60.00,2.00 L 90.00,38.00 L 120.00,32.00 L 150.00,6.00 L 180.00,40.00" class="sparkline-commits" stroke-dasharray="210" stroke-dashoffset="210">
+        <path d="M 0.00,2.11 L 30.00,0.00 L 60.00,37.89 L 90.00,31.58 L 120.00,4.21 L 150.00,40.00 L 180.00,37.89" class="sparkline-commits" stroke-dasharray="210" stroke-dashoffset="210">
           <animate attributeName="stroke-dashoffset" from="210" to="0" dur="1.2s" fill="freeze"/>
         </path>
       </svg>
@@ -103,7 +103,7 @@
     <g transform="translate(420, 20)">
       <text x="0" y="25" class="sparkline-label text-secondary">AI Sessions</text>
       <svg x="110" y="0" width="180" height="40" viewBox="0 0 180 40">
-        <path d="M 0.00,36.44 L 30.00,27.56 L 60.00,0.00 L 90.00,40.00 L 120.00,21.33 L 150.00,22.22 L 180.00,31.11" class="sparkline-sessions" stroke-dasharray="210" stroke-dashoffset="210">
+        <path d="M 0.00,40.00 L 30.00,0.00 L 60.00,39.13 L 90.00,20.87 L 120.00,21.74 L 150.00,30.43 L 180.00,25.22" class="sparkline-sessions" stroke-dasharray="210" stroke-dashoffset="210">
           <animate attributeName="stroke-dashoffset" from="210" to="0" dur="1.2s" fill="freeze"/>
         </path>
       </svg>
@@ -120,12 +120,12 @@
         <text x="20" y="38" class="rank-num">#1</text>
         
         <text x="60" y="28" class="card-title text-primary">Claude Code</text>
-        <text x="60" y="48" class="card-stat text-secondary">143 sessions · 1,596 turns</text>
+        <text x="60" y="48" class="card-stat text-secondary">145 sessions · 1,541 turns</text>
         
         <g transform="translate(500, 0)">
-            <text x="320" y="28" class="card-value color-claude" text-anchor="end">66.4%</text>
+            <text x="320" y="28" class="card-value color-claude" text-anchor="end">66.7%</text>
             <rect x="0" y="40" width="320" height="6" class="progress-bg" rx="3"/>
-            <rect x="0" y="40" width="212.48000000000002" height="6" class="color-claude anim-bar" rx="3"/>
+            <rect x="0" y="40" width="213.44" height="6" class="color-claude anim-bar" rx="3"/>
         </g>
     </g>
     <g transform="translate(0, 90)">
@@ -135,12 +135,12 @@
         <text x="20" y="38" class="rank-num">#2</text>
         
         <text x="60" y="28" class="card-title text-primary">OpenAI Codex</text>
-        <text x="60" y="48" class="card-stat text-secondary">180 sessions · 679 turns</text>
+        <text x="60" y="48" class="card-stat text-secondary">165 sessions · 662 turns</text>
         
         <g transform="translate(500, 0)">
-            <text x="320" y="28" class="card-value color-codex" text-anchor="end">28.2%</text>
+            <text x="320" y="28" class="card-value color-codex" text-anchor="end">28.7%</text>
             <rect x="0" y="40" width="320" height="6" class="progress-bg" rx="3"/>
-            <rect x="0" y="40" width="90.24" height="6" class="color-codex anim-bar" rx="3"/>
+            <rect x="0" y="40" width="91.83999999999999" height="6" class="color-codex anim-bar" rx="3"/>
         </g>
     </g>
     <g transform="translate(0, 160)">
@@ -150,12 +150,12 @@
         <text x="20" y="38" class="rank-num">#3</text>
         
         <text x="60" y="28" class="card-title text-primary">Gemini</text>
-        <text x="60" y="48" class="card-stat text-secondary">45 sessions · 129 turns</text>
+        <text x="60" y="48" class="card-stat text-secondary">49 sessions · 106 turns</text>
         
         <g transform="translate(500, 0)">
-            <text x="320" y="28" class="card-value color-gemini" text-anchor="end">5.4%</text>
+            <text x="320" y="28" class="card-value color-gemini" text-anchor="end">4.6%</text>
             <rect x="0" y="40" width="320" height="6" class="progress-bg" rx="3"/>
-            <rect x="0" y="40" width="17.28" height="6" class="color-gemini anim-bar" rx="3"/>
+            <rect x="0" y="40" width="14.719999999999999" height="6" class="color-gemini anim-bar" rx="3"/>
         </g>
     </g>
     <g transform="translate(0, 230)">
