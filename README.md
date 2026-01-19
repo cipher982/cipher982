@@ -6,11 +6,11 @@
 
 | Repo | Commits | AI Sessions |
 |------|---------|-------------|
-| **zerg** | 0 | 112 |
-| **stopsign_ai** | 21 | 22 |
-| **sauron** | 0 | 29 |
-| **mcp-tools** | 5 | 17 |
+| **zerg** | 0 | 116 |
+| **stopsign_ai** | 21 | 21 |
+| **mcp-tools** | 5 | 16 |
 | **image-gen-poc** | 0 | 21 |
+| **sauron** | 0 | 20 |
 
 
 ## 💡 About
@@ -44,11 +44,11 @@ All metrics are computed locally and aggregated into a single JSON file, then vi
 <details>
 <summary>🔍 Detailed Stats (Last 30 Days)</summary>
 
-- **Commits**: 347
-- **Languages**: Python (239), TypeScript (108)
-- **AI Sessions**: Claude 702 · Codex 620 · Cursor 8 · Gemini 121
-- **Total Turns**: 9.7k
+- **Commits**: 350
+- **Languages**: Python (242), TypeScript (108)
+- **AI Sessions**: Claude 703 · Codex 625 · Cursor 7 · Gemini 119
+- **Total Turns**: 9.9k
 
 </details>
 
-*Last updated: 2026-01-18 06:03 UTC*
+*Last updated: 2026-01-19 06:05 UTC*
