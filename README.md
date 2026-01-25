@@ -6,10 +6,10 @@
 
 | Repo | Commits | AI Sessions |
 |------|---------|-------------|
-| **zerg** | 0 | 134 |
-| **mytech** | 0 | 58 |
-| **mcp-tools** | 16 | 31 |
-| **life-hub** | 0 | 40 |
+| **zerg** | 0 | 144 |
+| **mytech** | 0 | 55 |
+| **life-hub** | 0 | 42 |
+| **mcp-tools** | 14 | 25 |
 | **agent-run** | 0 | 35 |
 
 
@@ -46,9 +46,9 @@ All metrics are computed locally and aggregated into a single JSON file, then vi
 
 - **Commits**: 366
 - **Languages**: Python (257), TypeScript (108), HTML (1)
-- **AI Sessions**: Claude 845 · Codex 719 · Cursor 0 · Gemini 134
-- **Total Turns**: 11.7k
+- **AI Sessions**: Claude 850 · Codex 734 · Cursor 0 · Gemini 141
+- **Total Turns**: 11.9k
 
 </details>
 
-*Last updated: 2026-01-24 06:03 UTC*
+*Last updated: 2026-01-25 06:02 UTC*
