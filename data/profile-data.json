@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-01-27T06:03:26.178548+00:00",
+  "generated_at": "2026-01-28T06:04:08.326452+00:00",
   "github": {
     "repos_active_7d": 2,
-    "repos_active_30d": 19,
+    "repos_active_30d": 18,
     "commits_7d": 14,
-    "commits_30d": 336,
+    "commits_30d": 296,
     "languages_30d": [
       {
         "name": "Python",
-        "commits": 227
+        "commits": 202
       },
       {
         "name": "TypeScript",
-        "commits": 108
+        "commits": 93
       },
       {
         "name": "HTML",
@@ -22,7 +22,7 @@
     "last_push": {
       "repo": "hatch",
       "timestamp": "2026-01-27T00:18:09+00:00",
-      "hours_ago": 5.75
+      "hours_ago": 29.76
     },
     "top_repos_7d": [
       {
@@ -58,15 +58,15 @@
     ]
   },
   "claude": {
-    "sessions_7d": 274,
-    "sessions_30d": 796,
-    "turns_7d": 2820,
-    "turns_30d": 8261,
+    "sessions_7d": 326,
+    "sessions_30d": 825,
+    "turns_7d": 2818,
+    "turns_30d": 8390,
     "repos": [
       {
         "repo": "zerg",
-        "sessions": 81,
-        "turns": 1056
+        "sessions": 77,
+        "turns": 923
       },
       {
         "repo": "agent-run",
@@ -74,14 +74,14 @@
         "turns": 34
       },
       {
-        "repo": "mytech",
-        "sessions": 27,
-        "turns": 724
+        "repo": "mcp-tools",
+        "sessions": 32,
+        "turns": 63
       },
       {
         "repo": "life-hub",
-        "sessions": 20,
-        "turns": 191
+        "sessions": 22,
+        "turns": 152
       },
       {
         "repo": "hatch",
@@ -90,18 +90,13 @@
       },
       {
         "repo": "Home",
-        "sessions": 15,
-        "turns": 34
+        "sessions": 17,
+        "turns": 50
       },
       {
-        "repo": "misc",
-        "sessions": 11,
-        "turns": 157
-      },
-      {
-        "repo": "mcp-tools",
-        "sessions": 11,
-        "turns": 67
+        "repo": "mytech",
+        "sessions": 13,
+        "turns": 131
       },
       {
         "repo": "test_working_directory0",
@@ -109,14 +104,24 @@
         "turns": 8
       },
       {
-        "repo": "sauron",
-        "sessions": 8,
-        "turns": 132
+        "repo": "zerg-auto-agent",
+        "sessions": 7,
+        "turns": 64
       },
       {
-        "repo": "myfinance",
-        "sessions": 8,
-        "turns": 124
+        "repo": "zerg-rebrand",
+        "sessions": 7,
+        "turns": 54
+      },
+      {
+        "repo": "sauron",
+        "sessions": 7,
+        "turns": 137
+      },
+      {
+        "repo": "misc",
+        "sessions": 7,
+        "turns": 89
       },
       {
         "repo": "game-ui",
@@ -124,29 +129,44 @@
         "turns": 6
       },
       {
-        "repo": "zerg-rebrand",
-        "sessions": 5,
-        "turns": 40
+        "repo": "myagents",
+        "sessions": 2,
+        "turns": 12
       },
       {
-        "repo": "aiml",
-        "sessions": 4,
-        "turns": 51
-      },
-      {
-        "repo": "ai-tools-website",
-        "sessions": 3,
-        "turns": 22
-      },
-      {
-        "repo": "hdr",
-        "sessions": 3,
-        "turns": 10
+        "repo": "test-automation",
+        "sessions": 2,
+        "turns": 2
       },
       {
         "repo": "qa-run",
         "sessions": 2,
         "turns": 2
+      },
+      {
+        "repo": "zeta-analytics",
+        "sessions": 1,
+        "turns": 1
+      },
+      {
+        "repo": "fe-app",
+        "sessions": 1,
+        "turns": 1
+      },
+      {
+        "repo": "test-bme-app",
+        "sessions": 1,
+        "turns": 1
+      },
+      {
+        "repo": "qa",
+        "sessions": 1,
+        "turns": 1
+      },
+      {
+        "repo": "aiml",
+        "sessions": 1,
+        "turns": 9
       },
       {
         "repo": "mock-test",
@@ -167,53 +187,18 @@
         "repo": "qa-test-run",
         "sessions": 1,
         "turns": 1
-      },
-      {
-        "repo": "wine-images-126k",
-        "sessions": 1,
-        "turns": 6
-      },
-      {
-        "repo": "fe-app",
-        "sessions": 1,
-        "turns": 61
-      },
-      {
-        "repo": "zmp-provisioning-factory",
-        "sessions": 1,
-        "turns": 11
-      },
-      {
-        "repo": "google-ads-cli",
-        "sessions": 1,
-        "turns": 2
-      },
-      {
-        "repo": "g55",
-        "sessions": 1,
-        "turns": 57
       }
     ],
     "last_session": {
-      "repo": "zerg-rebrand",
-      "timestamp": "2026-01-27T04:19:07.050000+00:00",
-      "hours_ago": 1.74
+      "repo": "Home",
+      "timestamp": "2026-01-28T05:15:27.122000+00:00",
+      "hours_ago": 0.81
     },
     "daily_sessions": [
       {
-        "date": "2026-01-20",
-        "sessions": 16,
-        "turns": 221
-      },
-      {
-        "date": "2026-01-21",
-        "sessions": 38,
-        "turns": 581
-      },
-      {
         "date": "2026-01-22",
-        "sessions": 28,
-        "turns": 704
+        "sessions": 10,
+        "turns": 133
       },
       {
         "date": "2026-01-23",
@@ -228,45 +213,45 @@
       {
         "date": "2026-01-25",
         "sessions": 30,
-        "turns": 367
+        "turns": 368
       },
       {
         "date": "2026-01-26",
         "sessions": 34,
-        "turns": 357
+        "turns": 364
       },
       {
         "date": "2026-01-27",
+        "sessions": 81,
+        "turns": 374
+      },
+      {
+        "date": "2026-01-28",
         "sessions": 22,
-        "turns": 68
+        "turns": 87
       }
     ]
   },
   "codex": {
-    "sessions_7d": 174,
-    "sessions_30d": 695,
-    "turns_7d": 1213,
-    "turns_30d": 3604,
+    "sessions_7d": 205,
+    "sessions_30d": 707,
+    "turns_7d": 1387,
+    "turns_30d": 3748,
     "repos": [
       {
         "repo": "zerg",
-        "sessions": 98,
-        "turns": 804
+        "sessions": 118,
+        "turns": 919
       },
       {
         "repo": "life-hub",
-        "sessions": 31,
-        "turns": 184
+        "sessions": 24,
+        "turns": 159
       },
       {
         "repo": "mcp-tools",
-        "sessions": 18,
-        "turns": 74
-      },
-      {
-        "repo": "me",
-        "sessions": 9,
-        "turns": 36
+        "sessions": 15,
+        "turns": 62
       },
       {
         "repo": "sauron",
@@ -274,19 +259,24 @@
         "turns": 29
       },
       {
-        "repo": "misc",
-        "sessions": 3,
-        "turns": 12
-      },
-      {
         "repo": "image-gen-poc",
-        "sessions": 3,
-        "turns": 39
+        "sessions": 2,
+        "turns": 28
       },
       {
-        "repo": "zmp-provisioning-factory",
-        "sessions": 3,
-        "turns": 19
+        "repo": "me",
+        "sessions": 2,
+        "turns": 8
+      },
+      {
+        "repo": "fe-app",
+        "sessions": 1,
+        "turns": 4
+      },
+      {
+        "repo": "misc",
+        "sessions": 1,
+        "turns": 4
       },
       {
         "repo": "agent-run",
@@ -297,38 +287,18 @@
         "repo": "git",
         "sessions": 1,
         "turns": 4
-      },
-      {
-        "repo": "sysrescue-extract",
-        "sessions": 1,
-        "turns": 4
-      },
-      {
-        "repo": "ai-tools-website",
-        "sessions": 1,
-        "turns": 4
       }
     ],
     "last_session": {
       "repo": "zerg",
-      "timestamp": "2026-01-27T03:00:46.098000+00:00",
-      "hours_ago": 3.04
+      "timestamp": "2026-01-28T05:21:27.687000+00:00",
+      "hours_ago": 0.71
     },
     "daily_sessions": [
       {
-        "date": "2026-01-20",
-        "sessions": 3,
-        "turns": 59
-      },
-      {
-        "date": "2026-01-21",
-        "sessions": 26,
-        "turns": 114
-      },
-      {
         "date": "2026-01-22",
-        "sessions": 32,
-        "turns": 146
+        "sessions": 14,
+        "turns": 56
       },
       {
         "date": "2026-01-23",
@@ -348,12 +318,17 @@
       {
         "date": "2026-01-26",
         "sessions": 25,
-        "turns": 231
+        "turns": 240
       },
       {
         "date": "2026-01-27",
-        "sessions": 7,
-        "turns": 46
+        "sessions": 44,
+        "turns": 259
+      },
+      {
+        "date": "2026-01-28",
+        "sessions": 8,
+        "turns": 55
       }
     ]
   },
@@ -367,15 +342,15 @@
     "daily_sessions": []
   },
   "gemini": {
-    "sessions_7d": 46,
-    "sessions_30d": 164,
-    "turns_7d": 95,
-    "turns_30d": 453,
+    "sessions_7d": 45,
+    "sessions_30d": 152,
+    "turns_7d": 91,
+    "turns_30d": 421,
     "repos": [
       {
         "repo": "zerg",
-        "sessions": 21,
-        "turns": 30
+        "sessions": 22,
+        "turns": 31
       },
       {
         "repo": "life-hub",
@@ -414,16 +389,11 @@
       }
     ],
     "last_session": {
-      "repo": "life-hub",
-      "timestamp": "2026-01-27T04:55:20.961000+00:00",
-      "hours_ago": 1.13
+      "repo": "zerg",
+      "timestamp": "2026-01-28T02:37:01.972000+00:00",
+      "hours_ago": 3.45
     },
     "daily_sessions": [
-      {
-        "date": "2026-01-20",
-        "sessions": 2,
-        "turns": 5
-      },
       {
         "date": "2026-01-22",
         "sessions": 2,
@@ -453,37 +423,42 @@
         "date": "2026-01-27",
         "sessions": 4,
         "turns": 4
+      },
+      {
+        "date": "2026-01-28",
+        "sessions": 1,
+        "turns": 1
       }
     ]
   },
   "aggregate": {
-    "ai_sessions_7d": 493,
-    "ai_turns_7d": 4128,
-    "claude_percentage": 55.4,
-    "codex_percentage": 35.3,
+    "ai_sessions_7d": 485,
+    "ai_turns_7d": 4296,
+    "claude_percentage": 55.7,
+    "codex_percentage": 35.1,
     "cursor_percentage": 0.0,
     "gemini_percentage": 9.3,
-    "claude_turns_percentage": 68.3,
-    "codex_turns_percentage": 29.4,
+    "claude_turns_percentage": 65.6,
+    "codex_turns_percentage": 32.3,
     "cursor_turns_percentage": 0.0,
-    "gemini_turns_percentage": 2.3,
+    "gemini_turns_percentage": 2.1,
     "top_repos_combined": [
       {
         "repo": "zerg",
         "commits": 0,
-        "ai_sessions": 179,
-        "github_url": null
-      },
-      {
-        "repo": "life-hub",
-        "commits": 0,
-        "ai_sessions": 51,
+        "ai_sessions": 195,
         "github_url": null
       },
       {
         "repo": "mcp-tools",
         "commits": 11,
-        "ai_sessions": 29,
+        "ai_sessions": 47,
+        "github_url": null
+      },
+      {
+        "repo": "life-hub",
+        "commits": 0,
+        "ai_sessions": 46,
         "github_url": null
       },
       {
@@ -493,39 +468,30 @@
         "github_url": null
       },
       {
-        "repo": "mytech",
-        "commits": 0,
-        "ai_sessions": 27,
+        "repo": "hatch",
+        "commits": 3,
+        "ai_sessions": 18,
         "github_url": null
       }
     ],
     "daily_breakdown_7d": [
       {
-        "date": "2026-01-20",
-        "commits": 0,
-        "claude_sessions": 16,
-        "codex_sessions": 3,
-        "cursor_sessions": 0,
-        "gemini_sessions": 2,
-        "total_sessions": 21
-      },
-      {
         "date": "2026-01-21",
         "commits": 4,
-        "claude_sessions": 38,
-        "codex_sessions": 26,
+        "claude_sessions": 0,
+        "codex_sessions": 0,
         "cursor_sessions": 0,
         "gemini_sessions": 0,
-        "total_sessions": 64
+        "total_sessions": 0
       },
       {
         "date": "2026-01-22",
         "commits": 0,
-        "claude_sessions": 28,
-        "codex_sessions": 32,
+        "claude_sessions": 10,
+        "codex_sessions": 14,
         "cursor_sessions": 0,
         "gemini_sessions": 2,
-        "total_sessions": 62
+        "total_sessions": 26
       },
       {
         "date": "2026-01-23",
@@ -562,6 +528,15 @@
         "cursor_sessions": 0,
         "gemini_sessions": 7,
         "total_sessions": 66
+      },
+      {
+        "date": "2026-01-27",
+        "commits": 2,
+        "claude_sessions": 81,
+        "codex_sessions": 44,
+        "cursor_sessions": 0,
+        "gemini_sessions": 4,
+        "total_sessions": 129
       }
     ]
   }
