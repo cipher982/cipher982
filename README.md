@@ -6,10 +6,10 @@
 
 | Repo | Commits | AI Sessions |
 |------|---------|-------------|
-| **zerg** | 0 | 195 |
-| **mcp-tools** | 11 | 47 |
-| **life-hub** | 0 | 46 |
+| **zerg** | 0 | 204 |
+| **mcp-tools** | 7 | 40 |
 | **agent-run** | 0 | 35 |
+| **life-hub** | 0 | 35 |
 | **hatch** | 3 | 18 |
 
 
@@ -20,7 +20,7 @@ I'm a full-stack developer building AI-powered applications. This profile showca
 **What makes this unique?** Rather than just showing finished work (commits), this dashboard reveals the actual building process through:
 - Real-time AI collaboration metrics
 - Parallel development across multiple projects
-- Vibe coding sessions (avg 8 turns/session)
+- Vibe coding sessions (avg 7 turns/session)
 - And it was just fun to build! 😊
 
 
@@ -44,11 +44,11 @@ All metrics are computed locally and aggregated into a single JSON file, then vi
 <details>
 <summary>🔍 Detailed Stats (Last 30 Days)</summary>
 
-- **Commits**: 296
-- **Languages**: Python (202), TypeScript (93), HTML (1)
-- **AI Sessions**: Claude 825 · Codex 707 · Cursor 0 · Gemini 152
-- **Total Turns**: 12.6k
+- **Commits**: 271
+- **Languages**: Python (196), TypeScript (74), HTML (1)
+- **AI Sessions**: Claude 833 · Codex 706 · Cursor 0 · Gemini 153
+- **Total Turns**: 12.7k
 
 </details>
 
-*Last updated: 2026-01-28 06:04 UTC*
+*Last updated: 2026-01-29 06:11 UTC*
