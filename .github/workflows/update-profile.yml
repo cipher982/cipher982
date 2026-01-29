@@ -34,7 +34,7 @@ jobs:
       - name: Collect profile data
         env:
           LIFE_HUB_API_KEY: ${{ secrets.LIFE_HUB_API_KEY }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PROFILE_GITHUB_TOKEN }}
         working-directory: scripts
         run: python collect_data.py
 

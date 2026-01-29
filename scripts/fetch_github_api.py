@@ -88,10 +88,9 @@ def _make_paginated_request(url: str, params: Optional[Dict] = None, max_pages: 
 
 def fetch_user_repos(username: str) -> List[Dict]:
     """Fetch all repos for a user (including private repos when authenticated)."""
-    # Use /user/repos for authenticated users (includes private repos)
-    # Fall back to /users/:username/repos for public-only access
     token = get_github_token()
     if token:
+        # /user/repos includes private repos, requires PAT with repo scope
         url = "https://api.github.com/user/repos"
         return _make_paginated_request(url, {"type": "owner", "sort": "pushed"})
     else:
