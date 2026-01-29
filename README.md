@@ -6,11 +6,11 @@
 
 | Repo | Commits | AI Sessions |
 |------|---------|-------------|
-| **zerg** | 0 | 204 |
-| **mcp-tools** | 7 | 40 |
+| **zerg** | 0 | 203 |
+| **mcp-tools** | 0 | 40 |
 | **agent-run** | 0 | 35 |
 | **life-hub** | 0 | 35 |
-| **hatch** | 3 | 18 |
+| **zerg-auto-agent** | 0 | 19 |
 
 
 ## 💡 About
@@ -26,7 +26,7 @@ I'm a full-stack developer building AI-powered applications. This profile showca
 
 ## 🛠️ Current Stack
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![HTML](https://img.shields.io/badge/HTML-gray?style=flat-square&logo=html&logoColor=white)
+
 
 ## 📊 How This Works
 
@@ -44,11 +44,11 @@ All metrics are computed locally and aggregated into a single JSON file, then vi
 <details>
 <summary>🔍 Detailed Stats (Last 30 Days)</summary>
 
-- **Commits**: 271
-- **Languages**: Python (196), TypeScript (74), HTML (1)
-- **AI Sessions**: Claude 833 · Codex 706 · Cursor 0 · Gemini 153
-- **Total Turns**: 12.7k
+- **Commits**: 0
+- **Languages**: 
+- **AI Sessions**: Claude 835 · Codex 711 · Cursor 0 · Gemini 153
+- **Total Turns**: 12.8k
 
 </details>
 
-*Last updated: 2026-01-29 06:11 UTC*
+*Last updated: 2026-01-29 16:30 UTC*
