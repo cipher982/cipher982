@@ -6,11 +6,11 @@
 
 | Repo | Commits | AI Sessions |
 |------|---------|-------------|
-| **zerg** | 385 | 213 |
-| **life-hub** | 58 | 31 |
-| **mcp-tools** | 0 | 40 |
+| **zerg** | 336 | 232 |
+| **life-hub** | 56 | 23 |
+| **mcp-tools** | 0 | 32 |
 | **zerg-auto-agent** | 0 | 24 |
-| **agent-run** | 0 | 24 |
+| **hatch** | 0 | 18 |
 
 
 ## 💡 About
@@ -44,11 +44,11 @@ All metrics are computed locally and aggregated into a single JSON file, then vi
 <details>
 <summary>🔍 Detailed Stats (Last 30 Days)</summary>
 
-- **Commits**: 1375
-- **Languages**: Python (1087), Shell (237), TypeScript (15), HTML (1)
-- **AI Sessions**: Claude 845 · Codex 686 · Cursor 0 · Gemini 154
-- **Total Turns**: 12.8k
+- **Commits**: 1350
+- **Languages**: Python (1065), Shell (234), TypeScript (14), HTML (1)
+- **AI Sessions**: Claude 858 · Codex 687 · Cursor 0 · Gemini 149
+- **Total Turns**: 13.0k
 
 </details>
 
-*Last updated: 2026-01-30 06:12 UTC*
+*Last updated: 2026-01-31 06:07 UTC*
