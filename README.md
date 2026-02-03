@@ -6,11 +6,11 @@
 
 | Repo | Commits | AI Sessions |
 |------|---------|-------------|
-| **longhouse** | 353 | 0 |
+| **longhouse** | 375 | 13 |
 | **zerg** | 0 | 223 |
-| **sauron-jobs** | 26 | 22 |
-| **life-hub** | 19 | 13 |
-| **mcp-tools** | 0 | 30 |
+| **sauron-jobs** | 21 | 23 |
+| **mcp-tools** | 0 | 29 |
+| **life-hub** | 14 | 9 |
 
 
 ## 💡 About
@@ -44,11 +44,11 @@ All metrics are computed locally and aggregated into a single JSON file, then vi
 <details>
 <summary>🔍 Detailed Stats (Last 30 Days)</summary>
 
-- **Commits**: 1331
-- **Languages**: Python (1046), Shell (237), TypeScript (9), HTML (1)
-- **AI Sessions**: Claude 882 · Codex 705 · Cursor 0 · Gemini 143
+- **Commits**: 1300
+- **Languages**: Python (1025), Shell (227), TypeScript (9), HTML (1)
+- **AI Sessions**: Claude 889 · Codex 691 · Cursor 0 · Gemini 141
 - **Total Turns**: 13.4k
 
 </details>
 
-*Last updated: 2026-02-02 06:20 UTC*
+*Last updated: 2026-02-03 06:14 UTC*
