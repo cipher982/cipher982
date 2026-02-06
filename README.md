@@ -6,10 +6,10 @@
 
 | Repo | Commits | AI Sessions |
 |------|---------|-------------|
-| **longhouse** | 435 | 33 |
-| **zerg** | 0 | 167 |
+| **longhouse** | 478 | 37 |
+| **zerg** | 0 | 150 |
 | **sauron-jobs** | 19 | 25 |
-| **life-hub** | 26 | 3 |
+| **life-hub** | 28 | 4 |
 | **litellm-proxy** | 21 | 6 |
 
 
@@ -44,11 +44,11 @@ All metrics are computed locally and aggregated into a single JSON file, then vi
 <details>
 <summary>🔍 Detailed Stats (Last 30 Days)</summary>
 
-- **Commits**: 1222
-- **Languages**: Python (998), Shell (174), TypeScript (8), HTML (1)
-- **AI Sessions**: Claude 924 · Codex 700 · Cursor 0 · Gemini 136
+- **Commits**: 1181
+- **Languages**: Python (986), Shell (144), TypeScript (8), HTML (1)
+- **AI Sessions**: Claude 934 · Codex 675 · Cursor 0 · Gemini 132
 - **Total Turns**: 13.8k
 
 </details>
 
-*Last updated: 2026-02-05 06:17 UTC*
+*Last updated: 2026-02-06 06:15 UTC*
