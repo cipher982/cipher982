@@ -6,11 +6,11 @@
 
 | Repo | Commits | AI Sessions |
 |------|---------|-------------|
-| **longhouse** | 303 | 41 |
-| **zerg** | 0 | 48 |
+| **longhouse** | 237 | 45 |
+| **zerg** | 0 | 49 |
 | **mytech** | 0 | 34 |
-| **stopsign_ai** | 17 | 16 |
-| **mcp-tools** | 0 | 30 |
+| **mcp-tools** | 0 | 32 |
+| **phone** | 0 | 24 |
 
 
 ## 💡 About
@@ -44,11 +44,11 @@ All metrics are computed locally and aggregated into a single JSON file, then vi
 <details>
 <summary>🔍 Detailed Stats (Last 30 Days)</summary>
 
-- **Commits**: 952
-- **Languages**: Python (827), Shell (85), TypeScript (2), HTML (1)
-- **AI Sessions**: Claude 945 · Codex 567 · Cursor 2 · Gemini 100
-- **Total Turns**: 12.9k
+- **Commits**: 953
+- **Languages**: Python (815), Shell (98), TypeScript (2), HTML (1)
+- **AI Sessions**: Claude 964 · Codex 559 · Cursor 2 · Gemini 89
+- **Total Turns**: 13.0k
 
 </details>
 
-*Last updated: 2026-02-12 06:20 UTC*
+*Last updated: 2026-02-13 06:18 UTC*
