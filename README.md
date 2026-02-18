@@ -27,7 +27,7 @@ I build AI-powered applications and infrastructure. Most of my work involves aut
 | [**HDR Pop**](https://github.com/cipher982/hdr) | Transform standard photos into HDR using AI-powered gain map generation |
 | [**March Madness LLM**](https://marchmadness.drose.io) | NCAA bracket simulator with AI-powered decisions and a React frontend |
 | [**This Wine Does Not Exist**](https://github.com/cipher982/this-wine-does-not-exist) | Generating fake wines with GPT-2 + StyleGAN — 8 stars |
-| [**FloodMap USA**](https://github.com/cipher982/floodmap) | Interactive flood risk mapping with elevation data |
+| [**FloodMap USA**](https://floodmap.drose.io) | Interactive flood risk mapping with elevation data |
 | [**AI Tools Directory**](https://aitools.drose.io) | AI agents that discover, catalog, and organize emerging AI tools |
 | [**Pixel Pilot**](https://github.com/cipher982/pixel-pilot) | AI agent for completing computer tasks via screen control |
 
