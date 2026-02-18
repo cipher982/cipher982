@@ -12,7 +12,7 @@ I build AI-powered applications and infrastructure. Most of my work involves aut
 
 | Project | Description |
 |---------|-------------|
-| 🏛️ [**Longhouse**](https://longhouse.ai) | Centralized platform for managing AI agent sessions, insights, memory, and orchestration |
+| 🪵 [**Longhouse**](https://longhouse.ai) | Centralized platform for managing AI agent sessions, insights, memory, and orchestration |
 | ⚡ [**LLM Benchmarks**](https://llm-benchmarks.com) | Benchmarking LLM inference speeds across providers — 13 stars |
 | 🐣 [**Hatch**](https://github.com/cipher982/zerg/tree/main/packages/hatch-agent) | CLI tool for spawning headless AI agents (Claude, Codex, Gemini) |
 | 🔧 [**MCP Tools**](https://github.com/cipher982/mcp-tools) | Lightweight MCP server facades for Claude Code — 90%+ token reduction |
