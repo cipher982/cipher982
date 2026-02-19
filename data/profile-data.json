@@ -1,48 +1,44 @@
 {
-  "generated_at": "2026-02-18T06:20:09.920124+00:00",
+  "generated_at": "2026-02-19T06:19:30.702091+00:00",
   "github": {
     "repos_active_7d": 13,
-    "repos_active_30d": 20,
-    "commits_7d": 330,
-    "commits_30d": 944,
+    "repos_active_30d": 19,
+    "commits_7d": 300,
+    "commits_30d": 926,
     "languages_30d": [
       {
         "name": "Python",
-        "commits": 834
+        "commits": 826
       },
       {
         "name": "Shell",
-        "commits": 67
+        "commits": 59
       },
       {
         "name": "TypeScript",
         "commits": 3
-      },
-      {
-        "name": "HTML",
-        "commits": 1
       }
     ],
     "last_push": {
-      "repo": "sauron-jobs",
-      "timestamp": "2026-02-18T03:02:21+00:00",
-      "hours_ago": 3.29
+      "repo": "longhouse",
+      "timestamp": "2026-02-19T04:57:00+00:00",
+      "hours_ago": 1.37
     },
     "top_repos_7d": [
       {
         "repo": "longhouse",
-        "commits": 214
+        "commits": 184
       },
       {
         "repo": "stopsign_ai",
         "commits": 64
       },
       {
-        "repo": "me",
-        "commits": 9
+        "repo": "sauron-jobs",
+        "commits": 8
       },
       {
-        "repo": "life-hub",
+        "repo": "obsidian-vault",
         "commits": 8
       },
       {
@@ -52,12 +48,8 @@
     ],
     "daily_commits": [
       {
-        "date": "2026-02-11",
-        "commits": 60
-      },
-      {
         "date": "2026-02-12",
-        "commits": 49
+        "commits": 34
       },
       {
         "date": "2026-02-13",
@@ -81,55 +73,39 @@
       },
       {
         "date": "2026-02-18",
-        "commits": 20
+        "commits": 40
+      },
+      {
+        "date": "2026-02-19",
+        "commits": 25
       }
     ]
   },
   "claude": {
-    "sessions_7d": 194,
-    "sessions_30d": 930,
-    "turns_7d": 1141,
-    "turns_30d": 7593,
+    "sessions_7d": 131,
+    "sessions_30d": 881,
+    "turns_7d": 679,
+    "turns_30d": 7271,
     "repos": [
-      {
-        "repo": "zerg",
-        "sessions": 46,
-        "turns": 364
-      },
       {
         "repo": "hindsight",
         "sessions": 38,
         "turns": 38
       },
       {
-        "repo": "mytech",
-        "sessions": 22,
-        "turns": 153
-      },
-      {
-        "repo": "aiml",
-        "sessions": 17,
-        "turns": 156
-      },
-      {
-        "repo": "phone",
-        "sessions": 16,
-        "turns": 181
+        "repo": "zerg",
+        "sessions": 35,
+        "turns": 244
       },
       {
         "repo": "Home",
-        "sessions": 15,
-        "turns": 33
+        "sessions": 13,
+        "turns": 31
       },
       {
-        "repo": "mcp-tools",
-        "sessions": 11,
-        "turns": 21
-      },
-      {
-        "repo": "myagents",
-        "sessions": 7,
-        "turns": 70
+        "repo": "aiml",
+        "sessions": 13,
+        "turns": 145
       },
       {
         "repo": "stopsign_ai",
@@ -137,29 +113,34 @@
         "turns": 49
       },
       {
-        "repo": "ebay",
+        "repo": "phone",
+        "sessions": 6,
+        "turns": 61
+      },
+      {
+        "repo": "myagents",
         "sessions": 5,
-        "turns": 33
+        "turns": 47
+      },
+      {
+        "repo": "mytech",
+        "sessions": 4,
+        "turns": 12
+      },
+      {
+        "repo": "ebay",
+        "sessions": 4,
+        "turns": 20
+      },
+      {
+        "repo": "mcp-tools",
+        "sessions": 3,
+        "turns": 13
       },
       {
         "repo": "life-hub",
         "sessions": 2,
         "turns": 6
-      },
-      {
-        "repo": "gitops",
-        "sessions": 2,
-        "turns": 4
-      },
-      {
-        "repo": "tmp",
-        "sessions": 2,
-        "turns": 2
-      },
-      {
-        "repo": "g55",
-        "sessions": 2,
-        "turns": 19
       },
       {
         "repo": "hub",
@@ -170,28 +151,18 @@
         "repo": "sauron-jobs",
         "sessions": 1,
         "turns": 4
-      },
-      {
-        "repo": "agent-skills",
-        "sessions": 1,
-        "turns": 1
       }
     ],
     "last_session": {
       "repo": "stopsign_ai",
       "timestamp": "2026-02-15T17:25:34.182000+00:00",
-      "hours_ago": 60.91
+      "hours_ago": 84.9
     },
     "daily_sessions": [
       {
-        "date": "2026-02-11",
-        "sessions": 39,
-        "turns": 322
-      },
-      {
         "date": "2026-02-12",
-        "sessions": 57,
-        "turns": 327
+        "sessions": 33,
+        "turns": 185
       },
       {
         "date": "2026-02-13",
@@ -211,20 +182,20 @@
     ]
   },
   "codex": {
-    "sessions_7d": 54,
-    "sessions_30d": 473,
-    "turns_7d": 325,
-    "turns_30d": 3554,
+    "sessions_7d": 38,
+    "sessions_30d": 457,
+    "turns_7d": 261,
+    "turns_30d": 3430,
     "repos": [
       {
         "repo": "longhouse",
-        "sessions": 33,
-        "turns": 132
+        "sessions": 22,
+        "turns": 88
       },
       {
         "repo": "phone",
-        "sessions": 10,
-        "turns": 69
+        "sessions": 6,
+        "turns": 53
       },
       {
         "repo": "ebay",
@@ -235,11 +206,6 @@
         "repo": "davidrose",
         "sessions": 2,
         "turns": 12
-      },
-      {
-        "repo": "image-gen-poc",
-        "sessions": 2,
-        "turns": 49
       },
       {
         "repo": "stopsign_ai",
@@ -257,6 +223,11 @@
         "turns": 4
       },
       {
+        "repo": "image-gen-poc",
+        "sessions": 1,
+        "turns": 45
+      },
+      {
         "repo": "dserve",
         "sessions": 1,
         "turns": 24
@@ -265,18 +236,13 @@
     "last_session": {
       "repo": "phone",
       "timestamp": "2026-02-15T16:57:35.030000+00:00",
-      "hours_ago": 61.38
+      "hours_ago": 85.37
     },
     "daily_sessions": [
       {
-        "date": "2026-02-11",
-        "sessions": 10,
-        "turns": 40
-      },
-      {
         "date": "2026-02-12",
-        "sessions": 23,
-        "turns": 190
+        "sessions": 17,
+        "turns": 166
       },
       {
         "date": "2026-02-13",
@@ -306,29 +272,29 @@
   },
   "gemini": {
     "sessions_7d": 0,
-    "sessions_30d": 62,
+    "sessions_30d": 54,
     "turns_7d": 0,
-    "turns_30d": 127,
+    "turns_30d": 107,
     "repos": [],
     "last_session": null,
     "daily_sessions": []
   },
   "aggregate": {
-    "ai_sessions_7d": 248,
-    "ai_turns_7d": 1466,
-    "claude_percentage": 78.2,
-    "codex_percentage": 21.8,
+    "ai_sessions_7d": 169,
+    "ai_turns_7d": 940,
+    "claude_percentage": 77.5,
+    "codex_percentage": 22.5,
     "cursor_percentage": 0.0,
     "gemini_percentage": 0.0,
-    "claude_turns_percentage": 77.8,
-    "codex_turns_percentage": 22.2,
+    "claude_turns_percentage": 72.2,
+    "codex_turns_percentage": 27.8,
     "cursor_turns_percentage": 0.0,
     "gemini_turns_percentage": 0.0,
     "top_repos_combined": [
       {
         "repo": "longhouse",
-        "commits": 214,
-        "ai_sessions": 33,
+        "commits": 184,
+        "ai_sessions": 22,
         "github_url": null
       },
       {
@@ -338,42 +304,33 @@
         "github_url": null
       },
       {
-        "repo": "zerg",
-        "commits": 0,
-        "ai_sessions": 46,
-        "github_url": null
-      },
-      {
         "repo": "hindsight",
         "commits": 0,
         "ai_sessions": 38,
         "github_url": null
       },
       {
-        "repo": "phone",
+        "repo": "zerg",
         "commits": 0,
-        "ai_sessions": 26,
+        "ai_sessions": 35,
+        "github_url": null
+      },
+      {
+        "repo": "Home",
+        "commits": 0,
+        "ai_sessions": 13,
         "github_url": null
       }
     ],
     "daily_breakdown_7d": [
       {
-        "date": "2026-02-11",
-        "commits": 60,
-        "claude_sessions": 39,
-        "codex_sessions": 10,
-        "cursor_sessions": 0,
-        "gemini_sessions": 0,
-        "total_sessions": 49
-      },
-      {
         "date": "2026-02-12",
-        "commits": 49,
-        "claude_sessions": 57,
-        "codex_sessions": 23,
+        "commits": 34,
+        "claude_sessions": 33,
+        "codex_sessions": 17,
         "cursor_sessions": 0,
         "gemini_sessions": 0,
-        "total_sessions": 80
+        "total_sessions": 50
       },
       {
         "date": "2026-02-13",
@@ -414,6 +371,15 @@
       {
         "date": "2026-02-17",
         "commits": 61,
+        "claude_sessions": 0,
+        "codex_sessions": 0,
+        "cursor_sessions": 0,
+        "gemini_sessions": 0,
+        "total_sessions": 0
+      },
+      {
+        "date": "2026-02-18",
+        "commits": 40,
         "claude_sessions": 0,
         "codex_sessions": 0,
         "cursor_sessions": 0,
