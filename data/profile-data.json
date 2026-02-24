@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-02-23T06:20:20.894628+00:00",
+  "generated_at": "2026-02-24T06:18:46.573668+00:00",
   "github": {
-    "repos_active_7d": 13,
-    "repos_active_30d": 19,
-    "commits_7d": 286,
-    "commits_30d": 901,
+    "repos_active_7d": 14,
+    "repos_active_30d": 20,
+    "commits_7d": 271,
+    "commits_30d": 893,
     "languages_30d": [
       {
         "name": "Python",
-        "commits": 816
+        "commits": 810
       },
       {
         "name": "Shell",
-        "commits": 44
+        "commits": 43
       },
       {
         "name": "TypeScript",
@@ -21,17 +21,17 @@
     ],
     "last_push": {
       "repo": "longhouse",
-      "timestamp": "2026-02-22T23:14:15+00:00",
-      "hours_ago": 7.1
+      "timestamp": "2026-02-24T04:23:36+00:00",
+      "hours_ago": 1.92
     },
     "top_repos_7d": [
       {
         "repo": "longhouse",
-        "commits": 172
+        "commits": 175
       },
       {
         "repo": "stopsign_ai",
-        "commits": 45
+        "commits": 26
       },
       {
         "repo": "sauron-jobs",
@@ -48,12 +48,8 @@
     ],
     "daily_commits": [
       {
-        "date": "2026-02-16",
-        "commits": 27
-      },
-      {
         "date": "2026-02-17",
-        "commits": 61
+        "commits": 44
       },
       {
         "date": "2026-02-18",
@@ -73,24 +69,32 @@
       },
       {
         "date": "2026-02-22",
-        "commits": 42
+        "commits": 44
+      },
+      {
+        "date": "2026-02-23",
+        "commits": 7
+      },
+      {
+        "date": "2026-02-24",
+        "commits": 20
       }
     ]
   },
   "claude": {
     "sessions_7d": 0,
-    "sessions_30d": 714,
+    "sessions_30d": 687,
     "turns_7d": 0,
-    "turns_30d": 5316,
+    "turns_30d": 5074,
     "repos": [],
     "last_session": null,
     "daily_sessions": []
   },
   "codex": {
     "sessions_7d": 0,
-    "sessions_30d": 353,
+    "sessions_30d": 331,
     "turns_7d": 0,
-    "turns_30d": 2900,
+    "turns_30d": 2694,
     "repos": [],
     "last_session": null,
     "daily_sessions": []
@@ -106,9 +110,9 @@
   },
   "gemini": {
     "sessions_7d": 0,
-    "sessions_30d": 41,
+    "sessions_30d": 31,
     "turns_7d": 0,
-    "turns_30d": 88,
+    "turns_30d": 78,
     "repos": [],
     "last_session": null,
     "daily_sessions": []
@@ -127,13 +131,13 @@
     "top_repos_combined": [
       {
         "repo": "longhouse",
-        "commits": 172,
+        "commits": 175,
         "ai_sessions": 0,
         "github_url": null
       },
       {
         "repo": "stopsign_ai",
-        "commits": 45,
+        "commits": 26,
         "ai_sessions": 0,
         "github_url": null
       },
@@ -158,17 +162,8 @@
     ],
     "daily_breakdown_7d": [
       {
-        "date": "2026-02-16",
-        "commits": 27,
-        "claude_sessions": 0,
-        "codex_sessions": 0,
-        "cursor_sessions": 0,
-        "gemini_sessions": 0,
-        "total_sessions": 0
-      },
-      {
         "date": "2026-02-17",
-        "commits": 61,
+        "commits": 44,
         "claude_sessions": 0,
         "codex_sessions": 0,
         "cursor_sessions": 0,
@@ -205,6 +200,24 @@
       {
         "date": "2026-02-21",
         "commits": 12,
+        "claude_sessions": 0,
+        "codex_sessions": 0,
+        "cursor_sessions": 0,
+        "gemini_sessions": 0,
+        "total_sessions": 0
+      },
+      {
+        "date": "2026-02-22",
+        "commits": 44,
+        "claude_sessions": 0,
+        "codex_sessions": 0,
+        "cursor_sessions": 0,
+        "gemini_sessions": 0,
+        "total_sessions": 0
+      },
+      {
+        "date": "2026-02-23",
+        "commits": 7,
         "claude_sessions": 0,
         "codex_sessions": 0,
         "cursor_sessions": 0,
