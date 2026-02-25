@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-02-24T06:18:46.573668+00:00",
+  "generated_at": "2026-02-25T06:21:05.385273+00:00",
   "github": {
-    "repos_active_7d": 14,
+    "repos_active_7d": 11,
     "repos_active_30d": 20,
-    "commits_7d": 271,
-    "commits_30d": 893,
+    "commits_7d": 235,
+    "commits_30d": 870,
     "languages_30d": [
       {
         "name": "Python",
-        "commits": 810
+        "commits": 791
       },
       {
         "name": "Shell",
-        "commits": 43
+        "commits": 39
       },
       {
         "name": "TypeScript",
@@ -21,39 +21,35 @@
     ],
     "last_push": {
       "repo": "longhouse",
-      "timestamp": "2026-02-24T04:23:36+00:00",
-      "hours_ago": 1.92
+      "timestamp": "2026-02-25T03:38:25+00:00",
+      "hours_ago": 2.71
     },
     "top_repos_7d": [
       {
         "repo": "longhouse",
-        "commits": 175
-      },
-      {
-        "repo": "stopsign_ai",
-        "commits": 26
+        "commits": 161
       },
       {
         "repo": "sauron-jobs",
-        "commits": 21
+        "commits": 25
+      },
+      {
+        "repo": "stopsign_ai",
+        "commits": 13
       },
       {
         "repo": "ultra-hdr-ai-pipeline",
         "commits": 11
       },
       {
-        "repo": "obsidian-vault",
-        "commits": 8
+        "repo": "mcp-tools",
+        "commits": 7
       }
     ],
     "daily_commits": [
       {
-        "date": "2026-02-17",
-        "commits": 44
-      },
-      {
         "date": "2026-02-18",
-        "commits": 40
+        "commits": 20
       },
       {
         "date": "2026-02-19",
@@ -77,24 +73,28 @@
       },
       {
         "date": "2026-02-24",
-        "commits": 20
+        "commits": 39
+      },
+      {
+        "date": "2026-02-25",
+        "commits": 9
       }
     ]
   },
   "claude": {
     "sessions_7d": 0,
-    "sessions_30d": 687,
+    "sessions_30d": 652,
     "turns_7d": 0,
-    "turns_30d": 5074,
+    "turns_30d": 4776,
     "repos": [],
     "last_session": null,
     "daily_sessions": []
   },
   "codex": {
     "sessions_7d": 0,
-    "sessions_30d": 331,
+    "sessions_30d": 302,
     "turns_7d": 0,
-    "turns_30d": 2694,
+    "turns_30d": 2386,
     "repos": [],
     "last_session": null,
     "daily_sessions": []
@@ -110,9 +110,9 @@
   },
   "gemini": {
     "sessions_7d": 0,
-    "sessions_30d": 31,
+    "sessions_30d": 16,
     "turns_7d": 0,
-    "turns_30d": 78,
+    "turns_30d": 20,
     "repos": [],
     "last_session": null,
     "daily_sessions": []
@@ -131,19 +131,19 @@
     "top_repos_combined": [
       {
         "repo": "longhouse",
-        "commits": 175,
-        "ai_sessions": 0,
-        "github_url": null
-      },
-      {
-        "repo": "stopsign_ai",
-        "commits": 26,
+        "commits": 161,
         "ai_sessions": 0,
         "github_url": null
       },
       {
         "repo": "sauron-jobs",
-        "commits": 21,
+        "commits": 25,
+        "ai_sessions": 0,
+        "github_url": null
+      },
+      {
+        "repo": "stopsign_ai",
+        "commits": 13,
         "ai_sessions": 0,
         "github_url": null
       },
@@ -154,25 +154,16 @@
         "github_url": null
       },
       {
-        "repo": "obsidian-vault",
-        "commits": 8,
+        "repo": "mcp-tools",
+        "commits": 7,
         "ai_sessions": 0,
         "github_url": null
       }
     ],
     "daily_breakdown_7d": [
       {
-        "date": "2026-02-17",
-        "commits": 44,
-        "claude_sessions": 0,
-        "codex_sessions": 0,
-        "cursor_sessions": 0,
-        "gemini_sessions": 0,
-        "total_sessions": 0
-      },
-      {
         "date": "2026-02-18",
-        "commits": 40,
+        "commits": 20,
         "claude_sessions": 0,
         "codex_sessions": 0,
         "cursor_sessions": 0,
@@ -218,6 +209,15 @@
       {
         "date": "2026-02-23",
         "commits": 7,
+        "claude_sessions": 0,
+        "codex_sessions": 0,
+        "cursor_sessions": 0,
+        "gemini_sessions": 0,
+        "total_sessions": 0
+      },
+      {
+        "date": "2026-02-24",
+        "commits": 39,
         "claude_sessions": 0,
         "codex_sessions": 0,
         "cursor_sessions": 0,
