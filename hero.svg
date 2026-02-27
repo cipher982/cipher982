@@ -77,7 +77,7 @@
     <text x="220" y="18" class="metric-label text-secondary">TURNS</text>
 
     <!-- Commits -->
-    <text x="420" y="0" class="metric-value">213</text>
+    <text x="420" y="0" class="metric-value">173</text>
     <text x="420" y="18" class="metric-label text-secondary">COMMITS</text>
 
     <!-- Repos -->
@@ -93,7 +93,7 @@
     <g transform="translate(0, 20)">
       <text x="0" y="25" class="sparkline-label text-secondary">Commits</text>
       <svg x="80" y="0" width="180" height="40" viewBox="0 0 180 40">
-        <path d="M 0.00,7.57 L 30.00,2.16 L 60.00,34.59 L 90.00,0.00 L 120.00,40.00 L 150.00,5.41 L 180.00,19.46" class="sparkline-commits" stroke-dasharray="210" stroke-dashoffset="210">
+        <path d="M 0.00,17.30 L 30.00,34.59 L 60.00,0.00 L 90.00,40.00 L 120.00,4.32 L 150.00,19.46 L 180.00,33.51" class="sparkline-commits" stroke-dasharray="210" stroke-dashoffset="210">
           <animate attributeName="stroke-dashoffset" from="210" to="0" dur="1.2s" fill="freeze"/>
         </path>
       </svg>
@@ -177,6 +177,6 @@
 
   <!-- Footer: Last Activity -->
   <text x="30" y="535" class="footer text-secondary">
-    <tspan class="pulse">⚡</tspan> Last activity: 5h ago
+    <tspan class="pulse">⚡</tspan> Last activity: 14m ago
   </text>
 </svg>
