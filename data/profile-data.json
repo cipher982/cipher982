@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-03-05T06:12:42.297662+00:00",
+  "generated_at": "2026-03-06T06:11:12.285511+00:00",
   "github": {
     "repos_active_7d": 13,
-    "repos_active_30d": 23,
-    "commits_7d": 283,
-    "commits_30d": 880,
+    "repos_active_30d": 22,
+    "commits_7d": 292,
+    "commits_30d": 869,
     "languages_30d": [
       {
         "name": "Python",
-        "commits": 754
+        "commits": 746
       },
       {
         "name": "Shell",
-        "commits": 48
+        "commits": 45
       },
       {
         "name": "TypeScript",
@@ -25,13 +25,13 @@
     ],
     "last_push": {
       "repo": "longhouse",
-      "timestamp": "2026-03-05T03:38:49+00:00",
-      "hours_ago": 2.56
+      "timestamp": "2026-03-06T04:39:56+00:00",
+      "hours_ago": 1.52
     },
     "top_repos_7d": [
       {
         "repo": "longhouse",
-        "commits": 171
+        "commits": 182
       },
       {
         "repo": "march-madness-llm",
@@ -43,21 +43,17 @@
       },
       {
         "repo": "me",
-        "commits": 18
+        "commits": 17
       },
       {
         "repo": "stopsign_ai",
-        "commits": 18
+        "commits": 17
       }
     ],
     "daily_commits": [
       {
-        "date": "2026-02-26",
-        "commits": 14
-      },
-      {
         "date": "2026-02-27",
-        "commits": 21
+        "commits": 18
       },
       {
         "date": "2026-02-28",
@@ -77,30 +73,39 @@
       },
       {
         "date": "2026-03-05",
-        "commits": 17
+        "commits": 27
+      },
+      {
+        "date": "2026-03-06",
+        "commits": 16
       }
     ]
   },
   "claude": {
-    "sessions_7d": 88,
-    "sessions_30d": 905,
-    "turns_7d": 714,
-    "turns_30d": 5646,
+    "sessions_7d": 102,
+    "sessions_30d": 904,
+    "turns_7d": 846,
+    "turns_30d": 5695,
     "repos": [
       {
         "repo": "zerg",
-        "sessions": 26,
-        "turns": 148
+        "sessions": 33,
+        "turns": 165
       },
       {
         "repo": "aiml",
-        "sessions": 15,
-        "turns": 120
+        "sessions": 18,
+        "turns": 224
       },
       {
         "repo": "sauron-jobs",
-        "sessions": 9,
-        "turns": 46
+        "sessions": 10,
+        "turns": 62
+      },
+      {
+        "repo": "mytech",
+        "sessions": 6,
+        "turns": 50
       },
       {
         "repo": "cc-live-repro",
@@ -108,14 +113,9 @@
         "turns": 4
       },
       {
-        "repo": "mytech",
+        "repo": "Home",
         "sessions": 3,
-        "turns": 29
-      },
-      {
-        "repo": "mcp-tools",
-        "sessions": 3,
-        "turns": 29
+        "turns": 15
       },
       {
         "repo": "myagents",
@@ -128,24 +128,24 @@
         "turns": 23
       },
       {
-        "repo": "stopsign_ai",
-        "sessions": 3,
-        "turns": 17
-      },
-      {
         "repo": "march-madness-llm",
         "sessions": 3,
         "turns": 40
       },
       {
-        "repo": "Home",
+        "repo": "myjobs",
         "sessions": 2,
-        "turns": 11
+        "turns": 42
       },
       {
         "repo": "hdr",
         "sessions": 2,
-        "turns": 48
+        "turns": 52
+      },
+      {
+        "repo": "mcp-tools",
+        "sessions": 2,
+        "turns": 2
       },
       {
         "repo": "ai-tools-website",
@@ -158,14 +158,14 @@
         "turns": 9
       },
       {
+        "repo": "stopsign_ai",
+        "sessions": 2,
+        "turns": 11
+      },
+      {
         "repo": "drose_io",
         "sessions": 1,
         "turns": 8
-      },
-      {
-        "repo": "myjobs",
-        "sessions": 1,
-        "turns": 38
       },
       {
         "repo": "rt5",
@@ -189,20 +189,15 @@
       }
     ],
     "last_session": {
-      "repo": "zerg",
-      "timestamp": "2026-03-05T03:36:41.154000+00:00",
-      "hours_ago": 2.6
+      "repo": "myjobs",
+      "timestamp": "2026-03-06T00:53:00.080000+00:00",
+      "hours_ago": 5.3
     },
     "daily_sessions": [
       {
-        "date": "2026-02-26",
-        "sessions": 3,
-        "turns": 35
-      },
-      {
         "date": "2026-02-27",
-        "sessions": 8,
-        "turns": 28
+        "sessions": 7,
+        "turns": 22
       },
       {
         "date": "2026-03-02",
@@ -217,25 +212,30 @@
       {
         "date": "2026-03-04",
         "sessions": 28,
-        "turns": 232
+        "turns": 235
       },
       {
         "date": "2026-03-05",
-        "sessions": 17,
-        "turns": 95
+        "sessions": 34,
+        "turns": 269
+      },
+      {
+        "date": "2026-03-06",
+        "sessions": 1,
+        "turns": 1
       }
     ]
   },
   "codex": {
-    "sessions_7d": 109,
-    "sessions_30d": 403,
-    "turns_7d": 734,
-    "turns_30d": 2604,
+    "sessions_7d": 99,
+    "sessions_30d": 398,
+    "turns_7d": 731,
+    "turns_30d": 2552,
     "repos": [
       {
         "repo": "longhouse",
-        "sessions": 54,
-        "turns": 391
+        "sessions": 55,
+        "turns": 407
       },
       {
         "repo": "stopsign_ai",
@@ -244,13 +244,13 @@
       },
       {
         "repo": "zorb",
-        "sessions": 17,
-        "turns": 90
+        "sessions": 5,
+        "turns": 67
       },
       {
         "repo": "davidrose",
-        "sessions": 2,
-        "turns": 9
+        "sessions": 3,
+        "turns": 13
       },
       {
         "repo": "march-madness-llm",
@@ -290,15 +290,10 @@
     ],
     "last_session": {
       "repo": "longhouse",
-      "timestamp": "2026-03-05T02:33:30.541000+00:00",
-      "hours_ago": 3.65
+      "timestamp": "2026-03-06T04:14:39.753000+00:00",
+      "hours_ago": 1.94
     },
     "daily_sessions": [
-      {
-        "date": "2026-02-26",
-        "sessions": 17,
-        "turns": 105
-      },
       {
         "date": "2026-02-27",
         "sessions": 17,
@@ -321,8 +316,13 @@
       },
       {
         "date": "2026-03-05",
-        "sessions": 5,
-        "turns": 25
+        "sessions": 10,
+        "turns": 121
+      },
+      {
+        "date": "2026-03-06",
+        "sessions": 2,
+        "turns": 6
       }
     ]
   },
@@ -345,33 +345,39 @@
     "daily_sessions": []
   },
   "aggregate": {
-    "ai_sessions_7d": 195,
-    "ai_turns_7d": 1448,
-    "claude_percentage": 44.1,
-    "codex_percentage": 55.9,
+    "ai_sessions_7d": 199,
+    "ai_turns_7d": 1577,
+    "claude_percentage": 50.3,
+    "codex_percentage": 49.7,
     "cursor_percentage": 0.0,
     "gemini_percentage": 0.0,
-    "claude_turns_percentage": 49.3,
-    "codex_turns_percentage": 50.7,
+    "claude_turns_percentage": 53.6,
+    "codex_turns_percentage": 46.4,
     "cursor_turns_percentage": 0.0,
     "gemini_turns_percentage": 0.0,
     "top_repos_combined": [
       {
         "repo": "longhouse",
-        "commits": 171,
-        "ai_sessions": 54,
+        "commits": 182,
+        "ai_sessions": 55,
         "github_url": null
       },
       {
         "repo": "stopsign_ai",
-        "commits": 18,
-        "ai_sessions": 31,
+        "commits": 17,
+        "ai_sessions": 30,
+        "github_url": null
+      },
+      {
+        "repo": "zerg",
+        "commits": 0,
+        "ai_sessions": 33,
         "github_url": null
       },
       {
         "repo": "sauron-jobs",
         "commits": 20,
-        "ai_sessions": 10,
+        "ai_sessions": 11,
         "github_url": null
       },
       {
@@ -379,32 +385,17 @@
         "commits": 22,
         "ai_sessions": 5,
         "github_url": null
-      },
-      {
-        "repo": "zerg",
-        "commits": 0,
-        "ai_sessions": 26,
-        "github_url": null
       }
     ],
     "daily_breakdown_7d": [
       {
-        "date": "2026-02-26",
-        "commits": 14,
-        "claude_sessions": 3,
-        "codex_sessions": 17,
-        "cursor_sessions": 0,
-        "gemini_sessions": 0,
-        "total_sessions": 20
-      },
-      {
         "date": "2026-02-27",
-        "commits": 21,
-        "claude_sessions": 8,
+        "commits": 18,
+        "claude_sessions": 7,
         "codex_sessions": 17,
         "cursor_sessions": 0,
         "gemini_sessions": 0,
-        "total_sessions": 25
+        "total_sessions": 24
       },
       {
         "date": "2026-02-28",
@@ -441,6 +432,15 @@
         "cursor_sessions": 0,
         "gemini_sessions": 0,
         "total_sessions": 41
+      },
+      {
+        "date": "2026-03-05",
+        "commits": 27,
+        "claude_sessions": 34,
+        "codex_sessions": 10,
+        "cursor_sessions": 0,
+        "gemini_sessions": 0,
+        "total_sessions": 44
       }
     ]
   }
