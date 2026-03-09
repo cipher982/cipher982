@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-03-08T06:09:59.569412+00:00",
+  "generated_at": "2026-03-09T06:17:55.744445+00:00",
   "github": {
-    "repos_active_7d": 15,
-    "repos_active_30d": 22,
-    "commits_7d": 411,
-    "commits_30d": 886,
+    "repos_active_7d": 17,
+    "repos_active_30d": 24,
+    "commits_7d": 473,
+    "commits_30d": 911,
     "languages_30d": [
       {
         "name": "Python",
-        "commits": 745
+        "commits": 763
       },
       {
         "name": "Shell",
-        "commits": 64
+        "commits": 71
       },
       {
         "name": "TypeScript",
@@ -24,22 +24,22 @@
       }
     ],
     "last_push": {
-      "repo": "me",
-      "timestamp": "2026-03-08T03:36:38+00:00",
-      "hours_ago": 2.55
+      "repo": "longhouse",
+      "timestamp": "2026-03-08T21:57:49+00:00",
+      "hours_ago": 8.33
     },
     "top_repos_7d": [
       {
         "repo": "longhouse",
-        "commits": 251
+        "commits": 281
       },
       {
         "repo": "me",
-        "commits": 41
+        "commits": 46
       },
       {
         "repo": "sauron-jobs",
-        "commits": 24
+        "commits": 30
       },
       {
         "repo": "ai-tools-website",
@@ -77,20 +77,20 @@
       },
       {
         "date": "2026-03-08",
-        "commits": 59
+        "commits": 121
       }
     ]
   },
   "claude": {
-    "sessions_7d": 117,
-    "sessions_30d": 863,
-    "turns_7d": 915,
-    "turns_30d": 5230,
+    "sessions_7d": 126,
+    "sessions_30d": 846,
+    "turns_7d": 923,
+    "turns_30d": 5054,
     "repos": [
       {
         "repo": "zerg",
-        "sessions": 32,
-        "turns": 162
+        "sessions": 35,
+        "turns": 165
       },
       {
         "repo": "aiml",
@@ -104,8 +104,8 @@
       },
       {
         "repo": "Home",
-        "sessions": 7,
-        "turns": 21
+        "sessions": 9,
+        "turns": 25
       },
       {
         "repo": "mytech",
@@ -116,6 +116,11 @@
         "repo": "me",
         "sessions": 5,
         "turns": 25
+      },
+      {
+        "repo": "hindsight",
+        "sessions": 4,
+        "turns": 4
       },
       {
         "repo": "cc-live-repro",
@@ -158,7 +163,7 @@
         "turns": 9
       },
       {
-        "repo": "hindsight",
+        "repo": "claude-openai",
         "sessions": 1,
         "turns": 1
       },
@@ -194,9 +199,9 @@
       }
     ],
     "last_session": {
-      "repo": "zerg",
-      "timestamp": "2026-03-08T02:02:49.217000+00:00",
-      "hours_ago": 4.12
+      "repo": "hindsight",
+      "timestamp": "2026-03-08T19:44:22.506000+00:00",
+      "hours_ago": 10.56
     },
     "daily_sessions": [
       {
@@ -231,21 +236,21 @@
       },
       {
         "date": "2026-03-08",
-        "sessions": 5,
-        "turns": 6
+        "sessions": 14,
+        "turns": 17
       }
     ]
   },
   "codex": {
-    "sessions_7d": 120,
-    "sessions_30d": 410,
-    "turns_7d": 1025,
-    "turns_30d": 2734,
+    "sessions_7d": 128,
+    "sessions_30d": 416,
+    "turns_7d": 1151,
+    "turns_30d": 2850,
     "repos": [
       {
         "repo": "longhouse",
-        "sessions": 52,
-        "turns": 562
+        "sessions": 57,
+        "turns": 631
       },
       {
         "repo": "stopsign_ai",
@@ -253,14 +258,14 @@
         "turns": 115
       },
       {
-        "repo": "zorb",
+        "repo": "sauron-jobs",
         "sessions": 11,
-        "turns": 132
+        "turns": 81
       },
       {
-        "repo": "sauron-jobs",
-        "sessions": 9,
-        "turns": 62
+        "repo": "zorb",
+        "sessions": 11,
+        "turns": 150
       },
       {
         "repo": "davidrose",
@@ -293,6 +298,11 @@
         "turns": 10
       },
       {
+        "repo": "claude-openai",
+        "sessions": 1,
+        "turns": 20
+      },
+      {
         "repo": "hatch",
         "sessions": 1,
         "turns": 3
@@ -319,9 +329,9 @@
       }
     ],
     "last_session": {
-      "repo": "longhouse",
-      "timestamp": "2026-03-08T03:43:01.599000+00:00",
-      "hours_ago": 2.45
+      "repo": "sauron-jobs",
+      "timestamp": "2026-03-08T20:36:49.322000+00:00",
+      "hours_ago": 9.69
     },
     "daily_sessions": [
       {
@@ -342,7 +352,7 @@
       {
         "date": "2026-03-05",
         "sessions": 10,
-        "turns": 164
+        "turns": 182
       },
       {
         "date": "2026-03-06",
@@ -352,12 +362,12 @@
       {
         "date": "2026-03-07",
         "sessions": 15,
-        "turns": 266
+        "turns": 304
       },
       {
         "date": "2026-03-08",
-        "sessions": 10,
-        "turns": 85
+        "sessions": 18,
+        "turns": 155
       }
     ]
   },
@@ -385,7 +395,7 @@
     "last_session": {
       "repo": null,
       "timestamp": "2026-03-06T19:15:45.961000+00:00",
-      "hours_ago": 34.9
+      "hours_ago": 59.04
     },
     "daily_sessions": [
       {
@@ -396,39 +406,39 @@
     ]
   },
   "aggregate": {
-    "ai_sessions_7d": 239,
-    "ai_turns_7d": 1945,
-    "claude_percentage": 47.7,
-    "codex_percentage": 50.2,
+    "ai_sessions_7d": 256,
+    "ai_turns_7d": 2079,
+    "claude_percentage": 48.0,
+    "codex_percentage": 50.0,
     "cursor_percentage": 0.0,
-    "gemini_percentage": 2.1,
-    "claude_turns_percentage": 47.0,
-    "codex_turns_percentage": 52.7,
+    "gemini_percentage": 2.0,
+    "claude_turns_percentage": 44.4,
+    "codex_turns_percentage": 55.4,
     "cursor_turns_percentage": 0.0,
-    "gemini_turns_percentage": 0.3,
+    "gemini_turns_percentage": 0.2,
     "top_repos_combined": [
       {
         "repo": "longhouse",
-        "commits": 251,
-        "ai_sessions": 52,
+        "commits": 281,
+        "ai_sessions": 57,
         "github_url": null
       },
       {
         "repo": "sauron-jobs",
-        "commits": 24,
-        "ai_sessions": 26,
+        "commits": 30,
+        "ai_sessions": 28,
         "github_url": null
       },
       {
         "repo": "me",
-        "commits": 41,
+        "commits": 46,
         "ai_sessions": 8,
         "github_url": null
       },
       {
         "repo": "zerg",
         "commits": 0,
-        "ai_sessions": 32,
+        "ai_sessions": 35,
         "github_url": null
       },
       {
