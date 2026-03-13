@@ -69,15 +69,15 @@
 
   <g transform="translate(30, 75)">
     <!-- AI Sessions -->
-    <text x="0" y="0" class="metric-value">337</text>
+    <text x="0" y="0" class="metric-value">279</text>
     <text x="0" y="18" class="metric-label text-secondary">AI SESSIONS</text>
 
     <!-- Turns -->
-    <text x="220" y="0" class="metric-value">3,164</text>
+    <text x="220" y="0" class="metric-value">3,241</text>
     <text x="220" y="18" class="metric-label text-secondary">TURNS</text>
 
     <!-- Commits -->
-    <text x="420" y="0" class="metric-value">368</text>
+    <text x="420" y="0" class="metric-value">402</text>
     <text x="420" y="18" class="metric-label text-secondary">COMMITS</text>
 
     <!-- Repos -->
@@ -93,7 +93,7 @@
     <g transform="translate(0, 20)">
       <text x="0" y="25" class="sparkline-label text-secondary">Commits</text>
       <svg x="80" y="0" width="180" height="40" viewBox="0 0 180 40">
-        <path d="M 0.00,40.00 L 30.00,29.19 L 60.00,23.42 L 90.00,0.00 L 120.00,36.04 L 150.00,20.18 L 180.00,28.11" class="sparkline-commits" stroke-dasharray="210" stroke-dashoffset="210">
+        <path d="M 0.00,38.80 L 30.00,26.00 L 60.00,0.00 L 90.00,40.00 L 120.00,22.40 L 150.00,29.60 L 180.00,25.20" class="sparkline-commits" stroke-dasharray="210" stroke-dashoffset="210">
           <animate attributeName="stroke-dashoffset" from="210" to="0" dur="1.2s" fill="freeze"/>
         </path>
       </svg>
@@ -103,7 +103,7 @@
     <g transform="translate(420, 20)">
       <text x="0" y="25" class="sparkline-label text-secondary">AI Sessions</text>
       <svg x="110" y="0" width="180" height="40" viewBox="0 0 180 40">
-        <path d="M 0.00,37.55 L 30.00,36.46 L 60.00,38.37 L 90.00,35.10 L 120.00,40.00 L 150.00,0.00 L 180.00,34.83" class="sparkline-sessions" stroke-dasharray="210" stroke-dashoffset="210">
+        <path d="M 0.00,34.11 L 30.00,35.37 L 60.00,31.16 L 90.00,40.00 L 120.00,0.00 L 150.00,36.21 L 180.00,14.32" class="sparkline-sessions" stroke-dasharray="210" stroke-dashoffset="210">
           <animate attributeName="stroke-dashoffset" from="210" to="0" dur="1.2s" fill="freeze"/>
         </path>
       </svg>
@@ -120,12 +120,12 @@
         <text x="20" y="38" class="rank-num">#1</text>
         
         <text x="60" y="28" class="card-title text-primary">OpenAI Codex</text>
-        <text x="60" y="48" class="card-stat text-secondary">117 sessions · 2,605 turns</text>
+        <text x="60" y="48" class="card-stat text-secondary">108 sessions · 2,597 turns</text>
         
         <g transform="translate(500, 0)">
-            <text x="320" y="28" class="card-value color-codex" text-anchor="end">82.3%</text>
+            <text x="320" y="28" class="card-value color-codex" text-anchor="end">80.1%</text>
             <rect x="0" y="40" width="320" height="6" class="progress-bg" rx="3"/>
-            <rect x="0" y="40" width="263.36" height="6" class="color-codex anim-bar" rx="3"/>
+            <rect x="0" y="40" width="256.32" height="6" class="color-codex anim-bar" rx="3"/>
         </g>
     </g>
     <g transform="translate(0, 90)">
@@ -135,12 +135,12 @@
         <text x="20" y="38" class="rank-num">#2</text>
         
         <text x="60" y="28" class="card-title text-primary">Claude Code</text>
-        <text x="60" y="48" class="card-stat text-secondary">215 sessions · 554 turns</text>
+        <text x="60" y="48" class="card-stat text-secondary">166 sessions · 639 turns</text>
         
         <g transform="translate(500, 0)">
-            <text x="320" y="28" class="card-value color-claude" text-anchor="end">17.5%</text>
+            <text x="320" y="28" class="card-value color-claude" text-anchor="end">19.7%</text>
             <rect x="0" y="40" width="320" height="6" class="progress-bg" rx="3"/>
-            <rect x="0" y="40" width="56.0" height="6" class="color-claude anim-bar" rx="3"/>
+            <rect x="0" y="40" width="63.03999999999999" height="6" class="color-claude anim-bar" rx="3"/>
         </g>
     </g>
     <g transform="translate(0, 160)">
