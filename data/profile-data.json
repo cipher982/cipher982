@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-25T06:19:37.767874+00:00",
+  "generated_at": "2026-03-26T06:21:46.662991+00:00",
   "github": {
     "repos_active_7d": 7,
-    "repos_active_30d": 20,
-    "commits_7d": 383,
-    "commits_30d": 885,
+    "repos_active_30d": 19,
+    "commits_7d": 398,
+    "commits_30d": 879,
     "languages_30d": [
       {
         "name": "Python",
-        "commits": 725
+        "commits": 719
       },
       {
         "name": "Shell",
@@ -25,13 +25,13 @@
     ],
     "last_push": {
       "repo": "longhouse",
-      "timestamp": "2026-03-25T02:17:18+00:00",
-      "hours_ago": 4.03
+      "timestamp": "2026-03-26T05:06:06+00:00",
+      "hours_ago": 1.26
     },
     "top_repos_7d": [
       {
         "repo": "longhouse",
-        "commits": 336
+        "commits": 358
       },
       {
         "repo": "life-hub",
@@ -39,7 +39,7 @@
       },
       {
         "repo": "sauron-jobs",
-        "commits": 16
+        "commits": 9
       },
       {
         "repo": "obsidian-vault",
@@ -52,12 +52,8 @@
     ],
     "daily_commits": [
       {
-        "date": "2026-03-18",
-        "commits": 38
-      },
-      {
         "date": "2026-03-19",
-        "commits": 21
+        "commits": 16
       },
       {
         "date": "2026-03-20",
@@ -81,7 +77,11 @@
       },
       {
         "date": "2026-03-25",
-        "commits": 11
+        "commits": 35
+      },
+      {
+        "date": "2026-03-26",
+        "commits": 34
       }
     ]
   },
@@ -133,7 +133,7 @@
     "top_repos_combined": [
       {
         "repo": "longhouse",
-        "commits": 336,
+        "commits": 358,
         "ai_sessions": 0,
         "github_url": null
       },
@@ -145,7 +145,7 @@
       },
       {
         "repo": "sauron-jobs",
-        "commits": 16,
+        "commits": 9,
         "ai_sessions": 0,
         "github_url": null
       },
@@ -164,17 +164,8 @@
     ],
     "daily_breakdown_7d": [
       {
-        "date": "2026-03-18",
-        "commits": 38,
-        "claude_sessions": 0,
-        "codex_sessions": 0,
-        "cursor_sessions": 0,
-        "gemini_sessions": 0,
-        "total_sessions": 0
-      },
-      {
         "date": "2026-03-19",
-        "commits": 21,
+        "commits": 16,
         "claude_sessions": 0,
         "codex_sessions": 0,
         "cursor_sessions": 0,
@@ -220,6 +211,15 @@
       {
         "date": "2026-03-24",
         "commits": 61,
+        "claude_sessions": 0,
+        "codex_sessions": 0,
+        "cursor_sessions": 0,
+        "gemini_sessions": 0,
+        "total_sessions": 0
+      },
+      {
+        "date": "2026-03-25",
+        "commits": 35,
         "claude_sessions": 0,
         "codex_sessions": 0,
         "cursor_sessions": 0,
