@@ -46,11 +46,11 @@ I build AI-powered applications and infrastructure. Most of my work involves aut
 
 | Repo | Commits | AI Sessions |
 |------|---------|-------------|
-| **longhouse** | 361 | 226 |
-| **life-hub** | 21 | 10 |
-| **zerg** | 0 | 13 |
-| **dserve** | 0 | 9 |
-| **sauron** | 3 | 5 |
+| **longhouse** | 293 | 237 |
+| **life-hub** | 19 | 11 |
+| **llm-vision-explainer** | 0 | 18 |
+| **deployment-dashboard** | 0 | 15 |
+| **zmp-provisioning-factory** | 0 | 13 |
 
 
 ## How I Build
@@ -58,7 +58,7 @@ I build AI-powered applications and infrastructure. Most of my work involves aut
 The dashboard at the top updates automatically every 6 hours. It tracks my AI-native development workflow — combining traditional git commits with AI pair programming sessions across multiple tools.
 
 - **4 AI coding agents** running in parallel: Claude Code, OpenAI Codex, Gemini, Cursor
-- **Avg 38 turns/session** — deep problem-solving, not quick prompts
+- **Avg 37 turns/session** — deep problem-solving, not quick prompts
 - All metrics computed locally and via the [Longhouse](https://longhouse.ai) API
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Shell](https://img.shields.io/badge/Shell-89e051?style=flat-square&logo=shell&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
@@ -79,11 +79,11 @@ The dashboard at the top updates automatically every 6 hours. It tracks my AI-na
 <details>
 <summary>Detailed Stats (Last 30 Days)</summary>
 
-- **Commits**: 873
-- **Languages**: Python (714), Shell (89), TypeScript (37), JavaScript (5)
-- **AI Sessions**: Claude 541 · Codex 590 · Cursor 0 · Gemini 5
-- **Total Turns**: 21.7k
+- **Commits**: 884
+- **Languages**: Python (725), Shell (88), TypeScript (37), JavaScript (5)
+- **AI Sessions**: Claude 587 · Codex 598 · Cursor 0 · Gemini 5
+- **Total Turns**: 24.3k
 
 </details>
 
-*Last updated: 2026-03-28 06:17 UTC*
+*Last updated: 2026-03-29 06:20 UTC*
