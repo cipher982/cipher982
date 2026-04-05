@@ -46,11 +46,11 @@ I build AI-powered applications and infrastructure. Most of my work involves aut
 
 | Repo | Commits | AI Sessions |
 |------|---------|-------------|
-| **longhouse** | 200 | 155 |
-| **llm-vision-explainer** | 0 | 49 |
-| **me** | 27 | 14 |
-| **zmp-provisioning-factory** | 0 | 28 |
-| **deployment-dashboard** | 0 | 22 |
+| **longhouse** | 195 | 139 |
+| **me** | 27 | 13 |
+| **llm-vision-explainer** | 0 | 40 |
+| **horizon** | 0 | 20 |
+| **zmp-provisioning-factory** | 0 | 17 |
 
 
 ## How I Build
@@ -79,11 +79,11 @@ The dashboard at the top updates automatically every 6 hours. It tracks my AI-na
 <details>
 <summary>Detailed Stats (Last 30 Days)</summary>
 
-- **Commits**: 848
-- **Languages**: Python (696), Shell (121)
-- **AI Sessions**: Claude 703 · Codex 613 · Cursor 0 · Gemini 5
-- **Total Turns**: 28.3k
+- **Commits**: 846
+- **Languages**: Python (694), Shell (121)
+- **AI Sessions**: Claude 686 · Codex 606 · Cursor 0 · Gemini 5
+- **Total Turns**: 28.0k
 
 </details>
 
-*Last updated: 2026-04-04 06:18 UTC*
+*Last updated: 2026-04-05 06:23 UTC*
