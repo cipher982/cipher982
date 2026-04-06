@@ -46,9 +46,9 @@ I build AI-powered applications and infrastructure. Most of my work involves aut
 
 | Repo | Commits | AI Sessions |
 |------|---------|-------------|
-| **longhouse** | 195 | 139 |
-| **me** | 27 | 13 |
-| **llm-vision-explainer** | 0 | 40 |
+| **longhouse** | 236 | 93 |
+| **me** | 48 | 11 |
+| **llm-vision-explainer** | 0 | 36 |
 | **horizon** | 0 | 20 |
 | **zmp-provisioning-factory** | 0 | 17 |
 
@@ -58,7 +58,7 @@ I build AI-powered applications and infrastructure. Most of my work involves aut
 The dashboard at the top updates automatically every 6 hours. It tracks my AI-native development workflow — combining traditional git commits with AI pair programming sessions across multiple tools.
 
 - **4 AI coding agents** running in parallel: Claude Code, OpenAI Codex, Gemini, Cursor
-- **Avg 18 turns/session** — deep problem-solving, not quick prompts
+- **Avg 19 turns/session** — deep problem-solving, not quick prompts
 - All metrics computed locally and via the [Longhouse](https://longhouse.ai) API
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Shell](https://img.shields.io/badge/Shell-89e051?style=flat-square&logo=shell&logoColor=white)
@@ -79,11 +79,11 @@ The dashboard at the top updates automatically every 6 hours. It tracks my AI-na
 <details>
 <summary>Detailed Stats (Last 30 Days)</summary>
 
-- **Commits**: 846
-- **Languages**: Python (694), Shell (121)
-- **AI Sessions**: Claude 686 · Codex 606 · Cursor 0 · Gemini 5
-- **Total Turns**: 28.0k
+- **Commits**: 862
+- **Languages**: Python (829), Shell (2)
+- **AI Sessions**: Claude 678 · Codex 593 · Cursor 0 · Gemini 0
+- **Total Turns**: 27.9k
 
 </details>
 
-*Last updated: 2026-04-05 06:23 UTC*
+*Last updated: 2026-04-06 06:32 UTC*
