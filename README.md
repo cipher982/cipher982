@@ -13,9 +13,9 @@ I build AI-powered applications and infrastructure. Most of my work involves aut
 | Project | Description |
 |---------|-------------|
 | 🪵 [**Longhouse**](https://longhouse.ai) | Centralized platform for managing AI agent sessions, insights, memory, and orchestration |
-| ⚡ [**LLM Benchmarks**](https://llm-benchmarks.com) | Benchmarking LLM inference speeds across providers — 13 stars |
-| 🐣 [**Hatch**](https://github.com/cipher982/zerg/tree/main/packages/hatch-agent) | CLI tool for spawning headless AI agents (Claude, Codex, Gemini) |
-| 🔧 [**MCP Tools**](https://github.com/cipher982/mcp-tools) | Lightweight MCP server facades for Claude Code — 90%+ token reduction |
+| ⚡ [**LLM Benchmarks**](https://llm-benchmarks.com/cloud) | Benchmarking LLM inference speeds across providers — 13 stars |
+| 🐣 [**Hatch**](https://github.com/cipher982/hatch) | CLI tool for spawning headless AI agents (Claude, Codex, Gemini) |
+| 🔧 [**MCP Tools**](https://github.com/cipher982/agent-tools) | Lightweight MCP server facades for Claude Code — 90%+ token reduction |
 | 🎁 [**Code Wrapped**](https://github.com/cipher982/code-wrapped) | Spotify Wrapped for your AI pair programming year |
 | 📜 [**Agentlog**](https://github.com/cipher982/agentlog) | Canonical parser for AI agent session logs (Claude, Codex, Gemini, Cursor) |
 
@@ -24,11 +24,11 @@ I build AI-powered applications and infrastructure. Most of my work involves aut
 | Project | Description |
 |---------|-------------|
 | 🛑 [**Stop Sign Nanny**](https://crestwoodstopsign.com) | AI + IP camera system that tracks and scores vehicle behavior at intersections |
-| 🌅 [**HDR Pop**](https://github.com/cipher982/hdr) | Transform standard photos into HDR using AI-powered gain map generation |
+| 🌅 [**HDR Pop**](https://hdrpop.com) | Transform standard photos into HDR using AI-powered gain map generation |
 | 🏀 [**March Madness LLM**](https://marchmadness.drose.io) | NCAA bracket simulator with AI-powered decisions and a React frontend |
 | 🍷 [**This Wine Does Not Exist**](https://thiswinedoesnotexist.com) | Generating fake wines with GPT-2 + StyleGAN |
 | 🌊 [**FloodMap USA**](https://drose.io/floodmap) | Interactive flood risk mapping with elevation data |
-| 🤖 [**AI Tools Directory**](https://aitools.drose.io) | AI agents that discover, catalog, and organize emerging AI tools |
+| 🤖 [**AI Tools Directory**](https://drose.io/aitools/) | AI agents that discover, catalog, and organize emerging AI tools |
 | 🖥️ [**Pixel Pilot**](https://github.com/cipher982/pixel-pilot) | AI agent for completing computer tasks via screen control |
 
 ### Earlier Work
