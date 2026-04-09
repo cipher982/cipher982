@@ -46,11 +46,11 @@ I build AI-powered applications and infrastructure. Most of my work involves aut
 
 | Repo | Commits | AI Sessions |
 |------|---------|-------------|
-| **longhouse** | 266 | 146 |
-| **me** | 58 | 10 |
-| **llm-vision-explainer** | 0 | 44 |
-| **horizon** | 0 | 30 |
-| **Home** | 0 | 15 |
+| **longhouse** | 309 | 146 |
+| **me** | 36 | 5 |
+| **llm-vision-explainer** | 0 | 41 |
+| **horizon** | 0 | 24 |
+| **sauron-jobs** | 13 | 4 |
 
 
 ## How I Build
@@ -79,11 +79,11 @@ The dashboard at the top updates automatically every 6 hours. It tracks my AI-na
 <details>
 <summary>Detailed Stats (Last 30 Days)</summary>
 
-- **Commits**: 820
-- **Languages**: Python (653), Shell (135), TypeScript (1)
-- **AI Sessions**: Claude 780 · Codex 653 · Cursor 0 · Gemini 4
+- **Commits**: 803
+- **Languages**: Python (641), Shell (130), TypeScript (1)
+- **AI Sessions**: Claude 784 · Codex 661 · Cursor 0 · Gemini 4
 - **Total Turns**: 32.1k
 
 </details>
 
-*Last updated: 2026-04-08 06:27 UTC*
+*Last updated: 2026-04-09 06:29 UTC*
