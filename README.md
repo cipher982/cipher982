@@ -46,11 +46,11 @@ I build AI-powered applications and infrastructure. Most of my work involves aut
 
 | Repo | Commits | AI Sessions |
 |------|---------|-------------|
-| **longhouse** | 247 | 119 |
+| **longhouse** | 308 | 0 |
 | **floodmap** | 45 | 0 |
-| **crims** | 26 | 15 |
-| **me** | 21 | 20 |
-| **llm-vision-explainer** | 0 | 21 |
+| **crims** | 33 | 0 |
+| **me** | 18 | 0 |
+| **obsidian-vault** | 7 | 0 |
 
 
 ## How I Build
@@ -58,10 +58,10 @@ I build AI-powered applications and infrastructure. Most of my work involves aut
 The dashboard at the top updates automatically every 6 hours. It tracks my AI-native development workflow — combining traditional git commits with AI pair programming sessions across multiple tools.
 
 - **4 AI coding agents** running in parallel: Claude Code, OpenAI Codex, Gemini, Cursor
-- **Avg 18 turns/session** — deep problem-solving, not quick prompts
+- **Avg 0 turns/session** — deep problem-solving, not quick prompts
 - All metrics computed locally and via the [Longhouse](https://longhouse.ai) API
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Shell](https://img.shields.io/badge/Shell-89e051?style=flat-square&logo=shell&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 
 <details>
 <summary>Data sources</summary>
@@ -79,11 +79,11 @@ The dashboard at the top updates automatically every 6 hours. It tracks my AI-na
 <details>
 <summary>Detailed Stats (Last 30 Days)</summary>
 
-- **Commits**: 806
-- **Languages**: Python (772), TypeScript (2)
-- **AI Sessions**: Claude 753 · Codex 629 · Cursor 0 · Gemini 9
-- **Total Turns**: 31.5k
+- **Commits**: 827
+- **Languages**: Python (681), Shell (111), TypeScript (2)
+- **AI Sessions**: Claude 0 · Codex 0 · Cursor 0 · Gemini 0
+- **Total Turns**: 0
 
 </details>
 
-*Last updated: 2026-04-14 06:32 UTC*
+*Last updated: 2026-04-15 06:32 UTC*
