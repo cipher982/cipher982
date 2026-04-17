@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-04-16T06:33:21.038640+00:00",
+  "generated_at": "2026-04-17T06:33:23.478882+00:00",
   "github": {
-    "repos_active_7d": 9,
+    "repos_active_7d": 10,
     "repos_active_30d": 15,
-    "commits_7d": 442,
-    "commits_30d": 831,
+    "commits_7d": 428,
+    "commits_30d": 823,
     "languages_30d": [
       {
         "name": "Python",
-        "commits": 681
+        "commits": 671
       },
       {
         "name": "Shell",
@@ -17,17 +17,21 @@
       {
         "name": "TypeScript",
         "commits": 2
+      },
+      {
+        "name": "Swift",
+        "commits": 1
       }
     ],
     "last_push": {
       "repo": "obsidian-vault",
-      "timestamp": "2026-04-16T06:00:05+00:00",
+      "timestamp": "2026-04-17T06:00:05+00:00",
       "hours_ago": 0.55
     },
     "top_repos_7d": [
       {
         "repo": "longhouse",
-        "commits": 329
+        "commits": 317
       },
       {
         "repo": "floodmap",
@@ -39,7 +43,7 @@
       },
       {
         "repo": "me",
-        "commits": 18
+        "commits": 16
       },
       {
         "repo": "obsidian-vault",
@@ -48,12 +52,8 @@
     ],
     "daily_commits": [
       {
-        "date": "2026-04-09",
-        "commits": 23
-      },
-      {
         "date": "2026-04-10",
-        "commits": 76
+        "commits": 68
       },
       {
         "date": "2026-04-11",
@@ -77,7 +77,11 @@
       },
       {
         "date": "2026-04-16",
-        "commits": 8
+        "commits": 24
+      },
+      {
+        "date": "2026-04-17",
+        "commits": 1
       }
     ]
   },
@@ -129,7 +133,7 @@
     "top_repos_combined": [
       {
         "repo": "longhouse",
-        "commits": 329,
+        "commits": 317,
         "ai_sessions": 0,
         "github_url": null
       },
@@ -147,7 +151,7 @@
       },
       {
         "repo": "me",
-        "commits": 18,
+        "commits": 16,
         "ai_sessions": 0,
         "github_url": null
       },
@@ -160,17 +164,8 @@
     ],
     "daily_breakdown_7d": [
       {
-        "date": "2026-04-09",
-        "commits": 23,
-        "claude_sessions": 0,
-        "codex_sessions": 0,
-        "cursor_sessions": 0,
-        "gemini_sessions": 0,
-        "total_sessions": 0
-      },
-      {
         "date": "2026-04-10",
-        "commits": 76,
+        "commits": 68,
         "claude_sessions": 0,
         "codex_sessions": 0,
         "cursor_sessions": 0,
@@ -216,6 +211,15 @@
       {
         "date": "2026-04-15",
         "commits": 92,
+        "claude_sessions": 0,
+        "codex_sessions": 0,
+        "cursor_sessions": 0,
+        "gemini_sessions": 0,
+        "total_sessions": 0
+      },
+      {
+        "date": "2026-04-16",
+        "commits": 24,
         "claude_sessions": 0,
         "codex_sessions": 0,
         "cursor_sessions": 0,
