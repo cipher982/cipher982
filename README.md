@@ -46,11 +46,11 @@ I build AI-powered applications and infrastructure. Most of my work involves aut
 
 | Repo | Commits | AI Sessions |
 |------|---------|-------------|
-| **longhouse** | 317 | 0 |
-| **floodmap** | 45 | 0 |
+| **longhouse** | 363 | 0 |
 | **crims** | 33 | 0 |
-| **me** | 16 | 0 |
-| **obsidian-vault** | 7 | 0 |
+| **me** | 26 | 0 |
+| **obsidian-vault** | 8 | 0 |
+| **life-hub** | 5 | 0 |
 
 
 ## How I Build
@@ -61,7 +61,7 @@ The dashboard at the top updates automatically every 6 hours. It tracks my AI-na
 - **Avg 0 turns/session** — deep problem-solving, not quick prompts
 - All metrics computed locally and via the [Longhouse](https://longhouse.ai) API
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Shell](https://img.shields.io/badge/Shell-89e051?style=flat-square&logo=shell&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![Swift](https://img.shields.io/badge/Swift-gray?style=flat-square&logo=swift&logoColor=white)
 
 <details>
 <summary>Data sources</summary>
@@ -79,11 +79,11 @@ The dashboard at the top updates automatically every 6 hours. It tracks my AI-na
 <details>
 <summary>Detailed Stats (Last 30 Days)</summary>
 
-- **Commits**: 823
-- **Languages**: Python (671), Shell (114), TypeScript (2), Swift (1)
+- **Commits**: 827
+- **Languages**: Python (788), TypeScript (2), Swift (1)
 - **AI Sessions**: Claude 0 · Codex 0 · Cursor 0 · Gemini 0
 - **Total Turns**: 0
 
 </details>
 
-*Last updated: 2026-04-17 06:33 UTC*
+*Last updated: 2026-04-18 06:22 UTC*

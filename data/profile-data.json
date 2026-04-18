@@ -1,18 +1,14 @@
 {
-  "generated_at": "2026-04-17T06:33:23.478882+00:00",
+  "generated_at": "2026-04-18T06:22:22.405944+00:00",
   "github": {
-    "repos_active_7d": 10,
+    "repos_active_7d": 9,
     "repos_active_30d": 15,
-    "commits_7d": 428,
-    "commits_30d": 823,
+    "commits_7d": 440,
+    "commits_30d": 827,
     "languages_30d": [
       {
         "name": "Python",
-        "commits": 671
-      },
-      {
-        "name": "Shell",
-        "commits": 114
+        "commits": 788
       },
       {
         "name": "TypeScript",
@@ -25,17 +21,13 @@
     ],
     "last_push": {
       "repo": "obsidian-vault",
-      "timestamp": "2026-04-17T06:00:05+00:00",
-      "hours_ago": 0.55
+      "timestamp": "2026-04-18T06:00:01+00:00",
+      "hours_ago": 0.37
     },
     "top_repos_7d": [
       {
         "repo": "longhouse",
-        "commits": 317
-      },
-      {
-        "repo": "floodmap",
-        "commits": 45
+        "commits": 363
       },
       {
         "repo": "crims",
@@ -43,21 +35,21 @@
       },
       {
         "repo": "me",
-        "commits": 16
+        "commits": 26
       },
       {
         "repo": "obsidian-vault",
-        "commits": 7
+        "commits": 8
+      },
+      {
+        "repo": "life-hub",
+        "commits": 5
       }
     ],
     "daily_commits": [
       {
-        "date": "2026-04-10",
-        "commits": 68
-      },
-      {
         "date": "2026-04-11",
-        "commits": 20
+        "commits": 19
       },
       {
         "date": "2026-04-12",
@@ -77,11 +69,15 @@
       },
       {
         "date": "2026-04-16",
-        "commits": 24
+        "commits": 44
       },
       {
         "date": "2026-04-17",
-        "commits": 1
+        "commits": 51
+      },
+      {
+        "date": "2026-04-18",
+        "commits": 11
       }
     ]
   },
@@ -133,13 +129,7 @@
     "top_repos_combined": [
       {
         "repo": "longhouse",
-        "commits": 317,
-        "ai_sessions": 0,
-        "github_url": null
-      },
-      {
-        "repo": "floodmap",
-        "commits": 45,
+        "commits": 363,
         "ai_sessions": 0,
         "github_url": null
       },
@@ -151,30 +141,27 @@
       },
       {
         "repo": "me",
-        "commits": 16,
+        "commits": 26,
         "ai_sessions": 0,
         "github_url": null
       },
       {
         "repo": "obsidian-vault",
-        "commits": 7,
+        "commits": 8,
+        "ai_sessions": 0,
+        "github_url": null
+      },
+      {
+        "repo": "life-hub",
+        "commits": 5,
         "ai_sessions": 0,
         "github_url": null
       }
     ],
     "daily_breakdown_7d": [
       {
-        "date": "2026-04-10",
-        "commits": 68,
-        "claude_sessions": 0,
-        "codex_sessions": 0,
-        "cursor_sessions": 0,
-        "gemini_sessions": 0,
-        "total_sessions": 0
-      },
-      {
         "date": "2026-04-11",
-        "commits": 20,
+        "commits": 19,
         "claude_sessions": 0,
         "codex_sessions": 0,
         "cursor_sessions": 0,
@@ -219,7 +206,16 @@
       },
       {
         "date": "2026-04-16",
-        "commits": 24,
+        "commits": 44,
+        "claude_sessions": 0,
+        "codex_sessions": 0,
+        "cursor_sessions": 0,
+        "gemini_sessions": 0,
+        "total_sessions": 0
+      },
+      {
+        "date": "2026-04-17",
+        "commits": 51,
         "claude_sessions": 0,
         "codex_sessions": 0,
         "cursor_sessions": 0,
