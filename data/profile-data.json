@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-04-20T06:40:24.991570+00:00",
+  "generated_at": "2026-04-21T06:33:37.933047+00:00",
   "github": {
-    "repos_active_7d": 10,
-    "repos_active_30d": 16,
-    "commits_7d": 452,
-    "commits_30d": 850,
+    "repos_active_7d": 9,
+    "repos_active_30d": 15,
+    "commits_7d": 394,
+    "commits_30d": 832,
     "languages_30d": [
       {
         "name": "Python",
-        "commits": 809
+        "commits": 792
       },
       {
         "name": "TypeScript",
@@ -20,40 +20,36 @@
       }
     ],
     "last_push": {
-      "repo": "obsidian-vault",
-      "timestamp": "2026-04-20T06:00:05+00:00",
-      "hours_ago": 0.67
+      "repo": "longhouse",
+      "timestamp": "2026-04-20T23:21:41+00:00",
+      "hours_ago": 7.2
     },
     "top_repos_7d": [
       {
         "repo": "longhouse",
-        "commits": 359
-      },
-      {
-        "repo": "me",
-        "commits": 31
+        "commits": 329
       },
       {
         "repo": "stopsign_ai",
         "commits": 21
       },
       {
-        "repo": "crims",
-        "commits": 21
+        "repo": "me",
+        "commits": 20
       },
       {
         "repo": "obsidian-vault",
-        "commits": 10
+        "commits": 9
+      },
+      {
+        "repo": "crims",
+        "commits": 7
       }
     ],
     "daily_commits": [
       {
-        "date": "2026-04-13",
-        "commits": 50
-      },
-      {
         "date": "2026-04-14",
-        "commits": 125
+        "commits": 101
       },
       {
         "date": "2026-04-15",
@@ -77,7 +73,7 @@
       },
       {
         "date": "2026-04-20",
-        "commits": 1
+        "commits": 17
       }
     ]
   },
@@ -129,13 +125,7 @@
     "top_repos_combined": [
       {
         "repo": "longhouse",
-        "commits": 359,
-        "ai_sessions": 0,
-        "github_url": null
-      },
-      {
-        "repo": "me",
-        "commits": 31,
+        "commits": 329,
         "ai_sessions": 0,
         "github_url": null
       },
@@ -146,31 +136,28 @@
         "github_url": null
       },
       {
-        "repo": "crims",
-        "commits": 21,
+        "repo": "me",
+        "commits": 20,
         "ai_sessions": 0,
         "github_url": null
       },
       {
         "repo": "obsidian-vault",
-        "commits": 10,
+        "commits": 9,
+        "ai_sessions": 0,
+        "github_url": null
+      },
+      {
+        "repo": "crims",
+        "commits": 7,
         "ai_sessions": 0,
         "github_url": null
       }
     ],
     "daily_breakdown_7d": [
       {
-        "date": "2026-04-13",
-        "commits": 50,
-        "claude_sessions": 0,
-        "codex_sessions": 0,
-        "cursor_sessions": 0,
-        "gemini_sessions": 0,
-        "total_sessions": 0
-      },
-      {
         "date": "2026-04-14",
-        "commits": 125,
+        "commits": 101,
         "claude_sessions": 0,
         "codex_sessions": 0,
         "cursor_sessions": 0,
