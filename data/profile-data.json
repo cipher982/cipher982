@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-04-23T06:34:21.085059+00:00",
+  "generated_at": "2026-04-24T06:34:37.288016+00:00",
   "github": {
-    "repos_active_7d": 8,
+    "repos_active_7d": 7,
     "repos_active_30d": 15,
-    "commits_7d": 316,
-    "commits_30d": 868,
+    "commits_7d": 340,
+    "commits_30d": 858,
     "languages_30d": [
       {
         "name": "Python",
-        "commits": 828
+        "commits": 818
       },
       {
         "name": "TypeScript",
@@ -21,13 +21,13 @@
     ],
     "last_push": {
       "repo": "obsidian-vault",
-      "timestamp": "2026-04-23T06:00:03+00:00",
+      "timestamp": "2026-04-24T06:00:05+00:00",
       "hours_ago": 0.57
     },
     "top_repos_7d": [
       {
         "repo": "longhouse",
-        "commits": 216
+        "commits": 241
       },
       {
         "repo": "life-hub",
@@ -48,12 +48,8 @@
     ],
     "daily_commits": [
       {
-        "date": "2026-04-16",
-        "commits": 33
-      },
-      {
         "date": "2026-04-17",
-        "commits": 51
+        "commits": 41
       },
       {
         "date": "2026-04-18",
@@ -77,7 +73,11 @@
       },
       {
         "date": "2026-04-23",
-        "commits": 13
+        "commits": 57
+      },
+      {
+        "date": "2026-04-24",
+        "commits": 23
       }
     ]
   },
@@ -129,7 +129,7 @@
     "top_repos_combined": [
       {
         "repo": "longhouse",
-        "commits": 216,
+        "commits": 241,
         "ai_sessions": 0,
         "github_url": null
       },
@@ -160,17 +160,8 @@
     ],
     "daily_breakdown_7d": [
       {
-        "date": "2026-04-16",
-        "commits": 33,
-        "claude_sessions": 0,
-        "codex_sessions": 0,
-        "cursor_sessions": 0,
-        "gemini_sessions": 0,
-        "total_sessions": 0
-      },
-      {
         "date": "2026-04-17",
-        "commits": 51,
+        "commits": 41,
         "claude_sessions": 0,
         "codex_sessions": 0,
         "cursor_sessions": 0,
@@ -216,6 +207,15 @@
       {
         "date": "2026-04-22",
         "commits": 45,
+        "claude_sessions": 0,
+        "codex_sessions": 0,
+        "cursor_sessions": 0,
+        "gemini_sessions": 0,
+        "total_sessions": 0
+      },
+      {
+        "date": "2026-04-23",
+        "commits": 57,
         "claude_sessions": 0,
         "codex_sessions": 0,
         "cursor_sessions": 0,
