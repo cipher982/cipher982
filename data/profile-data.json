@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-04-25T06:27:08.093817+00:00",
+  "generated_at": "2026-04-26T06:34:28.495723+00:00",
   "github": {
-    "repos_active_7d": 7,
+    "repos_active_7d": 6,
     "repos_active_30d": 15,
-    "commits_7d": 308,
-    "commits_30d": 857,
+    "commits_7d": 302,
+    "commits_30d": 860,
     "languages_30d": [
       {
         "name": "Python",
-        "commits": 817
+        "commits": 820
       },
       {
         "name": "TypeScript",
@@ -21,39 +21,35 @@
     ],
     "last_push": {
       "repo": "obsidian-vault",
-      "timestamp": "2026-04-25T06:00:05+00:00",
-      "hours_ago": 0.45
+      "timestamp": "2026-04-26T06:00:05+00:00",
+      "hours_ago": 0.57
     },
     "top_repos_7d": [
       {
         "repo": "longhouse",
-        "commits": 218
+        "commits": 237
       },
       {
         "repo": "sauron-jobs",
-        "commits": 24
+        "commits": 27
       },
       {
         "repo": "life-hub",
         "commits": 24
       },
       {
-        "repo": "stopsign_ai",
-        "commits": 21
+        "repo": "me",
+        "commits": 7
       },
       {
-        "repo": "me",
-        "commits": 12
+        "repo": "obsidian-vault",
+        "commits": 6
       }
     ],
     "daily_commits": [
       {
-        "date": "2026-04-18",
-        "commits": 60
-      },
-      {
         "date": "2026-04-19",
-        "commits": 19
+        "commits": 13
       },
       {
         "date": "2026-04-20",
@@ -77,7 +73,11 @@
       },
       {
         "date": "2026-04-25",
-        "commits": 1
+        "commits": 43
+      },
+      {
+        "date": "2026-04-26",
+        "commits": 18
       }
     ]
   },
@@ -129,13 +129,13 @@
     "top_repos_combined": [
       {
         "repo": "longhouse",
-        "commits": 218,
+        "commits": 237,
         "ai_sessions": 0,
         "github_url": null
       },
       {
         "repo": "sauron-jobs",
-        "commits": 24,
+        "commits": 27,
         "ai_sessions": 0,
         "github_url": null
       },
@@ -146,31 +146,22 @@
         "github_url": null
       },
       {
-        "repo": "stopsign_ai",
-        "commits": 21,
+        "repo": "me",
+        "commits": 7,
         "ai_sessions": 0,
         "github_url": null
       },
       {
-        "repo": "me",
-        "commits": 12,
+        "repo": "obsidian-vault",
+        "commits": 6,
         "ai_sessions": 0,
         "github_url": null
       }
     ],
     "daily_breakdown_7d": [
       {
-        "date": "2026-04-18",
-        "commits": 60,
-        "claude_sessions": 0,
-        "codex_sessions": 0,
-        "cursor_sessions": 0,
-        "gemini_sessions": 0,
-        "total_sessions": 0
-      },
-      {
         "date": "2026-04-19",
-        "commits": 19,
+        "commits": 13,
         "claude_sessions": 0,
         "codex_sessions": 0,
         "cursor_sessions": 0,
@@ -216,6 +207,15 @@
       {
         "date": "2026-04-24",
         "commits": 42,
+        "claude_sessions": 0,
+        "codex_sessions": 0,
+        "cursor_sessions": 0,
+        "gemini_sessions": 0,
+        "total_sessions": 0
+      },
+      {
+        "date": "2026-04-25",
+        "commits": 43,
         "claude_sessions": 0,
         "codex_sessions": 0,
         "cursor_sessions": 0,
