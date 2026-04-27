@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-04-26T06:34:28.495723+00:00",
+  "generated_at": "2026-04-27T06:47:43.216594+00:00",
   "github": {
     "repos_active_7d": 6,
     "repos_active_30d": 15,
-    "commits_7d": 302,
-    "commits_30d": 860,
+    "commits_7d": 355,
+    "commits_30d": 847,
     "languages_30d": [
       {
         "name": "Python",
-        "commits": 820
+        "commits": 807
       },
       {
         "name": "TypeScript",
@@ -21,13 +21,13 @@
     ],
     "last_push": {
       "repo": "obsidian-vault",
-      "timestamp": "2026-04-26T06:00:05+00:00",
-      "hours_ago": 0.57
+      "timestamp": "2026-04-27T06:00:05+00:00",
+      "hours_ago": 0.79
     },
     "top_repos_7d": [
       {
         "repo": "longhouse",
-        "commits": 237
+        "commits": 291
       },
       {
         "repo": "sauron-jobs",
@@ -38,22 +38,18 @@
         "commits": 24
       },
       {
-        "repo": "me",
-        "commits": 7
+        "repo": "obsidian-vault",
+        "commits": 6
       },
       {
-        "repo": "obsidian-vault",
+        "repo": "me",
         "commits": 6
       }
     ],
     "daily_commits": [
       {
-        "date": "2026-04-19",
-        "commits": 13
-      },
-      {
         "date": "2026-04-20",
-        "commits": 17
+        "commits": 16
       },
       {
         "date": "2026-04-21",
@@ -77,6 +73,10 @@
       },
       {
         "date": "2026-04-26",
+        "commits": 67
+      },
+      {
+        "date": "2026-04-27",
         "commits": 18
       }
     ]
@@ -129,7 +129,7 @@
     "top_repos_combined": [
       {
         "repo": "longhouse",
-        "commits": 237,
+        "commits": 291,
         "ai_sessions": 0,
         "github_url": null
       },
@@ -146,13 +146,13 @@
         "github_url": null
       },
       {
-        "repo": "me",
-        "commits": 7,
+        "repo": "obsidian-vault",
+        "commits": 6,
         "ai_sessions": 0,
         "github_url": null
       },
       {
-        "repo": "obsidian-vault",
+        "repo": "me",
         "commits": 6,
         "ai_sessions": 0,
         "github_url": null
@@ -160,17 +160,8 @@
     ],
     "daily_breakdown_7d": [
       {
-        "date": "2026-04-19",
-        "commits": 13,
-        "claude_sessions": 0,
-        "codex_sessions": 0,
-        "cursor_sessions": 0,
-        "gemini_sessions": 0,
-        "total_sessions": 0
-      },
-      {
         "date": "2026-04-20",
-        "commits": 17,
+        "commits": 16,
         "claude_sessions": 0,
         "codex_sessions": 0,
         "cursor_sessions": 0,
@@ -216,6 +207,15 @@
       {
         "date": "2026-04-25",
         "commits": 43,
+        "claude_sessions": 0,
+        "codex_sessions": 0,
+        "cursor_sessions": 0,
+        "gemini_sessions": 0,
+        "total_sessions": 0
+      },
+      {
+        "date": "2026-04-26",
+        "commits": 67,
         "claude_sessions": 0,
         "codex_sessions": 0,
         "cursor_sessions": 0,
