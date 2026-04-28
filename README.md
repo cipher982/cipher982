@@ -46,10 +46,10 @@ I build AI-powered applications and infrastructure. Most of my work involves aut
 
 | Repo | Commits | AI Sessions |
 |------|---------|-------------|
-| **longhouse** | 291 | 0 |
+| **longhouse** | 313 | 0 |
 | **sauron-jobs** | 27 | 0 |
 | **life-hub** | 24 | 0 |
-| **obsidian-vault** | 6 | 0 |
+| **obsidian-vault** | 8 | 0 |
 | **me** | 6 | 0 |
 
 
@@ -79,11 +79,11 @@ The dashboard at the top updates automatically every 6 hours. It tracks my AI-na
 <details>
 <summary>Detailed Stats (Last 30 Days)</summary>
 
-- **Commits**: 847
-- **Languages**: Python (807), TypeScript (2), Swift (1)
+- **Commits**: 842
+- **Languages**: Python (802), TypeScript (2), Swift (1)
 - **AI Sessions**: Claude 0 · Codex 0 · Cursor 0 · Gemini 0
 - **Total Turns**: 0
 
 </details>
 
-*Last updated: 2026-04-27 06:47 UTC*
+*Last updated: 2026-04-28 06:50 UTC*
