@@ -1,6 +1,6 @@
 name: Update Profile Dashboard
 
-# Fetches AI session data from Life Hub API and GitHub activity via GitHub API.
+# Fetches AI session data from Longhouse API and GitHub activity via GitHub API.
 # Run manually or on schedule to keep the profile dashboard current.
 
 on:

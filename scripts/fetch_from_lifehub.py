@@ -1,23 +1,22 @@
 #!/usr/bin/env python3
 """
-Fetch AI agent session data from the Life Hub API.
+Fetch AI agent session data from the Longhouse API.
 
-This module fetches data from https://data.drose.io instead of parsing local
-log files directly. This allows the GitHub profile to update even when running
-from GitHub Actions (where local files aren't available).
+This module fetches data from the Longhouse instance (previously Life Hub)
+to allow the GitHub profile to update from GitHub Actions.
 
 Usage:
-    Set LIFE_HUB_API_KEY environment variable, then:
+    Set LONGHOUSE_DEVICE_TOKEN and optionally LONGHOUSE_API_URL, then:
 
     from fetch_from_lifehub import fetch_all_providers
 
     data = fetch_all_providers()
     # Returns dict with 'claude', 'codex', 'cursor', 'gemini' keys
-    # Each has same structure as local parsers return
 
 Environment Variables:
-    LIFE_HUB_API_KEY: Required. API key for authenticating with Life Hub.
-    LIFE_HUB_API_URL: Optional. Base URL (default: https://data.drose.io)
+    LONGHOUSE_DEVICE_TOKEN: Required. Device token (zdt_...) for Longhouse API.
+    LIFE_HUB_API_KEY: Fallback alias (same token, different env var name).
+    LONGHOUSE_API_URL: Optional. Base URL (default: https://david010.longhouse.ai)
 """
 
 import os
@@ -27,163 +26,91 @@ from collections import defaultdict
 from datetime import datetime, timedelta, timezone
 
 
-# Default API configuration
-DEFAULT_API_URL = "https://data.drose.io"
+DEFAULT_API_URL = "https://david010.longhouse.ai"
+PAGE_SIZE = 100
 
 
-def get_api_key() -> Optional[str]:
-    """Get the API key from environment."""
-    return os.environ.get("LIFE_HUB_API_KEY")
+def get_device_token() -> Optional[str]:
+    """Get Longhouse device token from environment."""
+    return os.environ.get("LONGHOUSE_DEVICE_TOKEN") or os.environ.get("LIFE_HUB_API_KEY")
 
 
 def get_api_url() -> str:
-    """Get the API base URL from environment or use default."""
-    return os.environ.get("LIFE_HUB_API_URL", DEFAULT_API_URL)
+    return os.environ.get("LONGHOUSE_API_URL", DEFAULT_API_URL)
 
 
-def _make_request(endpoint: str, params: Optional[Dict] = None) -> Optional[Dict[str, Any]]:
-    """
-    Make an authenticated request to the Life Hub API.
-
-    Args:
-        endpoint: API endpoint path (e.g., "/api/agents/stats")
-        params: Optional query parameters
-
-    Returns:
-        JSON response dict, or None if request fails
-    """
-    api_key = get_api_key()
-    if not api_key:
-        print("   ⚠️  LIFE_HUB_API_KEY not set")
-        return None
-
-    url = f"{get_api_url()}{endpoint}"
-    headers = {"X-API-Key": api_key}
-
+def _fetch_sessions_page(token: str, days_back: int, offset: int) -> Optional[Dict[str, Any]]:
+    url = f"{get_api_url()}/api/agents/sessions"
+    headers = {"X-Agents-Token": token}
+    params = {
+        "days_back": days_back,
+        "limit": PAGE_SIZE,
+        "offset": offset,
+        "include_test": "false",
+        "hide_autonomous": "true",
+    }
     try:
-        response = requests.get(url, headers=headers, params=params, timeout=30)
-        response.raise_for_status()
-        return response.json()
+        resp = requests.get(url, headers=headers, params=params, timeout=30)
+        resp.raise_for_status()
+        return resp.json()
     except requests.exceptions.RequestException as e:
-        print(f"   ⚠️  Life Hub API request failed: {e}")
+        print(f"   ⚠️  Longhouse API request failed: {e}")
         return None
 
 
-def fetch_stats(since_days: int = 7) -> Optional[Dict[str, Any]]:
-    """
-    Fetch aggregate agent stats from Life Hub API.
+def _fetch_all_sessions(token: str, days_back: int) -> Optional[List[Dict[str, Any]]]:
+    """Fetch all sessions for the given window, paginating as needed."""
+    first = _fetch_sessions_page(token, days_back, 0)
+    if first is None:
+        return None
 
-    Args:
-        since_days: Number of days to look back
+    sessions = list(first.get("sessions", []))
+    total = first.get("total", 0)
 
-    Returns:
-        Raw API response dict, or None if request fails
-    """
-    return _make_request("/api/agents/stats", {"since_days": since_days})
+    offset = PAGE_SIZE
+    while offset < total:
+        page = _fetch_sessions_page(token, days_back, offset)
+        if page is None:
+            break
+        sessions.extend(page.get("sessions", []))
+        offset += PAGE_SIZE
 
-
-def fetch_sessions(
-    provider: Optional[str] = None,
-    since: Optional[datetime] = None,
-    limit: int = 500
-) -> Optional[List[Dict[str, Any]]]:
-    """
-    Fetch agent sessions from Life Hub API.
-
-    Args:
-        provider: Filter by provider (claude, codex, gemini, cursor)
-        since: Filter sessions started after this time
-        limit: Maximum number of sessions to return
-
-    Returns:
-        List of session dicts, or None if request fails
-    """
-    params = {"limit": limit}
-    if provider:
-        params["provider"] = provider
-    if since:
-        params["since"] = since.isoformat()
-
-    result = _make_request("/query/agents/sessions", params)
-    if result:
-        return result.get("data", [])
-    return None
+    return sessions
 
 
-def compute_daily_breakdown(
-    sessions: List[Dict[str, Any]],
-    days: int = 7
-) -> List[Dict[str, Any]]:
-    """
-    Compute daily session breakdown from session list.
-
-    Args:
-        sessions: List of session dicts with 'started_at' and 'user_messages' fields
-        days: Number of days to include
-
-    Returns:
-        List of {"date": str, "sessions": int, "turns": int} sorted by date
-    """
+def compute_daily_breakdown(sessions: List[Dict[str, Any]], days: int = 7) -> List[Dict[str, Any]]:
     daily = defaultdict(lambda: {"sessions": 0, "turns": 0})
-
     cutoff = datetime.now(timezone.utc) - timedelta(days=days)
 
     for session in sessions:
         started_at = session.get("started_at")
         if not started_at:
             continue
-
-        # Parse timestamp (handle both string and datetime)
-        if isinstance(started_at, str):
-            try:
-                ts = datetime.fromisoformat(started_at.replace("Z", "+00:00"))
-            except ValueError:
-                continue
-        else:
-            ts = started_at
-
-        # Only include sessions within the time window
+        try:
+            ts = datetime.fromisoformat(started_at.replace("Z", "+00:00"))
+        except ValueError:
+            continue
         if ts < cutoff:
             continue
-
         date_str = ts.date().isoformat()
         daily[date_str]["sessions"] += 1
-        # Use user_messages (actual conversation turns), not events_total (includes tool calls)
         daily[date_str]["turns"] += session.get("user_messages") or 1
 
-    # Convert to sorted list
     return [
         {"date": date, "sessions": data["sessions"], "turns": data["turns"]}
         for date, data in sorted(daily.items())
     ]
 
 
-def compute_repos_from_sessions(
-    sessions: List[Dict[str, Any]]
-) -> List[Dict[str, Any]]:
-    """
-    Compute per-repo stats from session list.
-
-    Uses the 'project' field from sessions (extracted from cwd by Life Hub).
-
-    Args:
-        sessions: List of session dicts with 'project' and 'user_messages' fields
-
-    Returns:
-        List of {"repo": str, "sessions": int, "turns": int} sorted by sessions desc
-    """
+def compute_repos_from_sessions(sessions: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     repo_stats = defaultdict(lambda: {"sessions": 0, "turns": 0})
-
     for session in sessions:
         project = session.get("project")
         if not project:
             continue
-
         repo_stats[project]["sessions"] += 1
-        # Use user_messages (actual conversation turns), not events_total (includes tool calls)
         repo_stats[project]["turns"] += session.get("user_messages") or 1
 
-    # Convert to sorted list
     return [
         {"repo": repo, "sessions": stats["sessions"], "turns": stats["turns"]}
         for repo, stats in sorted(repo_stats.items(), key=lambda x: x[1]["sessions"], reverse=True)
@@ -191,35 +118,18 @@ def compute_repos_from_sessions(
 
 
 def find_last_session(sessions: List[Dict[str, Any]]) -> Optional[Dict[str, Any]]:
-    """
-    Find the most recent session from a list.
-
-    Args:
-        sessions: List of session dicts
-
-    Returns:
-        Dict with repo, timestamp, hours_ago or None
-    """
     if not sessions:
         return None
-
-    # Find session with latest started_at
     latest = None
     latest_ts = None
-
     for session in sessions:
         started_at = session.get("started_at")
         if not started_at:
             continue
-
-        if isinstance(started_at, str):
-            try:
-                ts = datetime.fromisoformat(started_at.replace("Z", "+00:00"))
-            except ValueError:
-                continue
-        else:
-            ts = started_at
-
+        try:
+            ts = datetime.fromisoformat(started_at.replace("Z", "+00:00"))
+        except ValueError:
+            continue
         if latest_ts is None or ts > latest_ts:
             latest = session
             latest_ts = ts
@@ -228,164 +138,84 @@ def find_last_session(sessions: List[Dict[str, Any]]) -> Optional[Dict[str, Any]
         return None
 
     hours_ago = (datetime.now(timezone.utc) - latest_ts).total_seconds() / 3600
-
     return {
         "repo": latest.get("project", "unknown"),
         "timestamp": latest_ts.isoformat(),
-        "hours_ago": round(hours_ago, 2)
+        "hours_ago": round(hours_ago, 2),
     }
 
 
-def transform_provider_data(
-    stats_7d: Dict[str, Any],
-    stats_30d: Dict[str, Any],
+def _build_provider_data(
     sessions_7d: List[Dict[str, Any]],
     sessions_30d: List[Dict[str, Any]],
-    provider: str
+    provider: str,
 ) -> Dict[str, Any]:
-    """
-    Transform Life Hub API response into local parser format.
+    p7 = [s for s in sessions_7d if s.get("provider", "").lower() == provider.lower()]
+    p30 = [s for s in sessions_30d if s.get("provider", "").lower() == provider.lower()]
 
-    The local parsers return:
-    {
-        "sessions_7d": int,
-        "sessions_30d": int,
-        "turns_7d": int,
-        "turns_30d": int,
-        "repos": [{"repo": str, "sessions": int, "turns": int}],
-        "last_session": {...} or None,
-        "daily_sessions": [{"date": str, "sessions": int, "turns": int}]
-    }
-    """
-    # Find this provider in the stats
-    provider_7d = None
-    for p in stats_7d.get("by_provider", []):
-        if p.get("provider", "").lower() == provider.lower():
-            provider_7d = p
-            break
-
-    provider_30d = None
-    for p in stats_30d.get("by_provider", []):
-        if p.get("provider", "").lower() == provider.lower():
-            provider_30d = p
-            break
-
-    sessions_count_7d = provider_7d.get("sessions", 0) if provider_7d else 0
-    sessions_count_30d = provider_30d.get("sessions", 0) if provider_30d else 0
-
-    # Use user_messages for turns (actual conversation turns, not raw event count)
-    turns_7d = provider_7d.get("user_messages", 0) if provider_7d else 0
-    turns_30d = provider_30d.get("user_messages", 0) if provider_30d else 0
-
-    # Filter sessions for this provider
-    provider_sessions_7d = [s for s in sessions_7d if s.get("provider", "").lower() == provider.lower()]
-    provider_sessions_30d = [s for s in sessions_30d if s.get("provider", "").lower() == provider.lower()]
-
-    # Compute repos from 7-day sessions
-    repos = compute_repos_from_sessions(provider_sessions_7d)
-
-    # Compute daily breakdown from 7-day sessions
-    daily_sessions = compute_daily_breakdown(provider_sessions_7d, days=7)
-
-    # Find last session
-    last_session = find_last_session(provider_sessions_7d)
+    turns_7d = sum(s.get("user_messages") or 0 for s in p7)
+    turns_30d = sum(s.get("user_messages") or 0 for s in p30)
 
     return {
-        "sessions_7d": sessions_count_7d,
-        "sessions_30d": sessions_count_30d,
+        "sessions_7d": len(p7),
+        "sessions_30d": len(p30),
         "turns_7d": turns_7d,
         "turns_30d": turns_30d,
-        "repos": repos,
-        "last_session": last_session,
-        "daily_sessions": daily_sessions,
+        "repos": compute_repos_from_sessions(p7),
+        "last_session": find_last_session(p7),
+        "daily_sessions": compute_daily_breakdown(p7, days=7),
     }
 
 
 def fetch_all_providers() -> Optional[Dict[str, Dict[str, Any]]]:
-    """
-    Fetch data for all providers from Life Hub API.
-
-    Fetches both aggregate stats (fast) and individual sessions (for daily
-    breakdown and per-repo stats).
-
-    Returns:
-        Dict with keys 'claude', 'codex', 'cursor', 'gemini',
-        each containing data in the same format as local parsers.
-        Returns None if API call fails.
-    """
-    print("   Fetching 7-day stats...")
-    stats_7d = fetch_stats(since_days=7)
-    if not stats_7d:
+    """Fetch data for all providers from Longhouse API."""
+    token = get_device_token()
+    if not token:
+        print("   ⚠️  No Longhouse device token found (LONGHOUSE_DEVICE_TOKEN or LIFE_HUB_API_KEY)")
         return None
 
-    print("   Fetching 30-day stats...")
-    stats_30d = fetch_stats(since_days=30)
-    if not stats_30d:
-        return None
-
-    # Fetch individual sessions for daily breakdown and repos
     print("   Fetching 7-day sessions...")
-    since_7d = datetime.now(timezone.utc) - timedelta(days=7)
-    sessions_7d = fetch_sessions(since=since_7d, limit=500)
+    sessions_7d = _fetch_all_sessions(token, days_back=7)
     if sessions_7d is None:
-        print("   ⚠️  Failed to fetch sessions, continuing with stats only")
-        sessions_7d = []
+        return None
+    print(f"   ✓ Got {len(sessions_7d)} sessions (7d)")
 
     print("   Fetching 30-day sessions...")
-    since_30d = datetime.now(timezone.utc) - timedelta(days=30)
-    sessions_30d = fetch_sessions(since=since_30d, limit=500)
+    sessions_30d = _fetch_all_sessions(token, days_back=30)
     if sessions_30d is None:
-        print("   ⚠️  Failed to fetch sessions, continuing with stats only")
-        sessions_30d = []
+        print("   ⚠️  Failed to fetch 30-day sessions, using 7-day for 30d stats")
+        sessions_30d = sessions_7d
 
-    # Transform data for each provider
-    providers = ["claude", "codex", "cursor", "gemini"]
     result = {}
-
-    for provider in providers:
-        result[provider] = transform_provider_data(
-            stats_7d, stats_30d, sessions_7d, sessions_30d, provider
+    for provider in ["claude", "codex", "cursor", "gemini"]:
+        result[provider] = _build_provider_data(sessions_7d, sessions_30d, provider)
+        print(
+            f"   ✓ {provider}: {result[provider]['sessions_7d']} sessions, "
+            f"{result[provider]['turns_7d']} turns (7d)"
         )
-        repos_count = len(result[provider].get("repos", []))
-        daily_count = len(result[provider].get("daily_sessions", []))
-        print(f"   ✓ {provider}: {result[provider]['sessions_7d']} sessions, "
-              f"{result[provider]['turns_7d']} turns, {repos_count} repos, "
-              f"{daily_count} days (7d)")
 
     return result
 
 
 def main():
-    """Test the Life Hub API fetch."""
+    """Test the Longhouse API fetch."""
     import json
 
-    print("Testing Life Hub API fetch...")
-
-    api_key = get_api_key()
-    if not api_key:
-        print("Error: LIFE_HUB_API_KEY environment variable not set")
-        print("Set it with: export LIFE_HUB_API_KEY='your-key'")
+    token = get_device_token()
+    if not token:
+        print("Error: set LONGHOUSE_DEVICE_TOKEN or LIFE_HUB_API_KEY")
         return
 
     result = fetch_all_providers()
     if result:
-        print("\n✅ Successfully fetched data from Life Hub API")
+        print("\n✅ Successfully fetched data from Longhouse API")
         for provider, data in result.items():
             print(f"\n{provider}:")
             print(f"  Sessions (7d): {data['sessions_7d']}")
             print(f"  Sessions (30d): {data['sessions_30d']}")
             print(f"  Turns (7d): {data['turns_7d']}")
-            print(f"  Turns (30d): {data['turns_30d']}")
-            print(f"  Repos: {len(data.get('repos', []))}")
-            if data.get("repos"):
-                for repo in data["repos"][:3]:
-                    print(f"    - {repo['repo']}: {repo['sessions']} sessions")
-            print(f"  Daily sessions: {len(data.get('daily_sessions', []))} days")
-            if data.get("last_session"):
-                print(f"  Last session: {data['last_session']['repo']} "
-                      f"({data['last_session']['hours_ago']:.1f}h ago)")
     else:
-        print("\n❌ Failed to fetch data from Life Hub API")
+        print("\n❌ Failed to fetch data from Longhouse API")
 
 
 if __name__ == "__main__":
