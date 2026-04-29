@@ -1,87 +1,83 @@
 {
-  "generated_at": "2026-04-29T23:49:15.497782+00:00",
+  "generated_at": "2026-04-29T23:50:39.185143+00:00",
   "github": {
     "repos_active_7d": 9,
     "repos_active_30d": 16,
-    "commits_7d": 463,
-    "commits_30d": 2498,
+    "commits_7d": 363,
+    "commits_30d": 902,
     "languages_30d": [
       {
         "name": "Python",
-        "commits": 2235
+        "commits": 854
       },
       {
-        "name": "Shell",
-        "commits": 168
+        "name": "HTML",
+        "commits": 5
+      },
+      {
+        "name": "Swift",
+        "commits": 4
       },
       {
         "name": "TypeScript",
-        "commits": 58
-      },
-      {
-        "name": "JavaScript",
-        "commits": 35
+        "commits": 2
       }
     ],
     "last_push": {
-      "repo": "chaos",
-      "timestamp": "2026-04-29T20:27:55-03:00",
-      "hours_ago": 0.35
+      "repo": "cipher982",
+      "timestamp": "2026-04-29T23:50:02+00:00",
+      "hours_ago": 0.0
     },
     "top_repos_7d": [
       {
-        "repo": "zerg",
-        "commits": 290
+        "repo": "longhouse",
+        "commits": 292
       },
       {
-        "repo": "zerg-transport-health-truth",
-        "commits": 62
+        "repo": "sauron-jobs",
+        "commits": 45
       },
       {
-        "repo": "bar",
-        "commits": 56
-      },
-      {
-        "repo": "me",
-        "commits": 31
+        "repo": "obsidian-vault",
+        "commits": 8
       },
       {
         "repo": "hatch",
-        "commits": 9
+        "commits": 6
+      },
+      {
+        "repo": "chaos-stability-probe",
+        "commits": 5
       }
     ],
     "daily_commits": [
       {
-        "date": "2026-04-22",
-        "commits": 26
-      },
-      {
         "date": "2026-04-23",
-        "commits": 105
+        "commits": 57
       },
       {
         "date": "2026-04-24",
-        "commits": 34
+        "commits": 42
       },
       {
         "date": "2026-04-25",
-        "commits": 60
+        "commits": 44
       },
       {
         "date": "2026-04-26",
-        "commits": 90
+        "commits": 67
       },
       {
         "date": "2026-04-27",
-        "commits": 83
+        "commits": 50
       },
       {
         "date": "2026-04-28",
-        "commits": 49
+        "commits": 52
       },
       {
         "date": "2026-04-29",
-        "commits": 16
+        "commits": 51
       }
     ]
   },
@@ -180,7 +176,7 @@
     "last_session": {
       "repo": "chaos",
       "timestamp": "2026-04-29T23:46:46.923000+00:00",
-      "hours_ago": 0.04
+      "hours_ago": 0.06
     },
     "daily_sessions": [
       {
@@ -320,7 +316,7 @@
     "last_session": {
       "repo": "chaos",
       "timestamp": "2026-04-29T23:27:13.774000+00:00",
-      "hours_ago": 0.37
+      "hours_ago": 0.39
     },
     "daily_sessions": [
       {
@@ -378,7 +374,7 @@
     "last_session": {
       "repo": null,
       "timestamp": "2026-04-29T21:43:49.479000+00:00",
-      "hours_ago": 2.09
+      "hours_ago": 2.11
     },
     "daily_sessions": [
       {
@@ -411,49 +407,40 @@
     "gemini_turns_percentage": 0.9,
     "top_repos_combined": [
       {
-        "repo": "zerg",
-        "commits": 290,
-        "ai_sessions": 31,
-        "github_url": "https://github.com/cipher982/longhouse"
-      },
-      {
-        "repo": "bar",
-        "commits": 56,
-        "ai_sessions": 10,
+        "repo": "longhouse",
+        "commits": 292,
+        "ai_sessions": 0,
         "github_url": null
       },
       {
-        "repo": "zerg-transport-health-truth",
-        "commits": 62,
+        "repo": "sauron-jobs",
+        "commits": 45,
         "ai_sessions": 0,
-        "github_url": "https://github.com/cipher982/longhouse"
+        "github_url": null
       },
       {
-        "repo": "me",
-        "commits": 31,
-        "ai_sessions": 9,
-        "github_url": "https://github.com/cipher982/me"
+        "repo": "zerg",
+        "commits": 0,
+        "ai_sessions": 31,
+        "github_url": null
       },
       {
         "repo": "chaos",
         "commits": 0,
         "ai_sessions": 14,
-        "github_url": "https://github.com/cipher982/chaos-stability-probe"
+        "github_url": null
+      },
+      {
+        "repo": "git",
+        "commits": 0,
+        "ai_sessions": 11,
+        "github_url": null
       }
     ],
     "daily_breakdown_7d": [
       {
-        "date": "2026-04-22",
-        "commits": 26,
-        "claude_sessions": 0,
-        "codex_sessions": 0,
-        "cursor_sessions": 0,
-        "gemini_sessions": 0,
-        "total_sessions": 0
-      },
-      {
         "date": "2026-04-23",
-        "commits": 105,
+        "commits": 57,
         "claude_sessions": 6,
         "codex_sessions": 7,
         "cursor_sessions": 0,
@@ -462,7 +449,7 @@
       },
       {
         "date": "2026-04-24",
-        "commits": 34,
+        "commits": 42,
         "claude_sessions": 7,
         "codex_sessions": 35,
         "cursor_sessions": 0,
@@ -471,7 +458,7 @@
       },
       {
         "date": "2026-04-25",
-        "commits": 60,
+        "commits": 44,
         "claude_sessions": 1,
         "codex_sessions": 7,
         "cursor_sessions": 0,
@@ -480,7 +467,7 @@
       },
       {
         "date": "2026-04-26",
-        "commits": 90,
+        "commits": 67,
         "claude_sessions": 4,
         "codex_sessions": 17,
         "cursor_sessions": 0,
@@ -489,7 +476,7 @@
       },
       {
         "date": "2026-04-27",
-        "commits": 83,
+        "commits": 50,
         "claude_sessions": 6,
         "codex_sessions": 10,
         "cursor_sessions": 0,
@@ -498,7 +485,7 @@
       },
       {
         "date": "2026-04-28",
-        "commits": 49,
+        "commits": 52,
         "claude_sessions": 15,
         "codex_sessions": 14,
         "cursor_sessions": 0,
