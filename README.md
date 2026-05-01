@@ -46,11 +46,11 @@ I build AI-powered applications and infrastructure. Most of my work involves aut
 
 | Repo | Commits | AI Sessions |
 |------|---------|-------------|
-| **longhouse** | 285 | 0 |
-| **sauron-jobs** | 45 | 0 |
-| **zerg** | 0 | 31 |
-| **chaos** | 0 | 19 |
-| **git** | 0 | 11 |
+| **longhouse** | 220 | 0 |
+| **sauron-jobs** | 46 | 0 |
+| **zerg** | 0 | 27 |
+| **chaos** | 0 | 23 |
+| **bar** | 0 | 15 |
 
 
 ## How I Build
@@ -58,7 +58,7 @@ I build AI-powered applications and infrastructure. Most of my work involves aut
 The dashboard at the top updates automatically every 6 hours. It tracks my AI-native development workflow — combining traditional git commits with AI pair programming sessions across multiple tools.
 
 - **4 AI coding agents** running in parallel: Claude Code, OpenAI Codex, Gemini, Cursor
-- **Avg 11 turns/session** — deep problem-solving, not quick prompts
+- **Avg 12 turns/session** — deep problem-solving, not quick prompts
 - All metrics computed locally and via the [Longhouse](https://longhouse.ai) API
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![HTML](https://img.shields.io/badge/HTML-gray?style=flat-square&logo=html&logoColor=white) ![Swift](https://img.shields.io/badge/Swift-gray?style=flat-square&logo=swift&logoColor=white)
@@ -79,11 +79,11 @@ The dashboard at the top updates automatically every 6 hours. It tracks my AI-na
 <details>
 <summary>Detailed Stats (Last 30 Days)</summary>
 
-- **Commits**: 902
-- **Languages**: Python (854), HTML (5), Swift (4), TypeScript (2)
-- **AI Sessions**: Claude 297 · Codex 446 · Cursor 0 · Gemini 23
-- **Total Turns**: 9.3k
+- **Commits**: 882
+- **Languages**: Python (834), HTML (5), Swift (4), TypeScript (2)
+- **AI Sessions**: Claude 60 · Codex 123 · Cursor 0 · Gemini 17
+- **Total Turns**: 2.3k
 
 </details>
 
-*Last updated: 2026-04-30 06:48 UTC*
+*Last updated: 2026-05-01 06:50 UTC*
