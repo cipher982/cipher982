@@ -46,11 +46,11 @@ I build AI-powered applications and infrastructure. Most of my work involves aut
 
 | Repo | Commits | AI Sessions |
 |------|---------|-------------|
-| **longhouse** | 203 | 0 |
+| **longhouse** | 146 | 0 |
 | **chaos-stability-probe** | 67 | 0 |
-| **sauron-jobs** | 47 | 0 |
-| **zerg** | 0 | 27 |
-| **chaos** | 0 | 24 |
+| **sauron-jobs** | 46 | 0 |
+| **me** | 24 | 8 |
+| **drose_io** | 27 | 4 |
 
 
 ## How I Build
@@ -58,10 +58,10 @@ I build AI-powered applications and infrastructure. Most of my work involves aut
 The dashboard at the top updates automatically every 6 hours. It tracks my AI-native development workflow — combining traditional git commits with AI pair programming sessions across multiple tools.
 
 - **4 AI coding agents** running in parallel: Claude Code, OpenAI Codex, Gemini, Cursor
-- **Avg 12 turns/session** — deep problem-solving, not quick prompts
+- **Avg 11 turns/session** — deep problem-solving, not quick prompts
 - All metrics computed locally and via the [Longhouse](https://longhouse.ai) API
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![HTML](https://img.shields.io/badge/HTML-gray?style=flat-square&logo=html&logoColor=white) ![Swift](https://img.shields.io/badge/Swift-gray?style=flat-square&logo=swift&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![HTML](https://img.shields.io/badge/HTML-gray?style=flat-square&logo=html&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 
 <details>
 <summary>Data sources</summary>
@@ -79,11 +79,11 @@ The dashboard at the top updates automatically every 6 hours. It tracks my AI-na
 <details>
 <summary>Detailed Stats (Last 30 Days)</summary>
 
-- **Commits**: 930
-- **Languages**: Python (883), HTML (9), Swift (4)
-- **AI Sessions**: Claude 284 · Codex 432 · Cursor 0 · Gemini 23
-- **Total Turns**: 9.5k
+- **Commits**: 1002
+- **Languages**: Python (932), HTML (29), TypeScript (4), Swift (4)
+- **AI Sessions**: Claude 59 · Codex 122 · Cursor 0 · Gemini 17
+- **Total Turns**: 2.2k
 
 </details>
 
-*Last updated: 2026-05-02 06:35 UTC*
+*Last updated: 2026-05-03 06:47 UTC*
