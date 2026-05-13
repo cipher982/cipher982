@@ -2,7 +2,6 @@
   <img src="./hero.svg" alt="AI-Native Development Dashboard" />
 </p>
 
-I build AI-powered applications and infrastructure. Most of my work involves autonomous agents, LLM tooling, and shipping real products — from computer vision systems to full-stack web apps. The dashboard above tracks my AI pair programming workflow in real time.
 
 ---
 
