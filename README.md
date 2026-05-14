@@ -2,6 +2,7 @@
   <img src="./hero.svg" alt="AI-Native Development Dashboard" />
 </p>
 
+I build AI-powered applications and infrastructure. Most of my work involves autonomous agents, LLM tooling, and shipping real products — from computer vision systems to full-stack web apps. The dashboard above tracks my AI pair programming workflow in real time.
 
 ---
 
@@ -45,11 +46,11 @@
 
 | Repo | Commits | AI Sessions |
 |------|---------|-------------|
-| **longhouse** | 245 | 0 |
-| **zerg** | 0 | 229 |
-| **llm-benchmarks** | 32 | 0 |
-| **llm-benchmarks-dashboard** | 20 | 0 |
-| **me** | 12 | 5 |
+| **longhouse** | 266 | 6 |
+| **zerg** | 0 | 232 |
+| **llm-benchmarks** | 29 | 0 |
+| **llm-benchmarks-dashboard** | 19 | 0 |
+| **me** | 12 | 6 |
 
 
 ## How I Build
@@ -78,11 +79,11 @@ The dashboard at the top updates automatically every 6 hours. It tracks my AI-na
 <details>
 <summary>Detailed Stats (Last 30 Days)</summary>
 
-- **Commits**: 1029
-- **Languages**: Python (914), HTML (34), TypeScript (24), Swift (19)
-- **AI Sessions**: Claude 239 · Codex 551 · Cursor 0 · Gemini 17
+- **Commits**: 1016
+- **Languages**: Python (898), HTML (38), TypeScript (24), Swift (19)
+- **AI Sessions**: Claude 245 · Codex 543 · Cursor 0 · Gemini 17
 - **Total Turns**: 7.3k
 
 </details>
 
-*Last updated: 2026-05-13 06:58 UTC*
+*Last updated: 2026-05-14 06:56 UTC*
