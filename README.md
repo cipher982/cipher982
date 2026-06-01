@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="./hero.svg" alt="David Rose — AI Systems Engineer" />
+  <img src="./hero.svg" alt="David Rose, AI Systems Engineer" />
 </p>
 
-I design and build AI systems end to end — autonomous agents, LLM infrastructure, and the products on top of them. Most of my time goes to agent orchestration and developer tooling, with a long tail of computer-vision and full-stack work behind it.
+I design and build AI systems end to end: autonomous agents, LLM infrastructure, and the products on top of them. Most of my time goes to agent orchestration and developer tooling, with a long tail of computer-vision and full-stack work behind it.
 
 ---
 
@@ -10,7 +10,7 @@ I design and build AI systems end to end — autonomous agents, LLM infrastructu
 
 | Project | |
 |---------|--|
-| 🪵 [**Longhouse**](https://longhouse.ai) | Platform for running, observing, and orchestrating fleets of AI agent sessions — memory, insights, and control plane. |
+| 🪵 [**Longhouse**](https://longhouse.ai) | Platform for running, observing, and orchestrating fleets of AI agent sessions, with shared memory and a control plane. |
 | 🐣 [**Hatch**](https://github.com/cipher982/hatch) | CLI for spawning headless coding agents (Claude, Codex, Gemini) and wiring them into pipelines. |
 | 🔧 [**Agent Tools**](https://github.com/cipher982/agent-tools) | MCP server facades that cut Claude Code's tool-token overhead by ~90%. |
 | 📜 [**Agentlog**](https://github.com/cipher982/agentlog) | A canonical parser for AI agent session logs across Claude, Codex, Gemini, and Cursor. |
@@ -44,6 +44,6 @@ Earlier work in control systems and computer vision that shaped how I think abou
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=white)
 
-Over the last 30 days: **600 commits** across **18 repos**. I work alongside coding agents daily — roughly **1123 agent sessions** this month, mostly Claude Code and Codex — but the output is the part that matters.
+Over the last 30 days: **600 commits** across **18 repos**. I work alongside coding agents daily (roughly **1123 agent sessions** this month, mostly Claude Code and Codex), but the output is the part that matters.
 
 *Hero dashboard auto-updates daily · last refreshed 2026-06-01 23:07 UTC*

@@ -152,7 +152,7 @@ def generate_hero_svg(data: Dict[str, Any]) -> str:
         chips_svg += markup
         cx += w + 12
 
-    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{WIDTH}" height="{HEIGHT}" viewBox="0 0 {WIDTH} {HEIGHT}" role="img" aria-label="{NAME} — {ROLE}">
+    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{WIDTH}" height="{HEIGHT}" viewBox="0 0 {WIDTH} {HEIGHT}" role="img" aria-label="{NAME}, {ROLE}">
   <defs>
     <style>
       .bg {{ fill: #0d1117; }}
