@@ -23,7 +23,7 @@ FLAGSHIP = ["Longhouse", "Stop Sign Nanny", "LLM Benchmarks"]
 
 # --- Layout ------------------------------------------------------------------
 WIDTH = 900
-HEIGHT = 360
+HEIGHT = 372
 PAD = 36
 
 
@@ -55,15 +55,22 @@ def _intensity(c: int) -> float:
     return 1.0
 
 
+_MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+           "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+_COL_STEP = CAL_CELL + CAL_GAP
+
+
 def build_contribution_calendar(
     daily_commits: List[Dict[str, Any]], x: float, y: float
 ) -> str:
-    """A full-year GitHub-style contribution heatmap.
+    """A full-year GitHub-style contribution heatmap with month + weekday labels.
 
     Columns are weeks (oldest left → newest right), rows are weekdays
-    (Sunday top). Intensity is bucketed by activity so the grid reads as
-    "consistently active" with no up/down slope. Future days in the current
-    week and days with no data render as faint empty cells.
+    (Sunday top). Month labels along the top and weekday labels on the left
+    make the time axis legible — so the boundaries read as "start of the
+    window," not "didn't commit." Intensity is bucketed by activity (not
+    scaled to peak) so the grid reads as consistent activity with no slope.
+    Future days and days with no data render as faint empty cells.
     """
     by_date = {d["date"]: d["commits"] for d in daily_commits}
 
@@ -73,20 +80,43 @@ def build_contribution_calendar(
     start = today - timedelta(days=sunday_offset + (CAL_COLS - 1) * 7)
 
     squares = []
+    month_labels = []
+    last_month = None
+
     for col in range(CAL_COLS):
+        col_first = start + timedelta(days=col * 7)
+        # Label a column when its first day falls in a new month, leaving a
+        # little room at the right edge so the last label isn't clipped.
+        if col_first.month != last_month and col < CAL_COLS - 1:
+            month_labels.append(
+                f'<text x="{x + col * _COL_STEP:.0f}" y="{y - 6:.0f}" '
+                f'class="cal-label">{_MONTHS[col_first.month - 1]}</text>'
+            )
+            last_month = col_first.month
+
         for row in range(CAL_ROWS):
-            d = start + timedelta(days=col * 7 + row)
+            d = col_first + timedelta(days=row)
             if d > today:
                 continue
             c = by_date.get(d.isoformat(), 0)
-            cx = x + col * (CAL_CELL + CAL_GAP)
-            cy = y + row * (CAL_CELL + CAL_GAP)
+            cx = x + col * _COL_STEP
+            cy = y + row * _COL_STEP
             squares.append(
                 f'<rect x="{cx:.0f}" y="{cy:.0f}" width="{CAL_CELL}" '
                 f'height="{CAL_CELL}" rx="2" class="cell" '
                 f'fill-opacity="{_intensity(c):.2f}"/>'
             )
-    return "\n  ".join(squares)
+
+    # Weekday labels (Mon/Wed/Fri) on the left, aligned to their rows.
+    weekday_labels = []
+    for row, name in ((1, "Mon"), (3, "Wed"), (5, "Fri")):
+        ly = y + row * _COL_STEP + CAL_CELL - 1
+        weekday_labels.append(
+            f'<text x="{x - 8:.0f}" y="{ly:.0f}" class="cal-label" '
+            f'text-anchor="end">{name}</text>'
+        )
+
+    return "\n  ".join(month_labels + weekday_labels + squares)
 
 
 def chip(label: str, x: float, y: float) -> str:
@@ -106,10 +136,12 @@ def generate_hero_svg(data: Dict[str, Any]) -> str:
     commits_30d = gh.get("commits_30d", 0)
     repos_30d = gh.get("repos_active_30d", 0)
 
-    # Full-year contribution calendar, centered as its own band near the
-    # bottom. Falls back gracefully when there's less than a year of data.
-    cal_x = (WIDTH - CAL_W) / 2
-    cal_y = 268
+    # Full-year contribution calendar as its own band near the bottom, with
+    # month + weekday labels. Offset right by the weekday-label gutter so the
+    # grid + labels sit centered as a unit.
+    gutter = 30
+    cal_x = (WIDTH - CAL_W - gutter) / 2 + gutter
+    cal_y = 278
     calendar = build_contribution_calendar(gh.get("daily_commits", []), cal_x, cal_y)
 
     # Flagship chips, laid out left-to-right with consistent gaps.
@@ -135,6 +167,7 @@ def generate_hero_svg(data: Dict[str, Any]) -> str:
       .stat-num {{ font: 700 22px 'SF Mono', ui-monospace, 'Consolas', monospace; fill: #e6edf3; }}
       .stat-label {{ font: 400 12px 'Segoe UI', -apple-system, system-ui, sans-serif; fill: #8b949e; }}
       .cell {{ fill: #58a6ff; }}
+      .cal-label {{ font: 400 9px 'Segoe UI', -apple-system, system-ui, sans-serif; fill: #6e7681; }}
       .divider {{ stroke: #21262d; stroke-width: 1; }}
 
       @media (prefers-color-scheme: light) {{
@@ -150,6 +183,7 @@ def generate_hero_svg(data: Dict[str, Any]) -> str:
         .stat-num {{ fill: #1f2328; }}
         .stat-label {{ fill: #636c76; }}
         .cell {{ fill: #0969da; }}
+        .cal-label {{ fill: #818b98; }}
         .divider {{ stroke: #eaeef2; }}
       }}
 
