@@ -23,7 +23,7 @@ FLAGSHIP = ["Longhouse", "Stop Sign Nanny", "LLM Benchmarks"]
 
 # --- Layout ------------------------------------------------------------------
 WIDTH = 900
-HEIGHT = 300
+HEIGHT = 360
 PAD = 36
 
 
@@ -31,57 +31,61 @@ def format_number(num: int) -> str:
     return f"{num:,}"
 
 
-def build_contribution_grid(
+# Contribution calendar geometry (GitHub-style: weeks as columns, weekdays
+# as rows). 53 columns covers a full trailing year.
+CAL_CELL = 9
+CAL_GAP = 2
+CAL_COLS = 53
+CAL_ROWS = 7
+CAL_W = CAL_COLS * (CAL_CELL + CAL_GAP) - CAL_GAP
+CAL_H = CAL_ROWS * (CAL_CELL + CAL_GAP) - CAL_GAP
+
+
+def _intensity(c: int) -> float:
+    # Fixed activity buckets (not scaled to peak) so a single outlier day
+    # doesn't wash everything else into the dimmest tint.
+    if c == 0:
+        return 0.09          # empty-cell tint
+    if c <= 3:
+        return 0.40
+    if c <= 8:
+        return 0.62
+    if c <= 15:
+        return 0.82
+    return 1.0
+
+
+def build_contribution_calendar(
     daily_commits: List[Dict[str, Any]], x: float, y: float
 ) -> str:
-    """A GitHub-style contribution grid of the last ~4 weeks of commits.
+    """A full-year GitHub-style contribution heatmap.
 
-    Intensity → opacity bucket, so the strip reads as "consistently active"
-    with no up/down slope. The current (partial) day is excluded so a quiet
-    morning never reads as a slump; missing days render as empty cells.
+    Columns are weeks (oldest left → newest right), rows are weekdays
+    (Sunday top). Intensity is bucketed by activity so the grid reads as
+    "consistently active" with no up/down slope. Future days in the current
+    week and days with no data render as faint empty cells.
     """
-    cell = 11       # square size
-    gap = 3         # gap between squares
-    weeks = 6       # columns
-    rows = 5        # rows — 6×5 = last 30 days
-
     by_date = {d["date"]: d["commits"] for d in daily_commits}
 
-    # The grid ends yesterday (today is partial). Build a contiguous run of
-    # weeks*rows days ending there, oldest first.
-    if by_date:
-        latest = max(date.fromisoformat(d) for d in by_date)
-    else:
-        latest = date.today()
-    end = min(latest, date.today() - timedelta(days=1))
-    total_days = weeks * rows
-    days = [end - timedelta(days=i) for i in range(total_days - 1, -1, -1)]
-
-    counts = [by_date.get(d.isoformat(), 0) for d in days]
-
-    def opacity(c: int) -> float:
-        # Fixed commit-count buckets (not scaled to peak) so a single
-        # outlier day doesn't wash everything else into the dimmest tint.
-        if c == 0:
-            return 0.08          # empty-cell tint
-        if c <= 3:
-            return 0.40
-        if c <= 8:
-            return 0.62
-        if c <= 15:
-            return 0.82
-        return 1.0
+    today = date.today()
+    # Start at the Sunday 52 weeks back so the final column ends on today.
+    sunday_offset = (today.weekday() + 1) % 7  # Mon=0..Sun=6 -> days since Sun
+    start = today - timedelta(days=sunday_offset + (CAL_COLS - 1) * 7)
 
     squares = []
-    for idx, c in enumerate(counts):
-        col = idx // rows
-        row = idx % rows
-        cx = x + col * (cell + gap)
-        cy = y + row * (cell + gap)
-        squares.append(
-            f'<rect x="{cx:.0f}" y="{cy:.0f}" width="{cell}" height="{cell}" '
-            f'rx="3" class="cell" fill-opacity="{opacity(c):.2f}"/>'
-        )
+    for col in range(CAL_COLS):
+        for row in range(CAL_ROWS):
+            d = start + timedelta(days=col * 7 + row)
+            if d > today:
+                continue
+            c = by_date.get(d.isoformat(), 0)
+            cx = x + col * (CAL_CELL + CAL_GAP)
+            cy = y + row * (CAL_CELL + CAL_GAP)
+            squares.append(
+                f'<rect x="{cx:.0f}" y="{cy:.0f}" width="{CAL_CELL}" '
+                f'height="{CAL_CELL}" rx="2" class="cell" '
+                f'fill-opacity="{_intensity(c):.2f}"/>'
+            )
     return "\n  ".join(squares)
 
 
@@ -102,11 +106,11 @@ def generate_hero_svg(data: Dict[str, Any]) -> str:
     commits_30d = gh.get("commits_30d", 0)
     repos_30d = gh.get("repos_active_30d", 0)
 
-    # Contribution grid (last 30 days) — right-aligned. 6 cols × 5 rows of
-    # 11px cells + 3px gaps = 81px wide, 67px tall.
-    grid_w = 6 * (11 + 3) - 3
-    grid_x = WIDTH - PAD - grid_w
-    grid = build_contribution_grid(gh.get("daily_commits", []), grid_x, 218)
+    # Full-year contribution calendar, centered as its own band near the
+    # bottom. Falls back gracefully when there's less than a year of data.
+    cal_x = (WIDTH - CAL_W) / 2
+    cal_y = 268
+    calendar = build_contribution_calendar(gh.get("daily_commits", []), cal_x, cal_y)
 
     # Flagship chips, laid out left-to-right with consistent gaps.
     chips_svg = ""
@@ -176,11 +180,11 @@ def generate_hero_svg(data: Dict[str, Any]) -> str:
     <text x="150" y="0" class="stat-num">{repos_30d}</text>
     <text x="150" y="18" class="stat-label">active repos</text>
   </g>
+  <text x="{WIDTH - PAD}" y="224" class="stat-label" text-anchor="end">commit activity · past year</text>
 
-  <!-- Contribution grid (last 30 days, right-aligned) -->
-  <text x="{WIDTH - PAD}" y="210" class="stat-label" text-anchor="end">commit activity · 30d</text>
+  <!-- Full-year contribution calendar -->
   <g class="grid">
-  {grid}
+  {calendar}
   </g>
 </svg>'''
     return svg

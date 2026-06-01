@@ -158,16 +158,16 @@ def parse_github_activity(git_dir: Path) -> Dict[str, Any]:
             repos_30d.add(repo_name)
             commits_30d_total += len(commits_30d)
 
-            # Track commits by date across the full 30d window (commit's own
-            # timezone, not UTC) for the contribution grid.
-            for commit in commits_30d:
-                commit_date = commit["timestamp"].date().isoformat()
-                commits_by_date[commit_date] += 1
-
             # Aggregate language stats
             language = detect_language(repo_path)
             if language:
                 language_commits_30d[language] += len(commits_30d)
+
+        # Daily commit counts across the past year, for the contribution
+        # calendar (commit's own timezone, not UTC).
+        for commit in get_commits_since(repo_path, 365):
+            commit_date = commit["timestamp"].date().isoformat()
+            commits_by_date[commit_date] += 1
 
     # Top repos by commits in 7d
     top_repos = [

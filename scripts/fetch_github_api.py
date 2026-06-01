@@ -113,6 +113,51 @@ def detect_language(repo: Dict) -> Optional[str]:
     return repo.get("language")
 
 
+def fetch_contribution_calendar(username: str) -> List[Dict[str, Any]]:
+    """Fetch the past-year daily contribution calendar via GraphQL.
+
+    This is the same data as the green graph on the GitHub profile (includes
+    private contributions when the token has access). Returns a list of
+    {date, commits} for every day in the trailing year, or [] on failure.
+    """
+    token = get_github_token()
+    if not token:
+        return []
+
+    query = """
+    query($login: String!) {
+      user(login: $login) {
+        contributionsCollection {
+          contributionCalendar {
+            weeks { contributionDays { date contributionCount } }
+          }
+        }
+      }
+    }
+    """
+    try:
+        resp = requests.post(
+            "https://api.github.com/graphql",
+            headers={"Authorization": f"Bearer {token}"},
+            json={"query": query, "variables": {"login": username}},
+            timeout=30,
+        )
+        resp.raise_for_status()
+        weeks = (
+            resp.json()["data"]["user"]["contributionsCollection"]
+            ["contributionCalendar"]["weeks"]
+        )
+    except (requests.exceptions.RequestException, KeyError, TypeError) as e:
+        print(f"   GraphQL contribution calendar fetch failed: {e}")
+        return []
+
+    return [
+        {"date": day["date"], "commits": day["contributionCount"]}
+        for week in weeks
+        for day in week["contributionDays"]
+    ]
+
+
 def fetch_github_activity(username: Optional[str] = None) -> Dict[str, Any]:
     """
     Fetch GitHub activity via API.
@@ -182,7 +227,8 @@ def fetch_github_activity(username: Optional[str] = None) -> Dict[str, Any]:
 
             if commit_date > since_30d:
                 commits_30d_list.append(commit)
-                # Track daily commits across the full 30d window for the grid.
+                # Per-repo daily tally; used as a fallback for the calendar
+                # when the GraphQL contribution feed is unavailable.
                 date_str = commit_date.date().isoformat()
                 daily_commits[date_str] += 1
 
@@ -224,10 +270,17 @@ def fetch_github_activity(username: Optional[str] = None) -> Dict[str, Any]:
         for lang, count in sorted(language_commits_30d.items(), key=lambda x: x[1], reverse=True)
     ]
 
-    daily_commits_list = [
-        {"date": date, "commits": count}
-        for date, count in sorted(daily_commits.items())
-    ]
+    # Prefer the full-year GraphQL contribution calendar for the heatmap;
+    # fall back to the per-repo 30d tally if it's unavailable.
+    print("   Fetching contribution calendar (GraphQL)...")
+    daily_commits_list = fetch_contribution_calendar(username)
+    if daily_commits_list:
+        print(f"   Got {len(daily_commits_list)} days of contribution data")
+    else:
+        daily_commits_list = [
+            {"date": date, "commits": count}
+            for date, count in sorted(daily_commits.items())
+        ]
 
     return {
         "repos_active_7d": len(repos_7d),
