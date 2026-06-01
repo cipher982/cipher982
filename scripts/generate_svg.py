@@ -7,6 +7,7 @@ are pulled live from data/profile-data.json so the strip stays current; the
 identity copy and flagship list are stable constants below.
 """
 import json
+from datetime import date, timedelta
 from pathlib import Path
 from typing import Any, Dict, List
 
@@ -30,36 +31,58 @@ def format_number(num: int) -> str:
     return f"{num:,}"
 
 
-def build_area_path(values: List[int], x: float, y: float, w: float, h: float):
-    """Return (line_path, area_path) for a filled-area sparkline.
+def build_contribution_grid(
+    daily_commits: List[Dict[str, Any]], x: float, y: float
+) -> str:
+    """A GitHub-style contribution grid of the last ~4 weeks of commits.
 
-    line_path traces the top edge; area_path closes it down to the baseline
-    for the gradient fill. Coordinates are absolute (no nested viewBox) so the
-    gradient renders consistently across GitHub's SVG sanitizer.
+    Intensity → opacity bucket, so the strip reads as "consistently active"
+    with no up/down slope. The current (partial) day is excluded so a quiet
+    morning never reads as a slump; missing days render as empty cells.
     """
-    if not values or len(values) < 2:
-        return "", ""
+    cell = 11       # square size
+    gap = 3         # gap between squares
+    weeks = 6       # columns
+    rows = 5        # rows — 6×5 = last 30 days
 
-    max_val = max(values)
-    min_val = min(values)
-    rng = (max_val - min_val) or 1
-    step = w / (len(values) - 1)
+    by_date = {d["date"]: d["commits"] for d in daily_commits}
 
-    pts = []
-    for i, v in enumerate(values):
-        px = x + i * step
-        # Leave a little headroom so the peak isn't flush with the top.
-        norm = (v - min_val) / rng
-        py = y + h - (norm * (h - 6)) - 3
-        pts.append((px, py))
+    # The grid ends yesterday (today is partial). Build a contiguous run of
+    # weeks*rows days ending there, oldest first.
+    if by_date:
+        latest = max(date.fromisoformat(d) for d in by_date)
+    else:
+        latest = date.today()
+    end = min(latest, date.today() - timedelta(days=1))
+    total_days = weeks * rows
+    days = [end - timedelta(days=i) for i in range(total_days - 1, -1, -1)]
 
-    line = "M " + " L ".join(f"{px:.1f},{py:.1f}" for px, py in pts)
-    area = (
-        f"M {pts[0][0]:.1f},{y + h:.1f} "
-        + "L " + " L ".join(f"{px:.1f},{py:.1f}" for px, py in pts)
-        + f" L {pts[-1][0]:.1f},{y + h:.1f} Z"
-    )
-    return line, area
+    counts = [by_date.get(d.isoformat(), 0) for d in days]
+
+    def opacity(c: int) -> float:
+        # Fixed commit-count buckets (not scaled to peak) so a single
+        # outlier day doesn't wash everything else into the dimmest tint.
+        if c == 0:
+            return 0.08          # empty-cell tint
+        if c <= 3:
+            return 0.40
+        if c <= 8:
+            return 0.62
+        if c <= 15:
+            return 0.82
+        return 1.0
+
+    squares = []
+    for idx, c in enumerate(counts):
+        col = idx // rows
+        row = idx % rows
+        cx = x + col * (cell + gap)
+        cy = y + row * (cell + gap)
+        squares.append(
+            f'<rect x="{cx:.0f}" y="{cy:.0f}" width="{cell}" height="{cell}" '
+            f'rx="3" class="cell" fill-opacity="{opacity(c):.2f}"/>'
+        )
+    return "\n  ".join(squares)
 
 
 def chip(label: str, x: float, y: float) -> str:
@@ -79,11 +102,11 @@ def generate_hero_svg(data: Dict[str, Any]) -> str:
     commits_30d = gh.get("commits_30d", 0)
     repos_30d = gh.get("repos_active_30d", 0)
 
-    # Commit sparkline from the daily series (oldest -> newest). Confined to
-    # the right half so it doesn't collide with the stat numbers on the left.
-    daily = [d["commits"] for d in gh.get("daily_commits", [])]
-    spark_x = 360
-    spark_line, spark_area = build_area_path(daily, spark_x, 224, WIDTH - PAD - spark_x, 46)
+    # Contribution grid (last 30 days) — right-aligned. 6 cols × 5 rows of
+    # 11px cells + 3px gaps = 81px wide, 67px tall.
+    grid_w = 6 * (11 + 3) - 3
+    grid_x = WIDTH - PAD - grid_w
+    grid = build_contribution_grid(gh.get("daily_commits", []), grid_x, 218)
 
     # Flagship chips, laid out left-to-right with consistent gaps.
     chips_svg = ""
@@ -107,7 +130,7 @@ def generate_hero_svg(data: Dict[str, Any]) -> str:
       .chip-text {{ font: 500 13px 'Segoe UI', -apple-system, system-ui, sans-serif; fill: #c9d1d9; }}
       .stat-num {{ font: 700 22px 'SF Mono', ui-monospace, 'Consolas', monospace; fill: #e6edf3; }}
       .stat-label {{ font: 400 12px 'Segoe UI', -apple-system, system-ui, sans-serif; fill: #8b949e; }}
-      .spark-line {{ stroke: #58a6ff; stroke-width: 2; fill: none; }}
+      .cell {{ fill: #58a6ff; }}
       .divider {{ stroke: #21262d; stroke-width: 1; }}
 
       @media (prefers-color-scheme: light) {{
@@ -122,18 +145,13 @@ def generate_hero_svg(data: Dict[str, Any]) -> str:
         .chip-text {{ fill: #1f2328; }}
         .stat-num {{ fill: #1f2328; }}
         .stat-label {{ fill: #636c76; }}
-        .spark-line {{ stroke: #0969da; }}
+        .cell {{ fill: #0969da; }}
         .divider {{ stroke: #eaeef2; }}
       }}
 
-      @keyframes draw {{ from {{ stroke-dashoffset: 1400; }} to {{ stroke-dashoffset: 0; }} }}
-      .spark-line {{ stroke-dasharray: 1400; animation: draw 1.6s cubic-bezier(0.22, 1, 0.36, 1) forwards; }}
+      @keyframes fade-in {{ from {{ opacity: 0; }} to {{ opacity: 1; }} }}
+      .grid {{ animation: fade-in 1.2s ease-out forwards; }}
     </style>
-
-    <linearGradient id="area-fill" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.28"/>
-      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
-    </linearGradient>
   </defs>
 
   <rect width="{WIDTH}" height="{HEIGHT}" class="bg" rx="12"/>
@@ -159,10 +177,11 @@ def generate_hero_svg(data: Dict[str, Any]) -> str:
     <text x="150" y="18" class="stat-label">active repos</text>
   </g>
 
-  <!-- Commit sparkline (right-aligned, ~60% width) -->
-  <text x="{WIDTH - PAD}" y="216" class="stat-label" text-anchor="end">daily commits</text>
-  <path d="{spark_area}" fill="url(#area-fill)"/>
-  <path d="{spark_line}" class="spark-line"/>
+  <!-- Contribution grid (last 30 days, right-aligned) -->
+  <text x="{WIDTH - PAD}" y="210" class="stat-label" text-anchor="end">commit activity · 30d</text>
+  <g class="grid">
+  {grid}
+  </g>
 </svg>'''
     return svg
 

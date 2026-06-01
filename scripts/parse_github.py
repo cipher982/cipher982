@@ -143,12 +143,6 @@ def parse_github_activity(git_dir: Path) -> Dict[str, Any]:
             commits_7d_total += len(commits_7d)
             repo_commits_7d[repo_name] = len(commits_7d)
 
-            # Track commits by date (use commit's local timezone, not UTC)
-            for commit in commits_7d:
-                # Commit timestamp already has timezone info from git
-                commit_date = commit["timestamp"].date().isoformat()
-                commits_by_date[commit_date] += 1
-
             # Track last push
             latest_commit = max(commits_7d, key=lambda c: c["timestamp"])
             if last_push_time is None or latest_commit["timestamp"] > last_push_time:
@@ -163,6 +157,12 @@ def parse_github_activity(git_dir: Path) -> Dict[str, Any]:
         if commits_30d:
             repos_30d.add(repo_name)
             commits_30d_total += len(commits_30d)
+
+            # Track commits by date across the full 30d window (commit's own
+            # timezone, not UTC) for the contribution grid.
+            for commit in commits_30d:
+                commit_date = commit["timestamp"].date().isoformat()
+                commits_by_date[commit_date] += 1
 
             # Aggregate language stats
             language = detect_language(repo_path)

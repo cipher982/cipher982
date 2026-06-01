@@ -182,12 +182,12 @@ def fetch_github_activity(username: Optional[str] = None) -> Dict[str, Any]:
 
             if commit_date > since_30d:
                 commits_30d_list.append(commit)
+                # Track daily commits across the full 30d window for the grid.
+                date_str = commit_date.date().isoformat()
+                daily_commits[date_str] += 1
 
                 if commit_date > since_7d:
                     commits_7d_list.append(commit)
-                    # Track daily commits
-                    date_str = commit_date.date().isoformat()
-                    daily_commits[date_str] += 1
 
                 # Track last push
                 if last_push_time is None or commit_date > last_push_time:
