@@ -1,82 +1,49 @@
 <p align="center">
-  <img src="./hero.svg" alt="AI-Native Development Dashboard" />
+  <img src="./hero.svg" alt="David Rose — AI Systems Engineer" />
 </p>
 
-I build AI-powered applications and infrastructure. Most of my work involves autonomous agents, LLM tooling, and shipping real products — from computer vision systems to full-stack web apps. The dashboard above tracks my AI pair programming workflow in real time.
+I design and build AI systems end to end — autonomous agents, LLM infrastructure, and the products on top of them. Most of my time goes to agent orchestration and developer tooling, with a long tail of computer-vision and full-stack work behind it.
 
 ---
 
-## Projects
+## What I'm Building Now
 
-### AI & Agents
+| Project | |
+|---------|--|
+| 🪵 [**Longhouse**](https://longhouse.ai) | Platform for running, observing, and orchestrating fleets of AI agent sessions — memory, insights, and control plane. |
+| 🐣 [**Hatch**](https://github.com/cipher982/hatch) | CLI for spawning headless coding agents (Claude, Codex, Gemini) and wiring them into pipelines. |
+| 🔧 [**Agent Tools**](https://github.com/cipher982/agent-tools) | MCP server facades that cut Claude Code's tool-token overhead by ~90%. |
+| 📜 [**Agentlog**](https://github.com/cipher982/agentlog) | A canonical parser for AI agent session logs across Claude, Codex, Gemini, and Cursor. |
+| 🎁 [**Code Wrapped**](https://github.com/cipher982/code-wrapped) | A year-in-review for your AI pair-programming habits. |
 
-| Project | Description |
-|---------|-------------|
-| 🪵 [**Longhouse**](https://longhouse.ai) | Centralized platform for managing AI agent sessions, insights, memory, and orchestration |
-| ⚡ [**LLM Benchmarks**](https://llm-benchmarks.com/cloud) | Benchmarking LLM inference speeds across providers — 13 stars |
-| 🐣 [**Hatch**](https://github.com/cipher982/hatch) | CLI tool for spawning headless AI agents (Claude, Codex, Gemini) |
-| 🔧 [**MCP Tools**](https://github.com/cipher982/agent-tools) | Lightweight MCP server facades for Claude Code — 90%+ token reduction |
-| 🎁 [**Code Wrapped**](https://github.com/cipher982/code-wrapped) | Spotify Wrapped for your AI pair programming year |
-| 📜 [**Agentlog**](https://github.com/cipher982/agentlog) | Canonical parser for AI agent session logs (Claude, Codex, Gemini, Cursor) |
+## Shipped Products
 
-### Apps & Sites
+| Project | |
+|---------|--|
+| 🛑 [**Stop Sign Nanny**](https://crestwoodstopsign.com) | Computer-vision system that watches an IP camera and scores how vehicles behave at an intersection. |
+| ⚡ [**LLM Benchmarks**](https://llm-benchmarks.com/cloud) | Live benchmarks of LLM inference speed across cloud providers. |
+| 🌅 [**HDR Pop**](https://hdrpop.com) | Turns standard photos into HDR via AI-generated gain maps. |
+| 🏀 [**March Madness LLM**](https://marchmadness.drose.io) | NCAA bracket simulator that lets an LLM make the picks. |
+| 🌊 [**FloodMap USA**](https://drose.io/floodmap) | Interactive flood-risk mapping over elevation data. |
+| 🍷 [**This Wine Does Not Exist**](https://thiswinedoesnotexist.com) | Invented wines from GPT-2 + StyleGAN. |
 
-| Project | Description |
-|---------|-------------|
-| 🛑 [**Stop Sign Nanny**](https://crestwoodstopsign.com) | AI + IP camera system that tracks and scores vehicle behavior at intersections |
-| 🌅 [**HDR Pop**](https://hdrpop.com) | Transform standard photos into HDR using AI-powered gain map generation |
-| 🏀 [**March Madness LLM**](https://marchmadness.drose.io) | NCAA bracket simulator with AI-powered decisions and a React frontend |
-| 🍷 [**This Wine Does Not Exist**](https://thiswinedoesnotexist.com) | Generating fake wines with GPT-2 + StyleGAN |
-| 🌊 [**FloodMap USA**](https://drose.io/floodmap) | Interactive flood risk mapping with elevation data |
-| 🤖 [**AI Tools Directory**](https://drose.io/aitools/) | AI agents that discover, catalog, and organize emerging AI tools |
-| 🖥️ [**Pixel Pilot**](https://github.com/cipher982/pixel-pilot) | AI agent for completing computer tasks via screen control |
+## Foundations
 
-### Earlier Work
+Earlier work in control systems and computer vision that shaped how I think about autonomy.
 
-| Project | Description |
-|---------|-------------|
-| 🚗 [**MPC Vehicle Controller**](https://github.com/cipher982/MPC-vehicle-controller) | Model predictive control + computer vision for autonomous vehicle steering — 21 stars |
-| 🦾 [**Robotic Control with DRL**](https://github.com/cipher982/Robotic-Control-in-Unity-with-DRL) | Deep reinforcement learning for robotic control in Unity |
-| 🎯 [**PID Control**](https://github.com/cipher982/PID-Control) | PID vehicle controller for autonomous driving |
-| 🛣️ [**Lane Tracking**](https://github.com/cipher982/HiFi-Lane-Tracking) | Image processing pipeline for autonomous lane detection |
+| Project | |
+|---------|--|
+| 🚗 [**MPC Vehicle Controller**](https://github.com/cipher982/MPC-vehicle-controller) | Model-predictive control + vision for autonomous steering. |
+| 🦾 [**Robotic Control with DRL**](https://github.com/cipher982/Robotic-Control-in-Unity-with-DRL) | Deep reinforcement learning for robotic control in Unity. |
+| 🛣️ [**Lane Tracking**](https://github.com/cipher982/HiFi-Lane-Tracking) | Image-processing pipeline for autonomous lane detection. |
+| 🖥️ [**Pixel Pilot**](https://github.com/cipher982/pixel-pilot) | Screen-control agent that completes computer tasks. |
 
 ---
 
-## Active This Week
-
-{{SHIPPING_TABLE}}
-
-## How I Build
-
-The dashboard at the top updates automatically every 6 hours. It tracks my AI-native development workflow — combining traditional git commits with AI pair programming sessions across multiple tools.
-
-- **4 AI coding agents** running in parallel: Claude Code, OpenAI Codex, Gemini, Cursor
-- **Avg {{AVG_TURNS}} turns/session** — deep problem-solving, not quick prompts
-- All metrics computed locally and via the [Longhouse](https://longhouse.ai) API
+## Build Cadence
 
 {{LANGUAGE_BADGES}}
 
-<details>
-<summary>Data sources</summary>
+Over the last 30 days: **{{COMMITS_30D}} commits** across **{{REPOS_30D}} repos**. I work alongside coding agents daily — roughly **{{AI_SESSIONS_30D}} agent sessions** this month, mostly Claude Code and Codex — but the output is the part that matters.
 
-- **Git activity**: GitHub API + local `git log`
-- **Claude sessions**: `~/.claude/projects/`
-- **Codex sessions**: `~/.codex/sessions/`
-- **Cursor sessions**: `state.vscdb` (SQLite)
-- **Gemini sessions**: `~/.gemini/tmp/*/logs.json`
-
-</details>
-
----
-
-<details>
-<summary>Detailed Stats (Last 30 Days)</summary>
-
-- **Commits**: {{COMMITS_30D}}
-- **Languages**: {{LANGUAGES_30D}}
-- **AI Sessions**: Claude {{CLAUDE_30D}} · Codex {{CODEX_30D}} · Cursor {{CURSOR_30D}} · Gemini {{GEMINI_30D}}
-- **Total Turns**: {{TURNS_30D}}
-
-</details>
-
-*Last updated: {{UPDATED_AT}}*
+*Hero dashboard auto-updates daily · last refreshed {{UPDATED_AT}}*
