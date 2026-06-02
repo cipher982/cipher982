@@ -30,7 +30,7 @@ I design and build AI systems end to end: autonomous agents, LLM infrastructure,
 | Project | |
 |---------|--|
 | 🌀 [**Chaos Stability Probe**](https://github.com/cipher982/chaos-stability-probe) | Mechanistic-interpretability research on how tiny prompt perturbations steer LLM generation, using activation patching and sparse-autoencoder feature deltas. |
-| ⚖️ [**Crims**](https://github.com/cipher982/crims) | A NYC criminal-justice data explorer: careful recidivism analysis over public arrest/jail data with Polars + DuckDB, shipped as a live Next.js app. |
+| ⚖️ [**Crims**](https://drose.io/nyc-crime) | A NYC criminal-justice data explorer: careful recidivism analysis over public arrest/jail data with Polars + DuckDB, shipped as a live Next.js app. |
 | 🌅 [**HDR Pop**](https://hdrpop.com) | Turns standard photos into HDR via AI-generated gain maps. |
 | 🏀 [**March Madness LLM**](https://marchmadness.drose.io) | NCAA bracket simulator that lets an LLM make the picks. |
 | 🍷 [**This Wine Does Not Exist**](https://thiswinedoesnotexist.com) | Invented wines from GPT-2 + StyleGAN. |
