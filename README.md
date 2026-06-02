@@ -6,25 +6,33 @@ I design and build AI systems end to end: autonomous agents, LLM infrastructure,
 
 ---
 
-## What I'm Building Now
+## Flagship Work
 
 | Project | |
 |---------|--|
-| 🪵 [**Longhouse**](https://longhouse.ai) | Platform for running, observing, and orchestrating fleets of AI agent sessions, with shared memory and a control plane. |
-| 🐣 [**Hatch**](https://github.com/cipher982/hatch) | CLI for spawning headless coding agents (Claude, Codex, Gemini) and wiring them into pipelines. |
+| 🪵 [**Longhouse**](https://longhouse.ai) | Mission control for AI coding agents: ingest, search, and live-steer agent sessions across your machines. Rust session engine, FastAPI backend, React UI, native iOS/macOS clients. |
+| 🔭 [**Agent Observatory**](https://github.com/cipher982/agent-observatory) | A macOS app that captures what coding agents *actually* receive, comparing expected context against real LLM traffic via a NetworkExtension transparent proxy. |
+| ⚡ [**LLM Benchmarks**](https://llm-benchmarks.com/cloud) | Continuously benchmarks LLM inference speed across 16+ providers, with a live public dashboard and a distributed job scheduler behind it. |
+| 🛑 [**Stop Sign Nanny**](https://crestwoodstopsign.com) | Real-time computer-vision pipeline that watches an intersection over RTSP, tracks vehicles with Kalman filtering, and scores stop-sign behavior. |
+| 🌊 [**FloodMap USA**](https://drose.io/floodmap) | Nation-wide US flood-risk mapping: a FastAPI elevation-tile service plus a MapLibre/WebGPU client with a shallow-water flood simulation. |
+
+## AI Agents & Tooling
+
+| Project | |
+|---------|--|
 | 🔧 [**Agent Tools**](https://github.com/cipher982/agent-tools) | MCP server facades that cut Claude Code's tool-token overhead by ~90%. |
-| 📜 [**Agentlog**](https://github.com/cipher982/agentlog) | A canonical parser for AI agent session logs across Claude, Codex, Gemini, and Cursor. |
+| 📜 [**Agentlog**](https://github.com/cipher982/agentlog) | A zero-dependency parser that normalizes local agent session logs across Claude, Codex, Gemini, and Cursor. |
+| 🖥️ [**Pixel Pilot**](https://github.com/cipher982/pixel-pilot) | Computer-use agent that completes desktop tasks via screen control. |
 | 🎁 [**Code Wrapped**](https://github.com/cipher982/code-wrapped) | A year-in-review for your AI pair-programming habits. |
 
-## Shipped Products
+## Research & Products
 
 | Project | |
 |---------|--|
-| 🛑 [**Stop Sign Nanny**](https://crestwoodstopsign.com) | Computer-vision system that watches an IP camera and scores how vehicles behave at an intersection. |
-| ⚡ [**LLM Benchmarks**](https://llm-benchmarks.com/cloud) | Live benchmarks of LLM inference speed across cloud providers. |
+| 🌀 [**Chaos Stability Probe**](https://github.com/cipher982/chaos-stability-probe) | Mechanistic-interpretability research on how tiny prompt perturbations steer LLM generation, using activation patching and sparse-autoencoder feature deltas. |
+| ⚖️ [**Crims**](https://github.com/cipher982/crims) | A NYC criminal-justice data explorer: careful recidivism analysis over public arrest/jail data with Polars + DuckDB, shipped as a live Next.js app. |
 | 🌅 [**HDR Pop**](https://hdrpop.com) | Turns standard photos into HDR via AI-generated gain maps. |
 | 🏀 [**March Madness LLM**](https://marchmadness.drose.io) | NCAA bracket simulator that lets an LLM make the picks. |
-| 🌊 [**FloodMap USA**](https://drose.io/floodmap) | Interactive flood-risk mapping over elevation data. |
 | 🍷 [**This Wine Does Not Exist**](https://thiswinedoesnotexist.com) | Invented wines from GPT-2 + StyleGAN. |
 
 ## Foundations
@@ -36,7 +44,6 @@ Earlier work in control systems and computer vision that shaped how I think abou
 | 🚗 [**MPC Vehicle Controller**](https://github.com/cipher982/MPC-vehicle-controller) | Model-predictive control + vision for autonomous steering. |
 | 🦾 [**Robotic Control with DRL**](https://github.com/cipher982/Robotic-Control-in-Unity-with-DRL) | Deep reinforcement learning for robotic control in Unity. |
 | 🛣️ [**Lane Tracking**](https://github.com/cipher982/HiFi-Lane-Tracking) | Image-processing pipeline for autonomous lane detection. |
-| 🖥️ [**Pixel Pilot**](https://github.com/cipher982/pixel-pilot) | Screen-control agent that completes computer tasks. |
 
 ---
 
