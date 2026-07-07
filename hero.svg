@@ -69,7 +69,7 @@
 
   <!-- Shipping metrics -->
   <g transform="translate(36, 224)">
-    <text x="0" y="0" class="stat-num">902</text>
+    <text x="0" y="0" class="stat-num">897</text>
     <text x="0" y="18" class="stat-label">commits · 30d</text>
 
     <text x="150" y="0" class="stat-num">20</text>
@@ -458,7 +458,8 @@
   <rect x="736" y="322" width="9" height="9" rx="2" class="cell" fill-opacity="1.00"/>
   <rect x="736" y="333" width="9" height="9" rx="2" class="cell" fill-opacity="0.40"/>
   <rect x="736" y="344" width="9" height="9" rx="2" class="cell" fill-opacity="1.00"/>
-  <rect x="746" y="278" width="9" height="9" rx="2" class="cell" fill-opacity="0.62"/>
-  <rect x="746" y="289" width="9" height="9" rx="2" class="cell" fill-opacity="0.40"/>
+  <rect x="746" y="278" width="9" height="9" rx="2" class="cell" fill-opacity="0.82"/>
+  <rect x="746" y="289" width="9" height="9" rx="2" class="cell" fill-opacity="0.82"/>
+  <rect x="746" y="300" width="9" height="9" rx="2" class="cell" fill-opacity="0.40"/>
   </g>
 </svg>
