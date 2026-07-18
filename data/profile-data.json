@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-17T07:51:14.225445+00:00",
+  "generated_at": "2026-07-18T07:25:56.383472+00:00",
   "github": {
-    "repos_active_7d": 9,
-    "repos_active_30d": 17,
-    "commits_7d": 568,
-    "commits_30d": 943,
+    "repos_active_7d": 8,
+    "repos_active_30d": 16,
+    "commits_7d": 582,
+    "commits_30d": 935,
     "languages_30d": [
       {
         "name": "Python",
-        "commits": 866
+        "commits": 856
       },
       {
         "name": "HTML",
@@ -25,29 +25,29 @@
     ],
     "last_push": {
       "repo": "longhouse",
-      "timestamp": "2026-07-17T02:09:11+00:00",
-      "hours_ago": 5.69
+      "timestamp": "2026-07-18T01:50:55+00:00",
+      "hours_ago": 5.58
     },
     "top_repos_7d": [
       {
         "repo": "longhouse",
-        "commits": 430
+        "commits": 455
       },
       {
         "repo": "me",
-        "commits": 65
-      },
-      {
-        "repo": "sauron-jobs",
-        "commits": 26
+        "commits": 64
       },
       {
         "repo": "obsidian-vault",
-        "commits": 22
+        "commits": 24
+      },
+      {
+        "repo": "sauron-jobs",
+        "commits": 17
       },
       {
         "repo": "hatch",
-        "commits": 10
+        "commits": 11
       }
     ],
     "daily_commits": [
@@ -1525,19 +1525,23 @@
       },
       {
         "date": "2026-07-16",
-        "commits": 148
+        "commits": 149
       },
       {
         "date": "2026-07-17",
+        "commits": 84
+      },
+      {
+        "date": "2026-07-18",
         "commits": 0
       }
     ]
   },
   "claude": {
-    "sessions_7d": 27,
+    "sessions_7d": 31,
     "sessions_30d": 91,
-    "turns_7d": 893,
-    "turns_30d": 1639,
+    "turns_7d": 1074,
+    "turns_30d": 1776,
     "repos": [
       {
         "repo": "me",
@@ -1545,14 +1549,14 @@
         "turns": 263
       },
       {
+        "repo": "davidrose",
+        "sessions": 6,
+        "turns": 125
+      },
+      {
         "repo": "mcp-tools",
         "sessions": 5,
         "turns": 150
-      },
-      {
-        "repo": "davidrose",
-        "sessions": 4,
-        "turns": 61
       },
       {
         "repo": "zerg",
@@ -1565,6 +1569,21 @@
         "turns": 138
       },
       {
+        "repo": "git",
+        "sessions": 1,
+        "turns": 60
+      },
+      {
+        "repo": "whoop-mcp",
+        "sessions": 1,
+        "turns": 57
+      },
+      {
+        "repo": "claude-session-mcp",
+        "sessions": 1,
+        "turns": 42
+      },
+      {
         "repo": "tmp",
         "sessions": 1,
         "turns": 1
@@ -1575,20 +1594,15 @@
         "turns": 74
       },
       {
-        "repo": "git",
-        "sessions": 1,
-        "turns": 42
-      },
-      {
         "repo": "traccar",
         "sessions": 1,
         "turns": 90
       }
     ],
     "last_session": {
-      "repo": "tmp",
-      "timestamp": "2026-07-16T15:37:26.258000+00:00",
-      "hours_ago": 16.23
+      "repo": "davidrose",
+      "timestamp": "2026-07-17T23:28:41.934000+00:00",
+      "hours_ago": 7.95
     },
     "daily_sessions": [
       {
@@ -1605,34 +1619,44 @@
         "date": "2026-07-16",
         "sessions": 5,
         "turns": 23
+      },
+      {
+        "date": "2026-07-17",
+        "sessions": 1,
+        "turns": 1
       }
     ]
   },
   "codex": {
-    "sessions_7d": 99,
+    "sessions_7d": 110,
     "sessions_30d": 262,
-    "turns_7d": 569,
-    "turns_30d": 1975,
+    "turns_7d": 697,
+    "turns_30d": 2675,
     "repos": [
       {
         "repo": "davidrose",
-        "sessions": 62,
-        "turns": 174
+        "sessions": 67,
+        "turns": 179
       },
       {
         "repo": "zerg",
-        "sessions": 16,
-        "turns": 259
+        "sessions": 17,
+        "turns": 294
       },
       {
         "repo": "g55",
-        "sessions": 7,
-        "turns": 98
+        "sessions": 10,
+        "turns": 173
       },
       {
         "repo": "me",
         "sessions": 7,
         "turns": 7
+      },
+      {
+        "repo": "sauron",
+        "sessions": 2,
+        "turns": 26
       },
       {
         "repo": "longhouse-console-live-parity",
@@ -1650,11 +1674,6 @@
         "turns": 3
       },
       {
-        "repo": "sauron",
-        "sessions": 1,
-        "turns": 22
-      },
-      {
         "repo": "longhouse",
         "sessions": 1,
         "turns": 1
@@ -1662,15 +1681,10 @@
     ],
     "last_session": {
       "repo": "zerg",
-      "timestamp": "2026-07-17T02:37:01.312000+00:00",
-      "hours_ago": 5.24
+      "timestamp": "2026-07-18T00:54:52.862000+00:00",
+      "hours_ago": 6.52
     },
     "daily_sessions": [
-      {
-        "date": "2026-07-10",
-        "sessions": 3,
-        "turns": 39
-      },
       {
         "date": "2026-07-11",
         "sessions": 33,
@@ -1694,20 +1708,25 @@
       {
         "date": "2026-07-16",
         "sessions": 35,
-        "turns": 174
+        "turns": 175
       },
       {
         "date": "2026-07-17",
-        "sessions": 5,
-        "turns": 9
+        "sessions": 18,
+        "turns": 182
+      },
+      {
+        "date": "2026-07-18",
+        "sessions": 2,
+        "turns": 3
       }
     ]
   },
   "cursor": {
-    "sessions_7d": 1,
-    "sessions_30d": 8,
-    "turns_7d": 2,
-    "turns_30d": 41,
+    "sessions_7d": 35,
+    "sessions_30d": 42,
+    "turns_7d": 92,
+    "turns_30d": 131,
     "repos": [
       {
         "repo": "davidrose",
@@ -1716,15 +1735,20 @@
       }
     ],
     "last_session": {
-      "repo": "davidrose",
-      "timestamp": "2026-07-11T21:23:16.738542+00:00",
-      "hours_ago": 130.47
+      "repo": null,
+      "timestamp": "2026-07-17T21:31:37.988000+00:00",
+      "hours_ago": 9.91
     },
     "daily_sessions": [
       {
         "date": "2026-07-11",
         "sessions": 1,
         "turns": 2
+      },
+      {
+        "date": "2026-07-17",
+        "sessions": 34,
+        "turns": 90
       }
     ]
   },
@@ -1738,58 +1762,49 @@
     "daily_sessions": []
   },
   "aggregate": {
-    "ai_sessions_7d": 127,
-    "ai_turns_7d": 1464,
-    "claude_percentage": 21.3,
-    "codex_percentage": 78.0,
-    "cursor_percentage": 0.8,
+    "ai_sessions_7d": 175,
+    "ai_turns_7d": 1863,
+    "claude_percentage": 17.7,
+    "codex_percentage": 62.3,
+    "cursor_percentage": 20.0,
     "gemini_percentage": 0.0,
-    "claude_turns_percentage": 61.0,
-    "codex_turns_percentage": 38.9,
-    "cursor_turns_percentage": 0.1,
+    "claude_turns_percentage": 57.6,
+    "codex_turns_percentage": 37.4,
+    "cursor_turns_percentage": 4.9,
     "gemini_turns_percentage": 0.0,
     "top_repos_combined": [
       {
         "repo": "longhouse",
-        "commits": 430,
+        "commits": 455,
         "ai_sessions": 1,
         "github_url": null
       },
       {
         "repo": "me",
-        "commits": 65,
+        "commits": 64,
         "ai_sessions": 15,
         "github_url": null
       },
       {
         "repo": "davidrose",
         "commits": 0,
-        "ai_sessions": 66,
-        "github_url": null
-      },
-      {
-        "repo": "sauron-jobs",
-        "commits": 26,
-        "ai_sessions": 0,
+        "ai_sessions": 73,
         "github_url": null
       },
       {
         "repo": "obsidian-vault",
-        "commits": 22,
+        "commits": 24,
         "ai_sessions": 0,
+        "github_url": null
+      },
+      {
+        "repo": "zerg",
+        "commits": 0,
+        "ai_sessions": 21,
         "github_url": null
       }
     ],
     "daily_breakdown_7d": [
-      {
-        "date": "2026-07-10",
-        "commits": 82,
-        "claude_sessions": 0,
-        "codex_sessions": 3,
-        "cursor_sessions": 0,
-        "gemini_sessions": 0,
-        "total_sessions": 3
-      },
       {
         "date": "2026-07-11",
         "commits": 39,
@@ -1837,12 +1852,21 @@
       },
       {
         "date": "2026-07-16",
-        "commits": 148,
+        "commits": 149,
         "claude_sessions": 5,
         "codex_sessions": 35,
         "cursor_sessions": 0,
         "gemini_sessions": 0,
         "total_sessions": 40
+      },
+      {
+        "date": "2026-07-17",
+        "commits": 84,
+        "claude_sessions": 1,
+        "codex_sessions": 18,
+        "cursor_sessions": 34,
+        "gemini_sessions": 0,
+        "total_sessions": 53
       }
     ]
   }
