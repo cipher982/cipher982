@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="./hero.svg" alt="David Rose, AI Systems Engineer" />
+  <img src="./hero.svg" alt="David W. Rose, cipher982" />
 </p>
 
-I design and build AI systems end to end: autonomous agents, LLM infrastructure, and the products on top of them. Most of my time goes to agent orchestration and developer tooling, with a long tail of computer-vision and full-stack work behind it.
+**I tinker with machines. Some of them think.** My projects range from coding agents and LLM benchmarks to maps, computer vision, personal infrastructure, and vehicle electronics. More projects and notes live at [drose.io](https://drose.io/).
 
 ---
 

@@ -12,9 +12,9 @@ from pathlib import Path
 from typing import Any, Dict, List
 
 # --- Identity (stable) -------------------------------------------------------
-NAME = "David Rose"
-ROLE = "AI Systems Engineer"
-TAGLINE = "I build autonomous agents, LLM tooling, and ship real products."
+NAME = "David W. Rose"
+ROLE = "I tinker with machines. Some of them think."
+TAGLINE = "Projects and notes, from CAN buses to context windows."
 HANDLE = "@cipher982"
 
 # Flagship work shown as chips in the hero. Keep to three — the full list
