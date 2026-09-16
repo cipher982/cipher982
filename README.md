@@ -49,8 +49,8 @@ Earlier work in control systems and computer vision that shaped how I think abou
 
 ## Build Cadence
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![HTML](https://img.shields.io/badge/HTML-gray?style=flat-square&logo=html&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![HTML](https://img.shields.io/badge/HTML-gray?style=flat-square&logo=html&logoColor=white)
 
-Over the last 30 days: **2,205 commits** across **15 repos**. I work alongside coding agents daily (roughly **374 agent sessions** this month, mostly Claude Code and Codex), but the output is the part that matters.
+Over the last 30 days: **2,222 commits** across **16 repos**. I work alongside coding agents daily (roughly **376 agent sessions** this month, mostly Claude Code and Codex), but the output is the part that matters.
 
-*Hero dashboard auto-updates daily · last refreshed 2026-09-15 10:39 UTC*
+*Hero dashboard auto-updates daily · last refreshed 2026-09-16 10:28 UTC*
