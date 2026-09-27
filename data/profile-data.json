@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-26T10:29:46.731316+00:00",
+  "generated_at": "2026-09-27T11:00:39.861248+00:00",
   "github": {
     "repos_active_7d": 13,
     "repos_active_30d": 19,
-    "commits_7d": 1206,
-    "commits_30d": 2337,
+    "commits_7d": 1232,
+    "commits_30d": 2341,
     "languages_30d": [
       {
         "name": "Python",
-        "commits": 2158
+        "commits": 2162
       },
       {
         "name": "HTML",
@@ -28,61 +28,33 @@
       }
     ],
     "last_push": {
-      "repo": "longhouse",
-      "timestamp": "2026-09-26T09:12:57+00:00",
-      "hours_ago": 1.27
+      "repo": "drose_io",
+      "timestamp": "2026-09-27T08:08:01+00:00",
+      "hours_ago": 2.87
     },
     "top_repos_7d": [
       {
         "repo": "longhouse",
-        "commits": 379
+        "commits": 396
       },
       {
         "repo": "me",
-        "commits": 290
+        "commits": 299
       },
       {
         "repo": "g55",
-        "commits": 248
+        "commits": 246
       },
       {
         "repo": "longhouse-control-plane",
-        "commits": 178
+        "commits": 180
       },
       {
-        "repo": "obsidian-vault",
-        "commits": 27
+        "repo": "drose_io",
+        "commits": 26
       }
     ],
     "daily_commits": [
-      {
-        "date": "2025-09-21",
-        "commits": 3
-      },
-      {
-        "date": "2025-09-22",
-        "commits": 13
-      },
-      {
-        "date": "2025-09-23",
-        "commits": 10
-      },
-      {
-        "date": "2025-09-24",
-        "commits": 1
-      },
-      {
-        "date": "2025-09-25",
-        "commits": 10
-      },
-      {
-        "date": "2025-09-26",
-        "commits": 45
-      },
-      {
-        "date": "2025-09-27",
-        "commits": 16
-      },
       {
         "date": "2025-09-28",
         "commits": 14
@@ -1537,30 +1509,34 @@
       },
       {
         "date": "2026-09-26",
-        "commits": 31
+        "commits": 73
+      },
+      {
+        "date": "2026-09-27",
+        "commits": 8
       }
     ]
   },
   "claude": {
-    "sessions_7d": 21,
-    "sessions_30d": 49,
-    "turns_7d": 433,
-    "turns_30d": 937,
+    "sessions_7d": 22,
+    "sessions_30d": 51,
+    "turns_7d": 376,
+    "turns_30d": 951,
     "repos": [
       {
         "repo": "davidrose",
-        "sessions": 10,
-        "turns": 110
+        "sessions": 11,
+        "turns": 111
       },
       {
         "repo": "zerg",
-        "sessions": 6,
-        "turns": 167
+        "sessions": 5,
+        "turns": 101
       },
       {
         "repo": "g55",
-        "sessions": 2,
-        "turns": 75
+        "sessions": 3,
+        "turns": 81
       },
       {
         "repo": "drose_io",
@@ -1569,9 +1545,9 @@
       }
     ],
     "last_session": {
-      "repo": "zerg",
-      "timestamp": "2026-09-26T02:30:57.510467+00:00",
-      "hours_ago": 7.98
+      "repo": "davidrose",
+      "timestamp": "2026-09-27T03:39:19.455032+00:00",
+      "hours_ago": 7.36
     },
     "daily_sessions": [
       {
@@ -1596,8 +1572,13 @@
       },
       {
         "date": "2026-09-26",
-        "sessions": 3,
-        "turns": 9
+        "sessions": 4,
+        "turns": 22
+      },
+      {
+        "date": "2026-09-27",
+        "sessions": 1,
+        "turns": 1
       }
     ]
   },
@@ -1616,7 +1597,7 @@
     "last_session": {
       "repo": "zerg",
       "timestamp": "2026-09-25T03:42:32.585082+00:00",
-      "hours_ago": 30.79
+      "hours_ago": 55.3
     },
     "daily_sessions": [
       {
@@ -1656,7 +1637,7 @@
     "last_session": {
       "repo": "zeta",
       "timestamp": "2026-09-23T01:04:27.216077+00:00",
-      "hours_ago": 81.42
+      "hours_ago": 105.94
     },
     "daily_sessions": [
       {
@@ -1686,58 +1667,49 @@
     "daily_sessions": []
   },
   "aggregate": {
-    "ai_sessions_7d": 33,
-    "ai_turns_7d": 517,
-    "claude_percentage": 57.6,
-    "codex_percentage": 3.0,
-    "cursor_percentage": 39.4,
+    "ai_sessions_7d": 34,
+    "ai_turns_7d": 460,
+    "claude_percentage": 58.8,
+    "codex_percentage": 2.9,
+    "cursor_percentage": 38.2,
     "gemini_percentage": 0.0,
-    "claude_turns_percentage": 83.8,
+    "claude_turns_percentage": 81.7,
     "codex_turns_percentage": 0.2,
-    "cursor_turns_percentage": 16.1,
+    "cursor_turns_percentage": 18.0,
     "gemini_turns_percentage": 0.0,
     "top_repos_combined": [
       {
         "repo": "longhouse",
-        "commits": 379,
+        "commits": 396,
         "ai_sessions": 0,
         "github_url": null
       },
       {
         "repo": "me",
-        "commits": 290,
+        "commits": 299,
         "ai_sessions": 0,
         "github_url": null
       },
       {
         "repo": "g55",
-        "commits": 248,
-        "ai_sessions": 2,
+        "commits": 246,
+        "ai_sessions": 3,
         "github_url": null
       },
       {
         "repo": "longhouse-control-plane",
-        "commits": 178,
+        "commits": 180,
         "ai_sessions": 0,
         "github_url": null
       },
       {
-        "repo": "obsidian-vault",
-        "commits": 27,
-        "ai_sessions": 0,
+        "repo": "drose_io",
+        "commits": 26,
+        "ai_sessions": 1,
         "github_url": null
       }
     ],
     "daily_breakdown_7d": [
-      {
-        "date": "2026-09-19",
-        "commits": 44,
-        "claude_sessions": 0,
-        "codex_sessions": 0,
-        "cursor_sessions": 0,
-        "gemini_sessions": 0,
-        "total_sessions": 0
-      },
       {
         "date": "2026-09-20",
         "commits": 73,
@@ -1791,6 +1763,15 @@
         "cursor_sessions": 0,
         "gemini_sessions": 0,
         "total_sessions": 5
+      },
+      {
+        "date": "2026-09-26",
+        "commits": 73,
+        "claude_sessions": 4,
+        "codex_sessions": 0,
+        "cursor_sessions": 0,
+        "gemini_sessions": 0,
+        "total_sessions": 4
       }
     ]
   }
