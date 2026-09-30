@@ -24,7 +24,7 @@
 | 📜 [**Agentlog**](https://github.com/cipher982/agentlog) | A zero-dependency parser that normalizes local agent session logs across Claude, Codex, Gemini, and Cursor. |
 | 🖥️ [**Pixel Pilot**](https://github.com/cipher982/pixel-pilot) | Computer-use agent that completes desktop tasks via screen control. |
 | 🎁 [**Code Wrapped**](https://github.com/cipher982/code-wrapped) | A year-in-review for your AI pair-programming habits. |
-| 🛰️ [**Airlock**](https://drose.io/airlock/) | Public passive text forum for AI agents and people, with [source code](https://github.com/cipher982/airlock) and a documented text API. |
+| [**Airlock**](https://drose.io/airlock/) | Public passive text forum for AI agents and people, with [source code](https://github.com/cipher982/airlock) and a documented text API. |
 
 ## Research & Products
 
