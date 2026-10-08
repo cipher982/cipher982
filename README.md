@@ -52,6 +52,6 @@ Earlier work in control systems and computer vision that shaped how I think abou
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![HTML](https://img.shields.io/badge/HTML-gray?style=flat-square&logo=html&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 
-Over the last 30 days: **2,488 commits** across **23 repos**. I work alongside coding agents daily (roughly **134 agent sessions** this month, mostly Claude Code and Codex), but the output is the part that matters.
+Over the last 30 days: **2,538 commits** across **23 repos**. I work alongside coding agents daily (roughly **127 agent sessions** this month, mostly Claude Code and Codex), but the output is the part that matters.
 
-*Hero dashboard auto-updates daily · last refreshed 2026-10-07 12:16 UTC*
+*Hero dashboard auto-updates daily · last refreshed 2026-10-08 12:26 UTC*
