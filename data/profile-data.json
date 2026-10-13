@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-12T13:50:40.874490+00:00",
+  "generated_at": "2026-10-13T13:08:52.445189+00:00",
   "github": {
     "repos_active_7d": 21,
     "repos_active_30d": 30,
-    "commits_7d": 1712,
-    "commits_30d": 2554,
+    "commits_7d": 1732,
+    "commits_30d": 2538,
     "languages_30d": [
       {
         "name": "Python",
-        "commits": 2376
+        "commits": 2359
       },
       {
         "name": "HTML",
@@ -20,7 +20,7 @@
       },
       {
         "name": "Go",
-        "commits": 15
+        "commits": 16
       },
       {
         "name": "Jupyter Notebook",
@@ -28,9 +28,9 @@
       }
     ],
     "last_push": {
-      "repo": "me",
-      "timestamp": "2026-10-12T13:43:27+00:00",
-      "hours_ago": 0.11
+      "repo": "drose_io",
+      "timestamp": "2026-10-13T10:08:39+00:00",
+      "hours_ago": 2.99
     },
     "top_repos_7d": [
       {
@@ -43,15 +43,15 @@
       },
       {
         "repo": "me",
-        "commits": 294
+        "commits": 298
       },
       {
         "repo": "g55",
-        "commits": 225
+        "commits": 230
       },
       {
         "repo": "ailang-rl",
-        "commits": 91
+        "commits": 89
       }
     ],
     "daily_commits": [
@@ -1517,42 +1517,46 @@
       },
       {
         "date": "2026-10-12",
-        "commits": 77
+        "commits": 324
+      },
+      {
+        "date": "2026-10-13",
+        "commits": 5
       }
     ]
   },
   "claude": {
-    "sessions_7d": 23,
+    "sessions_7d": 19,
     "sessions_30d": 79,
-    "turns_7d": 533,
-    "turns_30d": 1338,
+    "turns_7d": 589,
+    "turns_30d": 1424,
     "repos": [
       {
         "repo": "zerg",
-        "sessions": 11,
-        "turns": 150
+        "sessions": 9,
+        "turns": 143
       },
       {
         "repo": "davidrose",
         "sessions": 7,
-        "turns": 95
+        "turns": 100
       },
       {
         "repo": "g55",
-        "sessions": 5,
-        "turns": 288
+        "sessions": 3,
+        "turns": 346
       }
     ],
     "last_session": {
       "repo": "zerg",
       "timestamp": "2026-10-12T03:56:09.028575+00:00",
-      "hours_ago": 9.91
+      "hours_ago": 33.21
     },
     "daily_sessions": [
       {
         "date": "2026-10-06",
-        "sessions": 5,
-        "turns": 103
+        "sessions": 3,
+        "turns": 94
       },
       {
         "date": "2026-10-07",
@@ -1562,12 +1566,12 @@
       {
         "date": "2026-10-08",
         "sessions": 5,
-        "turns": 144
+        "turns": 168
       },
       {
         "date": "2026-10-09",
         "sessions": 2,
-        "turns": 185
+        "turns": 245
       },
       {
         "date": "2026-10-10",
@@ -1601,7 +1605,7 @@
     "last_session": {
       "repo": "davidrose",
       "timestamp": "2026-10-07T03:48:35.668047+00:00",
-      "hours_ago": 130.03
+      "hours_ago": 153.34
     },
     "daily_sessions": [
       {
@@ -1612,21 +1616,32 @@
     ]
   },
   "cursor": {
-    "sessions_7d": 3,
+    "sessions_7d": 4,
     "sessions_30d": 31,
-    "turns_7d": 3,
-    "turns_30d": 138,
-    "repos": [],
+    "turns_7d": 9,
+    "turns_30d": 142,
+    "repos": [
+      {
+        "repo": "zeta",
+        "sessions": 1,
+        "turns": 6
+      }
+    ],
     "last_session": {
-      "repo": null,
-      "timestamp": "2026-10-06T16:00:40.239000+00:00",
-      "hours_ago": 141.83
+      "repo": "zeta",
+      "timestamp": "2026-10-12T15:33:08.285744+00:00",
+      "hours_ago": 21.6
     },
     "daily_sessions": [
       {
         "date": "2026-10-06",
         "sessions": 3,
         "turns": 3
+      },
+      {
+        "date": "2026-10-12",
+        "sessions": 1,
+        "turns": 6
       }
     ]
   },
@@ -1640,15 +1655,15 @@
     "daily_sessions": []
   },
   "aggregate": {
-    "ai_sessions_7d": 28,
-    "ai_turns_7d": 538,
-    "claude_percentage": 82.1,
-    "codex_percentage": 7.1,
-    "cursor_percentage": 10.7,
+    "ai_sessions_7d": 25,
+    "ai_turns_7d": 600,
+    "claude_percentage": 76.0,
+    "codex_percentage": 8.0,
+    "cursor_percentage": 16.0,
     "gemini_percentage": 0.0,
-    "claude_turns_percentage": 99.1,
-    "codex_turns_percentage": 0.4,
-    "cursor_turns_percentage": 0.6,
+    "claude_turns_percentage": 98.2,
+    "codex_turns_percentage": 0.3,
+    "cursor_turns_percentage": 1.5,
     "gemini_turns_percentage": 0.0,
     "top_repos_combined": [
       {
@@ -1665,41 +1680,32 @@
       },
       {
         "repo": "me",
-        "commits": 294,
+        "commits": 298,
         "ai_sessions": 0,
         "github_url": null
       },
       {
         "repo": "g55",
-        "commits": 225,
-        "ai_sessions": 5,
+        "commits": 230,
+        "ai_sessions": 3,
         "github_url": null
       },
       {
         "repo": "ailang-rl",
-        "commits": 91,
+        "commits": 89,
         "ai_sessions": 0,
         "github_url": null
       }
     ],
     "daily_breakdown_7d": [
       {
-        "date": "2026-10-05",
-        "commits": 121,
-        "claude_sessions": 0,
-        "codex_sessions": 0,
-        "cursor_sessions": 0,
-        "gemini_sessions": 0,
-        "total_sessions": 0
-      },
-      {
         "date": "2026-10-06",
         "commits": 267,
-        "claude_sessions": 5,
+        "claude_sessions": 3,
         "codex_sessions": 0,
         "cursor_sessions": 3,
         "gemini_sessions": 0,
-        "total_sessions": 8
+        "total_sessions": 6
       },
       {
         "date": "2026-10-07",
@@ -1745,6 +1751,15 @@
         "cursor_sessions": 0,
         "gemini_sessions": 0,
         "total_sessions": 0
+      },
+      {
+        "date": "2026-10-12",
+        "commits": 324,
+        "claude_sessions": 1,
+        "codex_sessions": 0,
+        "cursor_sessions": 1,
+        "gemini_sessions": 0,
+        "total_sessions": 2
       }
     ]
   }
