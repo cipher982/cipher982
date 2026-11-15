@@ -69,7 +69,7 @@
 
   <!-- Shipping metrics -->
   <g transform="translate(36, 224)">
-    <text x="0" y="0" class="stat-num">1,657</text>
+    <text x="0" y="0" class="stat-num">1,765</text>
     <text x="0" y="18" class="stat-label">commits · 30d</text>
 
     <text x="150" y="0" class="stat-num">19</text>
@@ -80,18 +80,18 @@
   <!-- Full-year contribution calendar -->
   <g class="grid">
   <text x="174" y="272" class="cal-label">Nov</text>
-  <text x="218" y="272" class="cal-label">Dec</text>
-  <text x="262" y="272" class="cal-label">Jan</text>
-  <text x="306" y="272" class="cal-label">Feb</text>
-  <text x="350" y="272" class="cal-label">Mar</text>
-  <text x="406" y="272" class="cal-label">Apr</text>
-  <text x="450" y="272" class="cal-label">May</text>
-  <text x="504" y="272" class="cal-label">Jun</text>
-  <text x="548" y="272" class="cal-label">Jul</text>
-  <text x="592" y="272" class="cal-label">Aug</text>
-  <text x="648" y="272" class="cal-label">Sep</text>
-  <text x="692" y="272" class="cal-label">Oct</text>
-  <text x="736" y="272" class="cal-label">Nov</text>
+  <text x="208" y="272" class="cal-label">Dec</text>
+  <text x="252" y="272" class="cal-label">Jan</text>
+  <text x="296" y="272" class="cal-label">Feb</text>
+  <text x="340" y="272" class="cal-label">Mar</text>
+  <text x="394" y="272" class="cal-label">Apr</text>
+  <text x="438" y="272" class="cal-label">May</text>
+  <text x="494" y="272" class="cal-label">Jun</text>
+  <text x="538" y="272" class="cal-label">Jul</text>
+  <text x="582" y="272" class="cal-label">Aug</text>
+  <text x="636" y="272" class="cal-label">Sep</text>
+  <text x="680" y="272" class="cal-label">Oct</text>
+  <text x="724" y="272" class="cal-label">Nov</text>
   <text x="166" y="297" class="cal-label" text-anchor="end">Mon</text>
   <text x="166" y="319" class="cal-label" text-anchor="end">Wed</text>
   <text x="166" y="341" class="cal-label" text-anchor="end">Fri</text>
@@ -460,11 +460,5 @@
   <rect x="736" y="333" width="9" height="9" rx="2" class="cell" fill-opacity="0.09"/>
   <rect x="736" y="344" width="9" height="9" rx="2" class="cell" fill-opacity="0.09"/>
   <rect x="746" y="278" width="9" height="9" rx="2" class="cell" fill-opacity="0.09"/>
-  <rect x="746" y="289" width="9" height="9" rx="2" class="cell" fill-opacity="0.09"/>
-  <rect x="746" y="300" width="9" height="9" rx="2" class="cell" fill-opacity="0.09"/>
-  <rect x="746" y="311" width="9" height="9" rx="2" class="cell" fill-opacity="0.09"/>
-  <rect x="746" y="322" width="9" height="9" rx="2" class="cell" fill-opacity="0.09"/>
-  <rect x="746" y="333" width="9" height="9" rx="2" class="cell" fill-opacity="0.09"/>
-  <rect x="746" y="344" width="9" height="9" rx="2" class="cell" fill-opacity="0.09"/>
   </g>
 </svg>
