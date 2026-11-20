@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-11-19T14:53:36.785852+00:00",
+  "generated_at": "2026-11-20T14:34:15.172316+00:00",
   "github": {
-    "repos_active_7d": 29,
-    "repos_active_30d": 31,
-    "commits_7d": 1119,
-    "commits_30d": 2068,
+    "repos_active_7d": 30,
+    "repos_active_30d": 32,
+    "commits_7d": 1138,
+    "commits_30d": 2194,
     "languages_30d": [
       {
         "name": "Python",
-        "commits": 1954
+        "commits": 2053
       },
       {
         "name": "Swift",
-        "commits": 33
+        "commits": 58
       },
       {
         "name": "HTML",
@@ -20,7 +20,7 @@
       },
       {
         "name": "Go",
-        "commits": 12
+        "commits": 13
       },
       {
         "name": "TypeScript",
@@ -29,29 +29,29 @@
     ],
     "last_push": {
       "repo": "drose_io",
-      "timestamp": "2026-11-19T08:08:03+00:00",
-      "hours_ago": 6.75
+      "timestamp": "2026-11-20T08:09:59+00:00",
+      "hours_ago": 6.39
     },
     "top_repos_7d": [
       {
-        "repo": "longhouse",
-        "commits": 329
+        "repo": "g55",
+        "commits": 317
       },
       {
-        "repo": "g55",
-        "commits": 292
+        "repo": "longhouse",
+        "commits": 293
       },
       {
         "repo": "longhouse-control-plane",
-        "commits": 188
+        "commits": 169
       },
       {
         "repo": "me",
-        "commits": 140
+        "commits": 167
       },
       {
         "repo": "sauron-jobs",
-        "commits": 52
+        "commits": 50
       }
     ],
     "daily_commits": [
@@ -137,7 +137,7 @@
       },
       {
         "date": "2025-12-06",
-        "commits": 59
+        "commits": 63
       },
       {
         "date": "2025-12-07",
@@ -193,7 +193,7 @@
       },
       {
         "date": "2025-12-20",
-        "commits": 88
+        "commits": 89
       },
       {
         "date": "2025-12-21",
@@ -221,11 +221,11 @@
       },
       {
         "date": "2025-12-27",
-        "commits": 210
+        "commits": 211
       },
       {
         "date": "2025-12-28",
-        "commits": 95
+        "commits": 96
       },
       {
         "date": "2025-12-29",
@@ -245,7 +245,7 @@
       },
       {
         "date": "2026-01-02",
-        "commits": 43
+        "commits": 44
       },
       {
         "date": "2026-01-03",
@@ -257,139 +257,139 @@
       },
       {
         "date": "2026-01-05",
-        "commits": 122
+        "commits": 123
       },
       {
         "date": "2026-01-06",
-        "commits": 130
-      },
-      {
-        "date": "2026-01-07",
-        "commits": 140
-      },
-      {
-        "date": "2026-01-08",
-        "commits": 152
-      },
-      {
-        "date": "2026-01-09",
-        "commits": 78
-      },
-      {
-        "date": "2026-01-10",
-        "commits": 109
-      },
-      {
-        "date": "2026-01-11",
-        "commits": 32
-      },
-      {
-        "date": "2026-01-12",
-        "commits": 46
-      },
-      {
-        "date": "2026-01-13",
-        "commits": 40
-      },
-      {
-        "date": "2026-01-14",
-        "commits": 13
-      },
-      {
-        "date": "2026-01-15",
-        "commits": 18
-      },
-      {
-        "date": "2026-01-16",
-        "commits": 98
-      },
-      {
-        "date": "2026-01-17",
-        "commits": 75
-      },
-      {
-        "date": "2026-01-18",
-        "commits": 112
-      },
-      {
-        "date": "2026-01-19",
-        "commits": 76
-      },
-      {
-        "date": "2026-01-20",
-        "commits": 51
-      },
-      {
-        "date": "2026-01-21",
-        "commits": 73
-      },
-      {
-        "date": "2026-01-22",
-        "commits": 57
-      },
-      {
-        "date": "2026-01-23",
-        "commits": 230
-      },
-      {
-        "date": "2026-01-24",
-        "commits": 109
-      },
-      {
-        "date": "2026-01-25",
-        "commits": 185
-      },
-      {
-        "date": "2026-01-26",
-        "commits": 159
-      },
-      {
-        "date": "2026-01-27",
-        "commits": 71
-      },
-      {
-        "date": "2026-01-28",
-        "commits": 24
-      },
-      {
-        "date": "2026-01-29",
-        "commits": 62
-      },
-      {
-        "date": "2026-01-30",
-        "commits": 75
-      },
-      {
-        "date": "2026-01-31",
-        "commits": 70
-      },
-      {
-        "date": "2026-02-01",
-        "commits": 98
-      },
-      {
-        "date": "2026-02-02",
-        "commits": 100
-      },
-      {
-        "date": "2026-02-03",
-        "commits": 73
-      },
-      {
-        "date": "2026-02-04",
-        "commits": 93
-      },
-      {
-        "date": "2026-02-05",
         "commits": 131
       },
       {
+        "date": "2026-01-07",
+        "commits": 141
+      },
+      {
+        "date": "2026-01-08",
+        "commits": 153
+      },
+      {
+        "date": "2026-01-09",
+        "commits": 79
+      },
+      {
+        "date": "2026-01-10",
+        "commits": 110
+      },
+      {
+        "date": "2026-01-11",
+        "commits": 36
+      },
+      {
+        "date": "2026-01-12",
+        "commits": 48
+      },
+      {
+        "date": "2026-01-13",
+        "commits": 41
+      },
+      {
+        "date": "2026-01-14",
+        "commits": 14
+      },
+      {
+        "date": "2026-01-15",
+        "commits": 19
+      },
+      {
+        "date": "2026-01-16",
+        "commits": 99
+      },
+      {
+        "date": "2026-01-17",
+        "commits": 76
+      },
+      {
+        "date": "2026-01-18",
+        "commits": 113
+      },
+      {
+        "date": "2026-01-19",
+        "commits": 78
+      },
+      {
+        "date": "2026-01-20",
+        "commits": 52
+      },
+      {
+        "date": "2026-01-21",
+        "commits": 75
+      },
+      {
+        "date": "2026-01-22",
+        "commits": 58
+      },
+      {
+        "date": "2026-01-23",
+        "commits": 231
+      },
+      {
+        "date": "2026-01-24",
+        "commits": 111
+      },
+      {
+        "date": "2026-01-25",
+        "commits": 186
+      },
+      {
+        "date": "2026-01-26",
+        "commits": 160
+      },
+      {
+        "date": "2026-01-27",
+        "commits": 72
+      },
+      {
+        "date": "2026-01-28",
+        "commits": 25
+      },
+      {
+        "date": "2026-01-29",
+        "commits": 63
+      },
+      {
+        "date": "2026-01-30",
+        "commits": 76
+      },
+      {
+        "date": "2026-01-31",
+        "commits": 72
+      },
+      {
+        "date": "2026-02-01",
+        "commits": 100
+      },
+      {
+        "date": "2026-02-02",
+        "commits": 101
+      },
+      {
+        "date": "2026-02-03",
+        "commits": 74
+      },
+      {
+        "date": "2026-02-04",
+        "commits": 95
+      },
+      {
+        "date": "2026-02-05",
+        "commits": 132
+      },
+      {
         "date": "2026-02-06",
-        "commits": 21
+        "commits": 22
       },
       {
         "date": "2026-02-07",
-        "commits": 1
+        "commits": 2
       },
       {
         "date": "2026-02-08",
@@ -397,83 +397,83 @@
       },
       {
         "date": "2026-02-09",
-        "commits": 28
+        "commits": 29
       },
       {
         "date": "2026-02-10",
-        "commits": 92
+        "commits": 93
       },
       {
         "date": "2026-02-11",
-        "commits": 89
+        "commits": 90
       },
       {
         "date": "2026-02-12",
-        "commits": 49
+        "commits": 50
       },
       {
         "date": "2026-02-13",
-        "commits": 14
-      },
-      {
-        "date": "2026-02-14",
-        "commits": 38
-      },
-      {
-        "date": "2026-02-15",
-        "commits": 82
-      },
-      {
-        "date": "2026-02-16",
-        "commits": 64
-      },
-      {
-        "date": "2026-02-17",
-        "commits": 68
-      },
-      {
-        "date": "2026-02-18",
-        "commits": 54
-      },
-      {
-        "date": "2026-02-19",
-        "commits": 54
-      },
-      {
-        "date": "2026-02-20",
-        "commits": 30
-      },
-      {
-        "date": "2026-02-21",
-        "commits": 33
-      },
-      {
-        "date": "2026-02-22",
-        "commits": 23
-      },
-      {
-        "date": "2026-02-23",
-        "commits": 26
-      },
-      {
-        "date": "2026-02-24",
-        "commits": 30
-      },
-      {
-        "date": "2026-02-25",
-        "commits": 23
-      },
-      {
-        "date": "2026-02-26",
         "commits": 15
       },
       {
+        "date": "2026-02-14",
+        "commits": 39
+      },
+      {
+        "date": "2026-02-15",
+        "commits": 83
+      },
+      {
+        "date": "2026-02-16",
+        "commits": 65
+      },
+      {
+        "date": "2026-02-17",
+        "commits": 70
+      },
+      {
+        "date": "2026-02-18",
+        "commits": 55
+      },
+      {
+        "date": "2026-02-19",
+        "commits": 55
+      },
+      {
+        "date": "2026-02-20",
+        "commits": 31
+      },
+      {
+        "date": "2026-02-21",
+        "commits": 34
+      },
+      {
+        "date": "2026-02-22",
+        "commits": 24
+      },
+      {
+        "date": "2026-02-23",
+        "commits": 27
+      },
+      {
+        "date": "2026-02-24",
+        "commits": 31
+      },
+      {
+        "date": "2026-02-25",
+        "commits": 24
+      },
+      {
+        "date": "2026-02-26",
+        "commits": 16
+      },
+      {
         "date": "2026-02-27",
-        "commits": 22
+        "commits": 23
       },
       {
         "date": "2026-02-28",
-        "commits": 1
+        "commits": 2
       },
       {
         "date": "2026-03-01",
@@ -485,55 +485,55 @@
       },
       {
         "date": "2026-03-03",
-        "commits": 98
+        "commits": 99
       },
       {
         "date": "2026-03-04",
-        "commits": 102
+        "commits": 103
       },
       {
         "date": "2026-03-05",
-        "commits": 26
-      },
-      {
-        "date": "2026-03-06",
         "commits": 27
       },
       {
+        "date": "2026-03-06",
+        "commits": 28
+      },
+      {
         "date": "2026-03-07",
-        "commits": 135
+        "commits": 136
       },
       {
         "date": "2026-03-08",
-        "commits": 68
-      },
-      {
-        "date": "2026-03-09",
-        "commits": 57
-      },
-      {
-        "date": "2026-03-10",
-        "commits": 40
-      },
-      {
-        "date": "2026-03-11",
         "commits": 69
       },
       {
+        "date": "2026-03-09",
+        "commits": 58
+      },
+      {
+        "date": "2026-03-10",
+        "commits": 41
+      },
+      {
+        "date": "2026-03-11",
+        "commits": 70
+      },
+      {
         "date": "2026-03-12",
-        "commits": 64
+        "commits": 65
       },
       {
         "date": "2026-03-13",
-        "commits": 16
+        "commits": 17
       },
       {
         "date": "2026-03-14",
-        "commits": 52
+        "commits": 53
       },
       {
         "date": "2026-03-15",
-        "commits": 1
+        "commits": 2
       },
       {
         "date": "2026-03-16",
@@ -545,139 +545,139 @@
       },
       {
         "date": "2026-03-18",
-        "commits": 43
+        "commits": 44
       },
       {
         "date": "2026-03-19",
-        "commits": 31
+        "commits": 32
       },
       {
         "date": "2026-03-20",
-        "commits": 22
+        "commits": 23
       },
       {
         "date": "2026-03-21",
-        "commits": 114
-      },
-      {
-        "date": "2026-03-22",
-        "commits": 70
-      },
-      {
-        "date": "2026-03-23",
-        "commits": 63
-      },
-      {
-        "date": "2026-03-24",
-        "commits": 84
-      },
-      {
-        "date": "2026-03-25",
-        "commits": 51
-      },
-      {
-        "date": "2026-03-26",
-        "commits": 47
-      },
-      {
-        "date": "2026-03-27",
-        "commits": 33
-      },
-      {
-        "date": "2026-03-28",
-        "commits": 27
-      },
-      {
-        "date": "2026-03-29",
-        "commits": 46
-      },
-      {
-        "date": "2026-03-30",
-        "commits": 44
-      },
-      {
-        "date": "2026-03-31",
-        "commits": 38
-      },
-      {
-        "date": "2026-04-01",
-        "commits": 57
-      },
-      {
-        "date": "2026-04-02",
-        "commits": 56
-      },
-      {
-        "date": "2026-04-03",
-        "commits": 36
-      },
-      {
-        "date": "2026-04-04",
-        "commits": 20
-      },
-      {
-        "date": "2026-04-05",
         "commits": 115
       },
       {
-        "date": "2026-04-06",
-        "commits": 44
+        "date": "2026-03-22",
+        "commits": 71
       },
       {
-        "date": "2026-04-07",
-        "commits": 73
+        "date": "2026-03-23",
+        "commits": 64
       },
       {
-        "date": "2026-04-08",
-        "commits": 63
+        "date": "2026-03-24",
+        "commits": 85
       },
       {
-        "date": "2026-04-09",
-        "commits": 38
+        "date": "2026-03-25",
+        "commits": 52
       },
       {
-        "date": "2026-04-10",
-        "commits": 69
+        "date": "2026-03-26",
+        "commits": 48
       },
       {
-        "date": "2026-04-11",
-        "commits": 31
-      },
-      {
-        "date": "2026-04-12",
+        "date": "2026-03-27",
         "commits": 34
       },
       {
-        "date": "2026-04-13",
-        "commits": 79
+        "date": "2026-03-28",
+        "commits": 28
       },
       {
-        "date": "2026-04-14",
-        "commits": 134
-      },
-      {
-        "date": "2026-04-15",
-        "commits": 86
-      },
-      {
-        "date": "2026-04-16",
+        "date": "2026-03-29",
         "commits": 47
       },
       {
-        "date": "2026-04-17",
+        "date": "2026-03-30",
+        "commits": 45
+      },
+      {
+        "date": "2026-03-31",
+        "commits": 39
+      },
+      {
+        "date": "2026-04-01",
         "commits": 60
       },
       {
-        "date": "2026-04-18",
+        "date": "2026-04-02",
+        "commits": 57
+      },
+      {
+        "date": "2026-04-03",
+        "commits": 37
+      },
+      {
+        "date": "2026-04-04",
+        "commits": 21
+      },
+      {
+        "date": "2026-04-05",
+        "commits": 116
+      },
+      {
+        "date": "2026-04-06",
+        "commits": 45
+      },
+      {
+        "date": "2026-04-07",
         "commits": 74
       },
       {
+        "date": "2026-04-08",
+        "commits": 64
+      },
+      {
+        "date": "2026-04-09",
+        "commits": 39
+      },
+      {
+        "date": "2026-04-10",
+        "commits": 70
+      },
+      {
+        "date": "2026-04-11",
+        "commits": 32
+      },
+      {
+        "date": "2026-04-12",
+        "commits": 35
+      },
+      {
+        "date": "2026-04-13",
+        "commits": 80
+      },
+      {
+        "date": "2026-04-14",
+        "commits": 135
+      },
+      {
+        "date": "2026-04-15",
+        "commits": 87
+      },
+      {
+        "date": "2026-04-16",
+        "commits": 48
+      },
+      {
+        "date": "2026-04-17",
+        "commits": 62
+      },
+      {
+        "date": "2026-04-18",
+        "commits": 77
+      },
+      {
         "date": "2026-04-19",
-        "commits": 17
+        "commits": 18
       },
       {
         "date": "2026-04-20",
-        "commits": 17
+        "commits": 18
       },
       {
         "date": "2026-04-21",
@@ -685,123 +685,123 @@
       },
       {
         "date": "2026-04-22",
-        "commits": 51
-      },
-      {
-        "date": "2026-04-23",
-        "commits": 57
-      },
-      {
-        "date": "2026-04-24",
-        "commits": 40
-      },
-      {
-        "date": "2026-04-25",
-        "commits": 69
-      },
-      {
-        "date": "2026-04-26",
-        "commits": 95
-      },
-      {
-        "date": "2026-04-27",
-        "commits": 56
-      },
-      {
-        "date": "2026-04-28",
-        "commits": 54
-      },
-      {
-        "date": "2026-04-29",
-        "commits": 36
-      },
-      {
-        "date": "2026-04-30",
         "commits": 52
       },
       {
+        "date": "2026-04-23",
+        "commits": 58
+      },
+      {
+        "date": "2026-04-24",
+        "commits": 41
+      },
+      {
+        "date": "2026-04-25",
+        "commits": 70
+      },
+      {
+        "date": "2026-04-26",
+        "commits": 96
+      },
+      {
+        "date": "2026-04-27",
+        "commits": 58
+      },
+      {
+        "date": "2026-04-28",
+        "commits": 55
+      },
+      {
+        "date": "2026-04-29",
+        "commits": 37
+      },
+      {
+        "date": "2026-04-30",
+        "commits": 53
+      },
+      {
         "date": "2026-05-01",
-        "commits": 32
+        "commits": 33
       },
       {
         "date": "2026-05-02",
-        "commits": 74
+        "commits": 75
       },
       {
         "date": "2026-05-03",
-        "commits": 42
+        "commits": 44
       },
       {
         "date": "2026-05-04",
-        "commits": 60
+        "commits": 61
       },
       {
         "date": "2026-05-05",
-        "commits": 35
+        "commits": 36
       },
       {
         "date": "2026-05-06",
-        "commits": 34
+        "commits": 35
       },
       {
         "date": "2026-05-07",
-        "commits": 89
+        "commits": 91
       },
       {
         "date": "2026-05-08",
-        "commits": 63
+        "commits": 64
       },
       {
         "date": "2026-05-09",
-        "commits": 16
+        "commits": 17
       },
       {
         "date": "2026-05-10",
-        "commits": 27
+        "commits": 28
       },
       {
         "date": "2026-05-11",
-        "commits": 85
+        "commits": 86
       },
       {
         "date": "2026-05-12",
-        "commits": 63
+        "commits": 64
       },
       {
         "date": "2026-05-13",
-        "commits": 77
+        "commits": 78
       },
       {
         "date": "2026-05-14",
-        "commits": 77
+        "commits": 78
       },
       {
         "date": "2026-05-15",
-        "commits": 168
+        "commits": 169
       },
       {
         "date": "2026-05-16",
-        "commits": 38
+        "commits": 39
       },
       {
         "date": "2026-05-17",
-        "commits": 133
+        "commits": 134
       },
       {
         "date": "2026-05-18",
-        "commits": 72
+        "commits": 73
       },
       {
         "date": "2026-05-19",
-        "commits": 161
+        "commits": 162
       },
       {
         "date": "2026-05-20",
-        "commits": 80
+        "commits": 81
       },
       {
         "date": "2026-05-21",
-        "commits": 159
+        "commits": 160
       },
       {
         "date": "2026-05-22",
@@ -877,7 +877,7 @@
       },
       {
         "date": "2026-06-09",
-        "commits": 31
+        "commits": 33
       },
       {
         "date": "2026-06-10",
@@ -893,7 +893,7 @@
       },
       {
         "date": "2026-06-13",
-        "commits": 41
+        "commits": 42
       },
       {
         "date": "2026-06-14",
@@ -905,7 +905,7 @@
       },
       {
         "date": "2026-06-16",
-        "commits": 50
+        "commits": 51
       },
       {
         "date": "2026-06-17",
@@ -953,19 +953,19 @@
       },
       {
         "date": "2026-06-28",
-        "commits": 86
+        "commits": 90
       },
       {
         "date": "2026-06-29",
-        "commits": 44
+        "commits": 46
       },
       {
         "date": "2026-06-30",
-        "commits": 34
+        "commits": 35
       },
       {
         "date": "2026-07-01",
-        "commits": 30
+        "commits": 31
       },
       {
         "date": "2026-07-02",
@@ -973,11 +973,11 @@
       },
       {
         "date": "2026-07-03",
-        "commits": 2
+        "commits": 3
       },
       {
         "date": "2026-07-04",
-        "commits": 41
+        "commits": 42
       },
       {
         "date": "2026-07-05",
@@ -989,7 +989,7 @@
       },
       {
         "date": "2026-07-07",
-        "commits": 100
+        "commits": 106
       },
       {
         "date": "2026-07-08",
@@ -997,7 +997,7 @@
       },
       {
         "date": "2026-07-09",
-        "commits": 86
+        "commits": 89
       },
       {
         "date": "2026-07-10",
@@ -1009,219 +1009,219 @@
       },
       {
         "date": "2026-07-12",
-        "commits": 128
+        "commits": 129
       },
       {
         "date": "2026-07-13",
-        "commits": 83
+        "commits": 89
       },
       {
         "date": "2026-07-14",
-        "commits": 41
+        "commits": 42
       },
       {
         "date": "2026-07-15",
-        "commits": 67
-      },
-      {
-        "date": "2026-07-16",
-        "commits": 157
-      },
-      {
-        "date": "2026-07-17",
-        "commits": 119
-      },
-      {
-        "date": "2026-07-18",
-        "commits": 159
-      },
-      {
-        "date": "2026-07-19",
-        "commits": 74
-      },
-      {
-        "date": "2026-07-20",
-        "commits": 114
-      },
-      {
-        "date": "2026-07-21",
-        "commits": 141
-      },
-      {
-        "date": "2026-07-22",
-        "commits": 279
-      },
-      {
-        "date": "2026-07-23",
-        "commits": 131
-      },
-      {
-        "date": "2026-07-24",
-        "commits": 90
-      },
-      {
-        "date": "2026-07-25",
-        "commits": 68
-      },
-      {
-        "date": "2026-07-26",
         "commits": 71
       },
       {
-        "date": "2026-07-27",
-        "commits": 78
+        "date": "2026-07-16",
+        "commits": 168
       },
       {
-        "date": "2026-07-28",
-        "commits": 160
+        "date": "2026-07-17",
+        "commits": 122
       },
       {
-        "date": "2026-07-29",
-        "commits": 204
+        "date": "2026-07-18",
+        "commits": 166
       },
       {
-        "date": "2026-07-30",
-        "commits": 28
+        "date": "2026-07-19",
+        "commits": 83
       },
       {
-        "date": "2026-07-31",
-        "commits": 226
+        "date": "2026-07-20",
+        "commits": 122
       },
       {
-        "date": "2026-08-01",
-        "commits": 139
+        "date": "2026-07-21",
+        "commits": 150
       },
       {
-        "date": "2026-08-02",
-        "commits": 253
+        "date": "2026-07-22",
+        "commits": 285
       },
       {
-        "date": "2026-08-03",
-        "commits": 366
-      },
-      {
-        "date": "2026-08-04",
-        "commits": 546
-      },
-      {
-        "date": "2026-08-05",
-        "commits": 176
-      },
-      {
-        "date": "2026-08-06",
-        "commits": 30
-      },
-      {
-        "date": "2026-08-07",
-        "commits": 154
-      },
-      {
-        "date": "2026-08-08",
-        "commits": 99
-      },
-      {
-        "date": "2026-08-09",
-        "commits": 153
-      },
-      {
-        "date": "2026-08-10",
-        "commits": 169
-      },
-      {
-        "date": "2026-08-11",
-        "commits": 99
-      },
-      {
-        "date": "2026-08-12",
-        "commits": 152
-      },
-      {
-        "date": "2026-08-13",
+        "date": "2026-07-23",
         "commits": 132
       },
       {
-        "date": "2026-08-14",
-        "commits": 194
+        "date": "2026-07-24",
+        "commits": 92
       },
       {
-        "date": "2026-08-15",
-        "commits": 149
+        "date": "2026-07-25",
+        "commits": 75
       },
       {
-        "date": "2026-08-16",
-        "commits": 140
+        "date": "2026-07-26",
+        "commits": 72
       },
       {
-        "date": "2026-08-17",
-        "commits": 206
+        "date": "2026-07-27",
+        "commits": 86
       },
       {
-        "date": "2026-08-18",
-        "commits": 95
+        "date": "2026-07-28",
+        "commits": 162
       },
       {
-        "date": "2026-08-19",
-        "commits": 52
+        "date": "2026-07-29",
+        "commits": 211
       },
       {
-        "date": "2026-08-20",
-        "commits": 84
+        "date": "2026-07-30",
+        "commits": 34
       },
       {
-        "date": "2026-08-21",
-        "commits": 175
+        "date": "2026-07-31",
+        "commits": 229
       },
       {
-        "date": "2026-08-22",
-        "commits": 127
+        "date": "2026-08-01",
+        "commits": 141
       },
       {
-        "date": "2026-08-23",
-        "commits": 112
+        "date": "2026-08-02",
+        "commits": 254
       },
       {
-        "date": "2026-08-24",
-        "commits": 124
+        "date": "2026-08-03",
+        "commits": 370
       },
       {
-        "date": "2026-08-25",
-        "commits": 66
+        "date": "2026-08-04",
+        "commits": 558
       },
       {
-        "date": "2026-08-26",
-        "commits": 113
+        "date": "2026-08-05",
+        "commits": 183
       },
       {
-        "date": "2026-08-27",
-        "commits": 53
+        "date": "2026-08-06",
+        "commits": 31
       },
       {
-        "date": "2026-08-28",
-        "commits": 82
+        "date": "2026-08-07",
+        "commits": 158
       },
       {
-        "date": "2026-08-29",
-        "commits": 3
-      },
-      {
-        "date": "2026-08-30",
-        "commits": 76
-      },
-      {
-        "date": "2026-08-31",
+        "date": "2026-08-08",
         "commits": 100
       },
       {
+        "date": "2026-08-09",
+        "commits": 155
+      },
+      {
+        "date": "2026-08-10",
+        "commits": 173
+      },
+      {
+        "date": "2026-08-11",
+        "commits": 104
+      },
+      {
+        "date": "2026-08-12",
+        "commits": 164
+      },
+      {
+        "date": "2026-08-13",
+        "commits": 139
+      },
+      {
+        "date": "2026-08-14",
+        "commits": 197
+      },
+      {
+        "date": "2026-08-15",
+        "commits": 153
+      },
+      {
+        "date": "2026-08-16",
+        "commits": 141
+      },
+      {
+        "date": "2026-08-17",
+        "commits": 213
+      },
+      {
+        "date": "2026-08-18",
+        "commits": 101
+      },
+      {
+        "date": "2026-08-19",
+        "commits": 54
+      },
+      {
+        "date": "2026-08-20",
+        "commits": 85
+      },
+      {
+        "date": "2026-08-21",
+        "commits": 176
+      },
+      {
+        "date": "2026-08-22",
+        "commits": 128
+      },
+      {
+        "date": "2026-08-23",
+        "commits": 113
+      },
+      {
+        "date": "2026-08-24",
+        "commits": 126
+      },
+      {
+        "date": "2026-08-25",
+        "commits": 69
+      },
+      {
+        "date": "2026-08-26",
+        "commits": 115
+      },
+      {
+        "date": "2026-08-27",
+        "commits": 54
+      },
+      {
+        "date": "2026-08-28",
+        "commits": 84
+      },
+      {
+        "date": "2026-08-29",
+        "commits": 4
+      },
+      {
+        "date": "2026-08-30",
+        "commits": 78
+      },
+      {
+        "date": "2026-08-31",
+        "commits": 104
+      },
+      {
         "date": "2026-09-01",
-        "commits": 165
+        "commits": 178
       },
       {
         "date": "2026-09-02",
-        "commits": 190
+        "commits": 192
       },
       {
         "date": "2026-09-03",
-        "commits": 103
+        "commits": 104
       },
       {
         "date": "2026-09-04",
@@ -1229,63 +1229,63 @@
       },
       {
         "date": "2026-09-05",
-        "commits": 16
+        "commits": 19
       },
       {
         "date": "2026-09-06",
-        "commits": 17
+        "commits": 18
       },
       {
         "date": "2026-09-07",
-        "commits": 33
+        "commits": 36
       },
       {
         "date": "2026-09-08",
-        "commits": 66
+        "commits": 68
       },
       {
         "date": "2026-09-09",
-        "commits": 85
+        "commits": 87
       },
       {
         "date": "2026-09-10",
-        "commits": 190
+        "commits": 194
       },
       {
         "date": "2026-09-11",
-        "commits": 224
+        "commits": 227
       },
       {
         "date": "2026-09-12",
-        "commits": 209
+        "commits": 210
       },
       {
         "date": "2026-09-13",
-        "commits": 88
+        "commits": 90
       },
       {
         "date": "2026-09-14",
-        "commits": 77
+        "commits": 78
       },
       {
         "date": "2026-09-15",
-        "commits": 136
+        "commits": 138
       },
       {
         "date": "2026-09-16",
-        "commits": 277
+        "commits": 280
       },
       {
         "date": "2026-09-17",
-        "commits": 246
+        "commits": 248
       },
       {
         "date": "2026-09-18",
-        "commits": 196
+        "commits": 199
       },
       {
         "date": "2026-09-19",
-        "commits": 44
+        "commits": 46
       },
       {
         "date": "2026-09-20",
@@ -1293,47 +1293,47 @@
       },
       {
         "date": "2026-09-21",
-        "commits": 153
+        "commits": 156
       },
       {
         "date": "2026-09-22",
-        "commits": 124
+        "commits": 131
       },
       {
         "date": "2026-09-23",
-        "commits": 222
+        "commits": 228
       },
       {
         "date": "2026-09-24",
-        "commits": 264
+        "commits": 265
       },
       {
         "date": "2026-09-25",
-        "commits": 199
+        "commits": 207
       },
       {
         "date": "2026-09-26",
-        "commits": 73
+        "commits": 74
       },
       {
         "date": "2026-09-27",
-        "commits": 173
+        "commits": 174
       },
       {
         "date": "2026-09-28",
-        "commits": 147
+        "commits": 153
       },
       {
         "date": "2026-09-29",
-        "commits": 231
+        "commits": 233
       },
       {
         "date": "2026-09-30",
-        "commits": 215
+        "commits": 216
       },
       {
         "date": "2026-10-01",
-        "commits": 73
+        "commits": 76
       },
       {
         "date": "2026-10-02",
@@ -1341,7 +1341,7 @@
       },
       {
         "date": "2026-10-03",
-        "commits": 98
+        "commits": 104
       },
       {
         "date": "2026-10-04",
@@ -1349,75 +1349,75 @@
       },
       {
         "date": "2026-10-05",
-        "commits": 121
+        "commits": 122
       },
       {
         "date": "2026-10-06",
-        "commits": 267
+        "commits": 273
       },
       {
         "date": "2026-10-07",
-        "commits": 421
+        "commits": 424
       },
       {
         "date": "2026-10-08",
-        "commits": 141
+        "commits": 142
       },
       {
         "date": "2026-10-09",
-        "commits": 234
+        "commits": 239
       },
       {
         "date": "2026-10-10",
-        "commits": 307
+        "commits": 317
       },
       {
         "date": "2026-10-11",
-        "commits": 532
+        "commits": 534
       },
       {
         "date": "2026-10-12",
-        "commits": 325
+        "commits": 327
       },
       {
         "date": "2026-10-13",
-        "commits": 135
+        "commits": 140
       },
       {
         "date": "2026-10-14",
-        "commits": 77
+        "commits": 82
       },
       {
         "date": "2026-10-15",
-        "commits": 51
+        "commits": 53
       },
       {
         "date": "2026-10-16",
-        "commits": 106
+        "commits": 108
       },
       {
         "date": "2026-10-17",
-        "commits": 118
+        "commits": 120
       },
       {
         "date": "2026-10-18",
-        "commits": 163
+        "commits": 170
       },
       {
         "date": "2026-10-19",
-        "commits": 245
+        "commits": 247
       },
       {
         "date": "2026-10-20",
-        "commits": 69
+        "commits": 70
       },
       {
         "date": "2026-10-21",
-        "commits": 50
+        "commits": 52
       },
       {
         "date": "2026-10-22",
-        "commits": 98
+        "commits": 99
       },
       {
         "date": "2026-10-23",
@@ -1429,11 +1429,11 @@
       },
       {
         "date": "2026-10-25",
-        "commits": 72
+        "commits": 73
       },
       {
         "date": "2026-10-26",
-        "commits": 60
+        "commits": 61
       },
       {
         "date": "2026-10-27",
@@ -1441,11 +1441,11 @@
       },
       {
         "date": "2026-10-28",
-        "commits": 118
+        "commits": 124
       },
       {
         "date": "2026-10-29",
-        "commits": 123
+        "commits": 127
       },
       {
         "date": "2026-10-30",
@@ -1465,7 +1465,7 @@
       },
       {
         "date": "2026-11-03",
-        "commits": 96
+        "commits": 97
       },
       {
         "date": "2026-11-04",
@@ -1501,7 +1501,7 @@
       },
       {
         "date": "2026-11-12",
-        "commits": 172
+        "commits": 174
       },
       {
         "date": "2026-11-13",
@@ -1521,7 +1521,7 @@
       },
       {
         "date": "2026-11-17",
-        "commits": 146
+        "commits": 153
       },
       {
         "date": "2026-11-18",
@@ -1529,52 +1529,51 @@
       },
       {
         "date": "2026-11-19",
-        "commits": 2
+        "commits": 148
+      },
+      {
+        "date": "2026-11-20",
+        "commits": 1
       }
     ]
   },
   "claude": {
-    "sessions_7d": 41,
-    "sessions_30d": 107,
-    "turns_7d": 831,
-    "turns_30d": 2416,
+    "sessions_7d": 40,
+    "sessions_30d": 111,
+    "turns_7d": 930,
+    "turns_30d": 2617,
     "repos": [
       {
         "repo": "davidrose",
         "sessions": 15,
-        "turns": 243
-      },
-      {
-        "repo": "g55",
-        "sessions": 12,
-        "turns": 347
+        "turns": 277
       },
       {
         "repo": "zerg",
         "sessions": 12,
-        "turns": 219
+        "turns": 193
+      },
+      {
+        "repo": "g55",
+        "sessions": 11,
+        "turns": 378
       },
       {
         "repo": "glasses",
         "sessions": 1,
-        "turns": 7
+        "turns": 67
       }
     ],
     "last_session": {
-      "repo": "glasses",
-      "timestamp": "2026-11-19T01:20:02.466382+00:00",
-      "hours_ago": 13.56
+      "repo": "zerg",
+      "timestamp": "2026-11-20T04:04:09.214263+00:00",
+      "hours_ago": 10.5
     },
     "daily_sessions": [
       {
-        "date": "2026-11-12",
-        "sessions": 2,
-        "turns": 3
-      },
-      {
         "date": "2026-11-13",
-        "sessions": 7,
-        "turns": 184
+        "sessions": 5,
+        "turns": 198
       },
       {
         "date": "2026-11-14",
@@ -1599,67 +1598,73 @@
       {
         "date": "2026-11-18",
         "sessions": 6,
-        "turns": 90
+        "turns": 170
       },
       {
         "date": "2026-11-19",
+        "sessions": 4,
+        "turns": 93
+      },
+      {
+        "date": "2026-11-20",
         "sessions": 1,
-        "turns": 7
+        "turns": 5
       }
     ]
   },
   "codex": {
-    "sessions_7d": 0,
-    "sessions_30d": 17,
-    "turns_7d": 0,
-    "turns_30d": 17,
-    "repos": [],
-    "last_session": null,
-    "daily_sessions": []
+    "sessions_7d": 1,
+    "sessions_30d": 18,
+    "turns_7d": 1,
+    "turns_30d": 18,
+    "repos": [
+      {
+        "repo": "tmp.UmSKo2cmQn",
+        "sessions": 1,
+        "turns": 1
+      }
+    ],
+    "last_session": {
+      "repo": "tmp.UmSKo2cmQn",
+      "timestamp": "2026-11-19T23:39:23.047000+00:00",
+      "hours_ago": 14.91
+    },
+    "daily_sessions": [
+      {
+        "date": "2026-11-19",
+        "sessions": 1,
+        "turns": 1
+      }
+    ]
   },
   "cursor": {
-    "sessions_7d": 7,
-    "sessions_30d": 60,
-    "turns_7d": 7,
-    "turns_30d": 62,
+    "sessions_7d": 9,
+    "sessions_30d": 65,
+    "turns_7d": 9,
+    "turns_30d": 67,
     "repos": [
+      {
+        "repo": "hatch",
+        "sessions": 6,
+        "turns": 6
+      },
       {
         "repo": "tmp",
         "sessions": 2,
         "turns": 2
       },
       {
-        "repo": "hatch",
-        "sessions": 2,
-        "turns": 2
-      },
-      {
-        "repo": "zeta",
-        "sessions": 2,
-        "turns": 2
-      },
-      {
-        "repo": "me",
+        "repo": "tmp.8vSgGHjL4S",
         "sessions": 1,
         "turns": 1
       }
     ],
     "last_session": {
-      "repo": "tmp",
-      "timestamp": "2026-11-17T17:34:12.255000+00:00",
-      "hours_ago": 45.32
+      "repo": "tmp.8vSgGHjL4S",
+      "timestamp": "2026-11-20T00:24:40.174000+00:00",
+      "hours_ago": 14.16
     },
     "daily_sessions": [
-      {
-        "date": "2026-11-12",
-        "sessions": 2,
-        "turns": 2
-      },
-      {
-        "date": "2026-11-13",
-        "sessions": 1,
-        "turns": 1
-      },
       {
         "date": "2026-11-15",
         "sessions": 2,
@@ -1669,6 +1674,16 @@
         "date": "2026-11-17",
         "sessions": 2,
         "turns": 2
+      },
+      {
+        "date": "2026-11-19",
+        "sessions": 4,
+        "turns": 4
+      },
+      {
+        "date": "2026-11-20",
+        "sessions": 1,
+        "turns": 1
       }
     ]
   },
@@ -1682,66 +1697,57 @@
     "daily_sessions": []
   },
   "aggregate": {
-    "ai_sessions_7d": 47,
-    "ai_turns_7d": 838,
-    "claude_percentage": 85.1,
-    "codex_percentage": 0.0,
-    "cursor_percentage": 14.9,
+    "ai_sessions_7d": 49,
+    "ai_turns_7d": 940,
+    "claude_percentage": 79.6,
+    "codex_percentage": 2.0,
+    "cursor_percentage": 18.4,
     "gemini_percentage": 0.0,
-    "claude_turns_percentage": 99.2,
-    "codex_turns_percentage": 0.0,
-    "cursor_turns_percentage": 0.8,
+    "claude_turns_percentage": 98.9,
+    "codex_turns_percentage": 0.1,
+    "cursor_turns_percentage": 1.0,
     "gemini_turns_percentage": 0.0,
     "top_repos_combined": [
       {
+        "repo": "g55",
+        "commits": 317,
+        "ai_sessions": 11,
+        "github_url": null
+      },
+      {
         "repo": "longhouse",
-        "commits": 329,
+        "commits": 293,
         "ai_sessions": 0,
         "github_url": null
       },
       {
-        "repo": "g55",
-        "commits": 292,
-        "ai_sessions": 12,
-        "github_url": null
-      },
-      {
         "repo": "longhouse-control-plane",
-        "commits": 188,
+        "commits": 169,
         "ai_sessions": 0,
         "github_url": null
       },
       {
         "repo": "me",
-        "commits": 140,
+        "commits": 167,
         "ai_sessions": 0,
         "github_url": null
       },
       {
         "repo": "sauron-jobs",
-        "commits": 52,
+        "commits": 50,
         "ai_sessions": 0,
         "github_url": null
       }
     ],
     "daily_breakdown_7d": [
       {
-        "date": "2026-11-12",
-        "commits": 172,
-        "claude_sessions": 2,
-        "codex_sessions": 0,
-        "cursor_sessions": 2,
-        "gemini_sessions": 0,
-        "total_sessions": 4
-      },
-      {
         "date": "2026-11-13",
         "commits": 147,
-        "claude_sessions": 7,
+        "claude_sessions": 5,
         "codex_sessions": 0,
-        "cursor_sessions": 1,
+        "cursor_sessions": 0,
         "gemini_sessions": 0,
-        "total_sessions": 8
+        "total_sessions": 5
       },
       {
         "date": "2026-11-14",
@@ -1772,7 +1778,7 @@
       },
       {
         "date": "2026-11-17",
-        "commits": 146,
+        "commits": 153,
         "claude_sessions": 7,
         "codex_sessions": 0,
         "cursor_sessions": 2,
@@ -1787,6 +1793,15 @@
         "cursor_sessions": 0,
         "gemini_sessions": 0,
         "total_sessions": 6
+      },
+      {
+        "date": "2026-11-19",
+        "commits": 148,
+        "claude_sessions": 4,
+        "codex_sessions": 1,
+        "cursor_sessions": 4,
+        "gemini_sessions": 0,
+        "total_sessions": 9
       }
     ]
   }
