@@ -1,4 +1,4 @@
-**David W. Rose** · Vehicle ECUs, wearable BLE, self-driving evals, and coding-agent infrastructure · [drose.io](https://drose.io) · [my-self-driving-g-wagon.drose.io](https://my-self-driving-g-wagon.drose.io) · [longhouse.ai](https://longhouse.ai)
+**David W. Rose** · Vehicle ECUs, wearable BLE, self-driving evals, and agent infra · [drose.io](https://drose.io) · [g-wagon](https://my-self-driving-g-wagon.drose.io) · [longhouse](https://longhouse.ai)
 
 <table>
   <tr>
@@ -23,13 +23,13 @@
       <sub>Remote control and SQLite archive for Claude Code, Codex, Cursor, and OpenCode. Rust + FastAPI + Swift.</sub>
     </td>
     <td width="33%" valign="top">
-      <a href="https://hdrpop.com"><img src="./assets/hdrpop.png" width="100%" alt="HDRPop SDR original versus AI luminance gain map HDR split" /></a><br />
-      <strong><a href="https://hdrpop.com">HDRPop</a></strong> · <code>hdrpop.com</code><br />
+      <a href="https://hdrpop.com"><img src="./assets/hdrpop.png" width="100%" alt="HDRPop SDR original versus HDR luminance gain map split" /></a><br />
+      <strong><a href="https://hdrpop.com">HDRPop</a></strong> · <a href="https://hdrpop.com">site</a><br />
       <sub>Turns standard photos into true HDR using AI-generated luminance gain maps.</sub>
     </td>
     <td width="33%" valign="top">
       <a href="https://github.com/cipher982/ray-ban-meta-custom-agents"><img src="./assets/rayban-meta.svg" width="100%" alt="Ray-Ban Meta Audio custom BLE voice agent" /></a><br />
-      <strong><a href="https://github.com/cipher982/ray-ban-meta-custom-agents">Ray-Ban Meta BLE</a></strong> · <code>Swift</code><br />
+      <strong><a href="https://github.com/cipher982/ray-ban-meta-custom-agents">Ray-Ban Meta BLE</a></strong> · <a href="https://github.com/cipher982/ray-ban-meta-custom-agents">repo</a><br />
       <sub>AirShield v17 BLE relay replacing Meta AI with a custom ~0.7 s voice agent and barge-in.</sub>
     </td>
   </tr>
