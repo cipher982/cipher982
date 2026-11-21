@@ -1,57 +1,75 @@
-<p align="center">
-  <img src="./hero.svg" alt="David W. Rose, cipher982" />
-</p>
+**David W. Rose** · Vehicle ECUs, wearable BLE, self-driving evals, and coding-agent infrastructure · [drose.io](https://drose.io) · [my-self-driving-g-wagon.drose.io](https://my-self-driving-g-wagon.drose.io) · [longhouse.ai](https://longhouse.ai)
 
-**I tinker with machines. Some of them think.** My projects range from coding agents and LLM benchmarks to maps, computer vision, personal infrastructure, and vehicle electronics. More projects and notes live at [drose.io](https://drose.io/).
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://my-self-driving-g-wagon.drose.io"><img src="./assets/g55-truck.svg" width="100%" alt="2011 Mercedes G55 AMG as-built hardware schematic" /></a><br />
+      <strong><a href="https://my-self-driving-g-wagon.drose.io">2011 G55 AMG: As-Built Hardware</a></strong> · <a href="https://github.com/cipher982/g55-public">g55-public</a> · <a href="https://github.com/cipher982/ultimate-nag52-fw">nag52-fw</a><br />
+      <sub>Patched ME 2.8.1 ECU (50 Hz CAN torque), NAG52 TCU, Jetson N16 @ 20 Hz, Rust Pi 5 CAN gateway (131 DBC signals), BLE BMS, CAD.</sub>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://my-self-driving-g-wagon.drose.io/#models"><img src="./assets/g55-eval.png" width="100%" alt="G-Wagon worldmodel-4B closed-loop driving rollout comparing MD v3 and lebowski" /></a><br />
+      <strong><a href="https://my-self-driving-g-wagon.drose.io">G-Wagon Closed-Loop Evals</a></strong> · 21 openpilot models<br />
+      <sub>Open-loop replay, <code>worldmodel-4B</code> neural closed-loop rollouts, and recovery tests on a learned G55 dynamics sim.</sub>
+    </td>
+  </tr>
+</table>
 
----
+<table>
+  <tr>
+    <td width="33%" valign="top">
+      <a href="https://longhouse.ai"><img src="./assets/longhouse.svg" width="100%" alt="Longhouse multi-machine coding agent remote control" /></a><br />
+      <strong><a href="https://longhouse.ai">Longhouse</a></strong> · <a href="https://github.com/cipher982/longhouse">repo</a><br />
+      <sub>Remote control and SQLite archive for Claude Code, Codex, Cursor, and OpenCode. Rust + FastAPI + Swift.</sub>
+    </td>
+    <td width="33%" valign="top">
+      <a href="https://hdrpop.com"><img src="./assets/hdrpop.png" width="100%" alt="HDRPop SDR original versus AI luminance gain map HDR split" /></a><br />
+      <strong><a href="https://hdrpop.com">HDRPop</a></strong> · <code>hdrpop.com</code><br />
+      <sub>Turns standard photos into true HDR using AI-generated luminance gain maps.</sub>
+    </td>
+    <td width="33%" valign="top">
+      <a href="https://github.com/cipher982/ray-ban-meta-custom-agents"><img src="./assets/rayban-meta.svg" width="100%" alt="Ray-Ban Meta Audio custom BLE voice agent" /></a><br />
+      <strong><a href="https://github.com/cipher982/ray-ban-meta-custom-agents">Ray-Ban Meta BLE</a></strong> · <code>Swift</code><br />
+      <sub>AirShield v17 BLE relay replacing Meta AI with a custom ~0.7 s voice agent and barge-in.</sub>
+    </td>
+  </tr>
+</table>
 
-## Flagship Work
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://llm-benchmarks.com/cloud"><img src="./assets/llm-benchmarks.png" width="100%" alt="LLM Benchmarks throughput distribution across 728 models and 83 providers" /></a><br />
+      <strong><a href="https://llm-benchmarks.com/cloud">LLM Benchmarks</a></strong> · <a href="https://github.com/cipher982/llm-benchmarks">runner</a> · <a href="https://github.com/cipher982/llm-benchmarks-dashboard">dashboard</a><br />
+      <sub>Continuous tok/s, TTFT, and variance tracking across 728 models and 83 cloud providers.</sub>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://drose.io/floodmap"><img src="./assets/floodmap.jpg" width="100%" alt="FloodMap USA interactive elevation and flood risk map" /></a><br />
+      <strong><a href="https://drose.io/floodmap">FloodMap USA</a></strong> · <a href="https://github.com/cipher982/floodmap">repo</a><br />
+      <sub>Nationwide US flood-risk explorer with a FastAPI elevation-tile backend and MapLibre/WebGPU shallow-water simulator.</sub>
+    </td>
+  </tr>
+</table>
 
-| Project | |
-|---------|--|
-| 🪵 [**Longhouse**](https://longhouse.ai) | Mission control for AI coding agents: ingest, search, and live-steer agent sessions across your machines. Rust session engine, FastAPI backend, React UI, native iOS/macOS clients. |
-| 🔭 [**Agent Observatory**](https://github.com/cipher982/agent-observatory) | A macOS app that captures what coding agents *actually* receive, comparing expected context against real LLM traffic via a NetworkExtension transparent proxy. |
-| ⚡ [**LLM Benchmarks**](https://llm-benchmarks.com/cloud) | Continuously benchmarks LLM inference speed across 16+ providers, with a live public dashboard and a distributed job scheduler behind it. |
-| 🛑 [**Stop Sign Nanny**](https://crestwoodstopsign.com) | Real-time computer-vision pipeline that watches an intersection over RTSP, tracks vehicles with Kalman filtering, and scores stop-sign behavior. |
-| 🌊 [**FloodMap USA**](https://drose.io/floodmap) | Nation-wide US flood-risk mapping: a FastAPI elevation-tile service plus a MapLibre/WebGPU client with a shallow-water flood simulation. |
+## More Projects & Tools
 
-## AI Agents & Tooling
+| Project | Area | Status | What it does |
+|---|---|---|---|
+| [**Hatch**](https://github.com/cipher982/hatch) | Agents / Go | active | Headless Go CLI for single-turn Claude, Codex, and Gemini runs that saves durable local manifests and raw logs. |
+| [**Chaos Stability Probe**](https://github.com/cipher982/chaos-stability-probe) | Interp / ML | research | Activation patching and SAE feature deltas measuring how tiny prompt perturbations steer LLM outputs. |
+| [**NYC Crime Explorer**](https://drose.io/nyc-crime) ([repo](https://github.com/cipher982/crims)) | Data | live | Recidivism analysis over public NYC arrest and jail records with Polars, DuckDB, and Next.js. |
+| [**Agent Tools**](https://github.com/cipher982/agent-tools) | Agents | tool | MCP server facades cutting Claude Code tool-token overhead by ~90%. |
+| [**Agentlog**](https://github.com/cipher982/agentlog) | Agents | lib | Zero-dependency parser normalizing local session logs across Claude, Codex, Gemini, and Cursor. |
+| [**AI Agent Forum**](https://drose.io/free-open-forum-for-agents-to-collaborate/) ([repo](https://github.com/cipher982/ai-agent-forum)) | Agents | live | Open web and HTTP API forum for AI agents to share notes and ask questions. |
+| [**MPC Vehicle Controller**](https://github.com/cipher982/MPC-vehicle-controller) · [**Unity DRL**](https://github.com/cipher982/Robotic-Control-in-Unity-with-DRL) · [**Lane Tracking**](https://github.com/cipher982/HiFi-Lane-Tracking) | Autonomy | 2018-19 | Earlier C++ model-predictive control, deep RL, and computer-vision foundations. |
 
-| Project | |
-|---------|--|
-| 🔧 [**Agent Tools**](https://github.com/cipher982/agent-tools) | MCP server facades that cut Claude Code's tool-token overhead by ~90%. |
-| 📜 [**Agentlog**](https://github.com/cipher982/agentlog) | A zero-dependency parser that normalizes local agent session logs across Claude, Codex, Gemini, and Cursor. |
-| 🖥️ [**Pixel Pilot**](https://github.com/cipher982/pixel-pilot) | Computer-use agent that completes desktop tasks via screen control. |
-| 🎁 [**Code Wrapped**](https://github.com/cipher982/code-wrapped) | A year-in-review for your AI pair-programming habits. |
-| [**AI Agent Forum**](https://drose.io/free-open-forum-for-agents-to-collaborate/) | Free, open forum for AI agents to collaborate, share notes, and ask questions, with a simple HTTP API; [source code](https://github.com/cipher982/ai-agent-forum). |
+<details>
+<summary>Paused &amp; Smaller Experiments (6 repos)</summary>
 
-## Research & Products
+- [**Stop Sign Nanny**](https://github.com/cipher982/stopsign_ai) (paused) - Real-time RTSP intersection CV pipeline with Kalman tracking to score stop-sign compliance.
+- [**Agent Observatory**](https://github.com/cipher982/agent-observatory) - macOS NetworkExtension transparent proxy comparing expected coding-agent context against raw LLM payloads.
+- [**Pixel Pilot**](https://github.com/cipher982/pixel-pilot) - Desktop computer-use agent via screen control.
+- [**Code Wrapped**](https://github.com/cipher982/code-wrapped) - Year-in-review stats for local AI pair-programming sessions.
+- [**March Madness LLM**](https://marchmadness.drose.io) ([repo](https://github.com/cipher982/march-madness-llm)) - NCAA bracket simulator driven by LLM picks.
+- [**This Wine Does Not Exist**](https://thiswinedoesnotexist.com) ([repo](https://github.com/cipher982/this-wine-does-not-exist)) - Synthetic wine labels and tasting notes from GPT-2 + StyleGAN.
 
-| Project | |
-|---------|--|
-| 🌀 [**Chaos Stability Probe**](https://github.com/cipher982/chaos-stability-probe) | Mechanistic-interpretability research on how tiny prompt perturbations steer LLM generation, using activation patching and sparse-autoencoder feature deltas. |
-| ⚖️ [**NYC Crime Data Explorer**](https://drose.io/nyc-crime) | Careful recidivism analysis over public NYC arrest/jail data with Polars + DuckDB, shipped as a live Next.js app. |
-| 🌅 [**HDR Pop**](https://hdrpop.com) | Turns standard photos into HDR via AI-generated gain maps. |
-| 🏀 [**March Madness LLM**](https://marchmadness.drose.io) | NCAA bracket simulator that lets an LLM make the picks. |
-| 🍷 [**This Wine Does Not Exist**](https://thiswinedoesnotexist.com) | Invented wines from GPT-2 + StyleGAN. |
-
-## Foundations
-
-Earlier work in control systems and computer vision that shaped how I think about autonomy.
-
-| Project | |
-|---------|--|
-| 🚗 [**MPC Vehicle Controller**](https://github.com/cipher982/MPC-vehicle-controller) | Model-predictive control + vision for autonomous steering. |
-| 🦾 [**Robotic Control with DRL**](https://github.com/cipher982/Robotic-Control-in-Unity-with-DRL) | Deep reinforcement learning for robotic control in Unity. |
-| 🛣️ [**Lane Tracking**](https://github.com/cipher982/HiFi-Lane-Tracking) | Image-processing pipeline for autonomous lane detection. |
-
----
-
-## Build Cadence
-
-{{LANGUAGE_BADGES}}
-
-Over the last 30 days: **{{COMMITS_30D}} commits** across **{{REPOS_30D}} repos**. I work alongside coding agents daily (roughly **{{AI_SESSIONS_30D}} agent sessions** this month, mostly Claude Code and Codex), but the output is the part that matters.
-
-*Hero dashboard auto-updates daily · last refreshed {{UPDATED_AT}}*
+</details>

@@ -3,11 +3,13 @@
 This repository renders above the pinned repositories on the `cipher982`
 GitHub profile.
 
-- Fetch immediately before editing; the scheduled dashboard workflow pushes
-  generated metric updates and can race a stale local checkout.
-- Keep durable identity copy in `README.template.md` and the generator
-  constants. Regenerate `README.md` and `assets/hero.svg` from those sources.
-- Treat `data/profile-data.json` and rendered dashboard metrics as generated
-  output. Do not hand-edit them or overwrite a fresh automation update.
-- Account-level display name, bio, and profile URL are not controlled by this
-  repository and require a separately approved GitHub token with `user` scope.
+- Fetch before editing (`git pull --ff-only`).
+- Keep durable copy in `TEMPLATE.md` and regenerate `README.md` with
+  `python3 scripts/generate_readme.py`.
+- Visual showcase cards live in `assets/` (`g55-truck.svg`, `g55-eval.png`,
+  `longhouse.svg`, `hdrpop.png`, `rayban-meta.svg`, `llm-benchmarks.png`,
+  `floodmap.jpg`). Keep images in the same HTML table row at identical aspect
+  ratios so rows align flush on GitHub.
+- Run `python3 scripts/check_links.py README.md TEMPLATE.md` before pushing.
+- Account-level display name, bio, pinned repos, and profile URL are controlled
+  in GitHub account settings, not this repository.
