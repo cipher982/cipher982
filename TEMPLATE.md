@@ -3,12 +3,12 @@
 <table>
   <tr>
     <td width="50%" valign="top">
-      <a href="https://my-self-driving-g-wagon.drose.io"><img src="./assets/g55-truck.svg?v=2" width="100%" alt="2011 Mercedes G55 AMG as-built hardware schematic" /></a><br />
+      <a href="https://my-self-driving-g-wagon.drose.io"><img src="./assets/g55-truck.svg" width="100%" alt="2011 Mercedes G55 AMG as-built hardware schematic" /></a><br />
       <strong><a href="https://my-self-driving-g-wagon.drose.io">2011 G55 AMG: As-Built Hardware</a></strong> · <a href="https://github.com/cipher982/g55-public">g55-public</a> · <a href="https://github.com/cipher982/ultimate-nag52-fw">nag52-fw</a><br />
       <sub>Patched ME 2.8.1 ECU (50 Hz CAN torque), NAG52 TCU, Jetson N16 @ 20 Hz, Rust Pi 5 CAN gateway (131 DBC signals), BLE BMS, CAD.</sub>
     </td>
     <td width="50%" valign="top">
-      <a href="https://my-self-driving-g-wagon.drose.io/#models"><img src="./assets/g55-eval.png?v=2" width="100%" alt="G-Wagon worldmodel-4B closed-loop driving rollout comparing MD v3 and lebowski" /></a><br />
+      <a href="https://my-self-driving-g-wagon.drose.io/#models"><img src="./assets/g55-eval.png" width="100%" alt="G-Wagon worldmodel-4B closed-loop driving rollout comparing MD v3 and lebowski" /></a><br />
       <strong><a href="https://my-self-driving-g-wagon.drose.io">G-Wagon Closed-Loop Evals</a></strong> · 21 openpilot models<br />
       <sub>Open-loop replay, <code>worldmodel-4B</code> neural closed-loop rollouts, and recovery tests on a learned G55 dynamics sim.</sub>
     </td>
@@ -18,17 +18,17 @@
 <table>
   <tr>
     <td width="33%" valign="top">
-      <a href="https://longhouse.ai"><img src="./assets/longhouse.svg?v=2" width="100%" alt="Longhouse multi-machine coding agent remote control" /></a><br />
+      <a href="https://longhouse.ai"><img src="./assets/longhouse.svg" width="100%" alt="Longhouse multi-machine coding agent remote control" /></a><br />
       <strong><a href="https://longhouse.ai">Longhouse</a></strong> · <a href="https://github.com/cipher982/longhouse">repo</a><br />
       <sub>Remote control and SQLite archive for Claude Code, Codex, Cursor, and OpenCode. Rust + FastAPI + Swift.</sub>
     </td>
     <td width="33%" valign="top">
-      <a href="https://hdrpop.com"><img src="./assets/hdrpop.png?v=2" width="100%" alt="HDRPop SDR original versus HDR luminance gain map split" /></a><br />
+      <a href="https://hdrpop.com"><img src="./assets/hdrpop.png" width="100%" alt="HDRPop SDR original versus HDR luminance gain map split" /></a><br />
       <strong><a href="https://hdrpop.com">HDRPop</a></strong> · <a href="https://hdrpop.com">site</a><br />
       <sub>Turns standard photos into true HDR using AI-generated luminance gain maps.</sub>
     </td>
     <td width="33%" valign="top">
-      <a href="https://github.com/cipher982/ray-ban-meta-custom-agents"><img src="./assets/rayban-meta.svg?v=2" width="100%" alt="Ray-Ban Meta Audio custom BLE voice agent" /></a><br />
+      <a href="https://github.com/cipher982/ray-ban-meta-custom-agents"><img src="./assets/rayban-meta.svg" width="100%" alt="Ray-Ban Meta Audio custom BLE voice agent" /></a><br />
       <strong><a href="https://github.com/cipher982/ray-ban-meta-custom-agents">Ray-Ban Meta BLE</a></strong> · <a href="https://github.com/cipher982/ray-ban-meta-custom-agents">repo</a><br />
       <sub>AirShield v17 BLE relay replacing Meta AI with a custom ~0.7 s voice agent and barge-in.</sub>
     </td>
@@ -38,7 +38,7 @@
 <table>
   <tr>
     <td width="50%" valign="top">
-      <a href="https://llm-benchmarks.com/cloud"><img src="./assets/llm-benchmarks.png?v=2" width="100%" alt="LLM Benchmarks throughput distribution across 728 models and 83 providers" /></a><br />
+      <a href="https://llm-benchmarks.com/cloud"><img src="./assets/llm-benchmarks.png" width="100%" alt="LLM Benchmarks throughput distribution across 728 models and 83 providers" /></a><br />
       <strong><a href="https://llm-benchmarks.com/cloud">LLM Benchmarks</a></strong> · <a href="https://github.com/cipher982/llm-benchmarks">runner</a> · <a href="https://github.com/cipher982/llm-benchmarks-dashboard">dashboard</a><br />
       <sub>Continuous tok/s, TTFT, and variance tracking across 728 models and 83 cloud providers.</sub>
     </td>
